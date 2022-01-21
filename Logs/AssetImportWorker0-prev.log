@@ -1,0 +1,21 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.6f1 (c0fade0cc7e9) revision 12647134'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Pro; OS build 19043.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 3924 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity 2021.1.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/bsk_b/Documents/Partita
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+62821
+Successfully changed project path to: C:/Users/bsk_b/Documents/Partita
+C:/Users/bsk_b/Documents/Partita
+Using Asset Import Pipeline V2.
