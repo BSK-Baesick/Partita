@@ -155,6 +155,15 @@ MonoBehaviour:
     - Name: TestNarrative
       PathPrefix: Scripts
       Guid: 420e409fc67d5404e8170ba7ed5d79ed
+    - Name: Scene2
+      PathPrefix: Scripts
+      Guid: 1eb7f6bf86f16f246bb6de333b182ee7
+    - Name: SilentType
+      PathPrefix: Scripts
+      Guid: 8a67966a23dc9344ebd3b9fe95584f85
+    - Name: WhereFrom
+      PathPrefix: Scripts
+      Guid: d78e3331d14ae4445b572398f35d4e25
   - Id: Audio
     Resources: []
   - Id: Backgrounds/c3dfd016-c5af-409a-bcef-81f7b348c0a4
