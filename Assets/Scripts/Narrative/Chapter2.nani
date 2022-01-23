@@ -1,18 +1,16 @@
-#Scene1
+#CHAPTER2
 
 "I think that might be for me."
-STEPHAN:"I think you might be correct."
-STEPHAN:"I'd thought this was for me. Seems I was wrong."
+STEPHAN: "I think you might be correct."
+STEPHAN: "I'd thought this was for me. Seems I was wrong."
 "Drop it."
 STEPHAN: "I haven't opened it."
 STEPHAN: "I thought it was for me."
 "It's not."
-@choice "Drop. It."
-@goto .choice_1
-@choice "Rush forward"
-@goto .choice_2
-
-#choice_1
+@choice "Drop It." goto:.SCENE_1
+@choice "Rush forward" goto:.SCENE_2
+@stop
+#SCENE_1
 STEPHAN: "I know."
 STEPHAN: "Mind if I ask who?"
 "..."
@@ -33,13 +31,11 @@ STEPHAN: "Rough road. Suppose they all are right now."
 STEPHAN: "Sorry. I'll drop it."
 STEPHAN: "You smoke?"
 
-@choice "Yes"
-@goto .choice_3
-@choice "No"
-@goto .choice_4
+@choice "Yes" goto:.SCENE_3
+@choice "No" goto:.SCENE_4
+@stop
 
-
-#choice_2
+#SCENE_2
 "Drop. It."
 "Move closer"
 "Give me the letter."
@@ -48,11 +44,11 @@ STEPHAN: "I don't want trouble."
 "Neither do I."
 STEPHAN: "And so we've reach an accord. No bullets then?"
 STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too so I doubt anyone else has."
-
-
-#choice_3
+@goto .SCENE_4
+@stop
+#SCENE_3
 "I do."
-STEPHAN:"Here. Take the edge off."
+STEPHAN: "Here. Take the edge off."
 Who are you waiting for?
 STEPHAN: "My son."
 *Why wait in the cold? That was the only bus for hours.
@@ -60,7 +56,6 @@ STEPHAN: "Just tradition."
 He laughes at himself.
 STEPHAN: "My son."
 STEPHAN: "They're not coming though."
-
 "Sorry for your loss."
 STEPHAN: "Oh they're not dead. Least I hope not."
 "Sorry."
@@ -76,12 +71,11 @@ STEPHAN: "Ahhh. I guess we're done for the day."
  "It was nice to meet you."
  "As long as I'm not imposing."
  STEPHAN: "Impossible. Come on then."
- 
- LETTER: I miss you. I miss Moscow. I miss music and symphony and sound that isn't wailing wind. I'd always loved wint3r before. Before I'd spent it flailing on the roa7. I hate it now. It's cruel and unknind. I want to see you. I will. 5tay safe. 
- 
+ LETTER: I miss you. I miss Moscow. I miss music and symphony and sound that isn't wailing wind. I'd always loved winter before. Before I'd spent it flailing on the road. I hate it now. It's cruel and unknind. I want to see you. I will. 5tay safe. 
  @choice "Burn it"
  @choice "Keep it"
-#choice_4
+ @goto .Chapter3
+#SCENE_4
 "No. Thankyou."
 STEPHAN: "Ah."
 STEPHAN: "Sorry about that."
@@ -106,8 +100,5 @@ STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Rec
 "I appreciate the concern. I'll be ok."
 STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
 @back Appearance.DropFade
-@choice "Try Again"
-@goto .Scene1
-
-
+@choice "Try Again" goto:.GAMEEND
 @stop
