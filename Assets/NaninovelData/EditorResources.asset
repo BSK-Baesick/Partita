@@ -155,7 +155,7 @@ MonoBehaviour:
     - Name: TestNarrative
       PathPrefix: Scripts
       Guid: 420e409fc67d5404e8170ba7ed5d79ed
-    - Name: Scene2
+    - Name: Chapter2
       PathPrefix: Scripts
       Guid: 1eb7f6bf86f16f246bb6de333b182ee7
     - Name: SilentType
@@ -177,3 +177,21 @@ MonoBehaviour:
     - Name: SamplePrototypeBonfire
       PathPrefix: Backgrounds/SampleBonfire
       Guid: 674a0c5f0f88359428aa91366b4db5a3
+  - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
+    Resources:
+    - Name: bs_7
+      PathPrefix: Backgrounds/MainBackground
+      Guid: db25581dc61a522489bd30cb550e8424
+    - Name: bs_8
+      PathPrefix: Backgrounds/MainBackground
+      Guid: 2fd78ca97e6416347abe13bfff0b8b37
+  - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
+    Resources:
+    - Name: Default
+      PathPrefix: Characters/Stephan
+      Guid: 66433bf975a379f47a2f851b3dfaa9f8
+  - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
+    Resources:
+    - Name: Default
+      PathPrefix: Characters/Pascha
+      Guid: 836bbdb377de56646b5ed50807ce8591
