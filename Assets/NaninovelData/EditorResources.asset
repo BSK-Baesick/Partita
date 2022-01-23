@@ -167,6 +167,9 @@ MonoBehaviour:
     - Name: Chapter4
       PathPrefix: Scripts
       Guid: bddb2cca591509d4a8a80726ce5e530c
+    - Name: Chapter5
+      PathPrefix: Scripts
+      Guid: d172b9f07329a3c48b08bf129e98f9b7
   - Id: Audio
     Resources: []
   - Id: Backgrounds/c3dfd016-c5af-409a-bcef-81f7b348c0a4
