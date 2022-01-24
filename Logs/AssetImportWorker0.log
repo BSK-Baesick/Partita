@@ -15,11 +15,11 @@ C:/Users/Kean/Documents/GitHub/Partita
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-63562
+57739
 Successfully changed project path to: C:/Users/Kean/Documents/GitHub/Partita
 C:/Users/Kean/Documents/GitHub/Partita
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 144.49 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 129.91 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,127 +35,460 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56312
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56364
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.007049 seconds.
+Registered in 0.005401 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 120.62 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 117.34 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.442 seconds
+- Completed reload, in  3.374 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.009482 seconds.
+Registered in 0.008464 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 120.43 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 117.33 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.560 seconds
+- Completed reload, in  1.480 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.09 seconds
-Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.24 seconds
+Refreshing native plugins compatible for Editor in 0.81 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4050 Unused Serialized files (Serialized files now loaded: 0)
 System memory in use before: 147.4 MB.
 System memory in use after: 147.6 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 4506.
-Total: 3.497200 ms (FindLiveObjects: 0.371100 ms CreateObjectMapping: 0.185800 ms MarkObjects: 2.861100 ms  DeleteObjects: 0.078000 ms)
+Total: 3.023100 ms (FindLiveObjects: 0.374500 ms CreateObjectMapping: 0.118300 ms MarkObjects: 2.456100 ms  DeleteObjects: 0.072600 ms)
 
 ========================================================================
 Received Import Request.
   path: Assets/Scripts/Narrative/Chapter2.nani
   artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b7ab539906281407075b881f9510927') in 0.117118 seconds 
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba51335021a37729059998a23bb99161') in 0.111413 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 20.275986 seconds.
+  Time since last request: 20.818592 seconds.
   path: Assets/Scripts/Narrative/Chapter2.nani
   artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4df001c8e05e8a2b25ad064211ed6252') in 0.017174 seconds 
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '548b8b6ee521e0b9531bb321aae2d7a0') in 0.010392 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 162.829098 seconds.
-  path: Assets/Scripts/Narrative/Chapter4.nani
-  artifactKey: Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter4.nani using Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c69fa057ffdd867ae45dd9ab7b53aa9e') in 0.013230 seconds 
+  Time since last request: 268.940979 seconds.
+  path: Assets/Scripts/Narrative/Chapter2.nani
+  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e721f58e5f7fb62002377c671c1bed') in 0.017037 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.518260 seconds.
-  path: Assets/Scripts/Narrative/Chapter5.nani
-  artifactKey: Guid(d172b9f07329a3c48b08bf129e98f9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter5.nani using Guid(d172b9f07329a3c48b08bf129e98f9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f3efcc1412aabeb0f05a1a05abaa26a') in 0.008025 seconds 
+  Time since last request: 583.267950 seconds.
+  path: Assets/Scripts/Narrative/Chapter2.nani
+  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8395192c3e16e70f62ed86af8d456fdc') in 0.019318 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 133.650059 seconds.
-  path: Assets/Scripts/Narrative/Chapter4.nani
-  artifactKey: Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter4.nani using Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e23e57bc25746aafd87be2f822b51211') in 0.014542 seconds 
+  Time since last request: 2177.589330 seconds.
+  path: Assets/Scripts/Narrative/Chapter2.nani
+  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e0f39650d7faee2765bf53743b1585fc') in 0.023377 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 38.724248 seconds.
-  path: Assets/Scripts/Narrative/Chapter4.nani
-  artifactKey: Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter4.nani using Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8917d88c8cba1fbcb8c8a7fb0922a9cc') in 0.013805 seconds 
+  Time since last request: 67.767572 seconds.
+  path: Assets/Scripts/Narrative/Chapter2.nani
+  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aacc8d960b5b90135875661a71c25d9') in 0.012913 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 924.176076 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26a6203d965dd95f39bfd782152def1a') in 0.197189 seconds 
+  Time since last request: 749.685026 seconds.
+  path: Assets/Naninovel Ink Adapter/Scripts/Start Ink.nani
+  artifactKey: Guid(d459f2db2696fce44af52c7d8bd5e07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Scripts/Start Ink.nani using Guid(d459f2db2696fce44af52c7d8bd5e07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6df25ea3b59cfb3c2622147a19295b') in 0.085958 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 53.224515 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f08217fca5a841a186b72aed73206cce') in 0.019272 seconds 
+  Time since last request: 18.404109 seconds.
+  path: Assets/Naninovel Ink Adapter/Runtime/NaninovelInkAdapter.cs
+  artifactKey: Guid(dfc0e4adfa0171d458a14f3353c4e137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Runtime/NaninovelInkAdapter.cs using Guid(dfc0e4adfa0171d458a14f3353c4e137) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '11b90dbeb2e7e5e330b837bf2e02a4c0') in 0.010484 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 21.963267 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ccd1a289527ec74255d9f933df6fe358') in 0.023072 seconds 
+  Time since last request: 57.634791 seconds.
+  path: Assets/Naninovel Ink Adapter/Editor/NaninovelInkAdapterEditor.cs
+  artifactKey: Guid(96d500d97e0620f43b0449aad9089e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Editor/NaninovelInkAdapterEditor.cs using Guid(96d500d97e0620f43b0449aad9089e5a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '308a98ac4f614b5df7f42c78a542e06f') in 0.008485 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 99.457600 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f476dc1e5c58bb9416282366fe9ffb7c') in 0.022594 seconds 
+  Time since last request: 9.614652 seconds.
+  path: Assets/Naninovel Ink Adapter/Runtime/Commands/InkChoice.cs
+  artifactKey: Guid(9c5ab40f9948a294489816c4630554a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Runtime/Commands/InkChoice.cs using Guid(9c5ab40f9948a294489816c4630554a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cccba37d79e92b66cd6a7b4a7139e30f') in 0.006602 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.014792 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4ee95ce2cc99fd93f4638044bb72f100') in 0.022262 seconds 
+  Time since last request: 0.945972 seconds.
+  path: Assets/Naninovel Ink Adapter/Runtime/Commands/StartInkStory.cs
+  artifactKey: Guid(db52548a0bff47da9e8ae3f6c5780ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Runtime/Commands/StartInkStory.cs using Guid(db52548a0bff47da9e8ae3f6c5780ca8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '330ff7f5ced6dd4db381e2e4c112b752') in 0.006699 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 177.043868 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36911e9856c0340669d1d47decc5be14') in 0.031423 seconds 
+  Time since last request: 32.097136 seconds.
+  path: Assets/Naninovel Ink Adapter/Runtime/Commands
+  artifactKey: Guid(391f563a41b5ebf4683260693341e1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Runtime/Commands using Guid(391f563a41b5ebf4683260693341e1eb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54cc9b53293d38a329dbbe949ef6b951') in 0.007187 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 111.447092 seconds.
-  path: Assets/Art/User Interface/GGJLogo.png
-  artifactKey: Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface/GGJLogo.png using Guid(4fb5912d8492b08408dcd4cb4ae6a705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd030418445519f040f1d4815dcdbd952') in 0.023253 seconds 
+  Time since last request: 9.078163 seconds.
+  path: Assets/Naninovel Ink Adapter/Runtime
+  artifactKey: Guid(5aba5a5af6dda9045a993142fc2a7155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter/Runtime using Guid(5aba5a5af6dda9045a993142fc2a7155) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bed8abaebf44b525ce2846a2d52e2c3') in 0.006795 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007628 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.87 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.438 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.83 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4032 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 146.1 MB.
+System memory in use after: 146.4 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4511.
+Total: 3.295000 ms (FindLiveObjects: 0.493300 ms CreateObjectMapping: 0.191500 ms MarkObjects: 2.582200 ms  DeleteObjects: 0.026200 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007547 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.89 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.269 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.92 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4146 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.6 MB.
+System memory in use after: 149.8 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4630.
+Total: 3.302100 ms (FindLiveObjects: 0.364900 ms CreateObjectMapping: 0.114900 ms MarkObjects: 2.792600 ms  DeleteObjects: 0.028100 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008094 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 1.36 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.349 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 1.19 ms, found 2 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4150 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 149.7 MB.
+System memory in use after: 149.9 MB.
+
+Unloading 15 unused Assets to reduce memory usage. Loaded Objects now: 4639.
+Total: 3.968400 ms (FindLiveObjects: 0.487600 ms CreateObjectMapping: 0.463800 ms MarkObjects: 2.993900 ms  DeleteObjects: 0.021500 ms)
+
 ========================================================================
 Received Import Request.
-  Time since last request: 2611.028148 seconds.
-  path: Assets/Scripts/Narrative/Chapter4.nani
-  artifactKey: Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter4.nani using Guid(bddb2cca591509d4a8a80726ce5e530c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a43fc35fc3c603f891f3c642765b71be') in 0.027955 seconds 
+  Time since last request: 384.939694 seconds.
+  path: Assets/Ink/Extras
+  artifactKey: Guid(4aa38ff3055ccd348a2a417c862d4d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Extras using Guid(4aa38ff3055ccd348a2a417c862d4d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0895109830232fba3bacf743848533ee') in 0.013232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.807323 seconds.
+  path: Assets/Ink/Editor/InkEditor.asmdef
+  artifactKey: Guid(2047ab7874eb449d78c2b459017aa506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Editor/InkEditor.asmdef using Guid(2047ab7874eb449d78c2b459017aa506) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e086c11fcce86f5cf6202a03b9b80a8d') in 0.023456 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 133.559088 seconds.
+  path: Assets/Ink/Partita_2nd_DraftADAPTERTEST.json
+  artifactKey: Guid(fce3faab501bfaa449f50aab604e6868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Partita_2nd_DraftADAPTERTEST.json using Guid(fce3faab501bfaa449f50aab604e6868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a34ae6c0e01760ce3c27d501f560cc85') in 0.021417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1437.363503 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/ContinueInputUI.prefab
+  artifactKey: Guid(1add671f8348e8443bcc56290e82fc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/ContinueInputUI.prefab using Guid(1add671f8348e8443bcc56290e82fc5e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '332d2a344c4eec7c1a59a1b08e27c71a') in 0.037813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000346 seconds.
+  path: Assets/Naninovel/Textures/UI/WaitingInputIndicator.png
+  artifactKey: Guid(64a55139bbf135f44b059095a281ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/WaitingInputIndicator.png using Guid(64a55139bbf135f44b059095a281ee20) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '72b22405ab7ed8b5292cdd8d56343e21') in 0.209941 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/VariableInputUI.prefab
+  artifactKey: Guid(bb95f484e341dcd4391a572f22b7d067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/VariableInputUI.prefab using Guid(bb95f484e341dcd4391a572f22b7d067) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ee30defd43765bdcec865cb1895b9c') in 0.058050 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Naninovel/Prefabs/TextPrinters/InputIndicatorBlack.prefab
+  artifactKey: Guid(2554d0900e1a69944bdee8b2feb8207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/TextPrinters/InputIndicatorBlack.prefab using Guid(2554d0900e1a69944bdee8b2feb8207b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a62388fe2658c64dfcada3ccc471573d') in 0.012784 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000314 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/InputConfiguration.asset
+  artifactKey: Guid(411806c92d97d974c82cf923c8485340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/InputConfiguration.asset using Guid(411806c92d97d974c82cf923c8485340) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3c1ed2c22fa4b8d3e9c784a95ad4e04') in 0.012115 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000247 seconds.
+  path: Assets/Naninovel/Prefabs/TextPrinters/InputIndicatorWhite.prefab
+  artifactKey: Guid(b9b3fefeea6c9f74ca0e1a2f9e4dfb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/TextPrinters/InputIndicatorWhite.prefab using Guid(b9b3fefeea6c9f74ca0e1a2f9e4dfb13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bd8c91234f4a4785b030402615b942ed') in 0.010635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.FlowMacroInput@32x.png
+  artifactKey: Guid(fa587defb4b33dd43ad2afc6af3c6cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.FlowMacroInput@32x.png using Guid(fa587defb4b33dd43ad2afc6af3c6cbb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c08543dee8bec2b949765aaa884dd2a0') in 0.031797 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000298 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.GraphInput@16x.png
+  artifactKey: Guid(1f867c8f02d4c4a9ab17102b317c6a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.GraphInput@16x.png using Guid(1f867c8f02d4c4a9ab17102b317c6a8c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e54f4c4bedc906ac03ce3985bf91c0b9') in 0.015146 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000283 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.Input@32x.png
+  artifactKey: Guid(31d0f50d2953b864a9b23a4bf615f075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.Input@32x.png using Guid(31d0f50d2953b864a9b23a4bf615f075) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7d2667edc2df56b8a3b7a35cdae12a4') in 0.014165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000295 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnButtonInput@16x.png
+  artifactKey: Guid(8c20a69101e923e46a57597f7661f269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnButtonInput@16x.png using Guid(8c20a69101e923e46a57597f7661f269) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17ecfdebb1acfeedf9c30455d696463b') in 0.014803 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.FlowMacroInput@16x.png
+  artifactKey: Guid(8240523b1137fc5488f4b2bd7fa804b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.FlowMacroInput@16x.png using Guid(8240523b1137fc5488f4b2bd7fa804b2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80fe749862bf8e215f5120c7dd9281ee') in 0.035328 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnKeyboardInput@32x.png
+  artifactKey: Guid(253205ed9e8ad9240a2ce864553f485b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnKeyboardInput@32x.png using Guid(253205ed9e8ad9240a2ce864553f485b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df3c63b5fe65daefc51608d4a8f8b0b2') in 0.016782 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000258 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.Input@16x.png
+  artifactKey: Guid(22f62b0b3eae70d45be4595e775688f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Types/UnityEngine.Input@16x.png using Guid(22f62b0b3eae70d45be4595e775688f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6ae2ca4258ce055536a37212f0102831') in 0.014514 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnKeyboardInput@16x.png
+  artifactKey: Guid(e633ecf9b77acf94b86a77990f2bc3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnKeyboardInput@16x.png using Guid(e633ecf9b77acf94b86a77990f2bc3b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85fd7defc12ebdb96706fca7c82c8d8e') in 0.014223 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.GraphInput@32x.png
+  artifactKey: Guid(d4796a27543b047f49759acfb8b66636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.GraphInput@32x.png using Guid(d4796a27543b047f49759acfb8b66636) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baba47da0b7aa6f18333bbc0287616f4') in 0.040557 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000299 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnButtonInput@32x.png
+  artifactKey: Guid(13c35e19395c3904ab04ba17d68fd930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.OnButtonInput@32x.png using Guid(13c35e19395c3904ab04ba17d68fd930) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65c29adab57f803d328b85ee05b5352d') in 0.013645 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.353416 seconds.
+  path: Assets/Naninovel/Runtime/Input/InputManager.cs
+  artifactKey: Guid(af89e84d37aca094eaac428773a8f3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Runtime/Input/InputManager.cs using Guid(af89e84d37aca094eaac428773a8f3ce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ecee47b8a476487c4347aa650c7ed6dd') in 0.005984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 704.511130 seconds.
+  path: Assets/Naninovel Ink Adapter
+  artifactKey: Guid(d2803add8b4b5174ca2293ed681bfda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Adapter using Guid(d2803add8b4b5174ca2293ed681bfda2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '17a49338a7753296eac038cc8fdb1e6d') in 0.009053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.859678 seconds.
+  path: Assets/Naninovel Ink Demo Script
+  artifactKey: Guid(f690c63f262e95e458ebe040a799c3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel Ink Demo Script using Guid(f690c63f262e95e458ebe040a799c3d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c75660c4b26330debb5bd2d4aa437b2') in 0.007561 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 202.402980 seconds.
+  path: Assets/Naninovel/Documentation.pdf
+  artifactKey: Guid(7a346c7edc3307043a33e61358b56e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Documentation.pdf using Guid(7a346c7edc3307043a33e61358b56e40) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '794ff966d407929924a1716280d876b9') in 0.025433 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.989825 seconds.
+  path: Assets/Naninovel/package.json
+  artifactKey: Guid(9508ecdc6ea20144d802230374381c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/package.json using Guid(9508ecdc6ea20144d802230374381c5f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e74b5685cc1acd990ee352097f1372e') in 0.010017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1455.299120 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/TitleUI.prefab
+  artifactKey: Guid(4b121aa1be1b7e04480b452c595ff17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/TitleUI.prefab using Guid(4b121aa1be1b7e04480b452c595ff17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be2ec47fd117c53e129209b468b30858') in 0.062887 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1406.825617 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/TitleUI.prefab
+  artifactKey: Guid(4b121aa1be1b7e04480b452c595ff17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/TitleUI.prefab using Guid(4b121aa1be1b7e04480b452c595ff17a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '103316aa40cb79398e8618b1613b9d9d') in 0.015104 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.344360 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Animate.prefab
+  artifactKey: Guid(7bf06fa813bb9c34daf521998fa72ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Animate.prefab using Guid(7bf06fa813bb9c34daf521998fa72ab1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9f31d3ef770ba6cd8361d92c6ae105ed') in 0.020671 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000267 seconds.
+  path: Assets/Naninovel/Textures/UI/ArrowRight.png
+  artifactKey: Guid(b9884ac3ddc7cdb4ba624345665f5508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/ArrowRight.png using Guid(b9884ac3ddc7cdb4ba624345665f5508) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dadab2bf447df416b71b1239efd21adc') in 0.034266 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000264 seconds.
+  path: Assets/Naninovel/Textures/UI/ArrowUp.png
+  artifactKey: Guid(175acf01eda3e8c4980cfe8546a4b91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/ArrowUp.png using Guid(175acf01eda3e8c4980cfe8546a4b91c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3a1ab3b2a879326cc74ca2c46184d7b2') in 0.055143 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Naninovel/Textures/UI/ArrowDown.png
+  artifactKey: Guid(6790891148636ed46a8b453d21631846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/ArrowDown.png using Guid(6790891148636ed46a8b453d21631846) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abb87d3f473356b037eb28b9e1f9702') in 0.015988 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000285 seconds.
+  path: Assets/Naninovel/Textures/UI/ArrowLeft.png
+  artifactKey: Guid(3e9fc1f73f634de419e229d893088bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/ArrowLeft.png using Guid(3e9fc1f73f634de419e229d893088bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbf13491b0e9abd3998514b04172d7cf') in 0.018017 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.410572 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/AudioConfiguration.asset
+  artifactKey: Guid(e9678d1675731a94bb4645a201cf7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/AudioConfiguration.asset using Guid(e9678d1675731a94bb4645a201cf7020) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '622fa5144f2b0bf2de02e9df120c5a03') in 0.010427 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.295697 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/BacklogMessage.prefab
+  artifactKey: Guid(5951be07f549bb04aa2f6d1655093de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/BacklogMessage.prefab using Guid(5951be07f549bb04aa2f6d1655093de2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d01829e64d500490d7f1516749b1f6a') in 0.024579 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000325 seconds.
+  path: Assets/Naninovel/Prefabs/DefaultUI/BacklogUI.prefab
+  artifactKey: Guid(7fba909c66b25324cb77db18679c2c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/DefaultUI/BacklogUI.prefab using Guid(7fba909c66b25324cb77db18679c2c96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06eb707e83ddcf3887aa2455ccbedbef') in 0.036675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000255 seconds.
+  path: Assets/Art/Characters/Placeholder/boy.png
+  artifactKey: Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Characters/Placeholder/boy.png using Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f563b47a7b1a6fb25f6c23242a365b1') in 0.023434 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000286 seconds.
+  path: Assets/Naninovel/Resources/Naninovel/DefaultMixer.mixer
+  artifactKey: Guid(a8d2f798fc082fd408df1fe76f6182f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Resources/Naninovel/DefaultMixer.mixer using Guid(a8d2f798fc082fd408df1fe76f6182f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a6faa56e88d5e6b53afa1f60ce35265') in 0.010631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000319 seconds.
+  path: Assets/Naninovel/Resources/Naninovel/Textures/Black.png
+  artifactKey: Guid(b41c2e3deb4471040b499744e6cfb19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Resources/Naninovel/Textures/Black.png using Guid(b41c2e3deb4471040b499744e6cfb19f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd37e386804e3e0d5d1ac1f81cbb177c5') in 0.013284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Naninovel/Textures/UI/Bubble.png
+  artifactKey: Guid(ae8da339e3f5e5147a06ab961c19008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/Bubble.png using Guid(ae8da339e3f5e5147a06ab961c19008a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f3cd2ce1050c30515bf3247d871b1748') in 0.072817 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000294 seconds.
+  path: Assets/Naninovel/Textures/UI/BacklogRollback.png
+  artifactKey: Guid(5c10f7ad3669521478b945772f8f509b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Textures/UI/BacklogRollback.png using Guid(5c10f7ad3669521478b945772f8f509b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '06a8a8dca94a6e5d76e7b5e90cf8bfbb') in 0.033807 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000304 seconds.
+  path: Assets/Art/Backgrounds/bs_8.png
+  artifactKey: Guid(2fd78ca97e6416347abe13bfff0b8b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/bs_8.png using Guid(2fd78ca97e6416347abe13bfff0b8b37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '217bc1d96791508af9874c1b4c07c23b') in 0.042453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.119831 seconds.
+  path: Assets/Naninovel/Prefabs/TextPrinters/Bubble.prefab
+  artifactKey: Guid(b47d9659b2be5ee4e95a776f213c9d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/TextPrinters/Bubble.prefab using Guid(b47d9659b2be5ee4e95a776f213c9d4b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6033bf28f8b093e430dd4b138dda2574') in 0.054198 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000263 seconds.
+  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
+  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef0f3fd59638768e34ff6381e467498') in 0.021163 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000300 seconds.
+  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab
+  artifactKey: Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab using Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15b41d7ed2b8a4e434fe9e06ef23c2a6') in 0.011193 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8948.238278 seconds.
+  path: Assets/Naninovel
+  artifactKey: Guid(57d9c5533841afa40accc5215648fa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel using Guid(57d9c5533841afa40accc5215648fa6f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14d95c02d263c1b7102666f5338fb059') in 0.008769 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.333555 seconds.
+  path: Assets/Ink/Partita_2nd_DraftADAPTERTEST.json
+  artifactKey: Guid(fce3faab501bfaa449f50aab604e6868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Partita_2nd_DraftADAPTERTEST.json using Guid(fce3faab501bfaa449f50aab604e6868) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f06c1a0823818acd467f64ee066709e2') in 0.012118 seconds 

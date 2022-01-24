@@ -21,7 +21,7 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
   InitializationScript: 
   TitleScript: 
-  StartGameScript: Chapter4
+  StartGameScript: Start Ink
   AutoAddScripts: 1
   HotReloadScripts: 1
   CountTotalCommands: 0
