@@ -44,7 +44,7 @@ public class NormalMapGenerator : EditorWindow
     {
         string path = AssetDatabase.GetAssetPath(source);
 
-        System.Diagnostics.Process.Start(Application.dataPath + "/Editor/LaigterPortable/laigter.exe", "--no-gui -d " + path + " -n");
+        System.Diagnostics.Process.Start(Application.dataPath + "/Editor/LaigterPortable/laigter.exe", "--no-gui -d \"" + path + "\" -n");
     }
 
     private void TextureImport(Texture2D source)
