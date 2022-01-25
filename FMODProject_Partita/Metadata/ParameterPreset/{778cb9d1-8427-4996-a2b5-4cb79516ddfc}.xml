@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{778cb9d1-8427-4996-a2b5-4cb79516ddfc}">
+		<property name="name">
+			<value>heavy snow night</value>
+		</property>
+		<relationship name="folder">
+			<destination>{648c4ef1-9e14-4447-a107-4fea8f300012}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{395c7cf1-9c91-4912-85d6-0dfe93661882}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{395c7cf1-9c91-4912-85d6-0dfe93661882}">
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>
