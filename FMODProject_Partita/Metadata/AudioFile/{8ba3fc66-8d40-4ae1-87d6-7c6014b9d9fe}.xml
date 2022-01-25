@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{8ba3fc66-8d40-4ae1-87d6-7c6014b9d9fe}">
+		<property name="assetPath">
+			<value>Music assets - characters talking/Vera_talking/VeraVoice00007.wav</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>1</value>
+		</property>
+		<property name="length">
+			<value>4.1386666666666665</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a12382c-b13c-4465-9b6a-0fe0f391f9ca}</destination>
+		</relationship>
+	</object>
+</objects>

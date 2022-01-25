@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{07927a47-e774-49d8-a7af-b1f44ec22e95}">
 		<property name="assetPath">
-			<value>TromboneLayer.wav</value>
+			<value>Music assets - duet and finale music/TromboneLayer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{46d1d989-c781-4a85-bddd-03421234aa19}">
 		<property name="assetPath">
-			<value>AccordionLayer.wav</value>
+			<value>Music assets - duet and finale music/AccordionLayer.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

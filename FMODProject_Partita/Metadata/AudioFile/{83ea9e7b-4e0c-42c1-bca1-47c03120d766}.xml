@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{83ea9e7b-4e0c-42c1-bca1-47c03120d766}">
 		<property name="assetPath">
-			<value>BassLayer_version2.wav</value>
+			<value>Music assets - duet and finale music/BassLayer_version2.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{48200933-3578-4930-bc5a-2d3f732cb68b}">
 		<property name="assetPath">
-			<value>EnghornLayer_version2.wav</value>
+			<value>Music assets - duet and finale music/EnghornLayer_version2.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>

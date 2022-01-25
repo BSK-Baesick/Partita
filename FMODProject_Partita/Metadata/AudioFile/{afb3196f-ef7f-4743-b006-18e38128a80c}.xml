@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="AudioFile" id="{afb3196f-ef7f-4743-b006-18e38128a80c}">
 		<property name="assetPath">
-			<value>ViolaLayer.version2.wav</value>
+			<value>Music assets - duet and finale music/ViolaLayer.version2.wav</value>
 		</property>
 		<property name="isStreaming">
 			<value>true</value>
