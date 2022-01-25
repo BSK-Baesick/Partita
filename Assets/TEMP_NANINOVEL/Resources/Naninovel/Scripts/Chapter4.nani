@@ -1,0 +1,108 @@
+# CHAPTER4
+@back bs_8
+@char Pascha scale:1.2
+PASCHA: "Drugs?"
+"Nothing that interesting."
+PASCHA: "I beg to differ. In fact I'd be more interested if it wasn't drugs. So now, I am thus, "more interested"."
+"Just a letter."
+PASCHA: "Well that is much more interesting."
+PASCHA: "Albeit, I wouldn't say no to drugs. I am desperately bored."
+PASCHA: "Read it to me?"
+"No."
+PASCHA: "Pleaaaase?"
+@choice "Are you high?" goto:.SCENE_1
+@choice Fine goto:.SCENE_2
+@stop
+# SCENE_1
+"Are you high?"
+PASCHA: "I fucking wish, my dear. Now come, you sweet summer thing. Why not spill secrets with a stranger?"
+"Fine."
+"..."
+PASCHA: "Fine. I'll start."
+"I'll be dead within a week."
+"Sure you will."
+PASCHA: "Swear it on my grave. Dragged there by stupid stupid queer love for stupid stupid queers."
+"How?"
+PASCHA: "Stupid, stupid queer love for stupid stupid queers."
+"How dramatic."
+PASCHA: "Death is pure drama. But it's love that pulls me there. Stupid, stupid queer love for stupid stupid queers."
+PASCHA: "I get half a day's walk from the border and my fuckwit of a lover gets caught in Moscow. Now me and my stupid bleeding heart are stuck racing back into the dark."
+PASCHA: "Anyway. Your turn!"
+
+@choice "Chase them" goto:.SCENE_3
+@choice "Let them go" goto:.SCENE_4
+@stop
+
+# SCENE_2
+"I don't even know you."
+PASCHA: "Nor I you, you sweet summer thing. Why not spill secrets with a stranger?"
+"Fine."
+"..."
+PASCHA: "Fine. I'll start."
+"I'll be dead within a week."
+"Sure you will."
+PASCHA: "Swear it on my grave. Dragged there by stupid stupid queer love for stupid stupid queers."
+"How?"
+PASCHA: "Stupid, stupid queer love for stupid stupid queers."
+"How dramatic."
+PASCHA: "Death is pure drama. But it's love that pulls me there. Stupid, stupid queer love for stupid stupid queers."
+PASCHA: "I get half a day's walk from the border and my fuckwit of a lover gets caught in Moscow. Now me and my stupid bleeding heart are stuck racing back into the dark."
+PASCHA: "Anyway. Your turn!"
+@choice "Chase them" goto:.SCENE_3
+@choice "Let them go" goto:.SCENE_4
+@stop
+
+# SCENE_3
+PASCHA: "I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
+"I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
+PASCHA: "Truly, we are kin. Bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover, one not fuckwitted enough to get caught in Moscow of all places."
+"I'm sorry."
+PASCHA: "Don't be. Jealousy among outcasts is a tedious thing. I am happy for you."
+PASCHA: "Truly."
+"You don't owe them your life."
+PASCHA: "Oh but I do. Love's a fickle Mistress like that. Take comfort that we'll never truly die, I suppose. Long as they keep breeding, we'll be being bred. Kind of Godlike like that, aren't we?"
+PASCHA: "Play a dirge with me. Some battle song to feed me fake courage?"
+"I won't entertain a deathwish."
+PASCHA: "You are a cruel thing, my dear."
+"Of course."
+PASCHA: "Then let's dance the night away."
+"Here you go Rambo."
+PASCHA: "S'pose I'll be getting more in touch with my Masculine side."
+"Don't die stupid."
+PASCHA: "Oofy doofy. That is a tall order my dear."
+PASCHA: "I'll try."
+"Good luck."
+PASCHA: "I'm sure your well wishings will make all the difference my dear."
+"I think I met your father."
+PASCHA: Truly a real cunt of a man.
+"I've never seen so much regret."
+PASCHA: "Thank-you."
+@goto .Chapter5
+@stop
+# SCENE_4
+"I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
+PASCHA: "Truly, we are kin. Bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover, one not fuckwitted enough to get caught in Moscow of all places."
+"I'm sorry."
+PASCHA: "Don't be. Jealousy among outcasts is a tedious thing. I am happy for you."
+PASCHA: "Truly."
+"You don't owe them your life."
+PASCHA: "Oh but I do. Love's a fickle Mistress like that. Take comfort that we'll never truly die, I suppose. Long as they keep breeding, we'll be being bred. Kind of Godlike like that, aren't we?"
+PASCHA: "Play a dirge with me. Some battle song to feed me fake courage?"
+"I won't entertain a deathwish."
+PASCHA: "You are a cruel thing, my dear."
+"Of course."
+PASCHA: "Then let's dance the night away."
+"Here you go Rambo."
+PASCHA: "S'pose I'll be getting more in touch with my Masculine side."
+"Don't die stupid."
+PASCHA: "Oofy doofy. That is a tall order my dear."
+PASCHA: "I'll try."
+"Good luck."
+PASCHA: "I'm sure your well wishings will make all the difference my dear."
+"I think I met your father."
+PASCHA: Truly a real cunt of a man.
+"I've never seen so much regret."
+PASCHA: "Thank-you."
+"Yeah..."
+@goto .Chapter5
+@stop

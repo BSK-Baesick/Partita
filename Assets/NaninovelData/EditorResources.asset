@@ -100,6 +100,9 @@ MonoBehaviour:
     - Name: SunShafts
       PathPrefix: Spawn
       Guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - Name: SnowHeavy
+      PathPrefix: Spawn
+      Guid: 22c512d367684b848825ff35c7322dbd
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -173,6 +176,9 @@ MonoBehaviour:
     - Name: Start Ink
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
+    - Name: WhereFrom
+      PathPrefix: Scripts
+      Guid: 0bde1e9f53e56f2419d68dd5b71f719b
   - Id: Audio
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
@@ -234,3 +240,13 @@ MonoBehaviour:
     - Name: SnowWild
       PathPrefix: Backgrounds
       Guid: c4374e5a046ac1348999bd9535d3e954
+  - Id: Movies
+    Resources:
+    - Name: Intro
+      PathPrefix: Movies
+      Guid: d33ff32856efc5945ba07e48f45313ae
+  - Id: Backgrounds/8544b14e-b3dc-49e3-8f83-995d3d25e031
+    Resources:
+    - Name: BusInterior
+      PathPrefix: Backgrounds
+      Guid: a82e5e7136130fe4e819a9b5ed42823a
