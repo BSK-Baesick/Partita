@@ -1,8 +1,13 @@
 // ART A silhouette of two figures huddled over a fire in the snow.
 ///@back Campfire
 ///@sfx Burning Bonfire + Snow Fall + Night Ambient Music
+//This whole sequence will be animated so I skipped it for easier testing
 
-/Winter curls around your ankles, biting at the flame that binds you.
+/* CHOICES WITH QUOTATION MARKS WITH SPACES INSIDE WILL SHOW YOU AN ERROR EITHER REMOVE OR REPLACE WITH SINGLE QUOTATION MARKS ''
+
+    Add @resetText after dialogues and before questions to clear the dialogue box */
+->Chapter1
+Winter curls around your ankles, biting at the flame that binds you.
 
 "It's time to go."
 
@@ -26,7 +31,7 @@
 
 "We don't hav-"
 ///@bgm Romance BGM
-You embrace.
+<i>You embrace.</i>
 
 "We have to go."
 
@@ -50,29 +55,38 @@ You embrace.
 ->Chapter1
 ///@stopBgm Romance
 //Fade into 1st Bus Station.
-@startTrans
-@back busstop1
 // insert bgm here
-@finishTrans CircleReveal
 =Chapter1
-/ART 1st Bus Station. 
+@startTrans
+@back id:BusInterior
+@finishTrans Crossfade time:5
 
-/Protag 1 exits the bus. The bus leaves. They meet Millia with a Sniper Rifle.
+@hide BusInterior remove:true
+//ART 1st Bus Station. 
+@back bs_7 id:Chapter1BusStop
+//Protag 1 exits the bus. The bus leaves. They meet Millia with a Sniper Rifle.
 ///@sfx Snow Fall
+@spawn Snow
+@char Millia
 Weary eyes pierce through glaring snow, as your feet touch soft powder. An ancient woman sits, alert, back pressed against concrete wall. In her arms she cradles a rifle, trained delicately on your approach.
 
     Her voice is backed with a surprising vigor.
 
-@printer Wide
-@char Millia scale:1.2 avatar:Protag
+//@printer Bubble.Left pos:0,20 //this is a test to try and match the mock up oda made
+@char Protag
 MILLIA: "No."
-// This flow seems kind of abrupt -sid
+// This flow seems kind of abrupt
+@resetText
+//@printer Bubble.Right pos:0,20
+//@printer Dialogue //test end
 +[Stay Silent]
 ->SilentType
 +Yes.
 She scoffs and flips her scope in your direction.
+@hideChars remove:true
 MILLIA: "Say that again?"
 ///@bgm Tense
+    @resetText
     ++[Stay Silent]
     ->SilentType
     ++No.
@@ -82,10 +96,11 @@ MILLIA: "Say that again?"
     She flips the rifle back towards herself, where it settles harmlessly in her lap.
     ->WhereFrom
     ++Yes.
-    BANG!
+    BANG! //i think this whole section should be put into its own thing
     A bullet flies towards you, grazing the outside of your neck. 
     She laughs.
     You feel a trickle of blood.
+        @resetText
         +++Take a step towards her.
         ///@sfx gunshot 
         BANG! 
@@ -96,6 +111,7 @@ MILLIA: "Say that again?"
         ///@stopBgm Tense
         She stares. 
         Curled lips smirk in amusement.
+            @resetText
             +++If you wanted me dead, I'd be dead.
             ->IfYouWantedMeDead
             +++What the fuck!?
@@ -110,6 +126,7 @@ MILLIA: "Say that again?"
     BANG! A bullet flies towards you, grazing the outside of your neck. 
     She laughs.
     You feel a trickle of blood.
+        @resetText
         +++Take another step towards her.
         BANG!
         Another bullet. Cutting delicately into the skin of your cheek.
@@ -118,10 +135,12 @@ MILLIA: "Say that again?"
         Then silence.
         She stares. 
         Curled lips smirk in amusement.
+            @resetText
             +++If you wanted me dead, I'd be dead.
             ->IfYouWantedMeDead
             +++What the fuck!?
             ++++Run towards her.
+                @resetText
                Are you sure?
                 +++++Yes.
                 ->MilliaDeath
@@ -134,7 +153,7 @@ MILLIA: "Say that again?"
 =MilliaDeath
 You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from amused to a terrifying focus. She tilt her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
 
-/ART Cut to black.
+//ART Cut to black.
 Everything.
 Ends.
 +[Try again.]
@@ -158,12 +177,17 @@ MILLIA: "You got me."
 
 =SilentType
 MILLIA: "Silent type?"
+@resetText
         +[Stay Silent]
         MILLIA: "-"
+        @resetText
             ++[Stay Silent]
-            MILLIA:"-"
+            MILLIA: "-"
+            @resetText
                 +++[Stay Silent]
+                
                 The woman stares into your soul, her eyes refuse to blink as they start to water in the snow. Tiny teardrops freezing over wrinkled skin. 
+                    @resetText
                     ++++Are we done?
                     MILLIA: "HAH! I WIN!" 
                     The woman grins with childlike ambition as one hand wipes the frozen salt from her eyes.
@@ -175,6 +199,7 @@ MILLIA: "Silent type?"
                         ->WhereFrom
                 +++Are we done?
                 MILLIA: "I don't know. Are we?"
+                @resetText
                     ++++What are you, a child?
                     MILLIA: "Just a very bored old woman."
                     ->WhereFrom
@@ -186,6 +211,7 @@ MILLIA: "Silent type?"
                     ->WhereFrom
             ++This is ridiculous.
             MILLIA: "You started it."
+                @resetText
                 +++What are you, a child?
                 MILLIA: "Just a very bored old woman."
                 ->WhereFrom
@@ -196,7 +222,7 @@ MILLIA: "Silent type?"
                 MILLIA: "Correct. Mosin's, to be exact."
                 ->WhereFrom
         +Just scared.
-        "Smart."
+        MILLIA: "Smart."
     ->WhereFrom
     
 =WhereFrom 
@@ -206,9 +232,11 @@ Your body.
 Your posture. 
 Your response.
 MILLIA: "Where are you from?"
-    Moscow."
+    @resetText
+    +Moscow.
     Her gaze converges on yours, she's intrigued.
     MILLIA: "And before that?
+        @resetText
         +Not Moscow.
         She scoffs.
         MILLIA: "Well I suppose you're not lying at least."
@@ -239,6 +267,7 @@ You open it, and familiar handwriting sends warmth wrapping round your body.
 LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to kindle dead eyes. She was looking for someone. Filled with hate, or passion, I couldn't tell which. I haven't seen that kind of drive in years. Everyone el5e I've met seems dead or dying. She reminded me of you, in a way. I asked her if she'd seen you. She said no. It stung. She wanted to be kind, I think, I think sh3'd forgotten how.
 
 MILLIA: "Letter from a lover?"
+@resetText
     +Yes.
     She smiles, gently. 
     MILLIA: "You should burn it."
@@ -266,6 +295,7 @@ MILLIA: "Letter from a lover?"
     
     For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
     
+    @resetText
     +Why didn't you kill me?
     MILLIA: "I've killed thousands for a country that's about to implode anyway. It's no fun anymore. There's nothing to be won. No grand prize. No medal. No accolades. Just a world wasting away on shriveled ambition."
     
@@ -273,6 +303,7 @@ MILLIA: "Letter from a lover?"
         
         "Besides. You seemed harmless enough."
         
+        @resetText
         ++Play her a song.
         You gently curl your backpack towards the ground, pulling delicate red timber to your chin. As you raise a bow to match with string, you can't help but feel a little more alive.
         ->MilliaSong
@@ -297,21 +328,32 @@ MILLIA: "Letter from a lover?"
 The fire dances as your. Tiny ripples of sound from the woman to you and you to her, each carving a path through the fire. Smoke ebbs and flow as it rises into the clouded sky.
 
 As the music comes to a close and your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
+@hideChars remove:True
+@despawn Snow
 ->1stLetter
 
 =MilliaNoSong
+@hideChars remove:True
+@despawn Snow
 As your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
 ->1stLetter
 
 =1stLetter
+@resetText
 +Burn it.
+@char Protag
 You take one last glance. Breathe. Then press the paper into the fire. It burns a little brighter and you feel a little warmer as your eyes give way to sleep.
 +Keep it.
+@char Protag
 You press the letter to your chest. Holding it tightly in place against the winter winds. There's a cold chill that sways you to sleep against the warmth of the fire.
 
-/ART Fade to black/white OR Millia sleeping
+@startTrans
+@hideChars remove:True
+@finishTrans FadeToBlack time:3
+//ART Fade to black/white OR Millia sleeping
 
 - You wake before the birds, your eyes pressed open against the weight of the world. Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
+    @resetText
     +Take it.
     ->TakeTheRifle
     +Leave it.
@@ -329,17 +371,19 @@ You press the letter to your chest. Holding it tightly in place against the wint
     You wait.
     You hear the rumbling of an engine in the distance.
     Your hands stretch out against the dying night, pulling the rifle towards you.
-/ART Change main character sprite, add Rifle.
+//ART Change main character sprite, add Rifle.
     She sleeps.
     You turn towards the coming bus.
+    
     ->Chapter2
     
 =Chapter2
 @back id:Chapter2BusStop
+@spawn Snow
+@char Protag
 The road is long and monotonous. Grey snow falls against a dull backdrop. Faint hints of color splash amidst the skyline and before you know it, the ride is over.
 
-@printer Wide
-@char Stephan look:right
+@char Stephan
 As you press on to sleeted ground, a man waits nearby. Older, but not elder, he's frail if not determined in demeanor. Grey eyes seem to glance towards you, then behind you to the closing door. 
 
 As the bus departs, his gaze follows. 
@@ -348,7 +392,7 @@ In one hand he holds a slowly burning cigar. In the other, a letter.
 
 Your letter.
 
-@char Protag look:left avatar:ProtagAvatar
+@resetText
 +I think that might be for me.
 Weary eyes smile at you.
 STEPHAN: "I think you might be correct."
@@ -363,13 +407,16 @@ You take it. Nestling it inside your coat.
 ->MindIfIAskWho
 + {TakeTheRifle} Train your rifle on him.
 His arms fly upwards, eyes full of fear. The letter dangles gently from one hand, as smoke rises from the cigar in the other.
+    @resetText
     ++Drop it.
     STEPHAN: "I haven't opened it."
     His voice is tired.
     STEPHAN: "I thought it was for me."
+    @resetText
         +++It's not.
         A wry, forced smile. 
         STEPHAN: "I know."
+        @resetText
             ++++Drop. It.
         He drops the letter. His hands remain pressed toward the sky.
             +++++Grab the letter.
@@ -380,6 +427,7 @@ His arms fly upwards, eyes full of fear. The letter dangles gently from one hand
         You rush forward and swipe it from the snow.
     ++Move closer.
     He winces at the approach.
+    @resetText
         +++Grab the letter.
         You rush forward and swipe the letter from his hands.
         +++Give me the letter.
@@ -390,6 +438,7 @@ His arms fly upwards, eyes full of fear. The letter dangles gently from one hand
 
 =IDontWantTrouble
 STEPHAN: "I don't want trouble."
+@resetText
 +Sorry. Tense.
 STEPHAN: "Tense times. Can hardly blame you."
 +Neither do I.
@@ -402,6 +451,7 @@ STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too 
 =MindIfIAskWho
 His eyes laze towards the letter.
 STEPHAN: "Mind if I ask who?"
+@resetText
     +...
     STEPHAN: "I understand."
     ->AndYou
@@ -410,6 +460,7 @@ STEPHAN: "Mind if I ask who?"
     ->AndYou
     +A lover.
     STEPHAN: "A secret lover!"
+    @resetText
         ++That or dead.
         His tone softens.
         STEPHAN: "Ah."
@@ -421,11 +472,12 @@ STEPHAN: "Mind if I ask who?"
         ->South
         
 =South  
+@resetText
 +...
 ->YouSmoke
 +I shouldn't...
 ->YouSmoke 
-Through Abkhazia. Then on to Turkey. I have family there."
++Through Abkhazia. Then on to Turkey. I have family there.
 STEPHAN: "Rough road. Suppose they all are right now."
 ->AndYou
         
@@ -434,6 +486,7 @@ The man glances towards your face for a moment. He nods and smiles.
 STEPHAN: "Sorry. I'll drop it."
 He leans back, head to the sky, dragging in a mound of smoke off the end of his cigar before exhaling. You watch it dance against the fog.
 STEPHAN: "You smoke?"
+@resetText
     +No.
     STEPHAN: "Ah."
     He presses the cigar down against his coat.
@@ -451,6 +504,7 @@ STEPHAN: "You smoke?"
     ->AndYou
         
 =AndYou
+@resetText
 +Who are you waiting for?
 STEPHAN: "My son."
 +Why wait in the cold? That was the only bus for hours.
@@ -459,24 +513,27 @@ He laughs at himself.
 STEPHAN: "My son."
 
 - STEPHAN: "They're not coming through."
-
+@resetText
 +Sorry for your loss.
 STEPHAN: "Oh they're not dead. Least I hope not."
 +Sorry.
 STEPHAN: "Don't be. My own damn fault."
 
 - STEPHAN: "You have a child that outruns the world and sometimes you just can't keep up. Sometimes you just say terrible things. I don't blame them for running off.  Gifted kid. Musical too. Brilliant bassist, I hate that instrument but God they were good. I just hope they're ok. Last I heard was Moscow. That was years ago."
+@resetText
 +City for the strays.
 STEPHAN: "Sounds like them."
 +I lived there. Before all this.
 STEPHAN: "Ah! Wouldn't have guessed."
  - A cold breeze rushes past you and wind whips powdered snow around your feet.
  STEPHAN: "Ahhh. I guess we're done for the day."
+ @resetText
  +I've got a bus to catch.
  STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover."
  +It was nice to meet you.
  STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Recover."
 - The breeze returns with harsher ambition.
+@resetText
  +I appreciate the concern. I'll be ok.
  He frowns with furrowed brow.
  STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
@@ -488,11 +545,17 @@ STEPHAN: "Ah! Wouldn't have guessed."
  ->ThroughTheSnow
  
  =SoloSnow
+ @despawn Snow
+ @spawn SnowHeavy
+ @back id:SnowWild
  You wait in silence shattered by whistling wind. The storm rises as you pull your scarf to cover your face.
+ @resetText
  +Stay.
  Your vision starts to cloud in blanket white, snow no longer merely bites at your ankles but rises to surround you on all sides. The cold cuts at your skin.
+ @resetText
     ++Stay.
         You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
+        @resetText
         +++Stay
             Are you sure?
             ++++Stay
@@ -511,48 +574,55 @@ Your eyes give way to pure white.
 Cold gives way to warmth. 
 Light gives way to dark. 
 
-/ART Fade to white
-
 The pain.
 Ends.
 +Try again.
 ->Chapter2
  
  =ThroughTheSnow
- /ART Fade to white
  You trudge against the storm. Yellow paint cuts through the white like a knife, glistening in the distance. The walk is hard, but short. 
- /ART prelude Bonfire
+ @startTrans
+ @despawn SnowHeavy
+ @back ph_bonfire id:Bonfire
+ @finishTrans Crossfade time:3
  The man and his wife brighten in your presence. The house is warm. The food is warm. You feel both full and light. 
+ @char Stephan
+ @char Protag
  STEPHAN: "Play with me."
- Why not?"
+ @resetText
+ +Why not?
  ->StephanDuet
  
- 
- I should sleep."
+ +I should sleep.
  The man face betrays his dissapointment, but he smiles regardless.
  STEPHAN: "I understand. Goodnight."
  ->Chapter2Epilogue
  
  
 =Chapter2Epilogue
+@hideChars remove:true
 You welcome the propect of sleep, but not before you remove the letter from your coat, reading secret words bathed in firelight.
  
  LETTER: I miss you. I miss Moscow. I miss music and symphonies and sound that isn't wailing wind. I want to play music again. Prefferably, inside. I'd always loved wint3r before. Before I'd spent it flailing on the roa7. I hate it now. It's cruel and unkind. I want to see you. I will. 5tay safe. 
  
+@resetText
 +Burn it.
+@char Protag
 You take one last glance. Breathe. Then press the paper into the fire. It burns a little brighter and you feel a little warmer as your eyes give way to sleep.
 +Keep it.
+@char Protag
 You press the letter to your chest. Holding it tightly in place against the winter winds. There's a cold chill that sways you to sleep against the warmth of the fire.
 -
- 
- /ART Fade in on Chapter 2 Setup with STEPHAN and PROTAG 2. PORTAG 2 gets on the bus. The bus leaves.
-  ->Chapter3
+ /DEMO END
+ //ART Fade in on Chapter 2 Setup with STEPHAN and PROTAG 2. PORTAG 2 gets on the bus. The bus leaves.
+  //->Chapter3 //COMMENTING OUT FOR THE DEMO 
+  ->DONE
   
  =StephanDuet
 Stephan Protag 2 DUET
  In this brief reprieve, music mutes the outside air. You play until the storm recedes. You laugh, and eat, and drink. It's remarkably simple, and beautifully melancholic.
  ->Chapter2Epilogue
- 
+
  =Chapter3
  /ART Bus traveling. Vera and Portag 2.
  
@@ -563,37 +633,37 @@ A voice cries out from across the other side of the bus.
 You look around for a moment, but find only a single figure besides yourself and the driver.
 A teenage girl, treading the boundaries of adulthood. She squints as you stare.
 VERA: "YEAH YOU, HORSEHAIR!"
-What?"
++"What?"
 ->YouComeFromUpNorth
-I don't appreciate the tone."
++"I don't appreciate the tone."
 VERA: "YEAH WELL I DON'T APPRECIATE YOUR LONG ASS FACE, I GOT A QUESTION FOR YOU!"
-Neigh."
++"Neigh."
 VERA: "YEAH TROT ON BITCH I GOT A QUESTION FOR YOU!"
-- What a great way to get an answer."
-    Ask it then"
+- +"What a great way to get an answer."
+    +"Ask it then"
     - ->YouComeFromUpNorth
 =YouComeFromUpNorth
 Her face scrunches as she observes you for a moment, taking it all in.
 VERA: "You come from up North?"
-Yes and no."
++"Yes and no."
 VERA: "The fuck does that mean?"
-    +Wasn't born there. Worked there a couple years. Moscow Orchestra."
+    ++"Wasn't born there. Worked there a couple years. Moscow Orchestra."
     VERA: "Huh. Cool."
     She catches herself in a moment of sincerity.
     Her face twists.
     ->YouSeeAnOldBitch
-    +Means yes and no."
+    ++"Means yes and no."
     Her distaste is palpable. Her face scrunches again.
     ->YouSeeAnOldBitch
-Yes."
++"Yes."
 ->YouSeeAnOldBitch
-No."
++"No."
 She groans, stretching out her fingers and throwing her head back in frustration.
 VERA: "FUUUUUUUUCK!"
 She sighs.
 VERA: "Fuck it."
 ->YouSeeAnOldBitch
-Neigh."
++"Neigh."
 She groans, stretching out her fingers and throwing her head back in frustration.
 VERA: "FUUUUUUUCK!"
 She sighs.
@@ -602,7 +672,7 @@ VERA: "Fuck it."
 =YouSeeAnOldBitch
 VERA: "You see an old bitch on your trip? Seventies? Big ass nose? Good shot? {TakeTheRifle: Apparently she's got a Mosin, just like yours.}
 {TakeTheRifle: She points to the rifle on your back}.
-Yes."
++"Yes."
 Her face gives way to shock as simmering eyes converge on yours.
 VERA: "Where?"
     ++[Tell the truth.] "Donetsk."
@@ -610,9 +680,9 @@ VERA: "Where?"
     ++[Lie] "Kursk."
     ->VeraLie
     
-No."
++"No."
 ->NoOrNeigh
-Neigh."
++"Neigh."
 ->NoOrNeigh
 
 =NoOrNeigh
@@ -628,27 +698,27 @@ Her eyes widen. She pulls out a notepad and presses it against the headrest, scr
 ->WhatsYourBeef
 
 =WhatsYourBeef
-What's your beef, Drumsticks?"
++"What's your beef, Drumsticks?"
 "Fuck off Horseface."
 But you've caught her in a moment of weakness.
-Why do you ask?"
++"Why do you ask?"
 - VERA: "Just."
 She pauses. 
 Frustrated.
 VERA: "I just wanna learn.
-How to kill?"
++"How to kill?"
 VERA: "How to survive."
-Better lessons out there."
++"Better lessons out there."
 VERA: "I'm not a coward."
 - VERA: "Everythings falling apart and everyone's pretending it's not. I just want to do something. That's all."
 Embarrassed by her own honesty, she turns away to stare against the horizon. The rage is still there, resting behind the eyes, but resting none-the-less.
-I get it."
++"I get it."
 VERA: Fuck off Shoestring.
-    +That one's not even a pun."
+    ++"That one's not even a pun."
     VERA: "You're not even a fucking pun."
     She smirks, stifling laughter.
     ->Silence
-    +Aight, Whackstick."
+    ++"Aight, Whackstick."
     She smirks, stifling laughter.
     ->Silence
 +Sit in silence.
@@ -725,40 +795,40 @@ PASCHA: "Drugs?"
 /ART PASCHA appears
 
     You rise with a start against the sudden new presence. Turning back towards the stop, you see a figure where there was none before. Sharp eyes. Hair too soft. Skin too shiny. A perfect smile: charming and yet full of grit. They are, in a word, "eccentric".
-    Nothing that interesting."
+    +"Nothing that interesting."
     PASCHA: "I beg to differ. In fact I'd be more interested if it wasn't drugs. So now, I am thus, "more interested"."
-    Just a letter."
+    +"Just a letter."
     PASCHA: "Well that is much more interesting."
     - They siddle slowly towards you.
     PASCHA: "Albeit, I wouldn't say no to drugs. I am desperately bored."
     Sharp eyes turn down towards the envelope in your hands.
     PASCHA: "Read it to me?"
-    No."
+    +"No."
     Sharp eyes turn round as they plead with you.
     PASCHA: "Pleaaaase?"
     ->AreYouHigh
-    Why?"
+    +"Why?"
     PASCHA: "I told you, I'm bored.
     ->AreYouHigh
-    Fine."
+    +"Fine."
     ->PublicReading
     
 =AreYouHigh
-+Are you high?"
+++"Are you high?"
         PASCHA: "I fucking wish, my dear. Now come, you sweet summer thing. Why not spill secrets with a stranger? 
-            ++Fine."
+            +++"Fine."
             ->PublicReading
-            ++..."
+            +++"..."
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week." 
             ->IllBeDead
 
-+I don't even know you."
+++"I don't even know you."
         PASCHA: "Nor I you, you sweet summer thing. Why not spill secrets with a stranger?
-            ++Fine."
+            +++"Fine."
             ->PublicReading
-            ++..."
+            +++"..."
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week."  
@@ -766,11 +836,11 @@ PASCHA: "Drugs?"
             
 =IllBeDead
 
-Sure you will."
++"Sure you will."
 PASCHA: "Swear it on my grave. Dragged there by stupid stupid queer love for stupid stupid queers."
-How?"
++"How?"
 PASCHA: "Stupid, stupid queer love for stupid stupid queers."
-How dramatic."
++"How dramatic."
 PASCHA: "Death is pure drama. But it's love that pulls me there. Stupid, stupid queer love for stupid stupid queers."
 - They twirl towards you. Honest eyes stare into your soul.
 PASCHA: "I get half a day's walk from the border and my fuckwit of a lover gets caught in Moscow. Now me and my stupid bleeding heart are stuck racing back into the dark."
@@ -797,19 +867,19 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     =PostPerformance
     They sigh and stare at you with sad eyes.
     PASCHA: "Truly, we are kin. Bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover, one not fuckwitted enough to get caught in Moscow of all places."
-    I'm sorry."
+    +"I'm sorry."
     PASCHA: "Don't be. Jealousy among outcasts is a tedious thing. I am happy for you."
     They smile.
     PASCHA: "Truly."
-    You don't owe them your life."
+    +"You don't owe them your life."
     PASCHA: "Oh but I do. Love's a fickle Mistress like that. Take comfort that we'll never truly die, I suppose. Long as they keep breeding, we'll be being bred. Kind of Godlike like that, aren't we?"
     They chuckle.
     - PASCHA: "Play a dirge with me. Some battle song to feed me fake courage?"
-    I won't entertain a deathwish."
+    +"I won't entertain a deathwish."
     PASCHA: "You are a cruel thing, my dear."
     Pascha plays alone. You see faint tears catching moonlight. They keep you awake until the grasp of exhaustion drags you both into slumber.
     ->Chapter4Epilogue
-    Of course."
+    +"Of course."
     PASCHA: "Then let's dance the night away."
     ->PaschaDuet
     
@@ -823,27 +893,27 @@ Their bus arriving earlier than your own, your momentary companion rises early a
 + {TakeTheRifle and not GiveVeraRifle} "Here you go Rambo." Give them the rifle.
 They take the rifle with both hands, toying with it for a moment before nodding graciously and strapping it to their back.
 PASCHA: "S'pose I'll be getting more in touch with my Masculine side."
-Don't die stupid."
++"Don't die stupid."
 PASCHA: "Oofy doofy. That is a tall order my dear."
 They chuckle.
 PASCHA: "I'll try."
-Good luck."
++"Good luck."
 PASCHA: "I'm sure your well wishings will make all the difference my dear.
 They chuckle, warmly.
 
 - As their bus presses round the corner, they step off the platform and into the snow leading to the roadside.
 
-I think I met your father."
++"I think I met your father."
 They don't stop walking, but a voice responds.
 PASCHA: Truly a real cunt of a man.
-    +I've never seen so much regret."
+    ++"I've never seen so much regret."
     They stop. 
     The bus waits. 
     They wait.
     PASCHA: "Thank-you."
     And press forth once more, rising on steel steps and disappearing behind glass doors.
     ->Chapter4TrueEnd
-    +Yeah..."
+    ++"Yeah..."
 
 +Let them go.
 
@@ -895,9 +965,9 @@ ZURAB: "Ah. You're not looking for me, are you?"
 
 An old man, not so much disappointed as embarrassed. A slightly curved back and open eyes. They carry with them a pointed stick and a rubbish bag half full to the brim. As they wait for your response, they prick a metal can and shake it into the bag.
 
-No. Sorry."
++"No. Sorry."
 ZURAB: "Haven't seen anyone else yet, I'm afraid."
-Have you seen anyone else here today?"
++"Have you seen anyone else here today?"
 ZURAB: "No. Sorry."
 -He examines you. 
 ZURAB: "Come take a seat. You look weary."
@@ -905,26 +975,26 @@ The invitation is as alluring as the seat itself.
 You take him up on the offer, grateful even for flimsy shelter from the cold breeze outside.
 The man gently careers around the perimeter of the station, pricking cans of steel and plastic wrapping from the ground.
 ZURAB: "You've come a long way?"
-And then some."
++"And then some."
 ZURAB: "And still some yet, I'm sure."
-Not really."
++"Not really."
 ZURAB: "Eyes say otherwise."
 -He taps the side of the station.
 ZURAB: "Seen many of these?"
-Too many."
-Not enough yet."
++"Too many."
++"Not enough yet."
 - His eyes enquire of yours with a strange sincerity.
 ZURAB: "Do you like them?"
-Yes."
++"Yes."
 He smiles.
 ZURAB: "So do I."
-No."
++"No."
 ZURAB: "Ahh. I'm sorry to hear that."
-    +Not their fault. Not yours. Just want to leave them all behind."
+    ++"Not their fault. Not yours. Just want to leave them all behind."
     ZURAB: "Understandable.
-    +No one's at fault for that.
+    ++"No one's at fault for that.
     ZURAB: "Perhaps the artist is?"
-I hadn't thought about it."
++"I hadn't thought about it."
 ZURAB: "Who could blame you? They're just bus stops."
 - His eyes drift to the top of the station. Cracked, weathered paint withers away on the concrete.
 ZURAB: "I just hope they remain a little longer than the world that built them. The absurdity. The color. Everything else is falling all around us and everyone else is itching to paint us in black and white and grey and anything but color. But we are red and gold and green and blue and anything and everything."
@@ -932,19 +1002,19 @@ He smiles.
 ZURAB: "I just hope that we outlive the fall. Language, art, music, silly bus stops. That might be all we have against a world that sees us mute and all a wash. I want them to know that we were here, and we were wonderful."
 The smile fades to embarrassment, he pricks another can on the ground.
 ZURAB: "A fickle fancy. I know.
-What isn't?"
++"What isn't?"
 ZURAB: "Who can say?"
-I understand."
++"I understand."
 He smiles again.
-A little."
++"A little."
 ZURAB: "Only a little?"
 He chuckles.
 - His eyes wander back towards you.
 ZURAB: "Play a song with me? Pass some time until the end times?"
-Sure."
++"Sure."
 His smile widens into a childlike grin, and you lose yourselves in the nothingness of fancificul sound. The world becomes more vibrant, color dances on the rooftop. Concrete heals over and grass grows through the morning snow. You think you see a sun behind the sky. For a time, the world is brighter, if only in your minds.
 ->Them
-Haven't the energy." 
++"Haven't the energy." 
 ZURAB: Then I'll play for you.
 He eyes you from his periphery as he plays. Matching tune to meet your face. But your mind is stuck in questions of where they are. If they're still coming, if waiting is worth the wait. They should be here.
 They should.
@@ -967,7 +1037,7 @@ You cry.
 
 They cry.
 
-I'm so fucking cold.
++"I'm so fucking cold.
 
 You hold each other till the end times.
 

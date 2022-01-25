@@ -37,7 +37,7 @@ MonoBehaviour:
     Resources:
     - Name: Bubble
       PathPrefix: TextPrinters
-      Guid: b47d9659b2be5ee4e95a776f213c9d4b
+      Guid: a010dfa958b5fb645a7e7ef3425dc918
   - Id: TextPrinters/5b5c298e-7289-476f-93aa-e69b45de1c3c
     Resources:
     - Name: TMProDialogue
@@ -215,3 +215,22 @@ MonoBehaviour:
     - Name: Default
       PathPrefix: Characters/Protag
       Guid: 68aed0b4e68dcf94194a793867fb4b1c
+  - Id: Characters/e7ea0b2b-4184-4969-94bf-ebfdf6d79e0b
+    Resources: []
+  - Id: Characters/7ccc65d6-2e47-43d0-95b6-37afb30d04a8
+    Resources: []
+  - Id: Backgrounds/3a3f92a0-9c3f-40af-9477-9e397d62c85d
+    Resources:
+    - Name: bs_7
+      PathPrefix: Backgrounds/Chapter1BusStop
+      Guid: db25581dc61a522489bd30cb550e8424
+  - Id: Backgrounds/ec8358b8-91d9-4289-8b35-af39cd756e0f
+    Resources:
+    - Name: ph_bonfire
+      PathPrefix: Backgrounds/Bonfire
+      Guid: 674a0c5f0f88359428aa91366b4db5a3
+  - Id: Backgrounds/b381c0ef-b043-4ad9-b11f-4a2f8a32e71b
+    Resources:
+    - Name: SnowWild
+      PathPrefix: Backgrounds
+      Guid: c4374e5a046ac1348999bd9535d3e954

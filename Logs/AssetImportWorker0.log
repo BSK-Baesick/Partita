@@ -15,11 +15,11 @@ C:/Users/Kean/Documents/GitHub/Partita
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-53631
+65493
 Successfully changed project path to: C:/Users/Kean/Documents/GitHub/Partita
 C:/Users/Kean/Documents/GitHub/Partita
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 146.97 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 120.26 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
@@ -35,1160 +35,1063 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56412
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56316
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.009061 seconds.
+Registered in 0.007851 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 141.06 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 119.48 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  3.863 seconds
+- Completed reload, in  3.648 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.011450 seconds.
+Registered in 0.012799 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 144.96 ms, found 2 plugins.
+Refreshing native plugins compatible for Editor in 128.54 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Mono: successfully reloaded assembly
-- Completed reload, in  2.019 seconds
+- Completed reload, in  1.637 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.21 seconds
-Refreshing native plugins compatible for Editor in 1.40 ms, found 2 plugins.
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.10 seconds
+Refreshing native plugins compatible for Editor in 0.88 ms, found 2 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 4169 Unused Serialized files (Serialized files now loaded: 0)
-System memory in use before: 151.3 MB.
-System memory in use after: 151.5 MB.
+System memory in use before: 151.0 MB.
+System memory in use after: 151.3 MB.
 
 Unloading 28 unused Assets to reduce memory usage. Loaded Objects now: 4625.
-Total: 5.114500 ms (FindLiveObjects: 0.721600 ms CreateObjectMapping: 0.508200 ms MarkObjects: 3.610900 ms  DeleteObjects: 0.271700 ms)
+Total: 5.045100 ms (FindLiveObjects: 0.503900 ms CreateObjectMapping: 0.345700 ms MarkObjects: 4.093700 ms  DeleteObjects: 0.100200 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Art/IMG_0543.PNG
-  artifactKey: Guid(04e1b31ffee401741aadb3cc5de16561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0543.PNG using Guid(04e1b31ffee401741aadb3cc5de16561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f57b43e82a64a9c1439412080a611c7e') in 0.245894 seconds 
+  path: Assets/Ink/Extras
+  artifactKey: Guid(4aa38ff3055ccd348a2a417c862d4d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Ink/Extras using Guid(4aa38ff3055ccd348a2a417c862d4d8a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ff3085307e4038d7f22081607056355') in 0.013160 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000314 seconds.
-  path: Assets/Art/Backgrounds/bs_2
-  artifactKey: Guid(50195788555ccfc4ebb6c290580f74d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2 using Guid(50195788555ccfc4ebb6c290580f74d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f39e42a04f73ad1f0cbf9764d8f5504') in 0.007688 seconds 
+  Time since last request: 1057.614037 seconds.
+  path: Assets/Art/Audio
+  artifactKey: Guid(40c07275c39ec5d42b7eac5dc808e01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Audio using Guid(40c07275c39ec5d42b7eac5dc808e01e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3abc09f48036ec9e30b8eacf33d6193a') in 0.007637 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.152745 seconds.
-  path: Assets/Art/bus_stop2_static.PNG
-  artifactKey: Guid(04e1b31ffee401741aadb3cc5de16561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bus_stop2_static.PNG using Guid(04e1b31ffee401741aadb3cc5de16561) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e032dde66ccb746aa0a282d4104d6ae8') in 0.024143 seconds 
+  Time since last request: 2.971031 seconds.
+  path: Assets/Art/Characters
+  artifactKey: Guid(dd153d3777f98d94daf27668cf561679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Characters using Guid(dd153d3777f98d94daf27668cf561679) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd1c1d7cd1b73d978b7a7e79f138f3b8') in 0.007701 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.738994 seconds.
-  path: Assets/Art/IMG_0572.PNG
-  artifactKey: Guid(55e2df3474a3122409dd02420a37323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0572.PNG using Guid(55e2df3474a3122409dd02420a37323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2d7831dfcaeea1c3e6e9e9f4a528dab') in 0.020028 seconds 
+  Time since last request: 556.283381 seconds.
+  path: Assets/NaninovelData
+  artifactKey: Guid(958ea0327e6c80b4d95f3a224769958e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData using Guid(958ea0327e6c80b4d95f3a224769958e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78926b94d3e0c2336950218258b696c4') in 0.007996 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.556577 seconds.
-  path: Assets/Art/IMG_0573.PNG
-  artifactKey: Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0573.PNG using Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebfb82c54dfa30b89d0e54fda980cfb7') in 0.028102 seconds 
+  Time since last request: 164.444659 seconds.
+  path: Assets/NewBubblePrinter.prefab
+  artifactKey: Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewBubblePrinter.prefab using Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a41e96c4d5f3e8ad0b6379dbeb961dcb') in 0.101460 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.438879 seconds.
-  path: Assets/Art/bs_2_0.PNG
-  artifactKey: Guid(55e2df3474a3122409dd02420a37323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_0.PNG using Guid(55e2df3474a3122409dd02420a37323c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b132ad4726fcd4e9bccd13bf789ebda') in 0.025193 seconds 
+  Time since last request: 8070.937811 seconds.
+  path: Assets/NewBubblePrinter.prefab
+  artifactKey: Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewBubblePrinter.prefab using Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '676dd0555bf798130b353a0fb58788ba') in 0.020562 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.499926 seconds.
-  path: Assets/Art/bs_2_1.PNG
-  artifactKey: Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_1.PNG using Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4505fa306363a5402cf4080521ed94c8') in 0.020071 seconds 
+  Time since last request: 1903.374572 seconds.
+  path: Assets/NewButtonListChoiceHandler.prefab
+  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b2880eb01980286fa83b5f95779a6359') in 0.099364 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.616905 seconds.
-  path: Assets/Art/IMG_0574.PNG
-  artifactKey: Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0574.PNG using Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0659d184270b9db68a4e5a5d57031cd3') in 0.022690 seconds 
+  Time since last request: 870.549438 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/bs_2_0.PNG
+  artifactKey: Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/bs_2_0.PNG using Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9d64217f19ef172337b82b6e9d7f117') in 0.252308 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.801523 seconds.
-  path: Assets/Art/bs_2-3.PNG
-  artifactKey: Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2-3.PNG using Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c5423ea498876e7b9a4a7069270487a') in 0.023074 seconds 
+  Time since last request: 6.842287 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/sky.PNG
+  artifactKey: Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/sky.PNG using Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '500d16f68398a833eacf60a19f1684de') in 0.020507 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.796870 seconds.
-  path: Assets/Art/IMG_0575.PNG
-  artifactKey: Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0575.PNG using Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '03bc7d20bbac0f739c75b3bc769f6518') in 0.020215 seconds 
+  Time since last request: 9.513272 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/sky_placeholder.PNG
+  artifactKey: Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/sky_placeholder.PNG using Guid(1ea55ec59a955d54db919933f6bbc0de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99062fb9002653366220d7e87540e861') in 0.020311 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.430720 seconds.
-  path: Assets/Art/bs_2_2.PNG
-  artifactKey: Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_2.PNG using Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '60ca12885c92fa9c24272aae96176fe9') in 0.040903 seconds 
+  Time since last request: 45.617642 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/PARTITA_BUS INTERIOR_V2_HM.png
+  artifactKey: Guid(a23dc638e7d60ad4aa194bc69a6af053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/PARTITA_BUS INTERIOR_V2_HM.png using Guid(a23dc638e7d60ad4aa194bc69a6af053) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '349fe4c0d15694871b58a5955edf5666') in 0.038639 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.345356 seconds.
-  path: Assets/Art/IMG_0576.PNG
-  artifactKey: Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/IMG_0576.PNG using Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a0cf7530b537e5e1bb68f95d569b806') in 0.025360 seconds 
+  Time since last request: 167.382053 seconds.
+  path: Assets/Naninovel/Materials/RainParticle.mat
+  artifactKey: Guid(24f11794f6247df4faa44075a267b797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Materials/RainParticle.mat using Guid(24f11794f6247df4faa44075a267b797) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba7b9f48afa7b9e76fcbe7ef6a62df7a') in 0.226151 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.673139 seconds.
-  path: Assets/Art/bs_2_4.PNG
-  artifactKey: Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_4.PNG using Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '27a4fe5c3f0f7dc6f776f6982504d2d4') in 0.056120 seconds 
+  Time since last request: 0.000474 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Rain.prefab
+  artifactKey: Guid(a9117e2fa90704d45b3e1461596c11ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Rain.prefab using Guid(a9117e2fa90704d45b3e1461596c11ee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd5331e4ea8dcc69b4af3064eb2ed752') in 0.019491 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 102.777514 seconds.
-  path: Assets/Art/asda.PNG
-  artifactKey: Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/asda.PNG using Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85e83d5df028eb2e4747d1ba1e756996') in 0.020351 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.473040 seconds.
-  path: Assets/Art/bs_2_1.PNG
-  artifactKey: Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_1.PNG using Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd623357ff34b6b4d11402d06e6647f74') in 0.028047 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.480703 seconds.
-  path: Assets/Art/bs_2_2.PNG
-  artifactKey: Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_2.PNG using Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02e07871894597df21f07c3c160cdca1') in 0.018942 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 27.968591 seconds.
-  path: Assets/Art/bs_2_3.PNG
-  artifactKey: Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_3.PNG using Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eca8e2de9e1e479cf531dcddbbcb5b13') in 0.021017 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.262418 seconds.
-  path: Assets/Art/bs_2_4.PNG
-  artifactKey: Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/bs_2_4.PNG using Guid(87641a402acff1442a62fe253f6f50da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5784a89480c7585c0f87591c68b6656f') in 0.022134 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 644.174715 seconds.
-  path: Assets/Naninovel Ink Adapter/Scripts/Start Ink.nani
-  artifactKey: Guid(d459f2db2696fce44af52c7d8bd5e07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel Ink Adapter/Scripts/Start Ink.nani using Guid(d459f2db2696fce44af52c7d8bd5e07b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4eaf1043ca49743ac5abef523caa128b') in 0.035759 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000357 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/Assets/Layouts/StartPageView.uxml
-  artifactKey: Guid(b25da32608546214ca8e4abbc2025f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/Assets/Layouts/StartPageView.uxml using Guid(b25da32608546214ca8e4abbc2025f77) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa75c66c74f4e24643f07ec70e7ea543') in 0.023230 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000281 seconds.
-  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineStartPlayback.png
-  artifactKey: Guid(5060c9f9eb2f7ee4695b638a21d8fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/DarkSkin/TimelineStartPlayback.png using Guid(5060c9f9eb2f7ee4695b638a21d8fe01) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91de3a3eb3deffef6d6dc711d9340680') in 0.019666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000390 seconds.
-  path: Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineStartPlayback.png
-  artifactKey: Guid(824c4beb0ca6c934bbc7a26919302236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.timeline/Editor/StyleSheets/Images/LightSkin/TimelineStartPlayback.png using Guid(824c4beb0ca6c934bbc7a26919302236) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '182359441782e5657fa7c81265d34bbe') in 0.019141 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.199059 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CustomVariablesConfiguration.asset
-  artifactKey: Guid(28a9cb862debeef4abbfdbcb00b6b2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CustomVariablesConfiguration.asset using Guid(28a9cb862debeef4abbfdbcb00b6b2b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df47b370cb216df639fc02e1147d928a') in 0.010303 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000480 seconds.
-  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.StartCoroutine@32x.png
-  artifactKey: Guid(767bc373c9d3a4b489e4c2456170041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.StartCoroutine@32x.png using Guid(767bc373c9d3a4b489e4c2456170041e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6593bdaab76159a2fb5a24182e55b9d5') in 0.026137 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000375 seconds.
-  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.StartCoroutine@16x.png
-  artifactKey: Guid(915846b6299e249ebaa71e7e1d640df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.StartCoroutine@16x.png using Guid(915846b6299e249ebaa71e7e1d640df9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86123f6dbe2a4d9cf4ae595d86548d6') in 0.017425 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000266 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/StateConfiguration.asset
-  artifactKey: Guid(9042240051e81544eb9d3a35c4b7f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/StateConfiguration.asset using Guid(9042240051e81544eb9d3a35c4b7f502) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad8b2a7915b5c8640e6055ea821ff33e') in 0.008631 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000264 seconds.
-  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.Start@32x.png
-  artifactKey: Guid(2a086ad34a147504894882643f3abc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.Start@32x.png using Guid(2a086ad34a147504894882643f3abc28) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8f41506cc8d2a352af949f9b9f195239') in 0.014288 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000387 seconds.
-  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/UpdateWizard/UpdateStartPage@32x.png
-  artifactKey: Guid(e3539ce2f5b6148c4b4ab7f6f89b2535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Windows/UpdateWizard/UpdateStartPage@32x.png using Guid(e3539ce2f5b6148c4b4ab7f6f89b2535) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f35ac1bd48787d636cb4dc3c0baaab7') in 0.014062 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/ScriptPlayerConfiguration.asset
-  artifactKey: Guid(72fae20038be68f4bbae665e1f2fb727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/ScriptPlayerConfiguration.asset using Guid(72fae20038be68f4bbae665e1f2fb727) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'db565caa1f3213eff136e075ee2a34d8') in 0.008714 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.Start@16x.png
-  artifactKey: Guid(775ec5f2a7a633749862d246ba48ee56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Flow/EditorAssetResources/Icons/Types/Unity.VisualScripting.Start@16x.png using Guid(775ec5f2a7a633749862d246ba48ee56) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16977020fd235e5eef6cb4de9faacb73') in 0.014755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.046692 seconds.
-  path: Assets/Art/Backgrounds/bs_2
-  artifactKey: Guid(50195788555ccfc4ebb6c290580f74d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/bs_2 using Guid(50195788555ccfc4ebb6c290580f74d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '43947b4d8388702e8e0d68709715222b') in 0.093611 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000313 seconds.
+  Time since last request: 0.376711 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fb6331259914ffcc05ce65a84d59074c') in 0.024492 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0ca46677b176524f5c024ef1e785c554') in 0.183071 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000317 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ff8e90fbd42a6b3507f91ea90b1ec56f') in 0.018929 seconds 
+  Time since last request: 0.000329 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/BusInterior.prefab
+  artifactKey: Guid(a82e5e7136130fe4e819a9b5ed42823a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/BusInterior.prefab using Guid(a82e5e7136130fe4e819a9b5ed42823a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b300bece10a25bd6e6083cc4f29377b5') in 0.033543 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Art/bs_2_3.PNG
-  artifactKey: Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bs_2_3.PNG using Guid(d88cea6eeebc9eb4982d248dfdd1ca29) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '94699827f642868ac421dba89d76e731') in 0.032872 seconds 
+  Time since last request: 0.000279 seconds.
+  path: Assets/NaninovelData/EditorResources.asset
+  artifactKey: Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7f31b4199f3356315119e9d6caf42bcc') in 0.021771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000279 seconds.
+  path: Assets/NewBubblePrinter.prefab
+  artifactKey: Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NewBubblePrinter.prefab using Guid(a010dfa958b5fb645a7e7ef3425dc918) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9207fb545875e9b904b001e5dfcf10a') in 0.037878 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000367 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '37b24ffd259d8bf962e8864e3c732fb7') in 0.037635 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000420 seconds.
+  path: Assets/Audio/SFX
+  artifactKey: Guid(4e2e1f1c4d620d843bdced0d674786b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Audio/SFX using Guid(4e2e1f1c4d620d843bdced0d674786b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'caa19dbb4ade33bf1a13ef20600c71c0') in 0.032238 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000385 seconds.
+  path: Assets/NewButtonListChoiceHandler.prefab
+  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3e8e4a4ab9519ae5c758d7478ab1b977') in 0.024656 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000547 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset
+  artifactKey: Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bde8595c0d3dbfebd0bfdb88619f9764') in 0.086369 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000381 seconds.
+  path: Assets/NewWidePrinter.prefab
+  artifactKey: Guid(079da135ebd17ea4e971125c02e107f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NewWidePrinter.prefab using Guid(079da135ebd17ea4e971125c02e107f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '741432d05e6183871d6d4f3cfcbb89f5') in 0.024830 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000407 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset
+  artifactKey: Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset using Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd968761d2c1e0777619051a6035c2de1') in 0.045694 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000368 seconds.
+  path: Assets/Audio
+  artifactKey: Guid(40c07275c39ec5d42b7eac5dc808e01e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Audio using Guid(40c07275c39ec5d42b7eac5dc808e01e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4fb0e6f0727d9a7d1502a8bac8157906') in 0.019075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000391 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior/PARTITA_BUS INTERIOR_V2_HM.png
+  artifactKey: Guid(a23dc638e7d60ad4aa194bc69a6af053) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior/PARTITA_BUS INTERIOR_V2_HM.png using Guid(a23dc638e7d60ad4aa194bc69a6af053) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f0d9fe0d30a215b4329863bbd193cd11') in 0.067969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000339 seconds.
+  path: Assets/Audio/BGM
+  artifactKey: Guid(5fb57711c37c79343a7b4938600eea67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Audio/BGM using Guid(5fb57711c37c79343a7b4938600eea67) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '87251848f9b41d1c246af50dbec54703') in 0.020580 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000288 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/Bus Interior
+  artifactKey: Guid(da3320459a2214144a0ef939776543e0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/Placeholder/Bus Interior using Guid(da3320459a2214144a0ef939776543e0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd837f7adb625e496b12fc3dc56a8438e') in 0.018721 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.613119 seconds.
+  path: Assets/Naninovel/Runtime/Elringus.Naninovel.Runtime.asmdef
+  artifactKey: Guid(08ab4e9b32bfd234da6fed8acbd71909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Runtime/Elringus.Naninovel.Runtime.asmdef using Guid(08ab4e9b32bfd234da6fed8acbd71909) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cb0916a509c25ed06fd9310ce4d9d018') in 0.008277 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.418094 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset
+  artifactKey: Guid(18f3884a4425f684485bfaae64c31f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b665ce130b2d8547fc9b15f3df859e24') in 0.009073 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000307 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset
+  artifactKey: Guid(50448706339b9ae41baf64063e0a2a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset using Guid(50448706339b9ae41baf64063e0a2a72) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '803a8367bbd17203dca5aca2543bb144') in 0.008329 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000223 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/ChoiceHandlersConfiguration.asset
+  artifactKey: Guid(20e6c52ee68a76f4285aac64cf26d0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/ChoiceHandlersConfiguration.asset using Guid(20e6c52ee68a76f4285aac64cf26d0b5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7cfa7a9eef3f0476df281d251a712466') in 0.011079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000229 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/LocalizationConfiguration.asset
+  artifactKey: Guid(bf964da1dfabbab48a57603edf01bc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/LocalizationConfiguration.asset using Guid(bf964da1dfabbab48a57603edf01bc67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '770821c447ef9aeeb8cc528135e6ec27') in 0.009155 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000287 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CameraConfiguration.asset
+  artifactKey: Guid(195e8d8fc51d9ce42ae6e1fb7deec0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CameraConfiguration.asset using Guid(195e8d8fc51d9ce42ae6e1fb7deec0da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cdb0840c379fe200233ba71df0a075de') in 0.010258 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/ScriptsConfiguration.asset
+  artifactKey: Guid(7494ba3a9ee28e54ebfae0c77136afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/ScriptsConfiguration.asset using Guid(7494ba3a9ee28e54ebfae0c77136afbc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f9b31115d1119252600368bd5a530d7') in 0.010644 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000321 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/MoviesConfiguration.asset
+  artifactKey: Guid(130cb4e34e036864da6fc99823c047a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/MoviesConfiguration.asset using Guid(130cb4e34e036864da6fc99823c047a1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c909a3e3364a60523215b00d4dabdb5') in 0.011861 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000270 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/ResourceProviderConfiguration.asset
+  artifactKey: Guid(986c35477618fde448c68e34337b7dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/ResourceProviderConfiguration.asset using Guid(986c35477618fde448c68e34337b7dfb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c6cff01e959deb127da6d2528cf477d') in 0.007256 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.151777 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/SpawnConfiguration.asset
+  artifactKey: Guid(162437cd83db2d14dbdd76c3f5ad8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/SpawnConfiguration.asset using Guid(162437cd83db2d14dbdd76c3f5ad8573) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '44c2bafde03e32899f0b792b1beb748d') in 0.008615 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000301 seconds.
-  path: Assets/Naninovel/Prefabs/TextPrinters/TMProWide.prefab
-  artifactKey: Guid(7860ef40eae6a3341be02586f7edd980) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/TextPrinters/TMProWide.prefab using Guid(7860ef40eae6a3341be02586f7edd980) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '64b4afa23852126a7807b45d7519faae') in 0.015962 seconds 
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/UnlockablesConfiguration.asset
+  artifactKey: Guid(694f2e7426679854c870025fade2368f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/UnlockablesConfiguration.asset using Guid(694f2e7426679854c870025fade2368f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa2399de3e422a7dd098e1b032a89bc') in 0.010589 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000263 seconds.
-  path: Assets/Art/bs_2_1.PNG
-  artifactKey: Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bs_2_1.PNG using Guid(158ad3c726f0c484daeeb9c5a107180e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f2d59397e49a792de57620e15058d8dc') in 0.026707 seconds 
+  Time since last request: 0.000248 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/UIConfiguration.asset
+  artifactKey: Guid(9132300506f43ed4898150c8ec679c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/UIConfiguration.asset using Guid(9132300506f43ed4898150c8ec679c22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5896b257b827fe57b54740c818d6a41') in 0.010639 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000406 seconds.
-  path: Assets/Art/bs_2_2.PNG
-  artifactKey: Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bs_2_2.PNG using Guid(51bf454cc4725ac42a6d542c548e1e06) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '311b6268588e4017914687fef1159d5a') in 0.025325 seconds 
+  Time since last request: 0.000446 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Namespaces/JetBrains@32x.png
+  artifactKey: Guid(05bb23e4f29314051bba7046617353f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Namespaces/JetBrains@32x.png using Guid(05bb23e4f29314051bba7046617353f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85a712ad3a9ae0d734a1bda9d8223808') in 0.015562 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000372 seconds.
-  path: Assets/NewTMProWidePrinter.prefab
-  artifactKey: Guid(02c6bf5f57a89584d8d8fcb8adb4f076) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewTMProWidePrinter.prefab using Guid(02c6bf5f57a89584d8d8fcb8adb4f076) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8123e61bf01856841dade5e0d3c92b49') in 0.017844 seconds 
+  Time since last request: 0.000285 seconds.
+  path: Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Namespaces/JetBrains@16x.png
+  artifactKey: Guid(eb7aa892e7a0c43b19f3268a61d31da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/EditorAssetResources/Icons/Namespaces/JetBrains@16x.png using Guid(eb7aa892e7a0c43b19f3268a61d31da5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f00c9ab3130886567edeb9ec1a588287') in 0.014089 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000352 seconds.
-  path: Assets/NaninovelData/EditorResources.asset
-  artifactKey: Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fc0aa3224b25aadb9c0781e3999df14a') in 0.021898 seconds 
+  Time since last request: 10.660498 seconds.
+  path: Assets/Naninovel/Materials/SnowParticle.mat
+  artifactKey: Guid(1027d9ccdb8ed6f43807a513e04440e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Materials/SnowParticle.mat using Guid(1027d9ccdb8ed6f43807a513e04440e9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba07a2f474de50a97269f071af03b61d') in 0.020706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000276 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow.prefab
+  artifactKey: Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Snow.prefab using Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f96a2c4ddbd951ff148b3e66e6fd701c') in 0.012294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.630993 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6ef133f4a981e30b3e867424f9052226') in 0.013031 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000329 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a1c6da0216fde2d4a5c3631ac4edb7e0') in 0.020073 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3561c729f5f4047000cf7972c04fdff2') in 0.013420 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Art/bus_stop2_static.PNG
-  artifactKey: Guid(04e1b31ffee401741aadb3cc5de16561) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bus_stop2_static.PNG using Guid(04e1b31ffee401741aadb3cc5de16561) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '87045fb5db4343bb2db5733bf12b0cfa') in 0.024937 seconds 
+  Time since last request: 86.522653 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bd778abbeb2bb1d09ad58af5271a1039') in 0.014238 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_2.prefab
-  artifactKey: Guid(685ee9f2160aafe448c7e6e443a25695) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/bs_2/bs_2.prefab using Guid(685ee9f2160aafe448c7e6e443a25695) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6b21440592522faa04097d06c8232206') in 0.016638 seconds 
+  Time since last request: 0.000239 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a1e0f735a95f1eb05119434936842abf') in 0.012043 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000348 seconds.
-  path: Assets/Art/bs_2_0.PNG
-  artifactKey: Guid(55e2df3474a3122409dd02420a37323c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bs_2_0.PNG using Guid(55e2df3474a3122409dd02420a37323c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '088ab49a19f97feafa0e72d2009cc008') in 0.023677 seconds 
+  Time since last request: 149.580742 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9f92cf26165842736b66c1f1747e1da4') in 0.016545 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000270 seconds.
-  path: Assets/Art/bs_2_4.PNG
-  artifactKey: Guid(87641a402acff1442a62fe253f6f50da) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/bs_2_4.PNG using Guid(87641a402acff1442a62fe253f6f50da) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'be5f56909d2fcc525a79b8c843b33394') in 0.020634 seconds 
+  Time since last request: 168.594117 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e704d5e20bf9fdfd71653d531f9057cb') in 0.014847 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000345 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset
-  artifactKey: Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b8afaec499b668a7444b143f80d4330b') in 0.046550 seconds 
+  Time since last request: 0.000293 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '271c560b10291830c90a9b0c0478217f') in 0.015536 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000363 seconds.
-  path: Assets/Art/Backgrounds/bus_stop2.prefab
-  artifactKey: Guid(bb526a2a6d4732d44876b65a86b8c1b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/bus_stop2.prefab using Guid(bb526a2a6d4732d44876b65a86b8c1b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5c437ed895a98ae83f52be511ac0d00a') in 0.014625 seconds 
+  Time since last request: 26.413354 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a9c3e69a7602a0117d5158e5e190d8df') in 0.012792 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000302 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0b74076e40716f820bc28e092102eda6') in 0.014631 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.148032 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '000b2588b9852f06b785f76aedef5f0c') in 0.012008 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e9c2f498459674824e7b73004286382') in 0.014673 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 81.090743 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '081c6390a8454823373d543c834578ef') in 0.016647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000274 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ccb119c4c6c0c954390f40b471682f7a') in 0.028165 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 44.319801 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0dc4c4c1ec03f3d11084ba06aad3f919') in 0.014548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000306 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '32c98c338b4bf4bde352002d77755d3b') in 0.013590 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 73.944208 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e9555a4578e4f5f8232551975a28840') in 0.014070 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000312 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '01c64ebf6465aaa4949252f15246a3fa') in 0.013700 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.938723 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '94f38ca34d519f12e06ccbb7fb0aede1') in 0.014417 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000268 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e076f96769601935a37d3854db296f7b') in 0.015422 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 354.845335 seconds.
+  path: Assets/Naninovel/Runtime/FX/Snow.cs
+  artifactKey: Guid(a3efd69167ab943458d509d701e70e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Runtime/FX/Snow.cs using Guid(a3efd69167ab943458d509d701e70e0d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6c6eefcd20a73f937ec692496b014f9a') in 0.016317 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 80.786762 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow.prefab
+  artifactKey: Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Snow.prefab using Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6421cf37ac2894b33ed5754b84c703b') in 0.008962 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.960955 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow.prefab
+  artifactKey: Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/Snow.prefab using Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c2c26b2294adfac1a188af62b684e0df') in 0.014364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 307.762664 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8209b79927ec51b57194088700f3056d') in 0.015078 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000404 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4ae3ef08c8bd7aa0dbf11d62fea0e7a5') in 0.014882 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.231432 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4201858282750b22514ec94816a8208c') in 0.013484 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000271 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '32e05996635072129f85ba9b7de6dbd6') in 0.013714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 34.642943 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow.prefab
+  artifactKey: Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Snow.prefab using Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'deec412a82ccd26927a7b046a512edf3') in 0.010658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.958472 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow.prefab
+  artifactKey: Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/Snow.prefab using Guid(9f4e71cb27fffa04486737d2cf8d622d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '348715acf675b729c61c939dbf0125cd') in 0.014970 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 64.135914 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6ab7523ed83da313e253bc44a4e3b9d5') in 0.013560 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000328 seconds.
-  path: Assets/NewWidePrinter.prefab
-  artifactKey: Guid(079da135ebd17ea4e971125c02e107f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewWidePrinter.prefab using Guid(079da135ebd17ea4e971125c02e107f3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ceabf08226bf8a38dac569ce687a7145') in 0.014391 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000276 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset
-  artifactKey: Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset using Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b9d7529cb77d011551f8fd516e83bb02') in 0.032789 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000285 seconds.
-  path: Assets/NewDialoguePrinter.prefab
-  artifactKey: Guid(5ea7d4833f5aece409b3afdf92c66389) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewDialoguePrinter.prefab using Guid(5ea7d4833f5aece409b3afdf92c66389) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'da3a07a98fa87d0cc6e031a2d9c3457e') in 0.015463 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Scenes/Main Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scenes/Main Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '41a33ae298d883508c3b97f1d6f392e7') in 0.013619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.136376 seconds.
-  path: Packages/com.unity.collab-proxy/Editor/Assets/Styles/StartPageView.uss
-  artifactKey: Guid(a06574b6de1fa064e95a5635a03b712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Packages/com.unity.collab-proxy/Editor/Assets/Styles/StartPageView.uss using Guid(a06574b6de1fa064e95a5635a03b712d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91bb22085875998759e7db615e010a21') in 0.013931 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 70.346497 seconds.
-  path: Assets/Ink/Partita_2nd_Draft.ink
-  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e91595ebdab0fe71936b6976e84db60a') in 0.019898 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000350 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '53d4a975eb92852e3993d5714ef32d7f') in 0.015593 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6674c9d71b6315d9b9f7496c55f780f1') in 0.012611 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 44.649027 seconds.
+  Time since last request: 63.828115 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3b05a70b198c27cd1e4cb858741f1e28') in 0.014731 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '13aa1db3553b384a60d27764ad836604') in 0.022100 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000358 seconds.
+  Time since last request: 0.000382 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4b5c9eda9095f36bb658379726099848') in 0.015713 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '48d9e96f6daf92552b9b6c9c07606047') in 0.015294 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 34.659382 seconds.
+  Time since last request: 237.849807 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6784f7915ede97ac3a9e3decbed9b971') in 0.016696 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ba096381d76127731d2516eec34e921b') in 0.014436 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 1.190054 seconds.
+  Time since last request: 0.000198 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '50dba72ba55a43dc2ffc0065b9396c46') in 0.012382 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f923e5f3a0ece5b19706c0125dd4263b') in 0.011706 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 152.183158 seconds.
+  Time since last request: 124.902406 seconds.
+  path: Assets/NaninovelData/Saves/GlobalSave.nson
+  artifactKey: Guid(c5ddbceb199acfc40b93979a615157b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/Saves/GlobalSave.nson using Guid(c5ddbceb199acfc40b93979a615157b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '70909b78c4a457587687e5d10f93e3ae') in 0.016048 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000275 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c3c6f7a6761f4f0408d2a256bcee7820') in 0.013486 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '73f0321da03ebd81d7b90a382a344973') in 0.012810 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.595206 seconds.
+  Time since last request: 0.000289 seconds.
+  path: Assets/NaninovelData/Saves/GameQuickSave001.nson
+  artifactKey: Guid(defeb01e6890392498a683a4b0667112) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/Saves/GameQuickSave001.nson using Guid(defeb01e6890392498a683a4b0667112) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dc09ba0d047e74ae5b101709dd47a8be') in 0.018049 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000333 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'faa1409f5a6d048f4cfc98871ab5d1ec') in 0.014354 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '056d117720823fa5ceaf27338d424c00') in 0.014317 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.521882 seconds.
+  Time since last request: 190.677161 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '31fb98f42a6d9434665c31341d880ab0') in 0.015617 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '619c318d4cce6cc0123564b075c9b017') in 0.015082 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000278 seconds.
+  Time since last request: 0.000265 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2ca2f8b7db06fe37d54cd58200184688') in 0.045170 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd1a5605533fb55ee14af9d2c5b738f71') in 0.012633 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 131.342438 seconds.
-  path: Assets/Naninovel Ink Adapter/Editor
-  artifactKey: Guid(d36756ecd7dbe5c4e88043608893a36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel Ink Adapter/Editor using Guid(d36756ecd7dbe5c4e88043608893a36a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'baa49bceb7683d772c15bd9e2124e19d') in 0.007775 seconds 
+  Time since last request: 152.172819 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '893d2b7279dd105240bf3aa557be4a96') in 0.017295 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.542646 seconds.
-  path: Assets/Scenes
-  artifactKey: Guid(b85e73ea87e5d8d47a379151c5834564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes using Guid(b85e73ea87e5d8d47a379151c5834564) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0321e92e2cd7dfce351ed7f3962b8b19') in 0.006877 seconds 
+  Time since last request: 0.000271 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6732c878281d5666f38de9b1c1b52b29') in 0.013972 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.574498 seconds.
-  path: Assets/Scenes/Main Game.unity
-  artifactKey: Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/Main Game.unity using Guid(2cda990e2423bbf4892e6590ba056729) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c707244512d305a01b8b863b78605256') in 0.006467 seconds 
+  Time since last request: 23.879950 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4ed6677a8b6c05703220c1075447e0fe') in 0.013762 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.430584 seconds.
-  path: Assets/NewWidePrinter.prefab
-  artifactKey: Guid(079da135ebd17ea4e971125c02e107f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewWidePrinter.prefab using Guid(079da135ebd17ea4e971125c02e107f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '577dec9a3abb48e235822e10a9480b7b') in 0.117978 seconds 
+  Time since last request: 0.000280 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4a7f06fbd7c468f3d7fadafe5a165b99') in 0.013005 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.238363 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab
-  artifactKey: Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab using Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f00120c266a99ef71e5bf118a711a1e3') in 0.014276 seconds 
+  Time since last request: 916.368833 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c2503da14719144b03c04f329d6b6e2a') in 0.015408 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.489484 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab
-  artifactKey: Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab using Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f0a010765fb58cca7d81b064e0c7648b') in 0.017107 seconds 
+  Time since last request: 0.000331 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '67768d3eb7f5044a1daa337f8ba899f0') in 0.017109 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 11.515596 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab
-  artifactKey: Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab using Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7ec9ddfa0091a8cfac7d8b7d4d74d06d') in 0.016391 seconds 
+  Time since last request: 752.152444 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '58a132da23765417872d406d77420216') in 0.015698 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 12.289540 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09e7fa184c856b0cdc365aea01e5adc9') in 0.026033 seconds 
+  Time since last request: 0.000254 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '57bebf9ed5a8ab2df91147be6e669021') in 0.012995 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.535597 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab
-  artifactKey: Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonList.prefab using Guid(1f6aa29000e839c409e6a9c0704adc96) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '75d2bfb9ddfac1c647f1e5823292ae03') in 0.011177 seconds 
+  Time since last request: 138.279046 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/Placeholder/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7f34f010cadffff36413e0a630efe29') in 0.022853 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 61.798849 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0383caa5eca5d89b0082e90ebec2c98b') in 0.025864 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.889717 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ca5979ab11dbbc910100307792a4999b') in 0.019883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.329878 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '84280e61c1362cefef28fc2b764991ae') in 0.013169 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 118.536277 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f17de673cc7475cbcc5b9a17b47c8b68') in 0.016096 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 25.318640 seconds.
+  Time since last request: 0.934589 seconds.
   path: Assets/NaninovelData/EditorResources.asset
   artifactKey: Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9e137dc0a40daf818981b9b4d224da86') in 0.014628 seconds 
+Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'daa9802029c3d3e518d967e4aa6971ca') in 0.014590 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000320 seconds.
-  path: Assets/NewButtonAreaChoiceHandler.prefab
-  artifactKey: Guid(ecfbd43cf99045147bbfaf41d65d7baf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonAreaChoiceHandler.prefab using Guid(ecfbd43cf99045147bbfaf41d65d7baf) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3ade6b6f4bde9fdcb758dc288581fd76') in 0.015242 seconds 
+  Time since last request: 0.000277 seconds.
+  path: Assets/Art/Backgrounds/Placeholder/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/Placeholder/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4894345700d9de7ed8d948e290ddbd6f') in 0.013733 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000228 seconds.
+  path: Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset
+  artifactKey: Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '457a3db28b3289d6dc59a64bc117d2e3') in 0.015192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.709077 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65eca431d6aeb3ff1b38f3444de40330') in 0.008400 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.956589 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '31b2cb415284ba29b030fe6659e8ec5f') in 0.019196 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 10.091849 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '41a60974680228940fafd0c5223eb6dc') in 0.018479 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.171915 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e962c4304713da67f1332054381efecd') in 0.012129 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.087963 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'caaaead50e19d411d56b90f897b057bf') in 0.012647 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.220708 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9c10544f34f6191b57fea7e6a088a8f2') in 0.015045 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 14.858910 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b152fc715ede64d008f49c04db31ee95') in 0.012998 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.898702 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a6e585ba9f238ed9d48abab07a497e29') in 0.014141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 1.868231 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '761456f6621a29fb00404b2b19e09915') in 0.017939 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.579730 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e02e7b1886789d7aa237b9d0a2ff2c49') in 0.012969 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.777069 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8fa26b3d8a71218f1cb18b38df185f0a') in 0.011406 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 55.055022 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8974898bfce2448bb0ee5a7648160b71') in 0.014864 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000293 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4fef554c313f804d48da1f47d75c992f') in 0.013859 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.996467 seconds.
+  path: Assets/Art/Backgrounds/placeholdersnowbg.prefab
+  artifactKey: Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/placeholdersnowbg.prefab using Guid(c4374e5a046ac1348999bd9535d3e954) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b0c526b3b908d3fdd2ce73c82398a0b') in 0.066591 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.457717 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow 1.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/Snow 1.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23e01da8c7bc744190b7260f2679d0be') in 0.018494 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.926927 seconds.
+  path: Assets/NaninovelData/EditorResources.asset
+  artifactKey: Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a3ce2e8a14feda0e90fd4b7147726220') in 0.013423 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000413 seconds.
+  path: Assets/Naninovel/Prefabs/FX/Snow 1.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/Snow 1.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8cb04c01adbc53102b320cfd5897902a') in 0.018823 seconds 
 ========================================================================
 Received Import Request.
   Time since last request: 0.000276 seconds.
   path: Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset
   artifactKey: Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b88c2587d84fba8590cc9c6620aed33f') in 0.017149 seconds 
+Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/BackgroundsConfiguration.asset using Guid(18f3884a4425f684485bfaae64c31f63) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '84ab5f222f87663858eacece05e6cda3') in 0.014194 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 28.064791 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '020439ef336c65f09de9835819452751') in 0.014825 seconds 
+  Time since last request: 2.186575 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '394d8484a0258aa1b9a0b6538955c082') in 0.009644 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 43.584935 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '932659523199cfea394a0e090696c2ed') in 0.011806 seconds 
+  Time since last request: 0.962357 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ea677753bea647af046d281bbacaa3b1') in 0.013873 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.356814 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8567d7c7458a9f458baf6d6b99cb3b9a') in 0.013925 seconds 
+  Time since last request: 5.486820 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9e56ae3a38353fca8fe5c343250cc604') in 0.009490 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.883551 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '22115caa3344228b6e4f4bc6ad9f0599') in 0.014872 seconds 
+  Time since last request: 1.016094 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '610f0016e9c60c9ed7812dfde3784149') in 0.011428 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 19.410170 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '0773e2fc0968ea0319f49a04a7404400') in 0.018755 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.193402 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '21a76345f28525a4f1df5f3a7bfd9b97') in 0.016297 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 26.239410 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '93876baaadd56dc3c1a4c9eba9e0c6ca') in 0.014290 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.194275 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5ed96697429edd3f287180f74f78984f') in 0.017053 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 37.949334 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '02a7a25d51316531778f9487dce71035') in 0.014241 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.597230 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6fc366b7b4a71f002088508eeedd9969') in 0.023428 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.758147 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '745b347a21b13963688be0c77f6aac0d') in 0.017626 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.429709 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c7b4dc22f8f0b31e3112d17f92db89c8') in 0.013742 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.829205 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'cfc17384af91acbd5af14f6bb42047fc') in 0.013519 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.039850 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd4b00d73f8b113b1f5262fef6684c50c') in 0.018783 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.093253 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a6d48589129465cd7cb9aeb6d2096b44') in 0.014098 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 82.233405 seconds.
+  Time since last request: 12.684029 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8a1687eee58f1751016bb7031c93bd4d') in 0.013005 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd9ec74925ca31d93f58058638c134aca') in 0.013267 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000292 seconds.
+  Time since last request: 0.000266 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f8c06b8a94b04a774b2ecc806205bdcb') in 0.014372 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '10b2323d962b2d40ee4d74ab6d513dbe') in 0.014691 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 16.005475 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c99f824f9b4f6aaa75a038df6edebf63') in 0.017513 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 90.430674 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '58ea4aa58bfb3f9743f7da3721cf150a') in 0.015679 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 30.594020 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '59ddce79d5ca12e423a63a0fd747a3f8') in 0.018929 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.037063 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '81c2e0b54f72134d2cc5235e9a857483') in 0.116976 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 52.213467 seconds.
+  Time since last request: 32.286690 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '11712fbaef1b7ad31715ae609c546f53') in 0.020717 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fcdceb2f76b31a1bc51d166277dbed9c') in 0.013789 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 26.871928 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fe7f29d2fd06f2155990b5280b30a7f5') in 0.017678 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 5.437123 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '096b3ab7076ba628ed18e70eb72c73e8') in 0.016812 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.405390 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5f96ae5de7b856abde49d7f5673cf9de') in 0.019988 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.826120 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3fbff5c6d680c4f2ed3f3ff06fd57d0c') in 0.018300 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.839593 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4600d6305c0d89389d6c9798b1e3819d') in 0.018833 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.627735 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e578a1d06007b3d96d3a07f8c432c2bc') in 0.015576 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 13.927845 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '34218ee704aceb53d9f65f943dd39669') in 0.015185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 33.022168 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fbcc2c0232900195cbdf5bb9e6dbd632') in 0.016193 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.466080 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab
-  artifactKey: Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ButtonArea.prefab using Guid(4fa6d62f894ae6e4698bfa8af59e7942) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '56f697686272a3b161d748ab11c060e9') in 0.012376 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000294 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '91648567249dd4a9a4bae38f3ab7ebd4') in 0.013655 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 18.712589 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce5545208d7eefc4cb3b0961fc35135a') in 0.011388 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.961484 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '24be358f138be85da964fb3741172f6d') in 0.024666 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.196027 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1122df4040393a73d65e2f92befbce6c') in 0.011814 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.961698 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'dfdc5d25ff759fc862fda92026a48035') in 0.019166 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 3.475687 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7261fd23ac13e3f42f22d021f65fd744') in 0.021480 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.952963 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '715a546ef2069d62ed5389dcde354a45') in 0.015797 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 60.220144 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '44eed6c2130b3a0cb5992fae6d96d52e') in 0.027042 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.355484 seconds.
-  path: Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab
-  artifactKey: Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Naninovel/Prefabs/ChoiceHandlers/ChoiceHandlerButton.prefab using Guid(42edc7aecc2c80841908c954370cb307) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '08eb7759c4927877bee98633d8a0f96c') in 0.012684 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 165.710699 seconds.
-  path: Assets/Ink/Partita_2nd_Draft.ink
-  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2a4c00f3ae866c77a67ce8da1657a5d0') in 0.017356 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 2.017707 seconds.
+  Time since last request: 0.000331 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9a768a51f6e5a0705ee63f1e84405010') in 0.016779 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '75e7ec4ba568aebc6429438aaa7b67db') in 0.013256 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 361.696453 seconds.
+  Time since last request: 45.373130 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '52004e616cac0db2c8922d6cfa966249') in 0.012714 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 7.489089 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '510d85334459df4f5e495dfcc7c63643') in 0.042655 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 22.511011 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '19ebc29cf166afd8a3856615ebd3a98a') in 0.012192 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.501983 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '64df31d1d510c9efb39835edde4ec759') in 0.014863 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.655722 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a128fb6cb82c1de774e87f85e6b33a8c') in 0.024790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.588049 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'cb9a64a084d8b5e2db9751750eac8e4c') in 0.014014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.789006 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4596b33ad4ded28b585ce3062ea44e7b') in 0.012060 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 4.201448 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'cb79e5810c256b3604c0f53f71cb4c72') in 0.013526 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.426650 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '71519796fb56223f5e7c501b65d56829') in 0.013743 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 26.322398 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '727947fa0b6a87a8c83bcbf29bcb34a1') in 0.011902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.199979 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4a4e57772cceba2b0175cde75a9882f8') in 0.016014 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 2.002913 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'beb9a451a91f86105c6acb44287b917f') in 0.013739 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 12.283035 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c01d49bab66c099b1c025dd5b45f08a5') in 0.014027 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 31.279069 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '435c9508b0eb05327c4f5bda9406288b') in 0.011669 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.876249 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '350583968404b0f9d00068d027ecbd0c') in 0.013321 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 23.996569 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '89e5fc113b187f9e4cabe35f318b84dc') in 0.010348 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 9.852277 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9ba8b05dbd04ea618be9833c7d3d1f3') in 0.011959 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 39.121423 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a4cad81a1bc3c418079e95dad76b5766') in 0.015367 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 16.367402 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd678c2dd4180dc4152935286f96e1f6e') in 0.014420 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 18.899171 seconds.
+  path: Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab
+  artifactKey: Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Naninovel/Prefabs/FX/SnowHeavy.prefab using Guid(22c512d367684b848825ff35c7322dbd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1c679e9508f98f1a03021150b09fb833') in 0.017967 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 102.645310 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '235720d2d383e83abdcd463e1a3773af') in 0.017440 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd8838e253d4d45ea0bfe6c6b6fc56831') in 0.016162 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000352 seconds.
+  Time since last request: 0.000364 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a672b381915f112a88aeeffc0381c874') in 0.021853 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3c659709f201b8b544eae04700b9d85e') in 0.014315 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 8.844974 seconds.
+  Time since last request: 122.015588 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '63a4d8be2e71581fc1b21b00254b5e02') in 0.018109 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '3f1ce97debf6f93a405b979b99b162c4') in 0.014145 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000511 seconds.
+  Time since last request: 0.000275 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '11fbfd91740dab0e619dfd9e10c84b30') in 0.016900 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '30fc308acab5befeea13654644ea6cac') in 0.014111 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 80.069239 seconds.
+  Time since last request: 106.229740 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b3d1e3fa1e31cc1b743462e5989fb481') in 0.014942 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c0db06ce7611d0c549684f813cec5da2') in 0.014570 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000303 seconds.
+  Time since last request: 0.000411 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5228e4bd16f23524c0ba931dc0b00c57') in 0.026135 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b5064217c93f74429dee097256ce88e8') in 0.014655 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 148.242909 seconds.
+  Time since last request: 624.453114 seconds.
+  path: Assets/Art/ezgif.com-gif-maker.mp4
+  artifactKey: Guid(d33ff32856efc5945ba07e48f45313ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/ezgif.com-gif-maker.mp4 using Guid(d33ff32856efc5945ba07e48f45313ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '5ae73855c93c19c491d9fbab5fa5f8e8') in 0.020532 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.423212 seconds.
+  path: Assets/Art/Movies
+  artifactKey: Guid(e09e40c6a13affc4eaac5f4d3de36530) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Movies using Guid(e09e40c6a13affc4eaac5f4d3de36530) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a1ee0e14355bad1ad361a5fea760a425') in 0.018707 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.386250 seconds.
+  path: Assets/Art/Movies/Intro.mp4
+  artifactKey: Guid(d33ff32856efc5945ba07e48f45313ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Art/Movies/Intro.mp4 using Guid(d33ff32856efc5945ba07e48f45313ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '900e2971c9b59dd53c9972fdbe6eb33d') in 0.023777 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 262.828426 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '661390a724ba1188b88a54ffa385b1e3') in 0.014920 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c2567de0070bbbd6672be730778ec18c') in 0.014748 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000467 seconds.
+  Time since last request: 0.000268 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a902eeb0f5b99108fc3a1321608830d6') in 0.018798 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'c1c26dc7ce3cc1f20c0b0323976d5a43') in 0.014059 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 23.474413 seconds.
+  Time since last request: 34.944264 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '11b4b29ac19de066398a51b0aa7e031c') in 0.011398 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '21ca04af17eeacc427b4a2aed7e4d902') in 0.024938 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000247 seconds.
+  Time since last request: 0.000371 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ea9400865f341a976be7560822e0e978') in 0.013141 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fe7fd5fbb4886e1c2b97f5843958f78e') in 0.025670 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 49.441029 seconds.
+  Time since last request: 26.514527 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '804d13c4959e24d63f31f3d338de8589') in 0.017511 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '906ba3fe6b12abb069c657c1553ff965') in 0.014536 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000303 seconds.
+  Time since last request: 0.000283 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'f6e53e41485d41496b8a7bafae446c23') in 0.018491 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b1587e11e0a83dc2e2ce7bec6ec0658a') in 0.016802 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 145.967170 seconds.
+  Time since last request: 130.815498 seconds.
   path: Assets/Ink/Partita_2nd_Draft.ink
   artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '441e4b8d87a8f06f866ea854c24b9c55') in 0.022559 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2bd069ead1ff66b6d3e9dd44e6f3f765') in 0.014408 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000365 seconds.
+  Time since last request: 0.000282 seconds.
   path: Assets/Ink/Partita_2nd_Draft.json
   artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e9c4c06dcaef027e5ffdded107a9b9f1') in 0.019029 seconds 
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'd6214667c35a5bad0683c65ab74d4dad') in 0.014918 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 794.354154 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '9cc1b8b92891a2501762c5317b08daff') in 0.019134 seconds 
+  Time since last request: 74.205580 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '20d3d24aeb3dd09cb1485713c865dd6c') in 0.013553 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 51.060671 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'db3f89d9563b1535f9fbc8157522e83b') in 0.015335 seconds 
+  Time since last request: 0.000318 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4e4e07cd25e3ab296f62022b4f412b42') in 0.013620 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.005098 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8871f7c7c82e0433761ab25600c93ab6') in 0.014242 seconds 
+  Time since last request: 121.521957 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '35d87bf0788ae44e2a7edfec420251d8') in 0.016188 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.640827 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '86aa35ecaab55539a796c228af92dc29') in 0.015390 seconds 
+  Time since last request: 0.000315 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '708018544b60a6c5aff71e1a676c9244') in 0.015698 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 123.270058 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ac062fd6dc77c065fbec38439c6c3a8a') in 0.015009 seconds 
+  Time since last request: 25.975764 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '02cfa523b3dc4569c5be3877f4881875') in 0.014352 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 7.106471 seconds.
-  path: Assets/NewTMProWidePrinter.prefab
-  artifactKey: Guid(02c6bf5f57a89584d8d8fcb8adb4f076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewTMProWidePrinter.prefab using Guid(02c6bf5f57a89584d8d8fcb8adb4f076) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a672d0668faea7bae8fac9518ec838a5') in 0.123262 seconds 
+  Time since last request: 0.000300 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e6a278b44ab6247c05bfa43254d07030') in 0.015077 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.530907 seconds.
-  path: Assets/NewDialoguePrinter.prefab
-  artifactKey: Guid(5ea7d4833f5aece409b3afdf92c66389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewDialoguePrinter.prefab using Guid(5ea7d4833f5aece409b3afdf92c66389) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd7af1f981cafeb796c1f16af113323b') in 0.019768 seconds 
+  Time since last request: 34.723272 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ad06aff4575068bf6d4124eaca31ec3f') in 0.013574 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 57.752726 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '1f1a92ee828a9c55cb5fc37159cc9fa5') in 0.014353 seconds 
+  Time since last request: 0.000279 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ad6311d355a8ad8a7867820e73c17654') in 0.015625 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 5.006675 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8f7d571d6d09431791a7624084d7c267') in 0.014858 seconds 
+  Time since last request: 97.715841 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'beb0bc325e1817be23b55766e2a54267') in 0.011416 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 2.182858 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'b848f62ae8c4b4813edb19292dc819f6') in 0.013565 seconds 
+  Time since last request: 0.000280 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4056a7e72236fa3b24ecb420b876341f') in 0.013620 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.415602 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '493f0ebb985f8ee873d993b9d12db3bd') in 0.014797 seconds 
+  Time since last request: 307.583991 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.ink
+  artifactKey: Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.ink using Guid(7b378b7c75bfcee4fba48125582cc507) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '57e39f0d74ba3a7e73a46d471c57718f') in 0.012966 seconds 
 ========================================================================
 Received Import Request.
-  Time since last request: 3.985783 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bac29071cfe720ccb7362cb33d8913f1') in 0.017673 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 12.726529 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'bc7f33c6466807329d042d680b932894') in 0.014224 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 21.589876 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '437ed89b1aa61d3a49798412b81017ff') in 0.011466 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 715.276941 seconds.
-  path: Assets/Scripts/Narrative/Chapter2.nani
-  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6302fc9776d680c6f22c9006f9bddec9') in 0.063883 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.685153 seconds.
-  path: Assets/Scripts/Narrative/Chapter2.nani
-  artifactKey: Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts/Narrative/Chapter2.nani using Guid(1eb7f6bf86f16f246bb6de333b182ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '10e39a5996adc3b70bd165be6d339a42') in 0.014619 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1066.270690 seconds.
-  path: Assets/Art/Characters/Placeholder/Protagonist.png
-  artifactKey: Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Protagonist.png using Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '219679e90afceed8adb42b7dcf809f84') in 0.035751 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.963036 seconds.
-  path: Assets/Art/Characters/Placeholder/Protagonist.png
-  artifactKey: Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Protagonist.png using Guid(68aed0b4e68dcf94194a793867fb4b1c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '34ed4fdb47a808e8727cb90def9f9387') in 0.028106 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 24.588952 seconds.
-  path: Assets/Art/Characters/Placeholder/pasha.png
-  artifactKey: Guid(836bbdb377de56646b5ed50807ce8591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/pasha.png using Guid(836bbdb377de56646b5ed50807ce8591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6030e1358eaeeae8c6fe0f2407cf680f') in 0.028256 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.923902 seconds.
-  path: Assets/Art/Characters/Placeholder/pasha.png
-  artifactKey: Guid(836bbdb377de56646b5ed50807ce8591) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/pasha.png using Guid(836bbdb377de56646b5ed50807ce8591) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '4b0427dc24031bff7e773f938990ec10') in 0.029991 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.937115 seconds.
-  path: Assets/Art/Characters/Placeholder/Pasha.png
-  artifactKey: Guid(836bbdb377de56646b5ed50807ce8591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Pasha.png using Guid(836bbdb377de56646b5ed50807ce8591) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42aeb367d6a78b0fdd5de0612f0a773d') in 0.021398 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.946579 seconds.
-  path: Assets/Art/Characters/Placeholder/Pasha.png
-  artifactKey: Guid(836bbdb377de56646b5ed50807ce8591) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Pasha.png using Guid(836bbdb377de56646b5ed50807ce8591) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '2a820c3707adf403b6b94fdc5844c3fa') in 0.034170 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.698247 seconds.
-  path: Assets/Art/Characters/Placeholder/Vera.png
-  artifactKey: Guid(49c043073cb85794d9cf948a7aac70bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Vera.png using Guid(49c043073cb85794d9cf948a7aac70bd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca073ef8bbf82952c5c3828b72db0c1a') in 0.025824 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.993579 seconds.
-  path: Assets/Art/Characters/Placeholder/Vera.png
-  artifactKey: Guid(49c043073cb85794d9cf948a7aac70bd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Vera.png using Guid(49c043073cb85794d9cf948a7aac70bd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '61e084fbc965dac45b2d4e8aad67ce2a') in 0.018450 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.914156 seconds.
-  path: Assets/Art/Characters/Placeholder/Millia.png
-  artifactKey: Guid(a0993a0b9fea51045bd2d723c45cb6c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Millia.png using Guid(a0993a0b9fea51045bd2d723c45cb6c0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '911883ef758832967c016a680dd817e3') in 0.022606 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.986231 seconds.
-  path: Assets/Art/Characters/Placeholder/Millia.png
-  artifactKey: Guid(a0993a0b9fea51045bd2d723c45cb6c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Millia.png using Guid(a0993a0b9fea51045bd2d723c45cb6c0) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'e2b82c4eff58e40900f8ca7b5d42fc37') in 0.023880 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 9.804424 seconds.
-  path: Assets/Art/Characters/Placeholder/Zakhar.png
-  artifactKey: Guid(ff2091662c5a7f048a3223840a0aef9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Zakhar.png using Guid(ff2091662c5a7f048a3223840a0aef9e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a628bedd5f20b6e9e141b72cd0b9e9f2') in 0.019855 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 1.005616 seconds.
-  path: Assets/Art/Characters/Placeholder/Zakhar.png
-  artifactKey: Guid(ff2091662c5a7f048a3223840a0aef9e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Zakhar.png using Guid(ff2091662c5a7f048a3223840a0aef9e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '66b70860c4da73ec3840a0f06e213fb1') in 0.021817 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.204614 seconds.
-  path: Assets/Art/Characters/Placeholder/Stephan.png
-  artifactKey: Guid(66433bf975a379f47a2f851b3dfaa9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Stephan.png using Guid(66433bf975a379f47a2f851b3dfaa9f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e659308222e6792c1472f091bfd471b2') in 0.022696 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.964547 seconds.
-  path: Assets/Art/Characters/Placeholder/Stephan.png
-  artifactKey: Guid(66433bf975a379f47a2f851b3dfaa9f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Stephan.png using Guid(66433bf975a379f47a2f851b3dfaa9f8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6980339d004e164d248b6702f189c9cc') in 0.022465 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 163.481601 seconds.
-  path: Assets/Art/Characters/Placeholder/Protagonist Wife.png
-  artifactKey: Guid(6da21e7dea9d5c6489fb29cd0caf85d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder/Protagonist Wife.png using Guid(6da21e7dea9d5c6489fb29cd0caf85d4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e9cb863038341fa09b87fc5c006677b') in 0.045421 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.923625 seconds.
-  path: Assets/Art/Characters/Placeholder/Protagonist Wife.png
-  artifactKey: Guid(6da21e7dea9d5c6489fb29cd0caf85d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Characters/Placeholder/Protagonist Wife.png using Guid(6da21e7dea9d5c6489fb29cd0caf85d4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'ec2d0c54465c5e17b87c037b36bf9111') in 0.026733 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.410014 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset
-  artifactKey: Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/CharactersConfiguration.asset using Guid(50448706339b9ae41baf64063e0a2a72) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '7f9781c5cbb3c3530b09d1403802028b') in 0.023910 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000307 seconds.
-  path: Assets/NaninovelData/EditorResources.asset
-  artifactKey: Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/EditorResources.asset using Guid(8e60152ecea5e92448d403458404ae0e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'a6a8c901c5c7cf12a5200fc3f317222a') in 0.015142 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/NaninovelData/Resources/Naninovel/Configuration/ChoiceHandlersConfiguration.asset
-  artifactKey: Guid(20e6c52ee68a76f4285aac64cf26d0b5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/NaninovelData/Resources/Naninovel/Configuration/ChoiceHandlersConfiguration.asset using Guid(20e6c52ee68a76f4285aac64cf26d0b5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'fd180e436a9e0b603d9c6d7b07ced0cb') in 0.020876 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 7.978727 seconds.
-  path: Assets/Art/Characters/Placeholder
-  artifactKey: Guid(d7f8af07eb5a58440964b1be3146a0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Characters/Placeholder using Guid(d7f8af07eb5a58440964b1be3146a0b1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ad1dd625d650ef244f2d45382681b8fd') in 0.008057 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.136542 seconds.
-  path: Assets/Art/Backgrounds/Placeholder
-  artifactKey: Guid(db69a76011e20ef429d2c9568f721260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/Placeholder using Guid(db69a76011e20ef429d2c9568f721260) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69f128e8dfad5d49e0078d3ec8fdbaf1') in 0.007271 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.953675 seconds.
-  path: Assets/Art/Backgrounds/Placeholder
-  artifactKey: Guid(db69a76011e20ef429d2c9568f721260) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/Placeholder using Guid(db69a76011e20ef429d2c9568f721260) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '8a54c9ccf8d47a1c4a9217d45ba45149') in 0.015815 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.437266 seconds.
-  path: Assets/Art/Backgrounds/Placeholder/Layered
-  artifactKey: Guid(634689f5713dbdb40ac6c3f8a728c7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/Placeholder/Layered using Guid(634689f5713dbdb40ac6c3f8a728c7ab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e7954c4950ec2924e3f3960b872f1a93') in 0.009340 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.943390 seconds.
-  path: Assets/Art/Backgrounds/Placeholder/Layered
-  artifactKey: Guid(634689f5713dbdb40ac6c3f8a728c7ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/Placeholder/Layered using Guid(634689f5713dbdb40ac6c3f8a728c7ab) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: 'eae725185f9d21ef70ab20d9576dda8e') in 0.019339 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 6.403222 seconds.
-  path: Assets/Art/User Interface
-  artifactKey: Guid(a6cc55013518dd449b5d71992ee6dfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/User Interface using Guid(a6cc55013518dd449b5d71992ee6dfcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'af2dcc0e592d44f9d6a414ad327a7f72') in 0.011185 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 15.044588 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_2_b.png
-  artifactKey: Guid(cecef74c3084e2c4598ed792cf4d5513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_2_b.png using Guid(cecef74c3084e2c4598ed792cf4d5513) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '348237381d50ca86000fa6fef59f902c') in 0.024974 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.564507 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_2_a.png
-  artifactKey: Guid(222ef49e8baef734cb51da88dfc2c61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_2_a.png using Guid(222ef49e8baef734cb51da88dfc2c61a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f84222574435330eeda939c6f784b8ee') in 0.022131 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 8.551418 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_2_g.jpg
-  artifactKey: Guid(a620052b58f440a4fa73122e337c9505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_2_g.jpg using Guid(a620052b58f440a4fa73122e337c9505) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3f75b22b63e6358732cc9a6045f346c') in 0.024101 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.593152 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_2_c.png
-  artifactKey: Guid(708e348ba9e6ea14cb7c762a73789e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_2_c.png using Guid(708e348ba9e6ea14cb7c762a73789e67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38a13a1f9b411683301ff810095e7df3') in 0.023798 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 4.258484 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_1_g.jpg
-  artifactKey: Guid(1f4f7bfbb0a36cb4ba6ea37d5d94a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_1_g.jpg using Guid(1f4f7bfbb0a36cb4ba6ea37d5d94a276) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4e6e8a10b72e37c4cb22e29982262efb') in 0.021431 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.381372 seconds.
-  path: Assets/Art/Backgrounds/bs_2/bs_1.PNG
-  artifactKey: Guid(c2a6a64b12eaa8e46ae3dbe4eab2c143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bs_2/bs_1.PNG using Guid(c2a6a64b12eaa8e46ae3dbe4eab2c143) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b3a76305cd0644a124571250fc2ce7ff') in 0.022016 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 34.956249 seconds.
-  path: Assets/Art/Backgrounds/Placeholder/New Folder
-  artifactKey: Guid(d5fdc91b183884e4d8f0214d9362ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/Placeholder/New Folder using Guid(d5fdc91b183884e4d8f0214d9362ebf0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4bfef9a409db0352084199bd5099b1be') in 0.009700 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 10.702894 seconds.
-  path: Assets/Art/Backgrounds/Placeholder/Layered/Bus Stop 2
-  artifactKey: Guid(d709fccdc647f604894f39b098231643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/Placeholder/Layered/Bus Stop 2 using Guid(d709fccdc647f604894f39b098231643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '02951e8c0dd618bdd393393287f209d7') in 0.009777 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 22.880577 seconds.
-  path: Assets/Art/Backgrounds/Placeholder/Bus Stop 2
-  artifactKey: Guid(d709fccdc647f604894f39b098231643) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
-Start importing Assets/Art/Backgrounds/Placeholder/Bus Stop 2 using Guid(d709fccdc647f604894f39b098231643) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '301cf9abf8fba144091ff93cff61385f') in 0.017544 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.989695 seconds.
-  path: Assets/Art/Backgrounds/bus_stop2.prefab
-  artifactKey: Guid(bb526a2a6d4732d44876b65a86b8c1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Art/Backgrounds/bus_stop2.prefab using Guid(bb526a2a6d4732d44876b65a86b8c1b6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f918086f018c16e9e1908273c52edaf') in 0.077035 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 14.784849 seconds.
-  path: Assets/Scripts
-  artifactKey: Guid(cd267a5c04b179c4392fd6a394342a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scripts using Guid(cd267a5c04b179c4392fd6a394342a27) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8feb9fb096fb0fe698429b6a44848aff') in 0.009539 seconds 
-========================================================================
-Received Import Request.
-  Time since last request: 0.419632 seconds.
-  path: Assets/NewButtonListChoiceHandler.prefab
-  artifactKey: Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/NewButtonListChoiceHandler.prefab using Guid(be64294fec19cf34dbbbd995f2f9179f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1bb8677de5f57a6f2ac3ec6740f95cd8') in 0.013905 seconds 
-AssetImportWorkerClient::OnTransportError - code=2 error=End of file
+  Time since last request: 0.000289 seconds.
+  path: Assets/Ink/Partita_2nd_Draft.json
+  artifactKey: Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Ink/Partita_2nd_Draft.json using Guid(3829383adfcc7834d9b235504d580872) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)  -> (artifact id: '6cfeb07b1538e17e16cd61c91af5e74e') in 0.013461 seconds 

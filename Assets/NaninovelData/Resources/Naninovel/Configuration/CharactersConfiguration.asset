@@ -82,8 +82,8 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
-      DisplayName: 
+      BakedLookDirection: 2
+      DisplayName: Millia
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
@@ -126,7 +126,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: 
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -161,7 +161,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: Stephan
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -205,7 +205,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: Pascha
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -249,8 +249,8 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
-      DisplayName: 
+      BakedLookDirection: 2
+      DisplayName: Zakhar
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
@@ -284,8 +284,8 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
-      DisplayName: 
+      BakedLookDirection: 2
+      DisplayName: You
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
