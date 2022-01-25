@@ -62,7 +62,7 @@ MonoBehaviour:
     Resources:
     - Name: ButtonList
       PathPrefix: ChoiceHandlers
-      Guid: 1f6aa29000e839c409e6a9c0704adc96
+      Guid: be64294fec19cf34dbbbd995f2f9179f
   - Id: ChoiceHandlers/29dafd1f-87b0-4bed-8160-11f9cd0543a9
     Resources:
     - Name: ButtonArea
@@ -177,14 +177,14 @@ MonoBehaviour:
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
     Resources:
-    - Name: busstop1
+    - Name: MainBackground
       PathPrefix: Backgrounds/MainBackground
       Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
     - Name: Default
-      PathPrefix: Backgrounds/MainBackground
-      Guid: 1f4f7bfbb0a36cb4ba6ea37d5d94a276
+      PathPrefix: Characters/Stephan
+      Guid: 66433bf975a379f47a2f851b3dfaa9f8
   - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
     Resources:
     - Name: Default
@@ -197,9 +197,21 @@ MonoBehaviour:
       Guid: a0993a0b9fea51045bd2d723c45cb6c0
   - Id: CharacterAvatars
     Resources:
-    - Name: Millia
+    - Name: ProtagAvatar
       PathPrefix: CharacterAvatars
-      Guid: a0993a0b9fea51045bd2d723c45cb6c0
-    - Name: Protag
-      PathPrefix: CharacterAvatars
+      Guid: 68aed0b4e68dcf94194a793867fb4b1c
+  - Id: Backgrounds/60d16735-5890-40a7-b5cb-a7f83817e842
+    Resources:
+    - Name: Chapter2BusStop
+      PathPrefix: Backgrounds
+      Guid: bb526a2a6d4732d44876b65a86b8c1b6
+  - Id: ChoiceHandlers/1a2e6485-26d7-4a03-b9a5-2781bc98adcc
+    Resources:
+    - Name: fostyle
+      PathPrefix: ChoiceHandlers
+      Guid: be64294fec19cf34dbbbd995f2f9179f
+  - Id: Characters/58537df7-284f-4e4e-8aa2-2629b881617b
+    Resources:
+    - Name: Default
+      PathPrefix: Characters/Protag
       Guid: 68aed0b4e68dcf94194a793867fb4b1c

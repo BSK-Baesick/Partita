@@ -1,7 +1,8 @@
-/ ART A silhouette of two figures huddled over a fire in the snow.
+// ART A silhouette of two figures huddled over a fire in the snow.
 ///@back Campfire
 ///@sfx Burning Bonfire + Snow Fall + Night Ambient Music
-Winter curls around your ankles, biting at the flame that binds you.
+
+/Winter curls around your ankles, biting at the flame that binds you.
 
 "It's time to go."
 
@@ -51,7 +52,7 @@ You embrace.
 //Fade into 1st Bus Station.
 @startTrans
 @back busstop1
-//; insert bgm here
+// insert bgm here
 @finishTrans CircleReveal
 =Chapter1
 /ART 1st Bus Station. 
@@ -332,12 +333,13 @@ You press the letter to your chest. Holding it tightly in place against the wint
     She sleeps.
     You turn towards the coming bus.
     ->Chapter2
-
+    
 =Chapter2
-//@back bs_2_g
+@back id:Chapter2BusStop
 The road is long and monotonous. Grey snow falls against a dull backdrop. Faint hints of color splash amidst the skyline and before you know it, the ride is over.
 
-@char Stephan
+@printer Wide
+@char Stephan look:right
 As you press on to sleeted ground, a man waits nearby. Older, but not elder, he's frail if not determined in demeanor. Grey eyes seem to glance towards you, then behind you to the closing door. 
 
 As the bus departs, his gaze follows. 
@@ -346,7 +348,8 @@ In one hand he holds a slowly burning cigar. In the other, a letter.
 
 Your letter.
 
-I think that might be for me."
+@char Protag look:left avatar:ProtagAvatar
++I think that might be for me.
 Weary eyes smile at you.
 STEPHAN: "I think you might be correct."
 He extends the letter out towards you. You take it, nestling it inside your coat.
@@ -360,18 +363,18 @@ You take it. Nestling it inside your coat.
 ->MindIfIAskWho
 + {TakeTheRifle} Train your rifle on him.
 His arms fly upwards, eyes full of fear. The letter dangles gently from one hand, as smoke rises from the cigar in the other.
-    +Drop it."
+    ++Drop it.
     STEPHAN: "I haven't opened it."
     His voice is tired.
     STEPHAN: "I thought it was for me."
-        ++It's not."
+        +++It's not.
         A wry, forced smile. 
         STEPHAN: "I know."
-            +++Drop. It."
+            ++++Drop. It.
         He drops the letter. His hands remain pressed toward the sky.
-            ++++Grab the letter.
+            +++++Grab the letter.
         You rush forward and swipe the letter from his hands.
-        ++Drop. It."
+        +++Drop. It.
         He drops the letter. 
         His hands remain pressed toward the sky.
         You rush forward and swipe it from the snow.
@@ -379,7 +382,7 @@ His arms fly upwards, eyes full of fear. The letter dangles gently from one hand
     He winces at the approach.
         +++Grab the letter.
         You rush forward and swipe the letter from his hands.
-        ++Give me the letter."
+        +++Give me the letter.
         He holds a palm out towards you. It trembles in the cold.
         You walk forward, rifle still trained as you swipe the letter from his palms.
         - ->IDontWantTrouble
@@ -387,9 +390,9 @@ His arms fly upwards, eyes full of fear. The letter dangles gently from one hand
 
 =IDontWantTrouble
 STEPHAN: "I don't want trouble."
-Sorry. Tense."
++Sorry. Tense.
 STEPHAN: "Tense times. Can hardly blame you."
-Neither do I."
++Neither do I.
 STEPHAN: "And so we've reached an accord. No bullets then?"
 He chuckles to himself, vaguely masking a residual fear.
 +Look away.
@@ -399,15 +402,15 @@ STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too 
 =MindIfIAskWho
 His eyes laze towards the letter.
 STEPHAN: "Mind if I ask who?"
-    +..."
+    +...
     STEPHAN: "I understand."
     ->AndYou
-    +I shouldn't say."
+    +I shouldn't say.
     STEPHAN: "I understand."
     ->AndYou
-    +A lover."
+    +A lover.
     STEPHAN: "A secret lover!"
-        ++That or dead."
+        ++That or dead.
         His tone softens.
         STEPHAN: "Ah."
         His face hardens.
@@ -418,9 +421,9 @@ STEPHAN: "Mind if I ask who?"
         ->South
         
 =South  
-..."
++...
 ->YouSmoke
-+I shouldn't..."
++I shouldn't...
 ->YouSmoke 
 Through Abkhazia. Then on to Turkey. I have family there."
 STEPHAN: "Rough road. Suppose they all are right now."
@@ -431,17 +434,17 @@ The man glances towards your face for a moment. He nods and smiles.
 STEPHAN: "Sorry. I'll drop it."
 He leans back, head to the sky, dragging in a mound of smoke off the end of his cigar before exhaling. You watch it dance against the fog.
 STEPHAN: "You smoke?"
-    +No."
+    +No.
     STEPHAN: "Ah."
     He presses the cigar down against his coat.
     STEPHAN: "Sorry about that."
     ->AndYou
-    +No. Thank You."
+    +No. Thank You.
     STEPHAN: "Ah."
     He presses the cigar down against his coat.
     STEPHAN: "Sorry about that."
     ->AndYou
-    +I do."
+    +I do.
     Cigar in mouth, he flicks open a small box from his trouser pocket. From inside his coat he removes a lighter and strikes a light. 
     "Here. Take the edge off."
     You take the cigar and inhale. There's comfort in the heat.
@@ -457,29 +460,29 @@ STEPHAN: "My son."
 
 - STEPHAN: "They're not coming through."
 
-Sorry for your loss."
++Sorry for your loss.
 STEPHAN: "Oh they're not dead. Least I hope not."
-Sorry."
++Sorry.
 STEPHAN: "Don't be. My own damn fault."
 
 - STEPHAN: "You have a child that outruns the world and sometimes you just can't keep up. Sometimes you just say terrible things. I don't blame them for running off.  Gifted kid. Musical too. Brilliant bassist, I hate that instrument but God they were good. I just hope they're ok. Last I heard was Moscow. That was years ago."
-City for the strays."
++City for the strays.
 STEPHAN: "Sounds like them."
-I lived there. Before all this."
++I lived there. Before all this.
 STEPHAN: "Ah! Wouldn't have guessed."
  - A cold breeze rushes past you and wind whips powdered snow around your feet.
  STEPHAN: "Ahhh. I guess we're done for the day."
- I've got a bus to catch."
+ +I've got a bus to catch.
  STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover."
- It was nice to meet you."
+ +It was nice to meet you.
  STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Recover."
 - The breeze returns with harsher ambition.
- I appreciate the concern. I'll be ok."
+ +I appreciate the concern. I'll be ok.
  He frowns with furrowed brow.
  STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
  As he goes to leave, he waves with his opposite hand, and you spot fractured stubs on the tips of his fingers. Frostbite.
  ->SoloSnow
- As long as I'm not imposing."
+ +As long as I'm not imposing.
  The man grins. 
  STEPHAN: "Impossible. Come on then."
  ->ThroughTheSnow

@@ -41,6 +41,7 @@ MonoBehaviour:
   Metadata:
     ids:
     - MainBackground
+    - Chapter2BusStop
     metas:
     - Implementation: Naninovel.SpriteBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -70,6 +71,26 @@ MonoBehaviour:
           rotation: {x: 0, y: 0, z: 0, w: 0}
           scale: {x: 0, y: 0, z: 0}
           tintColor: {r: 0, g: 0, b: 0, a: 0}
+    - Implementation: Naninovel.LayeredBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Backgrounds
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 60d16735-5890-40a7-b5cb-a7f83817e842
+      customData:
+        id: 0
+      Pivot: {x: 0.5, y: 0.5}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      CorrectRenderAspect: 1
+      Poses: []
   references:
     version: 1
     00000000:
