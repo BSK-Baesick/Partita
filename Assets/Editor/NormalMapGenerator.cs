@@ -26,8 +26,17 @@ public class NormalMapGenerator : EditorWindow
             {
                 NormalMap(sprite);
                 ShowNotification(new GUIContent("Normal map has been generated"));
-                AssetDatabase.Refresh();
             }
+        }
+
+        GUILayout.Space(15f);
+
+        GUILayout.Label("Click this after generating", EditorStyles.boldLabel);
+
+        if (GUILayout.Button("Refresh Project Window"))
+        {
+            AssetDatabase.Refresh();
+            TextureImport(sprite);
         }
     }
 
@@ -36,5 +45,22 @@ public class NormalMapGenerator : EditorWindow
         string path = AssetDatabase.GetAssetPath(source);
 
         System.Diagnostics.Process.Start(Application.dataPath + "/Editor/LaigterPortable/laigter.exe", "--no-gui -d " + path + " -n");
+    }
+
+    private void TextureImport(Texture2D source)
+    {
+        string path = AssetDatabase.GetAssetPath(source);
+        string filename = path.Replace(source.name, source.name + "_n");
+
+        TextureImporter importer = AssetImporter.GetAtPath(filename) as TextureImporter;
+
+        if (importer == null)
+        {
+            ShowNotification(new GUIContent("Try Again"));
+        } else
+        {
+            importer.textureType = TextureImporterType.NormalMap;
+            importer.SaveAndReimport();
+        }
     }
 }
