@@ -27,7 +27,7 @@ MonoBehaviour:
     Resources:
     - Name: Wide
       PathPrefix: TextPrinters
-      Guid: 781828b806deb1e4cbf50ef9de41da10
+      Guid: 079da135ebd17ea4e971125c02e107f3
   - Id: TextPrinters/059fef48-4961-4935-b8b6-4c639e5a28db
     Resources:
     - Name: Chat
@@ -52,7 +52,7 @@ MonoBehaviour:
     Resources:
     - Name: TMProWide
       PathPrefix: TextPrinters
-      Guid: 7860ef40eae6a3341be02586f7edd980
+      Guid: 02c6bf5f57a89584d8d8fcb8adb4f076
   - Id: TextPrinters/b044f30a-7742-4dba-83ff-3850f033c301
     Resources:
     - Name: TMProBubble
@@ -175,24 +175,16 @@ MonoBehaviour:
       Guid: d459f2db2696fce44af52c7d8bd5e07b
   - Id: Audio
     Resources: []
-  - Id: Backgrounds/c3dfd016-c5af-409a-bcef-81f7b348c0a4
-    Resources:
-    - Name: SamplePrototypeBonfire
-      PathPrefix: Backgrounds/SampleBonfire
-      Guid: 674a0c5f0f88359428aa91366b4db5a3
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
     Resources:
-    - Name: bs_7
+    - Name: busstop1
       PathPrefix: Backgrounds/MainBackground
-      Guid: db25581dc61a522489bd30cb550e8424
-    - Name: bs_8
-      PathPrefix: Backgrounds/MainBackground
-      Guid: 2fd78ca97e6416347abe13bfff0b8b37
+      Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
     - Name: Default
-      PathPrefix: Characters/Stephan
-      Guid: 66433bf975a379f47a2f851b3dfaa9f8
+      PathPrefix: Backgrounds/MainBackground
+      Guid: 1f4f7bfbb0a36cb4ba6ea37d5d94a276
   - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
     Resources:
     - Name: Default
@@ -200,6 +192,14 @@ MonoBehaviour:
       Guid: 836bbdb377de56646b5ed50807ce8591
   - Id: Characters/08064e0c-2f57-4f7e-b7d2-1bf40e4b11fa
     Resources:
-    - Name: 
+    - Name: Millia
       PathPrefix: Characters/Millia
-      Guid: 
+      Guid: a0993a0b9fea51045bd2d723c45cb6c0
+  - Id: CharacterAvatars
+    Resources:
+    - Name: Millia
+      PathPrefix: CharacterAvatars
+      Guid: a0993a0b9fea51045bd2d723c45cb6c0
+    - Name: Protag
+      PathPrefix: CharacterAvatars
+      Guid: 68aed0b4e68dcf94194a793867fb4b1c

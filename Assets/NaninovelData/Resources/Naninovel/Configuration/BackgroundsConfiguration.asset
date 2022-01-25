@@ -18,7 +18,7 @@ MonoBehaviour:
   ZOffset: 100
   ZStep: 0.1
   DefaultMetadata:
-    Implementation: Naninovel.SpriteBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+    Implementation: Naninovel.GenericBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
     Loader:
       PathPrefix: Backgrounds
@@ -41,7 +41,6 @@ MonoBehaviour:
   Metadata:
     ids:
     - MainBackground
-    - SampleBonfire
     metas:
     - Implementation: Naninovel.SpriteBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -62,27 +61,15 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      Poses: []
-    - Implementation: Naninovel.SpriteBackground, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-        Culture=neutral, PublicKeyToken=null
-      Loader:
-        PathPrefix: Backgrounds
-        ProviderTypes:
-        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
-          Culture=neutral, PublicKeyToken=null
-      guid: c3dfd016-c5af-409a-bcef-81f7b348c0a4
-      customData:
-        id: 0
-      Pivot: {x: 0.5, y: 0.5}
-      PixelsPerUnit: 100
-      EnableDepthPass: 1
-      DepthAlphaCutoff: 0.5
-      CustomShader: {fileID: 0}
-      RenderTexture: {fileID: 0}
-      CorrectRenderAspect: 1
-      Poses: []
+      Poses:
+      - name: Default
+        actorState:
+          appearance: bs_7
+          visible: 1
+          position: {x: 0, y: 0, z: 0}
+          rotation: {x: 0, y: 0, z: 0, w: 0}
+          scale: {x: 0, y: 0, z: 0}
+          tintColor: {r: 0, g: 0, b: 0, a: 0}
   references:
     version: 1
     00000000:

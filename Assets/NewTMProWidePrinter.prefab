@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 114653316575572746}
   - component: {fileID: 114172372010645744}
   m_Layer: 5
-  m_Name: TMProWide
+  m_Name: NewTMProWidePrinter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -977,7 +977,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 102, y: 0}
-  m_SizeDelta: {x: 438.3643, y: 438.3643}
+  m_SizeDelta: {x: 570.7059, y: 570.7059}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &6879026029779014326
 CanvasRenderer:

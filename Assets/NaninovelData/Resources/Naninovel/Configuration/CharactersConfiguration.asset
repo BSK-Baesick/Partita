@@ -15,7 +15,7 @@ MonoBehaviour:
   DefaultEasing: 1
   AutoShowOnModify: 1
   SceneOrigin: {x: 0.5, y: 0}
-  ZOffset: 50
+  ZOffset: 0
   ZStep: 0.1
   AutoArrangeOnAdd: 1
   DefaultMetadata:
@@ -97,11 +97,11 @@ MonoBehaviour:
       ClipMessageSound: 1
       LinkedPrinter: 
       Poses:
-      - name: 
+      - name: Default
         actorState:
-          appearance: 
+          appearance: default
           visible: 0
-          position: {x: 0, y: 0, z: 0}
+          position: {x: -9.6, y: 0, z: 0}
           rotation: {x: 0, y: 0, z: 0, w: 0}
           scale: {x: 0, y: 0, z: 0}
           tintColor: {r: 0, g: 0, b: 0, a: 0}
