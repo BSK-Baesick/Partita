@@ -1,4 +1,6 @@
-#CHAPTER4
+# CHAPTER4
+@back bs_8
+@char Pascha scale:1.2
 PASCHA: "Drugs?"
 "Nothing that interesting."
 PASCHA: "I beg to differ. In fact I'd be more interested if it wasn't drugs. So now, I am thus, "more interested"."
@@ -9,9 +11,9 @@ PASCHA: "Read it to me?"
 "No."
 PASCHA: "Pleaaaase?"
 @choice "Are you high?" goto:.SCENE_1
-@choice "Fine" goto:.SCENE_2
+@choice Fine goto:.SCENE_2
 @stop
-#SCENE_1
+# SCENE_1
 "Are you high?"
 PASCHA: "I fucking wish, my dear. Now come, you sweet summer thing. Why not spill secrets with a stranger?"
 "Fine."
@@ -31,7 +33,7 @@ PASCHA: "Anyway. Your turn!"
 @choice "Let them go" goto:.SCENE_4
 @stop
 
-#SCENE_2
+# SCENE_2
 "I don't even know you."
 PASCHA: "Nor I you, you sweet summer thing. Why not spill secrets with a stranger?"
 "Fine."
@@ -50,7 +52,7 @@ PASCHA: "Anyway. Your turn!"
 @choice "Let them go" goto:.SCENE_4
 @stop
 
-#SCENE_3
+# SCENE_3
 PASCHA: "I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
 "I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
 PASCHA: "Truly, we are kin. Bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover, one not fuckwitted enough to get caught in Moscow of all places."
@@ -77,7 +79,7 @@ PASCHA: Truly a real cunt of a man.
 PASCHA: "Thank-you."
 @goto .Chapter5
 @stop
-#SCENE_4
+# SCENE_4
 "I'm about to cross in Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
 PASCHA: "Truly, we are kin. Bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover, one not fuckwitted enough to get caught in Moscow of all places."
 "I'm sorry."
