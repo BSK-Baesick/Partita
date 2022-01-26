@@ -22,5 +22,5 @@ MonoBehaviour:
   AllowAddressableInEditor: 0
   ExtraLabels: []
   LocalRootPath: '%DATA%/Resources'
-  VideoStreamExtension: .mp4
+  VideoStreamExtension: .webm
   ProjectRootPath: Naninovel
