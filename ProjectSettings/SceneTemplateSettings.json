@@ -38,13 +38,6 @@
         },
         {
             "userAdded": false,
-            "type": "UnityEngine.Cubemap",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
-        },
-        {
-            "userAdded": false,
             "type": "UnityEngine.GameObject",
             "ignore": false,
             "defaultInstantiationMode": 0,
@@ -56,13 +49,6 @@
             "ignore": false,
             "defaultInstantiationMode": 0,
             "supportsModification": false
-        },
-        {
-            "userAdded": false,
-            "type": "UnityEngine.LightingSettings",
-            "ignore": false,
-            "defaultInstantiationMode": 0,
-            "supportsModification": true
         },
         {
             "userAdded": false,
