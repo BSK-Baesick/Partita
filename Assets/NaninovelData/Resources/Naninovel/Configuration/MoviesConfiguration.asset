@@ -23,5 +23,5 @@ MonoBehaviour:
   SkipFrames: 1
   FadeDuration: 1
   CustomFadeTexture: {fileID: 0}
-  PlayIntroMovie: 1
+  PlayIntroMovie: 0
   IntroMovieName: Intro
