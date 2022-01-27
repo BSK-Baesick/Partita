@@ -244,7 +244,7 @@ MonoBehaviour:
     Resources:
     - Name: Intro
       PathPrefix: Movies
-      Guid: d33ff32856efc5945ba07e48f45313ae
+      Guid: 24a685274c9a94b62b073652c75028c9
   - Id: Backgrounds/8544b14e-b3dc-49e3-8f83-995d3d25e031
     Resources:
     - Name: BusInterior
