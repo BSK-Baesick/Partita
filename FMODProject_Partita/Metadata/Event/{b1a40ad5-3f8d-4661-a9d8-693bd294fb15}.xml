@@ -115,6 +115,9 @@
 		<relationship name="automationTracks">
 			<destination>{ad1badb9-edf3-4c56-aaa9-d131e40c2347}</destination>
 		</relationship>
+		<relationship name="modules">
+			<destination>{ab6f43d8-edc0-4d80-be8d-27ed8192a402}</destination>
+		</relationship>
 		<relationship name="mixerGroup">
 			<destination>{1fcc3df3-5495-45dd-a8a1-34371c463e06}</destination>
 		</relationship>
@@ -145,6 +148,7 @@
 			<destination>{ea17b0a1-cb5c-4e2f-8ca0-c7474e2c229a}</destination>
 			<destination>{d732dba4-4510-4750-8622-f78683a6300a}</destination>
 			<destination>{efad108b-6fd4-4786-9adc-78822ba745fb}</destination>
+			<destination>{ab6f43d8-edc0-4d80-be8d-27ed8192a402}</destination>
 		</relationship>
 		<relationship name="markers">
 			<destination>{2780e1ec-2cc2-4a14-89ff-6218dacec2f1}</destination>
@@ -196,7 +200,10 @@
 	<object class="MixerBusPanner" id="{46089998-e84e-4d66-b44c-9e1c3f092242}" />
 	<object class="SingleSound" id="{a68fd51c-ae56-44ce-82ac-18b680dedc35}">
 		<property name="length">
-			<value>120</value>
+			<value>116.57142857142864</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{afb3196f-ef7f-4743-b006-18e38128a80c}</destination>
@@ -218,7 +225,10 @@
 	</object>
 	<object class="SingleSound" id="{1b85df31-52c1-4172-8470-7213ed7c6336}">
 		<property name="length">
-			<value>120</value>
+			<value>116.5714285714286</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{48200933-3578-4930-bc5a-2d3f732cb68b}</destination>
@@ -245,7 +255,10 @@
 	</object>
 	<object class="SingleSound" id="{efad108b-6fd4-4786-9adc-78822ba745fb}">
 		<property name="length">
-			<value>120</value>
+			<value>116.5714285714286</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{07927a47-e774-49d8-a7af-b1f44ec22e95}</destination>
@@ -275,7 +288,10 @@
 	</object>
 	<object class="SingleSound" id="{d732dba4-4510-4750-8622-f78683a6300a}">
 		<property name="length">
-			<value>120</value>
+			<value>116.5714285714286</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{46d1d989-c781-4a85-bddd-03421234aa19}</destination>
@@ -303,6 +319,17 @@
 			<destination>{3d0195d2-c673-4704-b7b2-0ded8ece033e}</destination>
 		</relationship>
 	</object>
+	<object class="SingleSound" id="{ab6f43d8-edc0-4d80-be8d-27ed8192a402}">
+		<property name="length">
+			<value>117.42857440476189</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
+		</property>
+		<relationship name="audioFile">
+			<destination>{c3380ee3-5c7c-4ca6-a2ac-dd8894ff3af8}</destination>
+		</relationship>
+	</object>
 	<object class="EventMixerGroup" id="{1fcc3df3-5495-45dd-a8a1-34371c463e06}">
 		<property name="name">
 			<value>Vera</value>
@@ -327,7 +354,10 @@
 	</object>
 	<object class="SingleSound" id="{ea17b0a1-cb5c-4e2f-8ca0-c7474e2c229a}">
 		<property name="length">
-			<value>120</value>
+			<value>116.57142857142857</value>
+		</property>
+		<property name="timelockedOffset">
+			<value>3.4285714285714284</value>
 		</property>
 		<relationship name="audioFile">
 			<destination>{83ea9e7b-4e0c-42c1-bca1-47c03120d766}</destination>
@@ -388,7 +418,7 @@
 	</object>
 	<object class="TempoMarker" id="{e39ddae3-f6c6-4485-98e7-d0ce345341ee}">
 		<property name="position">
-			<value>68.571428571428569</value>
+			<value>65.142857142857139</value>
 		</property>
 		<property name="tempo">
 			<value>210</value>
@@ -405,7 +435,7 @@
 	</object>
 	<object class="LoopRegion" id="{a8e3422c-f1af-45e6-a55e-967676454401}">
 		<property name="position">
-			<value>72</value>
+			<value>68.571428571428569</value>
 		</property>
 		<property name="length">
 			<value>19.714285714285708</value>
