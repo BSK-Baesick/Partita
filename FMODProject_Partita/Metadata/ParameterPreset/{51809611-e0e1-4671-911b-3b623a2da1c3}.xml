@@ -24,15 +24,35 @@
 		<property name="seekSpeed">
 			<value>1.0399999618530273</value>
 		</property>
+		<relationship name="automators">
+			<destination>{d74c0d54-a2fa-493d-a28d-fe42610e9704}</destination>
+		</relationship>
 		<relationship name="modulators">
 			<destination>{207aa067-61fa-420e-8c32-d72fc63039d9}</destination>
+			<destination>{ebfb784c-92dc-460b-9a61-d6c5c34de6d0}</destination>
 		</relationship>
+	</object>
+	<object class="Automator" id="{d74c0d54-a2fa-493d-a28d-fe42610e9704}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
 	</object>
 	<object class="RandomizerModulator" id="{207aa067-61fa-420e-8c32-d72fc63039d9}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>cursorPosition</value>
 		</property>
 		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{ebfb784c-92dc-460b-9a61-d6c5c34de6d0}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="rate">
+			<value>0.0749999955</value>
+		</property>
+		<property name="depth">
 			<value>100</value>
 		</property>
 	</object>
