@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{6444b014-0349-412f-83ed-a6e11f288f7f}">
 		<property name="name">
-			<value>SFX_Stephan_talk</value>
+			<value>minigame_Stephan</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -80,6 +80,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerMaster" id="{ff510bca-1dc2-40aa-b79e-2949973a2da6}">
+		<property name="volume">
+			<value>2.5</value>
+		</property>
 		<relationship name="effectChain">
 			<destination>{412e46af-d690-462d-b9f4-ebc1237e7814}</destination>
 		</relationship>
@@ -133,6 +136,9 @@
 			<destination>{9175182e-a73e-439e-8bba-3bfe1f7c4b83}</destination>
 			<destination>{5d4733e7-1c7c-45ea-865c-69c12af3ebeb}</destination>
 		</relationship>
+		<relationship name="playPercentages">
+			<destination>{0761710c-7cca-4ac8-a0c0-79c0a3f77c69}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{2abcf11a-bb7c-46d8-b561-222dbadbd9a6}" />
 	<object class="MixerBusEffectChain" id="{70a4800e-0120-4b92-85ce-1ab248dc0904}">
@@ -170,6 +176,14 @@
 	<object class="SingleSound" id="{5d4733e7-1c7c-45ea-865c-69c12af3ebeb}">
 		<relationship name="audioFile">
 			<destination>{6438f9aa-955a-4c01-b3e6-99994b56471b}</destination>
+		</relationship>
+	</object>
+	<object class="PlayPercentage" id="{0761710c-7cca-4ac8-a0c0-79c0a3f77c69}">
+		<property name="percentage">
+			<value>5</value>
+		</property>
+		<relationship name="sound">
+			<destination>{9175182e-a73e-439e-8bba-3bfe1f7c4b83}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{7f818c74-a1a6-4cb8-b27d-6c48042e4134}" />

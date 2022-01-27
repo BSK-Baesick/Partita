@@ -142,41 +142,65 @@
 	<object class="MixerBusPanner" id="{44cefa78-b095-48b6-8073-b6d7f12722fc}" />
 	<object class="MixerBusFader" id="{4def6dc5-af2f-4743-b112-ce38ef02fed4}" />
 	<object class="SingleSound" id="{6b4c94fb-4052-4da3-95f4-610fbf6e0e49}">
+		<property name="startOffset">
+			<value>34</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{67c81ec1-4eae-4270-97e6-20853c5645d0}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{e93b5acb-43df-4cf8-94d3-75cfd3f70271}">
+		<property name="startOffset">
+			<value>51</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1e025cdb-fcbf-4afe-ab4c-2428ccff1452}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{511ff9de-142d-49c2-9116-002642faffa4}">
+		<property name="startOffset">
+			<value>59.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{fbab2779-8f43-4abd-83dc-cfc3e9ea9d45}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{4e7e9652-5b01-42ea-ac6b-72c197e05698}">
+		<property name="startOffset">
+			<value>41.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{b3c75f46-9709-48c5-9eff-e6a6d920d68b}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{15792410-11fa-43ff-a2fa-87600c791a1c}">
+		<property name="startOffset">
+			<value>22.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{1b549f1d-2a11-4e63-9292-c5d595874da7}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{7a148717-ac92-4cf1-a57b-97741d0dbeb1}">
+		<property name="startOffset">
+			<value>7.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{932fd66d-1ae7-4b5f-8e15-4d5ffd1832ec}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{41a06037-422d-4bd4-85f9-156842527e83}">
+		<property name="startOffset">
+			<value>11.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{3811c0a6-f8ec-44e7-89d8-29968e6161a9}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{0858d681-0d7e-4d54-995a-5ce67bfe813d}">
+		<property name="startOffset">
+			<value>7.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{65712804-f53d-437f-9491-4863695a5f07}</destination>
 		</relationship>

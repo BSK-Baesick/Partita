@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{1f672673-0339-4b15-9280-ea473c1feb87}">
 		<property name="name">
-			<value>SFX_Protag_talk</value>
+			<value>minigame_Protag</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
@@ -126,8 +126,6 @@
 			<value>1</value>
 		</property>
 		<relationship name="sounds">
-			<destination>{e03843fb-3f74-4b2a-9c9b-fa9740c16106}</destination>
-			<destination>{08205e37-f305-4225-bc13-358bc06955a4}</destination>
 			<destination>{26801082-12ac-4931-b759-75b08bca486e}</destination>
 			<destination>{32f5df63-65e6-4e5f-92e3-ea30f4676b56}</destination>
 			<destination>{6081fd97-4cc7-40a4-872a-dfd13d73b67a}</destination>
@@ -142,16 +140,6 @@
 	</object>
 	<object class="MixerBusPanner" id="{c33a717a-ef4f-41e4-b1db-072863786263}" />
 	<object class="MixerBusFader" id="{cbded61e-faa2-4a13-835c-b7f48a79d451}" />
-	<object class="SingleSound" id="{e03843fb-3f74-4b2a-9c9b-fa9740c16106}">
-		<relationship name="audioFile">
-			<destination>{43c2ea4b-a720-4080-8882-188453b8ac72}</destination>
-		</relationship>
-	</object>
-	<object class="SingleSound" id="{08205e37-f305-4225-bc13-358bc06955a4}">
-		<relationship name="audioFile">
-			<destination>{08314af7-8039-4e2a-bd7e-76bf2be580b5}</destination>
-		</relationship>
-	</object>
 	<object class="SingleSound" id="{26801082-12ac-4931-b759-75b08bca486e}">
 		<relationship name="audioFile">
 			<destination>{2f533f7a-2aff-4040-aa0d-e7c1fd30564e}</destination>

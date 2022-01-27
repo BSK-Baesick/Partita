@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{ecf563c8-2827-4303-a150-ae8d0ce23c75}">
 		<property name="name">
-			<value>heavy snow day</value>
+			<value>SFX_heavy_snow_day</value>
 		</property>
 		<property name="outputFormat">
 			<value>1</value>
