@@ -16,10 +16,22 @@ public class DuetPlayFinishedState : DuetBaseState
     {
         if(duet.turnIndex < duet.turnsAmount)
         {
-            if(duet.isPlayersTurn)
-                duet.SwitchState(duet.playerState);
-            else
-                duet.SwitchState(duet.npcState);
+            switch(duet.turnType[duet.turnIndex])
+            {
+                case 1:
+                    duet.SwitchState(duet.playerState);
+                    break;
+                case 2:
+                    duet.SwitchState(duet.npcState);
+                    break;
+                case 3:
+                    duet.SwitchState(duet.pickChoiceState);
+                    break;
+                default:
+                    Debug.LogError("Invalid State Skipping Turn");
+                    duet.SwitchState(duet.finishedState);
+                    break;
+            }
         }
     }
 

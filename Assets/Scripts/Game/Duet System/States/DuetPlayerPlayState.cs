@@ -12,14 +12,14 @@ public class DuetPlayerPlayState : DuetBaseState
 
     public override void UpdateState(DuetStateManager duet)
     {   
+        //Timer Countdown
         duet.turnTime -= Time.deltaTime;
 
         if(duet.turnTime <= 0)
         {
-            if(duet.buttonPressed == false)
-                duet.score--;
-            
-            duet.turnTime = 0;
+            //buttonMissed
+            /*if(duet.buttonPressed == false)
+                duet.score--;*/ //commented out because we're not implementing score subtraction anymore
             duet.SwitchState(duet.finishedState);
         }
 
@@ -27,7 +27,7 @@ public class DuetPlayerPlayState : DuetBaseState
         {
             //perfect
             duet.buttonPressed = true;
-            duet.score++;
+            duet.score += 5;
         }
     }
 
