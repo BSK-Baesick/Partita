@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{9d2cf79a-d697-4dfd-a533-6350088d086d}">
 		<property name="name">
-			<value>SFX_Pascha_talk</value>
+			<value>minigame_Pascha</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -140,6 +140,9 @@
 			<destination>{e3d2fade-5849-439b-9341-4a203cd55684}</destination>
 			<destination>{e6b424d2-9700-4eb1-8e06-63543b0981ec}</destination>
 		</relationship>
+		<relationship name="playPercentages">
+			<destination>{0556be80-e2b5-4e6d-ac79-22a24b55becd}</destination>
+		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{76d7c4c0-3a2c-4ab8-849e-be8fb1860b01}" />
 	<object class="MixerBusEffectChain" id="{80b63977-adc1-42ce-b6a3-a51dbefb4d25}">
@@ -150,6 +153,9 @@
 	<object class="MixerBusPanner" id="{9d53ecba-c614-4d28-be00-52216c31ecd4}" />
 	<object class="MixerBusFader" id="{d59ae4a6-a1b7-47c1-89ec-6b09a1021826}" />
 	<object class="SingleSound" id="{da76ea32-278e-48a3-b701-13ceee831aa8}">
+		<property name="startOffset">
+			<value>4</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{b28e217c-ecc5-4a10-8fb4-89ea33ba7f58}</destination>
 		</relationship>
@@ -195,11 +201,17 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{e17d7213-eb8d-4d92-81f9-18aa11030e74}">
+		<property name="startOffset">
+			<value>7</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{fe6c3a6a-7c83-4513-bea3-6f345a78e56b}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{84c2c8cf-e3e5-4673-8989-52698d1a5c4c}">
+		<property name="startOffset">
+			<value>9.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{deb2d2f9-23e7-4fd4-8254-e7f5b70de02c}</destination>
 		</relationship>
@@ -212,6 +224,14 @@
 	<object class="SingleSound" id="{e6b424d2-9700-4eb1-8e06-63543b0981ec}">
 		<relationship name="audioFile">
 			<destination>{2513b631-c427-427e-b0fc-edc9ceaea706}</destination>
+		</relationship>
+	</object>
+	<object class="PlayPercentage" id="{0556be80-e2b5-4e6d-ac79-22a24b55becd}">
+		<property name="percentage">
+			<value>4</value>
+		</property>
+		<relationship name="sound">
+			<destination>{9e84706c-70cc-4c06-86c7-09fce6d4f8cb}</destination>
 		</relationship>
 	</object>
 	<object class="MixerBusFader" id="{32502acd-526d-4519-8fa2-11fdb9ecc429}" />

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{be9c99ff-a5f6-4180-ba43-fc12e5b9a80e}">
+		<property name="name">
+			<value>1</value>
+		</property>
+		<relationship name="folder">
+			<destination>{648c4ef1-9e14-4447-a107-4fea8f300012}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{2327dacd-2a74-4ed3-b1c5-57ef555163e0}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{2327dacd-2a74-4ed3-b1c5-57ef555163e0}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>0.2199999988079071</value>
+		</property>
+		<relationship name="automators">
+			<destination>{0c6845aa-a003-451b-ac96-b1d54823581a}</destination>
+		</relationship>
+		<relationship name="modulators">
+			<destination>{be519ded-c0fc-4f99-b687-4ad9ead4af0e}</destination>
+			<destination>{1e0ee07d-b820-41e6-a611-4d885e373c5f}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{0c6845aa-a003-451b-ac96-b1d54823581a}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
+		</property>
+	</object>
+	<object class="RandomizerModulator" id="{be519ded-c0fc-4f99-b687-4ad9ead4af0e}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{1e0ee07d-b820-41e6-a611-4d885e373c5f}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="rate">
+			<value>0.0749999955</value>
+		</property>
+		<property name="depth">
+			<value>100</value>
+		</property>
+	</object>
+</objects>

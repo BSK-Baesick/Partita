@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{748b041e-3a62-475c-b333-effab72932f4}">
 		<property name="name">
-			<value>SFX_Zurab_talk</value>
+			<value>minigame_Zurab</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>
@@ -151,11 +151,17 @@
 	<object class="MixerBusPanner" id="{ec965e12-032e-4041-be9c-d46825767070}" />
 	<object class="MixerBusFader" id="{4a78dbc1-bea9-4be2-8756-483b5dad7ecf}" />
 	<object class="SingleSound" id="{d442c52d-b5c6-4228-b4f1-41c087729bee}">
+		<property name="startOffset">
+			<value>39</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{0b7aa4b1-d89c-4d91-bda1-29324588a57f}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{9d236d71-4413-4ad5-92b4-5fcf712a4724}">
+		<property name="startOffset">
+			<value>26</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{07e6ec20-3a92-47d0-b8a6-c94e870b31ca}</destination>
 		</relationship>
@@ -166,11 +172,17 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{df68bda9-49fe-477e-98f1-be10423eb359}">
+		<property name="startOffset">
+			<value>29.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{50680cbd-f141-4fcf-a177-794a3253f717}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{498fdba7-6ffe-46f0-9f50-3782e928de9d}">
+		<property name="startOffset">
+			<value>9.5</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{11c12b9d-0525-4967-bf30-e88fa10c45a4}</destination>
 		</relationship>
@@ -191,21 +203,33 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{bbbc873b-c9f8-43ce-ac77-d5e0aaca237f}">
+		<property name="startOffset">
+			<value>42</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{820fc232-45ee-40ab-95c0-9d88bfacec4a}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{78f869e0-166c-4f14-82a8-9d168ebb29a2}">
+		<property name="startOffset">
+			<value>21</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{bcb9c3c8-3277-4928-b3b6-03e579d224b3}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{5060e47f-5f09-4ac0-a8a4-fdbd1271fdcf}">
+		<property name="startOffset">
+			<value>4</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{0960678c-f474-4f32-91df-27171b146806}</destination>
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{ee648888-fcb7-4b8b-939d-b31ec1187e35}">
+		<property name="startOffset">
+			<value>4</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{bc6f9173-36f0-4c88-b27d-76eea66f0371}</destination>
 		</relationship>

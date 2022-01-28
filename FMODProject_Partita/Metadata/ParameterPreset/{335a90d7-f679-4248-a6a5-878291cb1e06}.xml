@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{335a90d7-f679-4248-a6a5-878291cb1e06}">
+		<property name="name">
+			<value>Parameter 4</value>
+		</property>
+		<relationship name="folder">
+			<destination>{648c4ef1-9e14-4447-a107-4fea8f300012}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{4b693424-4846-438b-9fa1-6658bb32eba6}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{4b693424-4846-438b-9fa1-6658bb32eba6}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1.0199999809265137</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{99fe773a-ca34-4030-99ff-a79dc1ab23e9}</destination>
+			<destination>{259f4153-28a6-4a06-a3b0-0da62a23dc29}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{99fe773a-ca34-4030-99ff-a79dc1ab23e9}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
+	<object class="LFOModulator" id="{259f4153-28a6-4a06-a3b0-0da62a23dc29}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="rate">
+			<value>0.0599999987</value>
+		</property>
+		<property name="phase">
+			<value>-60</value>
+		</property>
+		<property name="depth">
+			<value>3.5</value>
+		</property>
+		<property name="direction">
+			<value>36</value>
+		</property>
+	</object>
+</objects>

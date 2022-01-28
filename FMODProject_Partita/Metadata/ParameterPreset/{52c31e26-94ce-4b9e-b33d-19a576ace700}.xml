@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{52c31e26-94ce-4b9e-b33d-19a576ace700}">
+		<property name="name">
+			<value>Parameter 5</value>
+		</property>
+		<relationship name="folder">
+			<destination>{648c4ef1-9e14-4447-a107-4fea8f300012}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{970bf761-11f9-4edc-a2f9-f1d5a5159148}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{970bf761-11f9-4edc-a2f9-f1d5a5159148}">
+		<property name="parameterType">
+			<value>1</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+		<property name="seekSpeed">
+			<value>1.2400000095367432</value>
+		</property>
+		<property name="seekSpeedDescending">
+			<value>0.29999998211860657</value>
+		</property>
+		<relationship name="modulators">
+			<destination>{7e78cc08-c68d-400f-be48-4dee3ff11622}</destination>
+		</relationship>
+	</object>
+	<object class="RandomizerModulator" id="{7e78cc08-c68d-400f-be48-4dee3ff11622}">
+		<property name="nameOfPropertyBeingModulated">
+			<value>cursorPosition</value>
+		</property>
+		<property name="amount">
+			<value>100</value>
+		</property>
+	</object>
+</objects>
