@@ -77,7 +77,7 @@ MonoBehaviour:
     data1: 386177743
     data2: 3659736749
   Type: 1
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &-6974098902772057851
@@ -216,30 +216,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-3174180677929244674
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Pascha_duet
-  m_EditorClassIdentifier: 
-  Name: Pascha_duet
-  StudioPath: parameter:/Pascha_duet
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3594490401
-    data2: 2447494444
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &-2218613883980785714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -339,7 +315,7 @@ MonoBehaviour:
     data1: 568462561
     data2: 615650383
   Type: 1
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &-896059827081223429
@@ -357,34 +333,10 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637790536350000000
+  lastModified: 637790674280000000
   FileSizes:
   - Name: Desktop
     Value: 2032
-  Exists: 1
---- !u!114 &-425633517877336304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Vera_duet
-  m_EditorClassIdentifier: 
-  Name: Vera_duet
-  StudioPath: parameter:/Vera_duet
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 4100425373
-    data2: 3029236381
-  Type: 1
-  IsGlobal: 1
-  Labels: []
   Exists: 1
 --- !u!114 &-22833525760973294
 MonoBehaviour:
@@ -440,17 +392,12 @@ MonoBehaviour:
   - {fileID: -8669794596112176318}
   - {fileID: -9162888729499294088}
   - {fileID: 5836649594887618372}
-  EditorParameters:
-  - {fileID: -425633517877336304}
-  - {fileID: 2551395940935733059}
-  - {fileID: -3174180677929244674}
-  - {fileID: 6856489020292453210}
-  - {fileID: 4128212768566694210}
+  EditorParameters: []
   MasterBanks:
   - {fileID: 6734345658795634640}
   StringsBanks:
   - {fileID: -896059827081223429}
-  cacheTime: 637790536350000000
+  cacheTime: 637790674280000000
   cacheVersion: 10
 --- !u!114 &389747604723407301
 MonoBehaviour:
@@ -558,30 +505,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14678
---- !u!114 &2551395940935733059
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Millia_duet
-  m_EditorClassIdentifier: 
-  Name: Millia_duet
-  StudioPath: parameter:/Millia_duet
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 568462561
-    data2: 615650383
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &3132305458388241252
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -603,7 +526,7 @@ MonoBehaviour:
     data1: 968881134
     data2: 4011441088
   Type: 1
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &3576747001147209633
@@ -654,30 +577,6 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &4128212768566694210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Stephan_duet
-  m_EditorClassIdentifier: 
-  Name: Stephan_duet
-  StudioPath: parameter:/Stephan_duet
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 968881134
-    data2: 4011441088
-  Type: 1
-  IsGlobal: 1
-  Labels: []
-  Exists: 1
 --- !u!114 &4244228038027490993
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -699,7 +598,7 @@ MonoBehaviour:
     data1: 4100425373
     data2: 3029236381
   Type: 1
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &5211957885904129584
@@ -782,7 +681,7 @@ MonoBehaviour:
     data1: 3594490401
     data2: 2447494444
   Type: 1
-  IsGlobal: 1
+  IsGlobal: 0
   Labels: []
   Exists: 1
 --- !u!114 &6424464533512810137
@@ -828,34 +727,10 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637790536350000000
+  lastModified: 637790674280000000
   FileSizes:
   - Name: Desktop
-    Value: 14000128
-  Exists: 1
---- !u!114 &6856489020292453210
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/Zurab_duet
-  m_EditorClassIdentifier: 
-  Name: Zurab_duet
-  StudioPath: parameter:/Zurab_duet
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 386177743
-    data2: 3659736749
-  Type: 1
-  IsGlobal: 1
-  Labels: []
+    Value: 13999808
   Exists: 1
 --- !u!114 &7745829794360232581
 MonoBehaviour:

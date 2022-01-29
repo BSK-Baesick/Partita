@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 438184005}
   - component: {fileID: 438184007}
   - component: {fileID: 438184008}
+  - component: {fileID: 438184009}
   m_Layer: 0
   m_Name: Inky Manager
   m_TagString: Untagged
@@ -196,6 +197,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fmodEventManager: {fileID: 1079732837157625677}
+  milliaDuetParameter: Millia_duet
+  stephanDuetParameter: Stephan_duet
+  veraDuetParameter: Vera_duet
+  paschaDuetParameter: Pascha_duet
+  zurabDuetParameter: Zurab_duet
+  duetParameterName: duet_character
+--- !u!114 &438184009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438184004}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 246d1597a386146eea128e069884725a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodAudioPlayer: {fileID: 438184008}
 --- !u!1001 &1079732837157625676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -203,26 +223,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2279929188756767019, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
-      propertyPath: music.musicMenu.Path
-      value: event:/MUSIC_menu
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279929188756767019, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
-      propertyPath: music.musicMenu.Guid.Data1
-      value: 2034466473
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279929188756767019, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
-      propertyPath: music.musicMenu.Guid.Data2
-      value: 1273576920
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279929188756767019, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
-      propertyPath: music.musicMenu.Guid.Data3
-      value: 1516431277
-      objectReference: {fileID: 0}
-    - target: {fileID: 2279929188756767019, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
-      propertyPath: music.musicMenu.Guid.Data4
-      value: 1190652741
-      objectReference: {fileID: 0}
     - target: {fileID: 5230628687794210094, guid: 771fca6758e1941b7bbd7318096e6efe, type: 3}
       propertyPath: m_Name
       value: FmodEventManager
