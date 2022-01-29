@@ -105,7 +105,6 @@ MonoBehaviour:
   IsOneShot: 0
   Parameters:
   - {fileID: -1633404074739784709}
-  - {fileID: 8280833182312894993}
   - {fileID: 8025950008765739453}
   - {fileID: 3576747001147209633}
   - {fileID: 3656139857133046928}
@@ -358,10 +357,10 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637788741020000000
+  lastModified: 637790536350000000
   FileSizes:
   - Name: Desktop
-    Value: 1918
+    Value: 2032
   Exists: 1
 --- !u!114 &-425633517877336304
 MonoBehaviour:
@@ -451,7 +450,7 @@ MonoBehaviour:
   - {fileID: 6734345658795634640}
   StringsBanks:
   - {fileID: -896059827081223429}
-  cacheTime: 637788741020000000
+  cacheTime: 637790536350000000
   cacheVersion: 10
 --- !u!114 &389747604723407301
 MonoBehaviour:
@@ -524,7 +523,7 @@ MonoBehaviour:
     Data4: 952350618
   Banks:
   - {fileID: 6734345658795634640}
-  IsStream: 1
+  IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
@@ -829,10 +828,10 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637788741020000000
+  lastModified: 637790536350000000
   FileSizes:
   - Name: Desktop
-    Value: 13999232
+    Value: 14000128
   Exists: 1
 --- !u!114 &6856489020292453210
 MonoBehaviour:
@@ -902,30 +901,6 @@ MonoBehaviour:
   ID:
     data1: 44472877
     data2: 3759120026
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &8280833182312894993
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/MUSIC_world/Parameter 3
-  m_EditorClassIdentifier: 
-  Name: Parameter 3
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 751435812
-    data2: 1687845094
   Type: 1
   IsGlobal: 0
   Labels: []
