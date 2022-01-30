@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class DuetPickChoiceState : DuetBaseState
 {
+    /////////////////////////////////////////////////////////BOTH PLAY MODE
     private int scoreEarned;
     private int timerInstance;
     public int buttonChosen;
+    
     //public enChoiceButtons choiceButtons;
 
     public override void EnterState(DuetStateManager duet)
@@ -55,13 +57,15 @@ public class DuetPickChoiceState : DuetBaseState
     {
         if(buttonChosen == timerInstance)
         {
+            //PLAY GOOD AUDIO
             scoreEarned = buttonChosen * 2;
             buttonChosen = 0;
         }
-    }
-
-    public override void GeneratePlayState(DuetStateManager duet)
-    {
-
+        else
+        {
+            //PLAY BAD AUDIO
+            scoreEarned = buttonChosen * -2;
+            buttonChosen = 0;
+        }
     }
 }

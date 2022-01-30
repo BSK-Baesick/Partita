@@ -7,13 +7,13 @@ public class DuetStateManager : MonoBehaviour
     DuetBaseState currentState;
     public DuetPlayerPlayState playerState = new DuetPlayerPlayState();
     public DuetPickChoiceState pickChoiceState = new DuetPickChoiceState();
+    public DuetBonusState bonusState = new DuetBonusState();
+    public DuetChanceState chanceState = new DuetChanceState();
     public DuetNPCPlayState npcState = new DuetNPCPlayState();
     public DuetBothPlayState overlapState = new DuetBothPlayState();
     public DuetPlayFinishedState finishedState = new DuetPlayFinishedState();
     
-    public int[] turnType; //1: player (button) // 2: NPC (wait) // 3: Both (choice)
-    public int turnsAmount;
-    public int turnIndex;
+    public int turnType; //1: player // 2: NPC (wait) // 3: Both // 4:chance // 5: Bonus //6: Game Done
 
     public bool buttonPressed;
     public int score;
@@ -24,32 +24,19 @@ public class DuetStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        turnsAmount = turnType.Length;
-        switch(turnType[turnIndex])
-        {
-            case 1:
-                currentState = playerState;     //PRESS TO GO
-                currentState.EnterState(this);
-                break;
-            case 2:
-                currentState = npcState;        //WAIT TO FINISH
-                currentState.EnterState(this);
-                break;
-            case 3:
-                currentState = pickChoiceState;     //BOTH PLAY
-                currentState.EnterState(this);
-                break;
-            default:
-                Debug.LogError("Invalid State Skipping Turn");
-                currentState = finishedState;
-                currentState.EnterState(this);
-                break;
-        }
+        currentState = playerState;
+        currentState.EnterState(this);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(score >= 100)
+            score = 100;
+
+        if(score <= 0)
+            score = 0;
+
         currentState.UpdateState(this);
     }
 

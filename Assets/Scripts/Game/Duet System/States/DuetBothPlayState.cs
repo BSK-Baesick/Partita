@@ -13,9 +13,4 @@ public class DuetBothPlayState : DuetBaseState
     {
 
     }
-
-    public override void GeneratePlayState(DuetStateManager duet)
-    {
-
-    }
 }

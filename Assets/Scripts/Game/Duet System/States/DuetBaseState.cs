@@ -7,6 +7,4 @@ public abstract class DuetBaseState
     public abstract void EnterState(DuetStateManager duet);
 
     public abstract void UpdateState(DuetStateManager duet);
-
-    public abstract void GeneratePlayState(DuetStateManager duet);
 }

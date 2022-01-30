@@ -18,6 +18,19 @@ public class DuetManager : MonoBehaviour
         UImg.scoreBar.value = stateMg.score;
         UImg.timerBar.value = stateMg.turnTime;
         
+        switch(stateMg.bonusState.currentColor)
+        {
+            case 1:
+                UImg.colorImage.color = Color.cyan;
+                break;
+            case 2:
+                UImg.colorImage.color = Color.yellow;
+                break;
+            case 3:
+                UImg.colorImage.color = Color.magenta;
+                break;
+        }
+
         UImg.timerBar.maxValue = stateMg.setTurnTime;
 
         if(stateMg.buttonPressed)
@@ -47,20 +60,23 @@ public class DuetManager : MonoBehaviour
                 break;
         }
 
-        switch(stateMg.turnType[stateMg.turnIndex])
+        switch(stateMg.turnType)
         {
             case 1:
-                UImg.soloUI.SetActive(true);
+                //player solo
+                UImg.npcUI.SetActive(true);
                 UImg.duetUI.SetActive(false);
                 UImg.buttonImage.color = Color.cyan;
                 break;
             case 2:
-                UImg.soloUI.SetActive(true);
+                //npc solo
+                UImg.npcUI.SetActive(true);
                 UImg.duetUI.SetActive(false);
                 UImg.buttonImage.color = Color.magenta;
                 break;
             case 3:
-                UImg.soloUI.SetActive(false);
+                //pickChoice
+                UImg.npcUI.SetActive(false);
                 UImg.duetUI.SetActive(true);
                 break;
         }
