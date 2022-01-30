@@ -1,0 +1,297 @@
+Using pre-set license
+Built from '2021.1/staging' branch; Version is '2021.1.6f1 (c0fade0cc7e9) revision 12647134'; Using compiler version '192528614'; Build Type 'Release'
+OS: 'Windows 10 Home Single Language; OS build 19044.1466; Version 2009; 64bit' Language: 'en' Physical Memory: 7112 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+ COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.1.6f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker1
+-projectPath
+C:/Users/chris/OneDrive/Documents/Unity Projects/Partita
+-logFile
+Logs/AssetImportWorker1.log
+-srvPort
+50019
+Successfully changed project path to: C:/Users/chris/OneDrive/Documents/Unity Projects/Partita
+C:/Users/chris/OneDrive/Documents/Unity Projects/Partita
+Using Asset Import Pipeline V2.
+Refreshing native plugins compatible for Editor in 335.85 ms, found 29 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2021.1.6f1 (c0fade0cc7e9)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/chris/OneDrive/Documents/Unity Projects/Partita/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: AMD Radeon(TM) R7 Graphics (ID=0x1313)
+    Vendor:   ATI
+    VRAM:     3556 MB
+    Driver:   27.20.1034.6
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56540
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.1.6f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.006133 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 282.44 ms, found 29 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  6.937 seconds
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.032509 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 232.54 ms, found 29 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  3.409 seconds
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.16 seconds
+Refreshing native plugins compatible for Editor in 2.88 ms, found 29 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 4198 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 153.8 MB.
+System memory in use after: 154.0 MB.
+
+Unloading 55 unused Assets to reduce memory usage. Loaded Objects now: 4631.
+Total: 14.462800 ms (FindLiveObjects: 1.005100 ms CreateObjectMapping: 0.268200 ms MarkObjects: 12.920400 ms  DeleteObjects: 0.264400 ms)
+
+========================================================================
+Received Import Request.
+  path: Assets/Art/Textures/Bus Stop Square/BUS_STOP2_TXTR.tif
+  artifactKey: Guid(4f6f22c3e01e51d459ced60338361298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/BUS_STOP2_TXTR.tif using Guid(4f6f22c3e01e51d459ced60338361298) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cc755c78017d19f78128c3f67a39162f') in 0.373836 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000968 seconds.
+  path: Assets/Art/Textures/Bus Stop Square
+  artifactKey: Guid(f6fcb990b67929c40a94eac3dedaca58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square using Guid(f6fcb990b67929c40a94eac3dedaca58) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2ff230630e3ec18d7c6851bc7337fb25') in 0.017306 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000485 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/ROAD2_TXTR.tif
+  artifactKey: Guid(f2ab1152ea8157740a1570f1a4bfaaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/ROAD2_TXTR.tif using Guid(f2ab1152ea8157740a1570f1a4bfaaeb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5dd19784a8605f6e996532b6f335652a') in 0.090771 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001418 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/SKY4_TXTR.tif
+  artifactKey: Guid(2d52166498e0ae04896e142173773639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/SKY4_TXTR.tif using Guid(2d52166498e0ae04896e142173773639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd220d26de6ccf340ec3923ec538e098b') in 0.041813 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000382 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/Mid ground garnish.PNG
+  artifactKey: Guid(542c46e1e9508a0408e0d647a29c8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/Mid ground garnish.PNG using Guid(542c46e1e9508a0408e0d647a29c8f29) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7f07d896c60775eab73a3306fb3b361f') in 0.131761 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000559 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/FLOOR_TXTR.tif
+  artifactKey: Guid(ce079ead8bcf9384f8ef3f4e703a7fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/FLOOR_TXTR.tif using Guid(ce079ead8bcf9384f8ef3f4e703a7fd0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0f8b37f5cef8b0bfca4e08e2618c4ff7') in 0.091945 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000676 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/FLOR_SPOT_TXTR.tif
+  artifactKey: Guid(10e27c951d26d8049aeb0d3608e96d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/FLOR_SPOT_TXTR.tif using Guid(10e27c951d26d8049aeb0d3608e96d2e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dbe8f0cfa744c92560cb6bf9982b13a') in 0.045364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000546 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/FENCE_TXTR.tif
+  artifactKey: Guid(27295904f7f45984989daf6b9cd73d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/FENCE_TXTR.tif using Guid(27295904f7f45984989daf6b9cd73d89) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '343b4439825a5741f41fd9cd1c229539') in 0.125110 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000661 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/IMG_0572.PNG
+  artifactKey: Guid(444ee5d96b556f646893dd7a07b76c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/IMG_0572.PNG using Guid(444ee5d96b556f646893dd7a07b76c9f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42b0950cf4027acfcd1874d1292e1058') in 0.122063 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000963 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/TRASHCAN_TXTR.tif
+  artifactKey: Guid(12a2e0bd6b5985a46a98db302004654f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/TRASHCAN_TXTR.tif using Guid(12a2e0bd6b5985a46a98db302004654f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4927081ab6fd8e78c415250c7fd1ee41') in 0.128902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000676 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/BUSHES_TXTR.tif
+  artifactKey: Guid(d4f6b795918e61144b23ad1b754876d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/BUSHES_TXTR.tif using Guid(d4f6b795918e61144b23ad1b754876d5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21484d6e954bc798665f6c9faaad4acc') in 0.112183 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000517 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/CABLES1_TXTR.tif
+  artifactKey: Guid(9a25c192c46d5b9468cb157d6f174ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/CABLES1_TXTR.tif using Guid(9a25c192c46d5b9468cb157d6f174ee7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12d80f37dcef752f336d9c4d25676f2a') in 0.042079 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000818 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/BUS_STOP1_TXTR.tif
+  artifactKey: Guid(3a2a9be4db051bd4faef469b8c62663e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/BUS_STOP1_TXTR.tif using Guid(3a2a9be4db051bd4faef469b8c62663e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ca72fc09d5eca8f230d156d44d92be7') in 0.151449 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000906 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/IMG_0574.PNG
+  artifactKey: Guid(29765ee631ba60545b27a677b29e757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/IMG_0574.PNG using Guid(29765ee631ba60545b27a677b29e757a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5370c7e822727c0d2c66e5aee39227c5') in 0.072549 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000739 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/UNDER_FLOR_TXTR.tif
+  artifactKey: Guid(40a05d81ec3dbb94ea664082ebb62a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/UNDER_FLOR_TXTR.tif using Guid(40a05d81ec3dbb94ea664082ebb62a05) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '20a6a413641d5067adb7a23024f9c254') in 0.059488 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000544 seconds.
+  path: Assets/Art/Textures/Bus Stop Square/SEMAFORO_TXTR.tif
+  artifactKey: Guid(bc28640c58770464db40aad99a1fa028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Bus Stop Square/SEMAFORO_TXTR.tif using Guid(bc28640c58770464db40aad99a1fa028) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '245d2a4654998a8104f5ab323bbd991f') in 0.108052 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 185.339060 seconds.
+  path: Assets/Art/Models/bus stop square uvs.fbx
+  artifactKey: Guid(a6df17f738c4812439fde9c415fa9217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/bus stop square uvs.fbx using Guid(a6df17f738c4812439fde9c415fa9217) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'befd2f006c368a0358e523431f36f6d5') in 4.332704 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 221.773279 seconds.
+  path: Assets/Art/Models/pigeon.fbx
+  artifactKey: Guid(c04f1928fea78ce4c8d79c48e9a2f657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Models/pigeon.fbx using Guid(c04f1928fea78ce4c8d79c48e9a2f657) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc5d8378de14e044c392a03c346cf9e7') in 0.526141 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 325.341865 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop
+  artifactKey: Guid(f6c784dfddd74574a9f60ab09551c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop using Guid(f6c784dfddd74574a9f60ab09551c517) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cd1c8259f92ca45bbdbc3c55bddacfcf') in 0.073453 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 11.337439 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop/back_ground1_TXTR.tif
+  artifactKey: Guid(32404ae5a6a8a9249aec625d404070c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop/back_ground1_TXTR.tif using Guid(32404ae5a6a8a9249aec625d404070c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a69835bbdbcf13b7ec55017682f6431') in 0.352540 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000563 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop/pigeon_statue1_TXTR.tif
+  artifactKey: Guid(e71a01ac7800bdc4cbc2aba54527df69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop/pigeon_statue1_TXTR.tif using Guid(e71a01ac7800bdc4cbc2aba54527df69) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31075ce78f340c5954dbe959779bd20c') in 0.158821 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000628 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop/TERRENO1_TXTR.tif
+  artifactKey: Guid(ee5a28204f386ca42ab3f0eb33ae2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop/TERRENO1_TXTR.tif using Guid(ee5a28204f386ca42ab3f0eb33ae2996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bb4796eb2512cc148a81e577ffb05cd') in 0.380953 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.002617 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop/bancas_TXTR.tif
+  artifactKey: Guid(521c2914fc0df3e46a8b58caf81b8bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop/bancas_TXTR.tif using Guid(521c2914fc0df3e46a8b58caf81b8bfc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8d540ae9e330d438431ea160bd18297') in 0.343676 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001480 seconds.
+  path: Assets/Art/Textures/Pigeon Bus Stop/black.tif
+  artifactKey: Guid(c685761e711b84d4ba2adc03906d86fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Textures/Pigeon Bus Stop/black.tif using Guid(c685761e711b84d4ba2adc03906d86fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b207959c97fad70104868b25f65b322b') in 0.516436 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 89.758870 seconds.
+  path: Assets/Materials/Pigeon Bus Stop.mat
+  artifactKey: Guid(3492c02141c6314409982045f161d114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Pigeon Bus Stop.mat using Guid(3492c02141c6314409982045f161d114) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8389d5f272a805895dfd93eb792e1dc6') in 0.230840 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 129.443675 seconds.
+  path: Assets/Materials/Bancas.mat
+  artifactKey: Guid(07641af9452d0d14e8bf35a320444507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bancas.mat using Guid(07641af9452d0d14e8bf35a320444507) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '86457c330d41fe7986b745af0433d616') in 0.180166 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 103.478172 seconds.
+  path: Assets/Materials/Diffuse Sprite.mat
+  artifactKey: Guid(d39d0f1b2260e264293ba39d258265f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Diffuse Sprite.mat using Guid(d39d0f1b2260e264293ba39d258265f6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dd630365cac2114d5b9300fc86ef8c41') in 0.145388 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 27.108710 seconds.
+  path: ProjectSettings/TagManager.asset
+  artifactKey: Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing ProjectSettings/TagManager.asset using Guid(00000000000000003000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd20553d05256559d1fa29e6645d752c0') in 0.046637 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 571.200554 seconds.
+  path: Assets/Shaders/SpriteDiffuseWithShadow.shader
+  artifactKey: Guid(3c76140f454869545b1ffb94d43f4acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/SpriteDiffuseWithShadow.shader using Guid(3c76140f454869545b1ffb94d43f4acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f59ab23a6aa69a101bf70650c7d6204b') in 0.077668 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 49.740816 seconds.
+  path: Assets/Shaders/SpriteDiffuseWithShadow.shader
+  artifactKey: Guid(3c76140f454869545b1ffb94d43f4acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Shaders/SpriteDiffuseWithShadow.shader using Guid(3c76140f454869545b1ffb94d43f4acc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f91adfb1e01a85c5025753c055204a5') in 8.137609 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 636.732885 seconds.
+  path: Assets/Art/Backgrounds/IMG_0597.png
+  artifactKey: Guid(efd444a3d3100d042bb0243695b2d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0597.png using Guid(efd444a3d3100d042bb0243695b2d124) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54aa3551f5370d98bd05c2bcf1345521') in 0.239308 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000419 seconds.
+  path: Assets/Art/Backgrounds/IMG_0664.png
+  artifactKey: Guid(3e707552da899064eb0786edb45f3577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0664.png using Guid(3e707552da899064eb0786edb45f3577) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8ca591984c787b6d3e9f8844c532600') in 0.887815 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 65.662468 seconds.
+  path: Assets/Art/Backgrounds/IMG_0597_n.png
+  artifactKey: Guid(f7504244907110d4ea3c1c5941399ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0597_n.png using Guid(f7504244907110d4ea3c1c5941399ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e81860edadb75f89092a07da5034e988') in 1.233236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.001045 seconds.
+  path: Assets/Art/Backgrounds/IMG_0664_n.png
+  artifactKey: Guid(541444e7d1152ba45b9637baf484b41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0664_n.png using Guid(541444e7d1152ba45b9637baf484b41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a63aac920095509cdd8376936da2e064') in 0.747835 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 5.740057 seconds.
+  path: Assets/Art/Backgrounds/IMG_0664_n.png
+  artifactKey: Guid(541444e7d1152ba45b9637baf484b41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0664_n.png using Guid(541444e7d1152ba45b9637baf484b41f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f6dd464a5716968d7ccdfb606f6bad5') in 1.196876 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 8.613586 seconds.
+  path: Assets/Art/Backgrounds/IMG_0597_n.png
+  artifactKey: Guid(f7504244907110d4ea3c1c5941399ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Art/Backgrounds/IMG_0597_n.png using Guid(f7504244907110d4ea3c1c5941399ca4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dfe1bceeda043b98ef632340ee659c0') in 0.156971 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 42.926403 seconds.
+  path: Assets/Materials/Bus.mat
+  artifactKey: Guid(80d2a8cca7b809b418455a14778cb2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Bus.mat using Guid(80d2a8cca7b809b418455a14778cb2ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4db81689b0222783ef09019df2e38c3') in 0.187523 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 54.799358 seconds.
+  path: Assets/Materials/Wheels.mat
+  artifactKey: Guid(11ea9ccaed42e884597d118ec3c7290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Wheels.mat using Guid(11ea9ccaed42e884597d118ec3c7290b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82285f20375e569b93c5522c699d628e') in 0.207628 seconds 
+AssetImportWorkerClient::OnTransportError - code=2 error=End of file
