@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx.Async;
+using Naninovel;
+using Naninovel.Commands;
 
 public class DuetBonusState : DuetBaseState
 {
@@ -10,12 +13,13 @@ public class DuetBonusState : DuetBaseState
 
     public override void EnterState(DuetStateManager duet)
     {
-        duet.turnTime = duet.setTurnTime;
+        duet.turnTime = duet.setTurnTime * 2;
         GenerateColor();
     }
 
     public override void UpdateState(DuetStateManager duet)
     {
+        var switchCommand = new SwitchToNovel();
         duet.turnTime -= Time.deltaTime;
         colorTime -= Time.deltaTime;
 
@@ -38,15 +42,16 @@ public class DuetBonusState : DuetBaseState
             }
         }
 
-        if(duet.turnTime >= duet.setTurnTime)
-            duet.turnTime = duet.setTurnTime;
+        if(duet.turnTime >= duet.setTurnTime * 2)
+            duet.turnTime = duet.setTurnTime * 2;
 
         if(colorTime <= 0)
             GenerateColor();
 
         if(duet.turnTime <= 0)
         {
-            duet.SwitchState(duet.playerState); //////////////////////////////////////BACK TO STORY
+            duet.SwitchState(duet.startState);
+            switchCommand.ExecuteAsync().Forget(); //////////////////////////////////////BACK TO STORY
         }
     }
 
@@ -54,6 +59,6 @@ public class DuetBonusState : DuetBaseState
     {
         currentColor = Random.Range(1,4);
         Debug.Log(currentColor);
-        colorTime = Random.Range(1,2);
+        colorTime = Random.Range(3,6);
     }
 }

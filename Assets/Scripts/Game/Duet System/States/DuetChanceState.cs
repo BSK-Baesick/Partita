@@ -1,6 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx.Async;
+using Naninovel;
+using Naninovel.Commands;
 
 public class DuetChanceState : DuetBaseState
 {
@@ -12,12 +15,13 @@ public class DuetChanceState : DuetBaseState
 
     public override void UpdateState(DuetStateManager duet)
     {   
+        var switchCommand = new SwitchToNovel();
         //Timer Countdown
         duet.turnTime -= Time.deltaTime;
 
         if(duet.turnTime <= 0)
         {
-            duet.SwitchState(duet.finishedState);
+            switchCommand.ExecuteAsync().Forget();
         }
         else
         {
@@ -35,7 +39,8 @@ public class DuetChanceState : DuetBaseState
                     duet.SwitchState(duet.playerState); //PICK MODE
                     break;
                 case 1:
-                    duet.SwitchState(duet.npcState); //BACK TO STORY
+                    duet.SwitchState(duet.startState);
+                    switchCommand.ExecuteAsync().Forget(); //BACK TO STORY
                     break;
             }
         }

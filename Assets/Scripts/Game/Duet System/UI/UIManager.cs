@@ -5,15 +5,14 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
-    [HideInInspector]public GameObject npcUI;
-    [HideInInspector]public GameObject duetUI;
+    [HideInInspector]public GameObject choiceUI;
     [HideInInspector]public GameObject chanceUI;
     [HideInInspector]public GameObject bonusUI;
+    [HideInInspector]public GameObject startUI;
 
-    public GameObject duetNotes;
+    public GameObject pickNotes;
 
     public Slider scoreBar;
-    public Image buttonImage;
     public Image colorImage;
     public Slider timerBar;
     public Image timerFill;
@@ -21,9 +20,9 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        bonusUI = gameObject.transform.Find("Canvas/ChanceUI").gameObject;
-        npcUI = gameObject.transform.Find("Canvas/SoloUI").gameObject;
-        duetUI = gameObject.transform.Find("Canvas/DuetUI").gameObject;
+        startUI = gameObject.transform.Find("Canvas/StartUI").gameObject;
+        choiceUI = gameObject.transform.Find("Canvas/ChoiceUI").gameObject;
+        chanceUI = gameObject.transform.Find("Canvas/ChanceUI").gameObject;
         bonusUI = gameObject.transform.Find("Canvas/BonusUI").gameObject;
     }
 }

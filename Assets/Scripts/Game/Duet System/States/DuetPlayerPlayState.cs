@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx.Async;
+using Naninovel;
+using Naninovel.Commands;
 
 public class DuetPlayerPlayState : DuetBaseState
 {
-    /////////////////////////////////////////////////////PLAYER SOLO MODE
     private int scoreEarned;
     private int timerInstance;
     public int buttonChosen;
@@ -18,7 +20,7 @@ public class DuetPlayerPlayState : DuetBaseState
     public override void EnterState(DuetStateManager duet)
     {
         duet.turnTime = duet.setTurnTime;
-        turns = 6;
+        turns = Random.Range(5,7);
     }
 
     public override void UpdateState(DuetStateManager duet)
@@ -64,16 +66,19 @@ public class DuetPlayerPlayState : DuetBaseState
 
             if(turns <= 0)
             {
+                var switchCommand = new SwitchToNovel();
                 switch(duet.score)
                 {
                     case int n when n >= 90:
-                        //back to story
+                        switchCommand.ExecuteAsync().Forget();
+                        duet.SwitchState(duet.startState);
                         break;
-                    case int n when n >= 30:
+                    case int n when n >= 20:
                         duet.SwitchState(duet.chanceState);
                         break;
-                    case int n when n < 30:
-                        //back to story dont get character
+                    case int n when n < 20:
+                        switchCommand.ExecuteAsync().Forget();
+                        duet.SwitchState(duet.startState);
                         break;
                 }
             }
@@ -86,7 +91,7 @@ public class DuetPlayerPlayState : DuetBaseState
         if(buttonChosen == timerInstance)
         {
             //PLAY GOOD AUDIO
-            scoreEarned = buttonChosen * 5;
+            scoreEarned = buttonChosen * 3;
             buttonChosen = 0;
         }
         else

@@ -1,19 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UniRx.Async;
+using Naninovel;
+using Naninovel.Commands;
 
 public class DuetStateManager : MonoBehaviour
 {
-    DuetBaseState currentState;
+    public DuetBaseState currentState;
+    public DuetStartState startState = new DuetStartState();
     public DuetPlayerPlayState playerState = new DuetPlayerPlayState();
-    public DuetPickChoiceState pickChoiceState = new DuetPickChoiceState();
     public DuetBonusState bonusState = new DuetBonusState();
     public DuetChanceState chanceState = new DuetChanceState();
-    public DuetNPCPlayState npcState = new DuetNPCPlayState();
-    public DuetBothPlayState overlapState = new DuetBothPlayState();
     public DuetPlayFinishedState finishedState = new DuetPlayFinishedState();
     
-    public int turnType; //1: player // 2: NPC (wait) // 3: Both // 4:chance // 5: Bonus //6: Game Done
+    public int turnType; //1: pick // 2: chance // 3: bonus
+
 
     public bool buttonPressed;
     public int score;
@@ -24,7 +26,7 @@ public class DuetStateManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        currentState = playerState;
+        currentState = startState;
         currentState.EnterState(this);
     }
 
@@ -36,6 +38,9 @@ public class DuetStateManager : MonoBehaviour
 
         if(score <= 0)
             score = 0;
+
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager.TrySetVariableValue("duetScore", score);
 
         currentState.UpdateState(this);
     }

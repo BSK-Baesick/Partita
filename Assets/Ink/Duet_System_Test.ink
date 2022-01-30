@@ -1,3 +1,7 @@
+VAR duetScore = 0
+
+@char Stephan
+@char Protag
 Hello
 ->AskDuet
 
@@ -12,5 +16,20 @@ Do you wanna duet?
     
 =Duet
 please find bugs and send them our way at the game-tech channel
- duet starts
- ->AskDuet
+duet starts
+@hideUI
+@spawn duet
+@duet
+You just finished the duet!
+@despawn duet
+{duetScore>50: ->GoodJob}
+{duetScore<50: ->BadJob}
+->DONE
+
+=GoodJob
+    You did good!
+    ->AskDuet
+=BadJob
+    I'm afraid you did terrible lmao.
+    Maybe try again?
+    ->AskDuet

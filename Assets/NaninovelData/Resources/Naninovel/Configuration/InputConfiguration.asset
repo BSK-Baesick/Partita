@@ -57,7 +57,7 @@ MonoBehaviour:
     Swipes: []
   - Name: ToggleUI
     AlwaysProcess: 0
-    Keys: 200000004d010000
+    Keys: 080000004d010000
     Axes: []
     Swipes: []
   - Name: ShowBacklog

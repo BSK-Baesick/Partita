@@ -35,13 +35,11 @@ public class DuetManager : MonoBehaviour
 
         if(stateMg.buttonPressed)
         {
-            UImg.buttonImage.enabled = false;
-            UImg.duetNotes.SetActive(false);
+            UImg.pickNotes.SetActive(false);
         }
         else
         {
-            UImg.buttonImage.enabled = true;
-            UImg.duetNotes.SetActive(true);
+            UImg.pickNotes.SetActive(true);
         }
 
         switch (Mathf.RoundToInt(stateMg.turnTime))
@@ -59,26 +57,40 @@ public class DuetManager : MonoBehaviour
                 UImg.timerFill.color = Color.magenta;
                 break;
         }
-
-        switch(stateMg.turnType)
+        if(stateMg.currentState == stateMg.startState)
         {
-            case 1:
-                //player solo
-                UImg.npcUI.SetActive(true);
-                UImg.duetUI.SetActive(false);
-                UImg.buttonImage.color = Color.cyan;
-                break;
-            case 2:
-                //npc solo
-                UImg.npcUI.SetActive(true);
-                UImg.duetUI.SetActive(false);
-                UImg.buttonImage.color = Color.magenta;
-                break;
-            case 3:
-                //pickChoice
-                UImg.npcUI.SetActive(false);
-                UImg.duetUI.SetActive(true);
-                break;
+            //pickchoice
+            UImg.startUI.SetActive(true);
+            UImg.choiceUI.SetActive(false);
+            UImg.chanceUI.SetActive(false);
+            UImg.bonusUI.SetActive(false);
+        }
+
+        if(stateMg.currentState == stateMg.playerState)
+        {
+            //pickchoice
+            UImg.startUI.SetActive(false);
+            UImg.choiceUI.SetActive(true);
+            UImg.chanceUI.SetActive(false);
+            UImg.bonusUI.SetActive(false);
+        }
+
+        if(stateMg.currentState == stateMg.chanceState)
+        {
+            //chance
+            UImg.startUI.SetActive(false);
+            UImg.choiceUI.SetActive(false);
+            UImg.chanceUI.SetActive(true);
+            UImg.bonusUI.SetActive(false);
+        }
+
+        if(stateMg.currentState == stateMg.bonusState)
+        {
+            //bonus
+            UImg.startUI.SetActive(false);
+            UImg.choiceUI.SetActive(false);
+            UImg.chanceUI.SetActive(false);
+            UImg.bonusUI.SetActive(true);
         }
     }
 }

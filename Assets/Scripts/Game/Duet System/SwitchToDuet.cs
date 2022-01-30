@@ -3,18 +3,18 @@ using Naninovel.Commands;
 using UniRx.Async;
 using UnityEngine;
 
-[CommandAlias("novel")]
-public class SwitchToNovel: Command
+[CommandAlias("duet")]
+public class SwitchToDuet: Command
 {
     public override async UniTask ExecuteAsync(CancellationToken asyncToken = default)
     {
         var duetManager = GameObject.Find("duet/DuetManager");
-        duetManager.SetActive(false);
+        duetManager.SetActive(true);
 
         var uiManager = Engine.GetService<IUIManager>();
-        uiManager.SetUIVisibleWithToggle(true, true);
+        uiManager.SetUIVisibleWithToggle(false, false);
 
         var inputManager = Engine.GetService<IInputManager>();
-        inputManager.ProcessInput = true;
+        inputManager.ProcessInput = false;
     }
 }

@@ -103,6 +103,9 @@ MonoBehaviour:
     - Name: SnowHeavy
       PathPrefix: Spawn
       Guid: 22c512d367684b848825ff35c7322dbd
+    - Name: duet
+      PathPrefix: Spawn
+      Guid: 19447ee7745ab9b4b80d4946832bc12c
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
