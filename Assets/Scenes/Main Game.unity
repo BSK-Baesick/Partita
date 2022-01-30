@@ -135,7 +135,6 @@ GameObject:
   - component: {fileID: 438184005}
   - component: {fileID: 438184007}
   - component: {fileID: 438184008}
-  - component: {fileID: 438184009}
   m_Layer: 0
   m_Name: Inky Manager
   m_TagString: Untagged
@@ -203,19 +202,6 @@ MonoBehaviour:
   paschaDuetParameter: Pascha_duet
   zurabDuetParameter: Zurab_duet
   duetParameterName: duet_character
---- !u!114 &438184009
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438184004}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 246d1597a386146eea128e069884725a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fmodAudioPlayer: {fileID: 438184008}
 --- !u!1001 &1079732837157625676
 PrefabInstance:
   m_ObjectHideFlags: 0

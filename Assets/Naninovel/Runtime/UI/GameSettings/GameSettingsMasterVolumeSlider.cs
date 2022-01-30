@@ -5,6 +5,7 @@ namespace Naninovel.UI
 {
     public class GameSettingsMasterVolumeSlider : ScriptableSlider
     {
+        
         private IAudioManager audioManager;
 
         protected override void Awake ()
