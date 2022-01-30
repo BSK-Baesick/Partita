@@ -15,7 +15,7 @@ public class Music
     public FMODUnity.EventReference musicFinale;
     public FMODUnity.EventReference musicMenu;
     public FMODUnity.EventReference musicWorld;
-    
+    public FMODUnity.EventReference minigamegGettingReady;   
 }
 
 [System.Serializable]
@@ -30,5 +30,6 @@ public class SFX
     public FMODUnity.EventReference minigameStephan;
     public FMODUnity.EventReference minigameVera;
     public FMODUnity.EventReference minigameZurab;
+    public FMODUnity.EventReference minigameBirds;
     public FMODUnity.EventReference uI_Click;
 }

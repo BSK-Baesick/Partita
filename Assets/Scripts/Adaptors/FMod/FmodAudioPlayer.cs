@@ -57,6 +57,13 @@ public class FmodAudioPlayer : MonoBehaviour
     {
         FMODUnity.RuntimeManager.PlayOneShot(fmodEventManager.music.musicWorld);
     }
+
+    //HV: Getting Ready
+    public void PlayMiniGameGettingReady()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(fmodEventManager.music.minigamegGettingReady);
+    }
+
     #endregion
 
     #region SFX
@@ -116,7 +123,13 @@ public class FmodAudioPlayer : MonoBehaviour
         FMODUnity.RuntimeManager.PlayOneShot(fmodEventManager.sFX.minigameZurab);
     }
 
-    //HV: UI Click
+    //HV: Zurab Minigame
+    public void PlayMinigameBirds()
+    {
+        FMODUnity.RuntimeManager.PlayOneShot(fmodEventManager.sFX.minigameBirds);
+    }
+
+    //HV: Minigame Birds
     public void PlayClickUI()
     {
         FMODUnity.RuntimeManager.PlayOneShot(fmodEventManager.sFX.uI_Click);
