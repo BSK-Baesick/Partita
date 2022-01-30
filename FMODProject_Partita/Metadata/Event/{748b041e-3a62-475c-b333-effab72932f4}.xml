@@ -122,6 +122,9 @@
 	</object>
 	<object class="MixerBusPanner" id="{39b55091-618f-4b06-876a-fb7c9da199a2}" />
 	<object class="MultiSound" id="{b36920b6-81d2-46ad-98ba-0eb5dfa78d03}">
+		<property name="volume">
+			<value>3.5</value>
+		</property>
 		<property name="playlistMode">
 			<value>1</value>
 		</property>
