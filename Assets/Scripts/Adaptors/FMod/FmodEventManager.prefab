@@ -72,6 +72,13 @@ MonoBehaviour:
         Data3: 829037707
         Data4: -1889677786
       Path: event:/MUSIC_world
+    minigamegGettingReady:
+      Guid:
+        Data1: -1596079664
+        Data2: 1150797873
+        Data3: -965695608
+        Data4: -1559280312
+      Path: event:/Minigame_gettingready
   sFX:
     busStopSoundscape:
       Guid:
@@ -136,10 +143,17 @@ MonoBehaviour:
         Data3: -84986957
         Data4: -198039113
       Path: event:/Minigame_Zurab
+    minigameBirds:
+      Guid:
+        Data1: -1572201775
+        Data2: 1280670893
+        Data3: -852531529
+        Data4: 1867220094
+      Path: event:/Minigame_birds
     uI_Click:
       Guid:
-        Data1: 1286402755
-        Data2: 1186796328
-        Data3: -972821620
-        Data4: 1878066631
+        Data1: -1842963160
+        Data2: 1099688167
+        Data3: 1740412063
+        Data4: 1064109908
       Path: event:/SFX_click
