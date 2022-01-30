@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="AudioFile" id="{45139d6a-5fc4-424b-90c6-027d27708aae}">
+		<property name="assetPath">
+			<value>viola_tuning.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>48</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>35.5</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{3a12382c-b13c-4465-9b6a-0fe0f391f9ca}</destination>
+		</relationship>
+	</object>
+</objects>

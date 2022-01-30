@@ -37,7 +37,7 @@ MonoBehaviour:
     Resources:
     - Name: Bubble
       PathPrefix: TextPrinters
-      Guid: b47d9659b2be5ee4e95a776f213c9d4b
+      Guid: a010dfa958b5fb645a7e7ef3425dc918
   - Id: TextPrinters/5b5c298e-7289-476f-93aa-e69b45de1c3c
     Resources:
     - Name: TMProDialogue
@@ -62,7 +62,7 @@ MonoBehaviour:
     Resources:
     - Name: ButtonList
       PathPrefix: ChoiceHandlers
-      Guid: 1f6aa29000e839c409e6a9c0704adc96
+      Guid: be64294fec19cf34dbbbd995f2f9179f
   - Id: ChoiceHandlers/29dafd1f-87b0-4bed-8160-11f9cd0543a9
     Resources:
     - Name: ButtonArea
@@ -100,6 +100,9 @@ MonoBehaviour:
     - Name: SunShafts
       PathPrefix: Spawn
       Guid: c4bf810b9b6cc9f44a58fd670678ded4
+    - Name: SnowHeavy
+      PathPrefix: Spawn
+      Guid: 22c512d367684b848825ff35c7322dbd
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -173,18 +176,21 @@ MonoBehaviour:
     - Name: Start Ink
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
+    - Name: WhereFrom
+      PathPrefix: Scripts
+      Guid: 0bde1e9f53e56f2419d68dd5b71f719b
   - Id: Audio
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
     Resources:
-    - Name: busstop1
+    - Name: MainBackground
       PathPrefix: Backgrounds/MainBackground
       Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
     - Name: Default
-      PathPrefix: Backgrounds/MainBackground
-      Guid: 1f4f7bfbb0a36cb4ba6ea37d5d94a276
+      PathPrefix: Characters/Stephan
+      Guid: 66433bf975a379f47a2f851b3dfaa9f8
   - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
     Resources:
     - Name: Default
@@ -197,9 +203,50 @@ MonoBehaviour:
       Guid: a0993a0b9fea51045bd2d723c45cb6c0
   - Id: CharacterAvatars
     Resources:
-    - Name: Millia
-      PathPrefix: CharacterAvatars
-      Guid: a0993a0b9fea51045bd2d723c45cb6c0
-    - Name: Protag
+    - Name: ProtagAvatar
       PathPrefix: CharacterAvatars
       Guid: 68aed0b4e68dcf94194a793867fb4b1c
+  - Id: Backgrounds/60d16735-5890-40a7-b5cb-a7f83817e842
+    Resources:
+    - Name: Chapter2BusStop
+      PathPrefix: Backgrounds
+      Guid: bb526a2a6d4732d44876b65a86b8c1b6
+  - Id: ChoiceHandlers/1a2e6485-26d7-4a03-b9a5-2781bc98adcc
+    Resources:
+    - Name: fostyle
+      PathPrefix: ChoiceHandlers
+      Guid: be64294fec19cf34dbbbd995f2f9179f
+  - Id: Characters/58537df7-284f-4e4e-8aa2-2629b881617b
+    Resources:
+    - Name: Default
+      PathPrefix: Characters/Protag
+      Guid: 68aed0b4e68dcf94194a793867fb4b1c
+  - Id: Characters/e7ea0b2b-4184-4969-94bf-ebfdf6d79e0b
+    Resources: []
+  - Id: Characters/7ccc65d6-2e47-43d0-95b6-37afb30d04a8
+    Resources: []
+  - Id: Backgrounds/3a3f92a0-9c3f-40af-9477-9e397d62c85d
+    Resources:
+    - Name: bs_7
+      PathPrefix: Backgrounds/Chapter1BusStop
+      Guid: db25581dc61a522489bd30cb550e8424
+  - Id: Backgrounds/ec8358b8-91d9-4289-8b35-af39cd756e0f
+    Resources:
+    - Name: ph_bonfire
+      PathPrefix: Backgrounds/Bonfire
+      Guid: 674a0c5f0f88359428aa91366b4db5a3
+  - Id: Backgrounds/b381c0ef-b043-4ad9-b11f-4a2f8a32e71b
+    Resources:
+    - Name: SnowWild
+      PathPrefix: Backgrounds
+      Guid: c4374e5a046ac1348999bd9535d3e954
+  - Id: Movies
+    Resources:
+    - Name: Intro
+      PathPrefix: Movies
+      Guid: d33ff32856efc5945ba07e48f45313ae
+  - Id: Backgrounds/8544b14e-b3dc-49e3-8f83-995d3d25e031
+    Resources:
+    - Name: BusInterior
+      PathPrefix: Backgrounds
+      Guid: a82e5e7136130fe4e819a9b5ed42823a

@@ -87,9 +87,14 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
+  hideOnLoad: 1
+  saveVisibilityState: 1
+  blockInputWhenVisible: 0
+  allowedSamplers: []
+  modalUI: 0
+  fontChangeConfiguration: []
   buttonsContainer: {fileID: 224198401566905306}
-  defaultButtonPrefab: {fileID: 114935234543976500, guid: 42edc7aecc2c80841908c954370cb307,
-    type: 3}
+  defaultButtonPrefab: {fileID: 114935234543976500, guid: 42edc7aecc2c80841908c954370cb307, type: 3}
   focusChoiceButtons: 1
 --- !u!225 &225470808532994266
 CanvasGroup:
@@ -125,6 +130,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!114 &114704911712777760
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -175,8 +181,8 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: 120}
+  m_AnchorMax: {x: 0.5, y: 0.32225925}
+  m_AnchoredPosition: {x: 0, y: 486}
   m_SizeDelta: {x: 800, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &114621990051940548
@@ -204,6 +210,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!114 &2274056889583601738
 MonoBehaviour:
   m_ObjectHideFlags: 0

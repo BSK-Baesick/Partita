@@ -61,6 +61,7 @@ MonoBehaviour:
     - Stephan
     - Pascha
     - Zakhar
+    - Protag
     metas:
     - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
@@ -81,8 +82,8 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
-      DisplayName: 
+      BakedLookDirection: 2
+      DisplayName: Millia
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
@@ -125,7 +126,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: 
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -160,7 +161,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: Stephan
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -204,7 +205,7 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
+      BakedLookDirection: 2
       DisplayName: Pascha
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
@@ -248,8 +249,43 @@ MonoBehaviour:
       CustomShader: {fileID: 0}
       RenderTexture: {fileID: 0}
       CorrectRenderAspect: 1
-      BakedLookDirection: 1
-      DisplayName: 
+      BakedLookDirection: 2
+      DisplayName: Zakhar
+      UseCharacterColor: 0
+      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      MessageColor: {r: 1, g: 1, b: 1, a: 1}
+      HighlightWhenSpeaking: 0
+      HighlightCharacterCount: 0
+      SpeakingTint: {r: 1, g: 1, b: 1, a: 1}
+      NotSpeakingTint: {r: 0.5, g: 0.5, b: 0.5, a: 1}
+      PlaceOnTop: 1
+      HighlightDuration: 0.35
+      HighlightEasing: 1
+      MessageSound: 
+      ClipMessageSound: 1
+      LinkedPrinter: 
+      Poses: []
+    - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+        Culture=neutral, PublicKeyToken=null
+      Loader:
+        PathPrefix: Characters
+        ProviderTypes:
+        - Naninovel.AddressableResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+        - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
+          Culture=neutral, PublicKeyToken=null
+      guid: 58537df7-284f-4e4e-8aa2-2629b881617b
+      customData:
+        id: 0
+      Pivot: {x: 0.5, y: 0}
+      PixelsPerUnit: 100
+      EnableDepthPass: 1
+      DepthAlphaCutoff: 0.5
+      CustomShader: {fileID: 0}
+      RenderTexture: {fileID: 0}
+      CorrectRenderAspect: 1
+      BakedLookDirection: 2
+      DisplayName: You
       UseCharacterColor: 0
       NameColor: {r: 1, g: 1, b: 1, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
