@@ -11,6 +11,7 @@ public class AudioTestScript : MonoBehaviour
     {
         fmodAudioPlayer = GetComponent<FmodAudioPlayer>();
         fmodAudioPlayer.PlayMinigameBirds();
+        
     }
 
     // Update is called once per frame
