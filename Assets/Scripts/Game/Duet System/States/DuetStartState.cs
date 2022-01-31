@@ -6,7 +6,7 @@ public class DuetStartState: DuetBaseState
 {
     public override void EnterState(DuetStateManager duet)
     {
-        duet.score = 0;
+        duet.score = 50;
         duet.buttonPressed = false;
     }
 

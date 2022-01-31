@@ -11,7 +11,7 @@ public class DuetPlayerPlayState : DuetBaseState
     private int timerInstance;
     public int buttonChosen;
 
-    private int turns;
+    public int turns;
 
     private string whoseTurn;
     
@@ -20,7 +20,7 @@ public class DuetPlayerPlayState : DuetBaseState
     public override void EnterState(DuetStateManager duet)
     {
         duet.turnTime = duet.setTurnTime;
-        turns = Random.Range(5,7);
+        turns = Random.Range(4,7);
     }
 
     public override void UpdateState(DuetStateManager duet)

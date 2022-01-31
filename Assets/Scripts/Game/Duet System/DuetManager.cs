@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DuetManager : MonoBehaviour
 {
@@ -18,6 +19,8 @@ public class DuetManager : MonoBehaviour
         UImg.scoreBar.value = stateMg.score;
         UImg.timerBar.value = stateMg.turnTime;
         
+        UImg.turnText.text = stateMg.playerState.turns + "x";
+
         switch(stateMg.bonusState.currentColor)
         {
             case 1:
@@ -31,7 +34,10 @@ public class DuetManager : MonoBehaviour
                 break;
         }
 
-        UImg.timerBar.maxValue = stateMg.setTurnTime;
+        if(stateMg.currentState == stateMg.bonusState)
+            UImg.timerBar.maxValue = stateMg.setTurnTime * 2;
+        else
+            UImg.timerBar.maxValue = stateMg.setTurnTime;
 
         if(stateMg.buttonPressed)
         {

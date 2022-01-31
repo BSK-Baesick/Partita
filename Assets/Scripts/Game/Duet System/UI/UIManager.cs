@@ -12,6 +12,8 @@ public class UIManager : MonoBehaviour
 
     public GameObject pickNotes;
 
+    public Text scoreText;
+    public Text turnText;
     public Slider scoreBar;
     public Image colorImage;
     public Slider timerBar;
