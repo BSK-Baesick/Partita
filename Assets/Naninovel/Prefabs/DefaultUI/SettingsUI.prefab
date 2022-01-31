@@ -1070,7 +1070,7 @@ GameObject:
   - component: {fileID: 224797458772190628}
   - component: {fileID: 114015454611578062}
   - component: {fileID: 114083071926363066}
-  - component: {fileID: 818062902236611039}
+  - component: {fileID: 5935995974246191617}
   m_Layer: 5
   m_Name: BgmVolumeSlider
   m_TagString: Untagged
@@ -1151,7 +1151,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 818062902236611039}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FmodAudioBusController, Assembly-CSharp
         m_MethodName: SetBusVolume
         m_Mode: 0
@@ -1188,7 +1188,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &818062902236611039
+--- !u!114 &5935995974246191617
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1197,10 +1197,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1135942475172094}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e228e1426cc864b2e84493ffbabc655c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/Master Bus/MX Master
+  busPath: bus:/MX Master
+  busVolume: 1
 --- !u!1 &1136363949352756
 GameObject:
   m_ObjectHideFlags: 0
@@ -6508,7 +6509,7 @@ GameObject:
   - component: {fileID: 224680088154248840}
   - component: {fileID: 114108345429691146}
   - component: {fileID: 114344960303325908}
-  - component: {fileID: 2445795963436414695}
+  - component: {fileID: 5054997512896538934}
   m_Layer: 5
   m_Name: SfxVolumeSlider
   m_TagString: Untagged
@@ -6589,7 +6590,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2445795963436414695}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FmodAudioBusController, Assembly-CSharp
         m_MethodName: SetBusVolume
         m_Mode: 0
@@ -6626,7 +6627,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &2445795963436414695
+--- !u!114 &5054997512896538934
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6635,10 +6636,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1646518415445828}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e228e1426cc864b2e84493ffbabc655c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/Master Bus/SFX Master
+  busPath: bus:/SFX Master
+  busVolume: 1
 --- !u!1 &1649431306128702
 GameObject:
   m_ObjectHideFlags: 0
@@ -7830,7 +7832,7 @@ GameObject:
   - component: {fileID: 224754575539271136}
   - component: {fileID: 114073951034471774}
   - component: {fileID: 114563707968940332}
-  - component: {fileID: 6364277118383909033}
+  - component: {fileID: 5079264762639213124}
   m_Layer: 5
   m_Name: MasterVolumeSlider
   m_TagString: Untagged
@@ -7911,7 +7913,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6364277118383909033}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FmodAudioBusController, Assembly-CSharp
         m_MethodName: SetBusVolume
         m_Mode: 0
@@ -7948,7 +7950,7 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6364277118383909033
+--- !u!114 &5079264762639213124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7957,10 +7959,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1752646349725316}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e228e1426cc864b2e84493ffbabc655c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   busPath: bus:/Master Bus
+  busVolume: 1
 --- !u!1 &1756339526711074
 GameObject:
   m_ObjectHideFlags: 0
@@ -9798,7 +9801,7 @@ GameObject:
   - component: {fileID: 224909992027358994}
   - component: {fileID: 114926606503624176}
   - component: {fileID: 114001154731766168}
-  - component: {fileID: 4627569072205450804}
+  - component: {fileID: 5601564500435961168}
   m_Layer: 5
   m_Name: VoiceVolumeSlider
   m_TagString: Untagged
@@ -9879,7 +9882,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4627569072205450804}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: FmodAudioBusController, Assembly-CSharp
         m_MethodName: SetBusVolume
         m_Mode: 0
@@ -9917,7 +9920,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   authorId: 
---- !u!114 &4627569072205450804
+--- !u!114 &5601564500435961168
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9926,10 +9929,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1901363908740948}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e228e1426cc864b2e84493ffbabc655c, type: 3}
+  m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/Master Bus/Voice Master
+  busPath: bus:/Voice Master
+  busVolume: 1
 --- !u!1 &1936785252008472
 GameObject:
   m_ObjectHideFlags: 0

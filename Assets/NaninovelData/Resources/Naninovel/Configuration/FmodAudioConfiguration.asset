@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5324ced3c5fea924a85ef40d573cdd3f, type: 3}
+  m_Name: FmodAudioConfiguration
+  m_EditorClassIdentifier: 
+  duet:
+    Guid:
+      Data1: 265498131
+      Data2: 1225630576
+      Data3: -1275059049
+      Data4: -1077205249
+    Path: event:/MUSIC_duet
+  finale:
+    Guid:
+      Data1: -1314649387
+      Data2: 1180778381
+      Data3: 996792489
+      Data4: 368809170
+    Path: event:/MUSIC_finale
+  menu:
+    Guid:
+      Data1: 2034466473
+      Data2: 1273576920
+      Data3: 1516431277
+      Data4: 1190652741
+    Path: event:/MUSIC_menu
+  world:
+    Guid:
+      Data1: 726610018
+      Data2: 1225982235
+      Data3: 829037707
+      Data4: -1889677786
+    Path: event:/MUSIC_world
+  gettingReady:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
+  busStopSoundscape:
+    Guid:
+      Data1: -319462456
+      Data2: 1124280359
+      Data3: -1917955935
+      Data4: 1966924300
+    Path: event:/SFX_heavy_snow_day
+  bonfireSoundscape:
+    Guid:
+      Data1: -882357577
+      Data2: 1322482728
+      Data3: 828377753
+      Data4: -1094003758
+    Path: event:/SFX_heavy_snow_night
+  loverTalk:
+    Guid:
+      Data1: 2125511832
+      Data2: 1088889812
+      Data3: 967961022
+      Data4: -974376938
+    Path: event:/SFX_Lover_talk
+  uiClick:
+    Guid:
+      Data1: 1286402755
+      Data2: 1186796328
+      Data3: -972821620
+      Data4: 1878066631
+    Path: event:/SFX_click
+  minigameMillia:
+    Guid:
+      Data1: -1004121518
+      Data2: 1162125317
+      Data3: -2091798630
+      Data4: 568506244
+    Path: event:/Minigame_Millia
+  minigamePascha:
+    Guid:
+      Data1: -1657997414
+      Data2: 1308481175
+      Data3: 1348678565
+      Data4: 1829276936
+    Path: event:/Minigame_Pascha
+  protag:
+    Guid:
+      Data1: 526853747
+      Data2: 1259668281
+      Data3: 1206550674
+      Data4: -2014634180
+    Path: event:/Minigame_Protag
+  minigameStephan:
+    Guid:
+      Data1: 1682223124
+      Data2: 1093600073
+      Data3: -509153917
+      Data4: 2140088351
+    Path: event:/Minigame_Stephan
+  minigameVera:
+    Guid:
+      Data1: 1454912571
+      Data2: 1284011094
+      Data3: -206367588
+      Data4: 952350618
+    Path: event:/Minigame_Vera
+  minigameZurab:
+    Guid:
+      Data1: 1955267614
+      Data2: 1197226594
+      Data3: -84986957
+      Data4: -198039113
+    Path: event:/Minigame_Zurab
+  minigameBirds:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 

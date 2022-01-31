@@ -115,6 +115,9 @@
 		</relationship>
 	</object>
 	<object class="EventMixerGroup" id="{e459ef5c-6df5-4b0a-a36d-578e32f0bdb5}">
+		<property name="volume">
+			<value>-2.5</value>
+		</property>
 		<property name="name">
 			<value>Audio 1</value>
 		</property>
@@ -149,6 +152,9 @@
 		</relationship>
 	</object>
 	<object class="SingleSound" id="{6ee3f0a3-b3fd-41d3-b3ff-a9b36e6903bf}">
+		<property name="volume">
+			<value>4</value>
+		</property>
 		<relationship name="audioFile">
 			<destination>{ffbf1728-1298-4853-a83a-558d7bd0a1c1}</destination>
 		</relationship>
