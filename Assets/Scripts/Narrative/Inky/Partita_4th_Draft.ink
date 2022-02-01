@@ -1,63 +1,45 @@
-Winter curls around your ankles, biting at the flame that binds you.
-
-"It's time to go."
-
-"I'm not ready."
-
-"Who is?"
-
-"I'm cold."
-
-"Everyone's cold."
-
-"Well I'm fucking freezing."
-
-"It's winter."
-
-"Hold me."
-
-"-"
-
-"Please."
-
-"We don't hav-"
-
-You embrace.
-
-"We have to go."
-
-"I know."
-
-"I'll leave letters.”
-
-"I know."
-
-“Find them.”
-
-“I know.
-
-"I'll see you soon."
-
-"I know."
-
-"I love you."
-
-"I love you."
 ->Chapter1
 
 =Chapter1
+
+@startTrans
+
+@back id:BusInterior
+
+@playBusStopSoundscape
+
+@finishTrans Crossfade time:3
+
+@hide BusInterior remove:true
+
+@playWorldMusic
+
+@back bs_7 id:Chapter1BusStop
+
+@spawn Snow params: 300, 3
+
+@char Millia
 
 As your feet touch soft powder, weary eyes pierce through glaring snow. An ancient woman sits, alert, back pressed against the cracked concrete wall. In her arms she cradles a rifle, trained delicately on your approach.
 
     Her voice is backed with a surprising vigor.
 
+@char Protag
+
 MILLIA: "No."
+
+@resetText
 
 +"-"
 ->SilentType
 +"Yes."
 She scoffs and raises the rifle to her eyeline.
+
+@spawn DepthOfField params:Millia,10,0.95,3
 MILLIA: "Say that again?"
+
+@resetText
+
     ++"-"
     ->SilentType
     ++"No."
@@ -71,6 +53,9 @@ MILLIA: "Say that again?"
     She laughs.
     You feel a trickle of blood.
         +++Take a step towards her.
+        
+        @resetText
+        
         BANG!
         Another bullet. Cutting delicately into the skin of your cheek
         Another laugh. 
@@ -78,6 +63,9 @@ MILLIA: "Say that again?"
         Then silence.
         She stares. 
         Curled lips smirk in amusement.
+        
+        @resetText
+        
             ++++"If you wanted me dead, I'd be dead."
             ->IfYouWantedMeDead
             ++++"What the fuck!?"
