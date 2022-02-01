@@ -1,11 +1,12 @@
 using System;
 using UniRx.Async;
 using Naninovel;
+using UnityEngine;
 
 [InitializeAtRuntime] // makes the service auto-initialize with other built-in engine services
-public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IStatefulService<SettingsStateMap>, IFmodAudioManager
+public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IFmodAudioManager
 {
-    public FmodAudioConfiguration Configuration { get; }
+    public FmodAudioConfiguration Configuration { get; set; }
 
     public FmodAudioManager(FmodAudioConfiguration config)
     {
@@ -16,20 +17,14 @@ public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IStatefu
         Configuration = config;
     }
 
-
-    //HV: Duet Parameters 
-    public string milliaDuetParameter = "Millia_duet";
-    public string stephanDuetParameter = "Stephan_duet";
-    public string veraDuetParameter = "Vera_duet";
-    public string paschaDuetParameter = "Pascha_duet";
-    public string zurabDuetParameter = "Zurab_duet";
-
-    public string duetParameterName = "duet_character";
+    public FmodAudioController audioController;
 
     public UniTask InitializeServiceAsync()
     {
         // Invoked when the engine is initializing, after services required in the constructor are initialized;
-
+        audioController = Engine.CreateObject<FmodAudioController>();
+        Engine.CreateObject<FMODUnity.StudioListener>();
+        
         return UniTask.CompletedTask;
     }
 
@@ -39,83 +34,85 @@ public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IStatefu
 
     }
 
+    public FmodAudioController GetFmodAudioController()
+    {
+        return audioController;
+    }
+
     public void DestroyService()
     {
         // Invoked when destroying the engine.
-    }
-
-    public void SaveServiceState(SettingsStateMap stateMap)
-    {
-        /* var settings = new Settings
-        {
-            MasterVolume = Configuration.masterVolume,
-            MusicVolume = Configuration.musicVolume,
-            SfxVolume = Configuration.sfxVolume,
-        };
-
-        stateMap.SetState(settings); */
-    }
-
-    public UniTask LoadServiceStateAsync(SettingsStateMap stateMap)
-    {
-        /* var settings = stateMap.GetState<Settings>();
-
-        if (settings is null) // Apply default settings.
-        {
-            Configuration.masterVolume = GetMasterVolume();
-            Configuration.musicVolume = GetMusicBusVolume();
-            Configuration.sfxVolume = GetSfxBusVolume();
-            return UniTask.CompletedTask;
-        }
-
-        Configuration.masterVolume = settings.MasterVolume;
-        Configuration.musicVolume = settings.MusicVolume;
-        Configuration.sfxVolume = settings.SfxVolume; */
-
-        return UniTask.CompletedTask;
     }
 
     #region MUSIC
     //HV: MUSIC METHODS
 
     //HV: Music Duet (0 = Millia, 1 = Stephan, 2 = Vera, 3 = Pascha, 4 = Zurab)
-    public virtual void PlayMusicDuet(int parameterNumber)
+    public void StartMusicDuet(int parameterNumber)
     {
-        FMOD.Studio.EventInstance duetMusic = FMODUnity.RuntimeManager.CreateInstance(Configuration.duet);
-        duetMusic.setParameterByName(duetParameterName, parameterNumber);
-        duetMusic.start();
-        duetMusic.release();
+        audioController.PlayMusicDuet(parameterNumber);
     }
 
     //HV: Music Finale (0 = false, 1 = true)
-    public virtual void PlayMusicFinale(int milliaParameterint, int stephanParameterint, int veraParameterint, int paschaParameterint, int zurabParameterint)
+    public void StartMusicFinale(int milliaParameterint, int stephanParameterint, int veraParameterint, int paschaParameterint, int zurabParameterint)
     {
-        FMOD.Studio.EventInstance finaleMusic = FMODUnity.RuntimeManager.CreateInstance(Configuration.finale);
-        finaleMusic.setParameterByName(milliaDuetParameter, milliaParameterint);
-        finaleMusic.setParameterByName(stephanDuetParameter, stephanParameterint);
-        finaleMusic.setParameterByName(veraDuetParameter, veraParameterint);
-        finaleMusic.setParameterByName(paschaDuetParameter, paschaParameterint);
-        finaleMusic.setParameterByName(zurabDuetParameter, zurabParameterint);
-        finaleMusic.start();
-        finaleMusic.release();
+        audioController.PlayMusicFinale(milliaParameterint, stephanParameterint, veraParameterint, paschaParameterint, zurabParameterint);
     }
 
     //HV: Music Menu
-    public void PlayMenuMusic()
+    public void StartMenuMusic()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.menu);
+        audioController.PlayMenuMusic();
+    }
+
+    public void EndMenuMusic()
+    {
+        audioController.StopMenuMusic();
     }
 
     //HV: Music World
-    public void PlayWorldMusic()
+    public void StartWorldMusic()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.world);
+        audioController.PlayWorldMusic();
+    }
+
+    //HV: Music World
+    public void EndWorldMusic()
+    {
+        audioController.StopWorldMusic();
     }
 
     //HV: Getting Ready
-    public void PlayMiniGameGettingReady()
+    public void StartMiniGameGettingReady()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.gettingReady);
+        audioController.PlayMiniGameGettingReady();
+    }
+
+    public void EndMiniGameGettingReady()
+    {
+        audioController.StopWorldMusic();
+    }
+
+    //HV: Bus Stop Soundscape/Heavy Snow Day
+    public void StartBusStopSoundscape()
+    {
+        audioController.PlayBusStopSoundscape();
+    }
+
+    public void EndBusStopSoundscape()
+    {
+        audioController.StopBusStopSoundscape();
+    }
+
+    //HV: Bonfire Soundscape/Heavy Snow Night
+    public void StartBonfireSoundscape()
+    {
+        audioController.PlayBonfireSoundscape();
+    }
+
+    public void EndBonfireSoundscape()
+    {
+        audioController.StopBonfireSoundscape();
     }
 
     #endregion
@@ -123,69 +120,58 @@ public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IStatefu
     #region SFX
     //HV: SFX METHODS
 
-    //HV: Bus Stop Soundscape/Heavy Snow Day
-    public void PlayBusStopSoundscape()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.busStopSoundscape);
-    }
-
-    //HV: Bonfire Soundscape/Heavy Snow Night
-    public void PlayBonfireSoundscape()
-    {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.bonfireSoundscape);
-    }
-
     //HV: Lover Talk
-    public void PlayLoverTalk()
+    public void StartLoverTalk()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.loverTalk);
+        audioController.PlayLoverTalk();
     }
 
     //HV: Millia Minigame
-    public void PlayMinigameMillia()
+    public void StartMinigameMillia()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigameMillia);
+        audioController.PlayMinigameMillia();
     }
 
     //HV: Pascha Minigame
-    public void PlayMinigamePascha()
+    public void StartMinigamePascha()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigamePascha);
+        audioController.PlayMinigamePascha();
     }
 
     //HV: Protag Minigame
-    public void PlayMinigameProtag()
+    public void StartMinigameProtag()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.protag);
+        audioController.PlayMinigameProtag();
     }
 
     //HV: Stephan Minigame
-    public void PlayMinigameStephan()
+    public void StartMinigameStephan()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigameStephan);
+        audioController.PlayMinigameStephan();
     }
 
     //HV: Vera Minigame
-    public void PlayMinigameVera()
+    public void StartMinigameVera()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigameVera);
+        audioController.PlayMinigameVera();
     }
 
     //HV: Zurab Minigame
-    public void PlayMinigameZurab()
+    public void StartMinigameZurab()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigameZurab);
+        audioController.PlayMinigameZurab();
     }
 
     //HV: Zurab Minigame
-    public void PlayMinigameBirds()
+    public void StartMinigameBirds()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.minigameBirds);
+        audioController.PlayMinigameBirds();
     }
 
-    public void PlayClickUI()
+    public void StartClickUI()
     {
-        FMODUnity.RuntimeManager.PlayOneShot(Configuration.uiClick);
+        audioController.PlayClickUI();
     }
     #endregion
+
 }

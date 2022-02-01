@@ -6,8 +6,8 @@ using Naninovel;
 public interface IFmodAudioManager : IEngineService<FmodAudioConfiguration>
 {
 
-    void PlayMusicDuet(int parameterNumber);
+    void StartMusicDuet(int parameterNumber);
 
-    void PlayMusicFinale(int milliaParameterint, int stephanParameterint, int veraParameterint, int paschaParameterint, int zurabParameterint);
+    void StartMusicFinale(int milliaParameterint, int stephanParameterint, int veraParameterint, int paschaParameterint, int zurabParameterint);
 
 }

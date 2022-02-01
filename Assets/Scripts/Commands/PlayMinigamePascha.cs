@@ -2,17 +2,15 @@ using Naninovel;
 using Naninovel.Commands;
 using UniRx.Async;
 
-[CommandAlias("playMusicDuet")]
-public class PlayMusicDuet : Command
+[CommandAlias("playMinigamePascha")]
+public class PlayMinigamePascha : Command
 {
-    [RequiredParameter]
-    private IntegerParameter characterId;
 
     public override async UniTask ExecuteAsync(CancellationToken asyncToken = default)
     {
         var audioManager = Engine.GetService<FmodAudioManager>();
 
-        audioManager.StartMusicDuet(characterId);
+        audioManager.StartMinigamePascha();
 
         await UniTask.CompletedTask;
     }

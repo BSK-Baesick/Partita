@@ -155,30 +155,18 @@ MonoBehaviour:
       Guid: 4b121aa1be1b7e04480b452c595ff17a
   - Id: Scripts
     Resources:
-    - Name: TestNarrative
-      PathPrefix: Scripts
-      Guid: 420e409fc67d5404e8170ba7ed5d79ed
-    - Name: Chapter2
-      PathPrefix: Scripts
-      Guid: 1eb7f6bf86f16f246bb6de333b182ee7
-    - Name: SilentType
-      PathPrefix: Scripts
-      Guid: 8a67966a23dc9344ebd3b9fe95584f85
-    - Name: WhereFrom
-      PathPrefix: Scripts
-      Guid: d78e3331d14ae4445b572398f35d4e25
-    - Name: Chapter4
-      PathPrefix: Scripts
-      Guid: bddb2cca591509d4a8a80726ce5e530c
-    - Name: Chapter5
-      PathPrefix: Scripts
-      Guid: d172b9f07329a3c48b08bf129e98f9b7
-    - Name: Start Ink
+    - Name: StartGame
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
-    - Name: WhereFrom
+    - Name: Menu
       PathPrefix: Scripts
-      Guid: 0bde1e9f53e56f2419d68dd5b71f719b
+      Guid: 450d2b521ab75e64d9c10fa4fca6b604
+    - Name: ClickSFX
+      PathPrefix: Scripts
+      Guid: 9d4b1021f6a4be6408ab38da7c7f1bab
+    - Name: MenuEnd
+      PathPrefix: Scripts
+      Guid: c969fe5c78ace3f4896983b6b9ec475a
   - Id: Audio
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
