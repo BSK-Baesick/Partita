@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{79437ea9-3dd8-4be9-ade7-625a45ebf746}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
 		<property name="name">
 			<value>MUSIC_menu</value>
 		</property>
@@ -62,7 +65,11 @@
 			<destination>{71cddd9e-f557-4fea-be18-2bd24dd91c1f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{9c6c8f92-0c6a-4b6f-b8b1-eafe6633d96d}" />
+	<object class="EventAutomatableProperties" id="{9c6c8f92-0c6a-4b6f-b8b1-eafe6633d96d}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{64cfa5c0-5830-46ae-83f7-b8978a0f70b1}" />
 	<object class="GroupTrack" id="{f67a8720-7ac7-47a1-a448-90e14ec7d72a}">
 		<relationship name="modules">
@@ -125,7 +132,7 @@
 	</object>
 	<object class="EventMixerMaster" id="{6cdd6aeb-eeb6-4dc6-a322-3d25d2c7ba1b}">
 		<relationship name="modulators">
-			<destination>{00332329-d9c4-4042-bfd8-25f34be9136c}</destination>
+			<destination>{25899adf-eae1-4aa1-af92-3f6daf26b0c9}</destination>
 		</relationship>
 		<relationship name="effectChain">
 			<destination>{41c9ac13-49b5-4ac0-ab5b-ff115505d40f}</destination>
@@ -307,7 +314,7 @@
 			<destination>{64cfa5c0-5830-46ae-83f7-b8978a0f70b1}</destination>
 		</relationship>
 	</object>
-	<object class="ADSRModulator" id="{00332329-d9c4-4042-bfd8-25f34be9136c}">
+	<object class="ADSRModulator" id="{25899adf-eae1-4aa1-af92-3f6daf26b0c9}">
 		<property name="nameOfPropertyBeingModulated">
 			<value>volume</value>
 		</property>
@@ -315,10 +322,10 @@
 			<value>-80</value>
 		</property>
 		<property name="releaseTime">
-			<value>5000</value>
+			<value>3000</value>
 		</property>
 		<property name="releaseShape">
-			<value>0.333775461</value>
+			<value>0.179758608</value>
 		</property>
 		<property name="finalValue">
 			<value>-80</value>

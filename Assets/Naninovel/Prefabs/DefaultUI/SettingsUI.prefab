@@ -1200,7 +1200,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/MX Master
+  busPath: bus:/Master Bus/MX Master
   busVolume: 1
 --- !u!1 &1136363949352756
 GameObject:
@@ -6747,7 +6747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/SFX Master
+  busPath: bus:/Master Bus/SFX Master
   busVolume: 1
 --- !u!1 &1649431306128702
 GameObject:
@@ -10040,7 +10040,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9492e8fd92eefb04097c5090be10df21, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  busPath: bus:/Voice Master
+  busPath: bus:/Master Bus/Voice Master
   busVolume: 1
 --- !u!1 &1936785252008472
 GameObject:
