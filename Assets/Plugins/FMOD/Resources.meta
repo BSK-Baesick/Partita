@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/FMOD/Resources.meta
 guid: e49af6009d163b043a7910eff684ba9f
+=======
+guid: 06ae579381df01a4a87bb149dec89954
+>>>>>>> duet-system-prototype:Assets/Plugins/FMOD.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

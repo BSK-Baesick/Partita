@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/FMOD/images/ContinuousParameterIcon.png.meta
 guid: b92803770616fc747bc3c40ffaec0a42
+=======
+guid: 6db219842a6fe1a4c92742f2beaa8a83
+>>>>>>> duet-system-prototype:Assets/Art/duetbar.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

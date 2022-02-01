@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 63f58c0238e6a9e478606d1d993309cc
+=======
+guid: dba56b95f549000ff80251dd4a95b3a4
+>>>>>>> duet-system-prototype
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -14,11 +18,16 @@ PluginImporter:
   - first:
       Any: 
     second:
+<<<<<<< HEAD
       enabled: 0
+=======
+      enabled: 1
+>>>>>>> duet-system-prototype
       settings: {}
   - first:
       Editor: Editor
     second:
+<<<<<<< HEAD
       enabled: 1
       settings:
         CPU: x86_64
@@ -28,6 +37,11 @@ PluginImporter:
     second:
       enabled: 1
       settings: {}
+=======
+      enabled: 0
+      settings:
+        DefaultValueInitialized: true
+>>>>>>> duet-system-prototype
   userData: 
   assetBundleName: 
   assetBundleVariant: 

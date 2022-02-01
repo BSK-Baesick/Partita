@@ -1,5 +1,13 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: 9a92017059267bf4dad529bd5ef60b9c
+=======
+<<<<<<< HEAD:Assets/Plugins/FMOD/Cache.meta
+guid: d2b819e44ab46a245be7e19d471e6f6b
+=======
+guid: 9a92017059267bf4dad529bd5ef60b9c
+>>>>>>> duet-system-prototype:Assets/Plugins.meta
+>>>>>>> duet-system-prototype
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Art/User Interface/Splash Screen/maxresdefault.jpg.meta
 guid: 6903b8365df620b4480df25b1daa71e8
+=======
+guid: e4e5d109d61bb8447bda06ce396185db
+>>>>>>> duet-system-prototype:Assets/Art/Circle.png.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

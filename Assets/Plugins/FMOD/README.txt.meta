@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Plugins/FMOD/README.txt.meta
 guid: 081074d1d9d6ab448b88688c3730e8a1
 TextScriptImporter:
+=======
+guid: d28082884352c3745803b1c4756c090b
+PrefabImporter:
+>>>>>>> duet-system-prototype:Assets/Art/Bad Notes.prefab.meta
   externalObjects: {}
   userData: 
   assetBundleName: 
