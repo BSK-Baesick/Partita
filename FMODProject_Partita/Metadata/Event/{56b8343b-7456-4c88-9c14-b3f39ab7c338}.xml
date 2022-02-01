@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{56b8343b-7456-4c88-9c14-b3f39ab7c338}">
+		<property name="color">
+			<value>Purple</value>
+		</property>
 		<property name="name">
 			<value>minigame_Vera</value>
 		</property>

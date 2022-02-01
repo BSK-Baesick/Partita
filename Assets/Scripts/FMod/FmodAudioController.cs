@@ -200,7 +200,7 @@ public class FmodAudioController : MonoBehaviour
     public void PlayClickUI()
     {
         var eventReference = fmodAudioConfiguration.uiClick;
-        FMODUnity.RuntimeManager.PlayOneShot(eventReference);
+        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX_click");
     }
 
     #endregion

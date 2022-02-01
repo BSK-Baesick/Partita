@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <objects serializationModel="Studio.02.01.00">
 	<object class="Event" id="{2b4f3062-011b-4913-8b1c-6a3126ce5d8f}">
+		<property name="color">
+			<value>Magenta</value>
+		</property>
 		<property name="name">
 			<value>MUSIC_world</value>
 		</property>
@@ -62,7 +65,11 @@
 			<destination>{71cddd9e-f557-4fea-be18-2bd24dd91c1f}</destination>
 		</relationship>
 	</object>
-	<object class="EventAutomatableProperties" id="{e61404ba-a5bf-4db4-8369-f8471b3daff3}" />
+	<object class="EventAutomatableProperties" id="{e61404ba-a5bf-4db4-8369-f8471b3daff3}">
+		<property name="maxVoices">
+			<value>1</value>
+		</property>
+	</object>
 	<object class="MarkerTrack" id="{2676e884-3135-4daf-b718-04db1a532a11}" />
 	<object class="GroupTrack" id="{2d49a6ed-46df-4757-b954-bbe373a8ea85}">
 		<relationship name="modules">
