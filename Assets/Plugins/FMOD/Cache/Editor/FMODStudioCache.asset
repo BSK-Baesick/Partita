@@ -28,30 +28,6 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14963
---- !u!114 &-7632134667512466989
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Zurab_duet
-  m_EditorClassIdentifier: 
-  Name: Zurab_duet
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 386177743
-    data2: 3659736749
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &-7599600655663109886
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -66,20 +42,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/SFX_click
   Guid:
-    Data1: -1842963160
-    Data2: 1099688167
-    Data3: 1740412063
-    Data4: 1064109908
+    Data1: 1286402755
+    Data2: 1186796328
+    Data3: -972821620
+    Data4: 1878066631
   Banks:
   - {fileID: 6734345658795634640}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 3451924502365170080}
   MinDistance: 0
   MaxDistance: 0
-  Length: 2606
---- !u!114 &-7246451505829588870
+  Length: 0
+--- !u!114 &-6724256261716747478
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -89,31 +66,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/1
-  m_EditorClassIdentifier: 
-  Name: 1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1901083469
-    data2: 300504962
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-7144239781657943537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/Parameter 2
+  m_Name: parameter:/MUSIC_world/Parameter 2
   m_EditorClassIdentifier: 
   Name: Parameter 2
   StudioPath: 
@@ -127,35 +80,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &-6537900541036976178
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_duet
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_duet
-  Guid:
-    Data1: 265498131
-    Data2: 1225630576
-    Data3: -1275059049
-    Data4: -1077205249
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters:
-  - {fileID: -1483010997900668434}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 66857
---- !u!114 &-5898716316863760803
+--- !u!114 &-6093436602108247372
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -165,16 +90,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Stephan_duet
+  m_Name: parameter:/MUSIC_world/Parameter 5
   m_EditorClassIdentifier: 
-  Name: Stephan_duet
+  Name: Parameter 5
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 968881134
-    data2: 4011441088
+    data1: 2509610369
+    data2: 1160230999
   Type: 1
   IsGlobal: 0
   Labels: []
@@ -206,34 +131,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &-5479982610460253708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Millia
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Millia
-  Guid:
-    Data1: -1004121518
-    Data2: 1162125317
-    Data3: -2091798630
-    Data4: 568506244
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-5345845531603828643
+--- !u!114 &-4937405767163815976
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -243,21 +141,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Pascha_duet
+  m_Name: parameter:/Zurab_duet
   m_EditorClassIdentifier: 
-  Name: Pascha_duet
-  StudioPath: 
+  Name: Zurab_duet
+  StudioPath: parameter:/Zurab_duet
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 3594490401
-    data2: 2447494444
+    data1: 386177743
+    data2: 3659736749
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-4017355978986601439
+--- !u!114 &-4327344981504229310
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -267,55 +165,52 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_world
+  m_Name: event:/Minigame_Stephan
   m_EditorClassIdentifier: 
-  Path: event:/mUSIC_world
+  Path: event:/Minigame_Stephan
   Guid:
-    Data1: 726610018
-    Data2: 1225982235
-    Data3: 829037707
-    Data4: -1889677786
+    Data1: 1682223124
+    Data2: 1093600073
+    Data3: -509153917
+    Data4: 2140088351
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-4177541284441706116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC_duet
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC_duet
+  Guid:
+    Data1: 265498131
+    Data2: 1225630576
+    Data3: -1275059049
+    Data4: -1077205249
   Banks:
   - {fileID: 6734345658795634640}
   IsStream: 1
   Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 184299390257508936}
-  - {fileID: -7144239781657943537}
-  - {fileID: -2385245905295611627}
-  - {fileID: -7246451505829588870}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
---- !u!114 &-2691341443600372000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Pascha
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Pascha
-  Guid:
-    Data1: -1657997414
-    Data2: 1308481175
-    Data3: 1348678565
-    Data4: 1829276936
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
   IsOneShot: 1
-  Parameters: []
+  Parameters:
+  - {fileID: 6076435013853114379}
   MinDistance: 0
   MaxDistance: 0
-  Length: 0
---- !u!114 &-2385245905295611627
+  Length: 66857
+--- !u!114 &-3506117026343088916
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -325,21 +220,45 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/Parameter 4
+  m_Name: parameter:/Stephan_duet
   m_EditorClassIdentifier: 
-  Name: Parameter 4
+  Name: Stephan_duet
+  StudioPath: parameter:/Stephan_duet
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 968881134
+    data2: 4011441088
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-1999083466146068917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_finale/Stephan_duet
+  m_EditorClassIdentifier: 
+  Name: Stephan_duet
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 3377883092
-    data2: 2841335612
+    data1: 968881134
+    data2: 4011441088
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-2214747746037321820
+--- !u!114 &-1621967374914951457
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -349,7 +268,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Millia_duet
+  m_Name: parameter:/MUSIC_finale/Millia_duet
   m_EditorClassIdentifier: 
   Name: Millia_duet
   StudioPath: 
@@ -360,92 +279,9 @@ MonoBehaviour:
     data1: 568462561
     data2: 615650383
   Type: 1
-  IsGlobal: 0
+  IsGlobal: 1
   Labels: []
   Exists: 1
---- !u!114 &-1951701886618562188
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_gettingready
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_gettingready
-  Guid:
-    Data1: -795228409
-    Data2: 1199942305
-    Data3: 1467185557
-    Data4: 823560235
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 16253
---- !u!114 &-1483010997900668434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_duet/duet_character
-  m_EditorClassIdentifier: 
-  Name: duet_character
-  StudioPath: 
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 3197208376
-    data2: 1898819561
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-1355923233870477328
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_finale
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_finale
-  Guid:
-    Data1: -1314649387
-    Data2: 1180778381
-    Data3: 996792489
-    Data4: 368809170
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -7632134667512466989}
-  - {fileID: -5898716316863760803}
-  - {fileID: 2160544116609209392}
-  - {fileID: -5345845531603828643}
-  - {fileID: -2214747746037321820}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 236571
 --- !u!114 &-896059827081223429
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -461,10 +297,114 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 637793069780000000
+  lastModified: 637788741020000000
   FileSizes:
   - Name: Desktop
-    Value: 2156
+    Value: 1918
+  Exists: 1
+--- !u!114 &-795158012065094009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_finale/Vera_duet
+  m_EditorClassIdentifier: 
+  Name: Vera_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4100425373
+    data2: 3029236381
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &-766301122652629274
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MUSIC_finale
+  m_EditorClassIdentifier: 
+  Path: event:/MUSIC_finale
+  Guid:
+    Data1: -1314649387
+    Data2: 1180778381
+    Data3: 996792489
+    Data4: 368809170
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 9089102836129225661}
+  - {fileID: -1999083466146068917}
+  - {fileID: -795158012065094009}
+  - {fileID: 8460274044761232356}
+  - {fileID: -1621967374914951457}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 117428
+--- !u!114 &-702634389058254410
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_world/Parameter 4
+  m_EditorClassIdentifier: 
+  Name: Parameter 4
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3377883092
+    data2: 2841335612
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-534091551461368246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Vera_duet
+  m_EditorClassIdentifier: 
+  Name: Vera_duet
+  StudioPath: parameter:/Vera_duet
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 4100425373
+    data2: 3029236381
+  Type: 1
+  IsGlobal: 1
+  Labels: []
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -486,50 +426,28 @@ MonoBehaviour:
   - {fileID: 1727120071999117242}
   - {fileID: -9162888729499294088}
   - {fileID: -7599600655663109886}
-  - {fileID: -1951701886618562188}
-  - {fileID: -6537900541036976178}
-  - {fileID: 707477173547638348}
-  - {fileID: 2509442290022097620}
-  - {fileID: 7409698925019042295}
-  - {fileID: -5479982610460253708}
-  - {fileID: 7961028497203169059}
-  - {fileID: -4017355978986601439}
-  - {fileID: 4837679100064610732}
-  - {fileID: -2691341443600372000}
-  - {fileID: 1453873690838430504}
-  - {fileID: 7980863016096114295}
-  - {fileID: -1355923233870477328}
-  EditorParameters: []
+  - {fileID: -4177541284441706116}
+  - {fileID: -4327344981504229310}
+  - {fileID: 4959862620004796445}
+  - {fileID: 1080126977952218904}
+  - {fileID: 7079681456152272720}
+  - {fileID: 9210084884679653688}
+  - {fileID: 5521974956997126119}
+  - {fileID: 6952371025761937043}
+  - {fileID: 1127402513305571184}
+  - {fileID: -766301122652629274}
+  EditorParameters:
+  - {fileID: -534091551461368246}
+  - {fileID: 2540585488036381924}
+  - {fileID: 5355878669765193561}
+  - {fileID: -4937405767163815976}
+  - {fileID: -3506117026343088916}
   MasterBanks:
   - {fileID: 6734345658795634640}
   StringsBanks:
   - {fileID: -896059827081223429}
-  cacheTime: 637793069780000000
+  cacheTime: 637788741020000000
   cacheVersion: 10
---- !u!114 &184299390257508936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/Parameter 5
-  m_EditorClassIdentifier: 
-  Name: Parameter 5
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2509610369
-    data2: 1160230999
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
 --- !u!114 &625756890479042444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -554,7 +472,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &707477173547638348
+--- !u!114 &1080126977952218904
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -564,24 +482,24 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Stephan
+  m_Name: event:/Minigame_Vera
   m_EditorClassIdentifier: 
-  Path: event:/minigame_Stephan
+  Path: event:/Minigame_Vera
   Guid:
-    Data1: 1682223124
-    Data2: 1093600073
-    Data3: -509153917
-    Data4: 2140088351
+    Data1: 1454912571
+    Data2: 1284011094
+    Data3: -206367588
+    Data4: 952350618
   Banks:
   - {fileID: 6734345658795634640}
-  IsStream: 0
+  IsStream: 1
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &1453873690838430504
+--- !u!114 &1127402513305571184
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -591,9 +509,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_menu
+  m_Name: event:/MUSIC_menu
   m_EditorClassIdentifier: 
-  Path: event:/mUSIC_menu
+  Path: event:/MUSIC_menu
   Guid:
     Data1: 2034466473
     Data2: 1273576920
@@ -636,7 +554,7 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 14678
---- !u!114 &2160544116609209392
+--- !u!114 &2540585488036381924
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -646,21 +564,69 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Vera_duet
+  m_Name: parameter:/Millia_duet
   m_EditorClassIdentifier: 
-  Name: Vera_duet
+  Name: Millia_duet
+  StudioPath: parameter:/Millia_duet
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 568462561
+    data2: 615650383
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &3451924502365170080
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_click/Parameter 1
+  m_EditorClassIdentifier: 
+  Name: Parameter 1
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 0
+  ID:
+    data1: 185438137
+    data2: 3538243311
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &3856919109218490019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_world/Parameter 3
+  m_EditorClassIdentifier: 
+  Name: Parameter 3
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 4100425373
-    data2: 3029236381
+    data1: 751435812
+    data2: 1687845094
   Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &2509442290022097620
+--- !u!114 &4959862620004796445
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -670,9 +636,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Zurab
+  m_Name: event:/Minigame_Zurab
   m_EditorClassIdentifier: 
-  Path: event:/minigame_Zurab
+  Path: event:/Minigame_Zurab
   Guid:
     Data1: 1955267614
     Data2: 1197226594
@@ -687,7 +653,31 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &4837679100064610732
+--- !u!114 &5355878669765193561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Pascha_duet
+  m_EditorClassIdentifier: 
+  Name: Pascha_duet
+  StudioPath: parameter:/Pascha_duet
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3594490401
+    data2: 2447494444
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &5521974956997126119
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -697,9 +687,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Protag
+  m_Name: event:/Minigame_Protag
   m_EditorClassIdentifier: 
-  Path: event:/minigame_Protag
+  Path: event:/Minigame_Protag
   Guid:
     Data1: 526853747
     Data2: 1259668281
@@ -714,6 +704,30 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
+--- !u!114 &6076435013853114379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_duet/duet_character
+  m_EditorClassIdentifier: 
+  Name: duet_character
+  StudioPath: 
+  Min: 0
+  Max: 4
+  Default: 0
+  ID:
+    data1: 3197208376
+    data2: 1898819561
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
 --- !u!114 &6734345658795634640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -729,12 +743,12 @@ MonoBehaviour:
   Path: FMODProject_Partita/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 637793069780000000
+  lastModified: 637788741020000000
   FileSizes:
   - Name: Desktop
-    Value: 19975008
+    Value: 13999232
   Exists: 1
---- !u!114 &7409698925019042295
+--- !u!114 &6952371025761937043
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -744,14 +758,65 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Vera
+  m_Name: event:/Minigame_Pascha
   m_EditorClassIdentifier: 
-  Path: event:/minigame_Vera
+  Path: event:/Minigame_Pascha
   Guid:
-    Data1: 1454912571
-    Data2: 1284011094
-    Data3: -206367588
-    Data4: 952350618
+    Data1: -1657997414
+    Data2: 1308481175
+    Data3: 1348678565
+    Data4: 1829276936
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &7019256552420169913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_world/1
+  m_EditorClassIdentifier: 
+  Name: 1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1901083469
+    data2: 300504962
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &7079681456152272720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Minigame_Millia
+  m_EditorClassIdentifier: 
+  Path: event:/Minigame_Millia
+  Guid:
+    Data1: -1004121518
+    Data2: 1162125317
+    Data3: -2091798630
+    Data4: 568506244
   Banks:
   - {fileID: 6734345658795634640}
   IsStream: 0
@@ -785,7 +850,55 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &7961028497203169059
+--- !u!114 &8460274044761232356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_finale/Pascha_duet
+  m_EditorClassIdentifier: 
+  Name: Pascha_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3594490401
+    data2: 2447494444
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9089102836129225661
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/MUSIC_finale/Zurab_duet
+  m_EditorClassIdentifier: 
+  Name: Zurab_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 386177743
+    data2: 3659736749
+  Type: 1
+  IsGlobal: 1
+  Labels: []
+  Exists: 1
+--- !u!114 &9210084884679653688
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -795,47 +908,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_birds
+  m_Name: event:/MUSIC_world
   m_EditorClassIdentifier: 
-  Path: event:/minigame_birds
+  Path: event:/MUSIC_world
   Guid:
-    Data1: -1101399202
-    Data2: 1214613895
-    Data3: 2134347951
-    Data4: 940802379
+    Data1: 726610018
+    Data2: 1225982235
+    Data3: 829037707
+    Data4: -1889677786
   Banks:
   - {fileID: 6734345658795634640}
   IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 47000
---- !u!114 &7980863016096114295
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_Fail
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_Fail
-  Guid:
-    Data1: 2033401300
-    Data2: 1197590295
-    Data3: -781219195
-    Data4: -322610627
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
   Is3D: 0
-  IsOneShot: 1
-  Parameters: []
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -6093436602108247372}
+  - {fileID: 3856919109218490019}
+  - {fileID: -6724256261716747478}
+  - {fileID: -702634389058254410}
+  - {fileID: 7019256552420169913}
   MinDistance: 0
   MaxDistance: 0
-  Length: 4785
+  Length: 75000

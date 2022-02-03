@@ -1,6 +1,6 @@
 ->Chapter1
 
-=Chapter1
+=== Chapter1
 
 @startTrans
 
@@ -10,508 +10,1358 @@
 
 @finishTrans Crossfade time:3
 
-@hide BusInterior remove:true
+@hide BusInterior
 
 @playWorldMusic
 
 @back bs_7 id:Chapter1BusStop
 
-@spawn Snow params: 300, 3
+@spawn Snow
 
-@char Millia
+@wait 1
 
-As your feet touch soft powder, weary eyes pierce through glaring snow. An ancient woman sits, alert, back pressed against the cracked concrete wall. In her arms she cradles a rifle, trained delicately on your approach.
+@char Protag scale:1.2,1.2
 
-    Her voice is backed with a surprising vigor.
+As your feet touch soft powder, weary eyes pierce through glaring snow. 
 
-@char Protag
+An ancient woman sits, alert, back pressed against the cracked concrete wall. 
+
+In her arms she cradles a rifle, trained delicately on your approach.
+
+Her voice is backed with a surprising vigor.
+    
+@char Millia look:left pos:75,0 scale:1.2,1.2
+
+@char Protag look:right pos:25,0 scale:1.2,1.2
 
 MILLIA: "No."
 
 @resetText
 
-+"-"
-->SilentType
-+"Yes."
+
+    + ["-"] -> SilentType
+    
+    + ["Yes."] -> Scene1
+
+
+
+
+=Scene1
+
 She scoffs and raises the rifle to her eyeline.
 
-@spawn DepthOfField params:Millia,10,0.95,3
+@char Millia look:left pos:75,0 scale:1.2,1.2
+
+@spawn DepthOfField params:Millia
+
 MILLIA: "Say that again?"
 
 @resetText
 
-    ++"-"
-    ->SilentType
-    ++"No."
-    Her eyes roll as she bemoans on an exasperated sigh.
-    MILLIA: "Boring."
-    She flips the rifle back towards herself, where it settles harmlessly in her lap.
-    ->WhereFrom
-    ++"Yes."
-    BANG!
-    A bullet flies towards you, grazing the outside of your neck. 
-    She laughs.
-    You feel a trickle of blood.
-        +++Take a step towards her.
+
+    +"-" -> SilentType
         
-        @resetText
+    +"No." -> Boring
+    
+    +"Yes." -> FirstGunshot
+
+
+
+=Boring
+    
+Her eyes roll as she bemoans on an exasperated sigh.
+    
+MILLIA: "Boring."
+    
+She flips the rifle back towards herself, where it settles harmlessly in her lap.
+
+-> WhereFrom
+
+
+
+=FirstGunshot
+    
+BANG!
+    
+A bullet flies towards you, grazing the outside of your neck. 
+    
+She laughs.
+    
+You feel a trickle of blood.
+    
+@despawn DepthOfField
+    
+@resetText
+    
+    
+    +Take a step towards her. -> SecondGunshot
+
+
+    
+=SecondGunshot
         
-        BANG!
-        Another bullet. Cutting delicately into the skin of your cheek
-        Another laugh. 
-        Another trickle of blood.
-        Then silence.
-        She stares. 
-        Curled lips smirk in amusement.
+BANG!
         
-        @resetText
+Another bullet. Cutting delicately into the skin of your cheek
         
-            ++++"If you wanted me dead, I'd be dead."
-            ->IfYouWantedMeDead
-            ++++"What the fuck!?"
-            ++++Run at her.
-            Are you sure?
-                +++++Yes.
-                ->MilliaDeath
-                +++++No.
-                ->WhatTheFuck
-        +++"What the fuck!?"
-    ++Take a step towards her.
-    BANG! 
-    A bullet flies towards you, grazing the outside of your neck. 
-    She laughs.
-    You feel a trickle of blood.
-        +++Take another step towards her.
-        BANG!
-        Another bullet. Cutting delicately into the skin of your cheek.
-        Another laugh. 
-        Another trickle of blood.
-        Then silence.
-        She stares. 
-        Curled lips smirk in amusement.
-            ++++"If you wanted me dead, I'd be dead."
-            ->IfYouWantedMeDead
-            ++++"What the fuck!?"
-            ++++Run towards her.
-               Are you sure?
-                +++++Yes.
-                ->MilliaDeath
-                +++++No.
-                ->WhatTheFuck
-        +++"What the fuck!?"
+Another laugh. 
         
-- ->WhatTheFuck
+Another trickle of blood.
+
+Then silence.
+
+She stares. 
+
+Curled lips smirk in amusement.
+
+@resetText
+
+
+    +"If you wanted me dead, I'd be dead." -> IfYouWantedMeDead
+        
+    +"What the fuck!?" -> Repetition1
+        
+    +Run at her. -> RunAtHer
+
+
+
+=RunAtHer
+
+Are you sure?
+
+@resetText
+
+
+    +Yes. -> MilliaDeath
+        
+    +No. -> WhatTheFuck
+
+
+
+=Repetition1
+
+@resetText
+        
+        
+    +"What the fuck!?" -> ThirdGunshot
+    
+    +Take a step towards her. -> ThirdGunshot
+
+
+    
+=ThirdGunshot
+
+BANG! 
+
+A bullet flies towards you, grazing the outside of your neck.
+
+She laughs.
+
+You feel a trickle of blood.
+
+@resetText
+
+
+    +Take another step towards her. -> FourthGunshot
+
+
+
+=FourthGunshot
+    
+BANG!
+
+Another bullet. Cutting delicately into the skin of your cheek.
+
+Another laugh. 
+
+Another trickle of blood.
+
+Then silence.
+
+She stares. 
+
+Curled lips smirk in amusement.
+
+@resetText
+
+
+    +"If you wanted me dead, I'd be dead." -> IfYouWantedMeDead
+    
+    +"What the fuck!?" -> WhatTheFuck
+    
+    +Run towards her. -> RunAtHer2
+
+
+
+=RunAtHer2
+
+Are you sure?
+
+@resetText
+   
+   
+    +Yes. -> MilliaDeath
+        
+    +No. -> WhatTheFuck
+        
+    +"What the fuck!?" -> WhatTheFuck
+
+
 
 =MilliaDeath
-You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from bemusement to a terrifying focus. She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
+
+You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from bemusement to a terrifying focus. 
+
+She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
+
 Everything.
+
 Ends.
-+[Try again.]
-->Chapter1
+
+@resetText
+
+
+    +[Try again.]
+
+-> Chapter1
+
+
 
 =WhatTheFuck
+
 She howls with laughter, her head reeling back to the sky as she splutters for a moment before it returns.
+
 MILLIA: "You play with fire."
+
 The rifle remains poised, and she steadies her aim.
+
 Her finger delicately tensing against the trigger.
+
 She smirks.
+
 And flips it back over her shoulder, as her lips give way to a wry smile.
+
 "I'm entertained."
-->WhereFrom
+
+-> WhereFrom
+
+
         
 =IfYouWantedMeDead
+
 Her smirk gives way to laughter. 
+
 She releases the rifle and raises her hands as it falls into her lap.
+
 MILLIA: "You got me."
-->WhereFrom
+
+-> WhereFrom
+
+
 
 =SilentType
+
+@despawn DepthOfField
+
 MILLIA: "Silent type?"
-        ++"-"
-        MILLIA: "-"
-            +++"-"
-            MILLIA:"-"
-                ++++"-"
-                The woman stares into your soul, her eyes refuse to blink as they start to water in the snow. Tiny teardrops freezing over wrinkled skin. 
-                    +++++"Are you ok?"
-                    MILLIA: "HAH! I WIN!" 
-                    She grins with childlike ambition, as one hand wipes the frozen salt from her eyes.
-                    ->WhereFrom
-                    +++++"-" 
-                    You both remain unblinking, tears forming on the boundaries of your vision in some ridiculous pissing contest. You lock gazes against the snow, frozen salt blinding you both until your bodies give way and force your hands to wipe your eyes.
+
+// Change this to an action > Stare at...
+
++"-"
+
+MILLIA: "-"
+
+        
+    ++"-" -> Stare1
+    
+    ++"Just scared." -> JustScared
+
+
+
+=JustScared
+
+"Smart."
+
+-> WhereFrom
+
+
+
+=Stare1
+
+MILLIA:"-"
+
+            
+    +++"-" -> Stare2
+    
+    +++"This is ridiculous." -> ThisIsRidiculous
+
+
+
+=Stare2
+                
+The woman stares into your soul, her eyes refuse to blink as they start to water in the snow. 
+                
+Tiny teardrops freezing over wrinkled skin. 
+
+                
+    ++++"Are you ok?" -> MilliaWins
+    
+    ++++"-" -> BothGiveUp
+    
+    ++++"Are we done?" -> CuriousProtag
+
+
+
+=MilliaWins
                     
-                        As your vision returns, the sound of spluttered laughter carries across the way. A smoker's lung.
-                        ->WhereFrom
-                ++++"Are we done?"
-                MILLIA: "I don't know. Are we?"
-                    +++++"You're a child."
-                    MILLIA: "Just a very bored old woman."
-                    ->WhereFrom
-                    +++++"Fine."
-                     MILLIA: "Well aren't you agreeable?"
-                     ->WhereFrom
-                    +++++"You're holding a rifle."
-                    MILLIA: "Correct. A Mosins, to be precise."
-                    ->WhereFrom
-            +++"This is ridiculous."
-            MILLIA: "You started it."
-                ++++"What are you, a child?"
-                MILLIA: "Just a very bored old woman."
-                ->WhereFrom
-                ++++"True."
-                MILLIA: "Well aren't you agreeable?"
-                ->WhereFrom
-                ++++"You're holding a rifle."
-                MILLIA: "Correct. Mosin's, to be exact."
-                ->WhereFrom
-        ++"Just scared."
-        "Smart."
-    ->WhereFrom
-    
+@char Millia look:left pos:75,0 scale:1.2,1.2
+                    
+@spawn ShakeCharacter params:Millia,1
+
+MILLIA: "HAH! I WIN!" 
+
+She grins with childlike ambition, as one hand wipes the frozen salt from her eyes.
+
+->WhereFrom
+
+
+
+=ThisIsRidiculous
+
+MILLIA: "You started it."
+
+            
++"What are you, a child?" -> YouStartedIt
+
++"True." -> TrueMillia
+
++"You're holding a rifle." -> CorrectMillia
+
+
+
+=YouStartedIt
+
+MILLIA: "Just a very bored old woman."
+
+->WhereFrom
+
+
+
+=TrueMillia
+
+MILLIA: "Well aren't you agreeable?"
+
+->WhereFrom
+
+
+
+=CorrectMillia
+
+MILLIA: "Correct. Mosin's, to be exact."
+
+->WhereFrom
+
+
+
+=BothGiveUp
+
+You both remain unblinking, tears forming on the boundaries of your vision in some ridiculous pissing contest. 
+
+You lock gazes against the snow, frozen salt blinding you both until your bodies give way and force your hands to wipe your eyes.
+
+As your vision returns, the sound of spluttered laughter carries across the way. A smoker's lung.
+
+->WhereFrom
+
+
+
+=CuriousProtag
+                
+MILLIA: "I don't know. Are we?"
+
++"You're a child."
+
+MILLIA: "Just a very bored old woman."
+
+->WhereFrom
+
+
+
++"Fine."
+
+ MILLIA: "Well aren't you agreeable?"
+ 
+ ->WhereFrom
+ 
+ 
+ 
++"You're holding a rifle."
+
+MILLIA: "Correct. A Mosins, to be precise."
+
+->WhereFrom
+                    
+
+
+
+                
 =WhereFrom 
+
 Old eyes slowly scan you.
+
 Your face
+
 Your body. 
+
 Your posture. 
+
 Your response.
+
 MILLIA: "Where are you from?"
-    +"Moscow."
-    Her gaze converges on yours, she's intrigued.
-    MILLIA: "And before that?
-        ++"Not Moscow."
-        She scoffs.
-        MILLIA: "Well I suppose you're not lying at least."
-        ++"None of your business."
-        She squints, digging deeper for a moment. 
-        MILLIA: "Well. Okay then."
-        ++"Where are you from?"
-        "Moscow nowadays. Born in Bila Tserkva. But who knows what we'll be calling either of those a year from now."
-    +"None of your business."
-    She squints, digging deeper for a moment. 
-    MILLIA: "Well. Okay then."
-    +"Where are you from?"
-    MILLIA: "Moscow nowadays. Born in Bila Tserkva. But who knows what we'll be calling either of those a year from now."
+
+
++"Moscow." -> ILiveAtMoscow
+        
++"None of your business." -> NoneOfYourBusiness
+
++"Where are you from?" -> AskMilliaFirstWhereSheLives
     
-    - ->MilliaFire
     
+    
+=ILiveAtMoscow
+    
+Her gaze converges on yours, she's intrigued.
+    
+MILLIA: "And before that?
+    
+    
+++"Not Moscow." -> NotLivingInMoscow
+        
+++"None of your business." -> NoneOfYourBusiness
+        
+++"Where are you from?" -> AskMilliaFirstWhereSheLives
+        
+        
+        
+=NoneOfYourBusiness
+
+She squints, digging deeper for a moment. 
+    
+MILLIA: "Well. Okay then."
+
+-> MilliaFire
+
+
+
+=AskMilliaFirstWhereSheLives
+
+MILLIA: "Moscow nowadays. Born in Bila Tserkva. But who knows what we'll be calling either of those a year from now."
+
+-> MilliaFire
+
+
+
+=NotLivingInMoscow
+
+She scoffs.
+        
+MILLIA: "Well I suppose you're not lying at least."
+        
+-> MilliaFire
+
+
+        
 =MilliaFire
+
 Her eyes slightly soften. The rifle lies harmlessly in her lap.
 
 MILLIA: "You must be cold. I'll start a fire.
 
-After a moment of wariness, the woman's shifting demeanor seems genuine. You help her gather firewood, and as you reach for a pile of kindling, a thin red envelope catches your eye amidst the shrubbery.
+After a moment of wariness, the woman's shifting demeanor seems genuine. 
+
+You help her gather firewood, and as you reach for a pile of kindling, a thin red envelope catches your eye amidst the shrubbery.
 
 You know that this was meant for you.
 
 You open it and familiar handwriting sends warmth wrapping round your body.
 
+
+
+// Convert this into a Featured Illustration
 LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to kindle dead eyes. She was looking for someone. Filled with hate, or passion, I couldn't tell which. I haven't seen that kind of drive in years. Everyone el5e I've met seems dead or dying. She reminded me of you, in a way. I asked her if she'd seen you. She said no. It stung. She wanted to be kind, I think, I think sh3'd forgotten how.
 
+
+
 MILLIA: "Letter from a lover?"
-    +"Yes."
-    She smiles, gently. 
-    MILLIA: "You should burn it."
-    +"No."
-    She smiles, knowingly. 
-    MILLIA: "You should burn it."
-    +"-"
-    She smiles, solemnly. 
-    MILLIA: "You should burn it."
-    - ->YouShouldBurnIt
+
+
++"Yes." -> SmilesGently
+    
++"No." -> SmilesKnowingly
+        
++"-" -> SmilesSolemnly
+    
+
+
+=SmilesGently
+
+She smiles, gently. 
+        
+MILLIA: "You should burn it."
+
+-> YouShouldBurnIt
+
+
+
+=SmilesKnowingly
+
+She smiles, knowingly. 
+        
+MILLIA: "You should burn it."
+
+-> YouShouldBurnIt
+
+
+
+=SmilesSolemnly
+
+She smiles, solemnly. 
+        
+MILLIA: "You should burn it."
+
+-> YouShouldBurnIt
+
+
     
 =YouShouldBurnIt
-    +"Can't."
-    MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. Memorise, then burn"  
-    +"Why?"
-    MILLIA: "If you're reading letters stashed in bus stops, they're worth burning. Memorise, then burn."
-    +"I know."
-    MILLIA: "I'm sure you do. Take the time to memorise."
-- ->YouCouldHaveKilledMe
+
+
+    +"Can't." -> CannotBurnLetter
+    
+    +"Why?" -> WhyBurnTheLetter
+    
+    +"I know." -> IKnowThat
+    
+    
+    
+=CannotBurnLetter
+
+MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. Memorise, then burn"  
+
+->YouCouldHaveKilledMe
+
+
+
+=WhyBurnTheLetter
+
+MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. Memorise, then burn"  
+
+->YouCouldHaveKilledMe
+
+
+
+=IKnowThat
+
+MILLIA: "I'm sure you do. Take the time to memorise."
+
+->YouCouldHaveKilledMe
+
+    
 
 =YouCouldHaveKilledMe
-    As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
-    
-    After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
-    
-    For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
-    
-    +"Why didn't you kill me?"
-    MILLIA: "I've killed thousands for a country that's about to implode anyway. It's no fun anymore. Nothing to be won. No grand prize. No medal. No accolades. Just a world wasting away on shriveled ambition."
-    
-        Her eyes rise to laze on the horizon.
-        
-        "Besides. You seemed harmless enough."
-        
-        ++Play her a song.
-        You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
-        ->MilliaDUET
-        //START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
-        
-        ++"We should sleep."
-        MILLIA: "True. I'll keep first watch."
-        ->MilliaNoSong
-    
-       
-    +"Do you like music?" 
-    MILLIA: "I adore it"
-    You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
-    ->MilliaDUET
-    //START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
 
-    +"We should sleep."
-    MILLIA: I'll keep first watch.
-    ->MilliaNoSong
+As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
+    
+After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
+    
+For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
+    
+    
++"Why didn't you kill me?" -> WhyYouDidntKillMe
+    
++"Do you like music?"  -> PlayHerASong
+    
++"We should sleep." -> Sleep1
+    
+    
+    
+=WhyYouDidntKillMe
+
+MILLIA: "I've killed thousands for a country that's about to implode anyway. 
+    
+MILLIA: "It's no fun anymore. Nothing to be won."
+    
+MILLIA: "No grand prize."
+    
+MILLIA: "No medal."
+    
+MILLIA: "No accolades."
+    
+MILLIA: "Just a world wasting away on shriveled ambition."
+    
+Her eyes rise to laze on the horizon.
+        
+MILLIA: "Besides. You seemed harmless enough."
+        
+        
+++Play her a song. -> PlayHerASong
+        
+++"We should sleep." -> Sleep2
+
+
+    
+=PlayHerASong
+
+You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
+        
+-> MilliaDUET
+        
+//START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
+
+
+
+=AskMilliaIfSheLikesMusic
+
+MILLIA: "I adore it"
+    
+You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
+    
+-> MilliaDUET
+    
+//START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
+
+
+
+=Sleep1
+
+MILLIA: I'll keep first watch.
+    
+-> MilliaNoSong
+
+
+
+=Sleep2
+
+MILLIA: "True. I'll keep first watch."
+
+-> MilliaNoSong
+
+
 
 //IF DUET IS SUCCESFUL
+
 =MilliaDUET
- As you raise a bow to match with string, you can't help but feel a little more alive.
 
-Matching your melody, the woman plays her own. A once dull brass sheen refracts moon and flame into the sky above. At first, it feels like a rising challenge, but you both settle into an uncanny unity 
+As you raise a bow to match with string, you can't help but feel a little more alive.
 
-The bonfire dances in your wake. Tiny ripples of sound from the woman to you and you to her, each carving a path through the fire. Smoke ebbs and flows as it rises into the open air.
+Matching your melody, the woman plays her own. 
+
+A once dull brass sheen refracts moon and flame into the sky above. 
+
+At first, it feels like a rising challenge, but you both settle into an uncanny unity 
+
+The bonfire dances in your wake. Tiny ripples of sound from the woman to you and you to her, each carving a path through the fire. 
+
+Smoke ebbs and flows as it rises into the open air.
 
 You play long into the night. But eventually, weariness does draw you back to reality.
 
 As the music comes to a close and your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
-->1stLetter
+
+-> 1stLetter
+
+
 
 //IF DUET IS NOT SUCCESFUL
+
 =MilliaNODUET
+
 As you raise a bow to matchstring, your arm curves against cold wind. You press forward, but the chill freezes you. The sound is naught but a screech.
 
 MILLIA: "I appreciate the sentiment, but now's the time for rest."
-->MilliaNoSong
+
+-> MilliaNoSong
+
 
 
 =MilliaNoSong
+
 As your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
-->1stLetter
+
+-> 1stLetter
+
+
 
 =1stLetter
-+Burn it.
+
+
++Burn it. -> BurnTheLetter
+
++Keep it. -> KeepTheLetter
+
+
+
+=BurnTheLetter
+
 You take one last glance. Breathe. Then press the paper into the fire. It burns a little brighter, and you feel a little warmer as your eyes succumb to the night.
-+Keep it.
+
+-> WakeUpProtag
+
+
+
+=KeepTheLetter
+
 You press the letter to your chest. Holding it tightly in place against the winter winds. There's a cold chill that sways you to sleep against the warmth of the fire.
 
-- You wake before the birds, your eyes pressing open against the weight of the world. Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
-    +Take it.
-    ->TakeTheRifle
-    +Leave it.
-    You consider the thought.
-    And let it pass.
-    In the distance, an engine rumbles on approach.
-    You turn back to the roadside and press on into morning.
-->Chapter2
+-> WakeUpProtag
+
+
+
+=WakeUpProtag
+
+You wake before the birds, your eyes pressing open against the weight of the world. 
+
+Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
+
+
++Take it. -> TakeTheRifle
+
++Leave it. -> LeaveTheRifle
+
+
 
 =TakeTheRifle
-    You tread carefully on fresh snow, sidling your way longside the first birdcall. 
-    She mumbles.
-    You freeze.
-    You wait.
-    You hear the rumbling of an engine in the distance.
-    Your hands stretch out against the dying night, pulling the rifle towards you.
-/ART Change main character sprite, add Rifle.
-    She sleeps.
-    You turn towards the coming bus.
-    ->Chapter2
+
+You tread carefully on fresh snow, sidling your way longside the first birdcall.
+
+She mumbles.
+
+You freeze.
+
+You wait.
+
+You hear the rumbling of an engine in the distance.
+
+Your hands stretch out against the dying night, pulling the rifle towards you.
+
+// ART Change main character sprite, add Rifle.
+
+She sleeps.
+    
+You turn towards the coming bus.
+    
+-> Chapter2
+
+
+
+=LeaveTheRifle
+    
+You consider the thought.
+    
+And let it pass.
+    
+In the distance, an engine rumbles on approach.
+    
+You turn back to the roadside and press on into morning.
+    
+-> Chapter2
+
+
 
 =Chapter2
-The road is long and monotonous. Grey snow falls against a dull backdrop. Faint hints of color from passing towns splash amidst the skyline and before you know it, the ride is over.
 
-As you press on to sleeted ground, a man waits nearby. Older, but not elder, he's frail if not determined in demeanor. Grey eyes seem to glance towards you, then behind, towards the closing door. 
+The road is long and monotonous. 
+
+Grey snow falls against a dull backdrop. 
+
+Faint hints of color from passing towns splash amidst the skyline and before you know it, the ride is over.
+
+As you press on to sleeted ground, a man waits nearby. 
+
+Older, but not elder, he's frail if not determined in demeanor. 
+
+Grey eyes seem to glance towards you, then behind, towards the closing door. 
 
 As the bus departs, his gaze follows it. 
 
-In one hand he holds a slowly burning cigar. In the other, a letter.
+In one hand he holds a slowly burning cigar. 
+
+In the other, a letter.
 
 Your letter.
 
-+"I think that might be for me."
+
++"I think that might be for me." -> StephanSmilesAtYou
+
++Stare at him. -> StareAtStephan
+
++ {TakeTheRifle} Train your rifle on him. -> TrainYourRifleAtStephan
+
+
+
+=StephanSmilesAtYou
+
 Weary eyes smile at you.
+
 STEPHAN: "I think you might be correct."
+
 He extends the letter out towards you. You take it, nestling it inside your coat.
+
 The man watches with warm intrigue.
+
 ->MindIfIAskWho
-+Stare at him.
-As the bus dips behind a cradle of trees, the man's eyes return to lock with yours. He smiles. It's surprisingly warm against the cold air.
+
+
+
+=StareAtStephan
+
+As the bus dips behind a cradle of trees, the man's eyes return to lock with yours.
+
+He smiles. It's surprisingly warm against the cold air.
+
 "I'd thought this was for me. Seems I was wrong."
+
 He raises the letter towards you.
+
 You take it. Nestling it inside your coat.
+
 ->MindIfIAskWho
-+ {TakeTheRifle} Train your rifle on him.
-His arms fly upwards, eyes full of fear. The letter dangles gently from one hand as smoke rises from the cigar in the other.
-    ++"Drop it."
-    STEPHAN: "I haven't opened it."
-    His voice is tired.
-    STEPHAN: "I thought it was for me."
-        +++"It's not."
-        A wry, forced smile. 
-        STEPHAN: "I know."
-            ++++"Drop. It."
-        He drops the letter. His hands remain pressed to the sky.
-            ++++Grab the letter.
-        You rush forward and swipe the letter from his hands.
-        +++"Drop. It."
-        He drops the letter. 
-        His hands remain pressed toward the sky.
-        You rush forward and swipe it from the snow.
-    ++Move closer.
-    He winces at the approach.
-        +++Grab the letter.
-        You rush forward and swipe the letter from his hands.
-        +++"Give me the letter."
-        He holds out a palm towards you. It trembles in the cold.
-        You walk forward, rifle still trained as you swipe the letter from his palms.
-        - ->IDontWantTrouble
+
+
+
+=TrainYourRifleAtStephan
+
+His arms fly upwards, eyes full of fear. 
+
+The letter dangles gently from one hand as smoke rises from the cigar in the other.
+
+
+    +"Drop it." -> DropTheLetter1
+        
+    +Move closer. -> MoveCloserToStephan
+
+
+
+=DropTheLetter1
+
+STEPHAN: "I haven't opened it."
+    
+His voice is tired.
+    
+STEPHAN: "I thought it was for me."
+
+    
+    +"It's not." -> TheLetterisNotForStephan
+                
+    +"Drop. It." -> DropTheLetter2
+
+
+
+=TheLetterisNotForStephan
+
+A wry, forced smile. 
+        
+STEPHAN: "I know."
+
+        
+    +"Drop. It." -> DropTheLetter3
+                
+    +Grab the letter. -> GrabTheLetter1
+
+
+
+=DropTheLetter2
+
+He drops the letter. His hands remain pressed to the sky.
+
+->IDontWantTrouble
+
+
+
+=GrabTheLetter1
+
+You rush forward and swipe the letter from his hands.
+
+->IDontWantTrouble
+
+
+
+=DropTheLetter3
+
+He drops the letter. 
+        
+His hands remain pressed toward the sky.
+        
+You rush forward and swipe it from the snow.
+
+->IDontWantTrouble
+
+
+
+=MoveCloserToStephan
+
+He winces at the approach.
+    
+    
+    +Grab the letter. -> GrabTheLetter2
+            
+    +"Give me the letter." -> GrabTheLetter3
+
+
+
+=GrabTheLetter2
+
+You rush forward and swipe the letter from his hands.
+
+->IDontWantTrouble
+
+
+
+=GrabTheLetter3
+
+He holds out a palm towards you. It trembles in the cold.
+        
+You walk forward, rifle still trained as you swipe the letter from his palms.
+
+->IDontWantTrouble
 
 
 =IDontWantTrouble
+
 STEPHAN: "I don't want trouble."
-+"Sorry. Tense."
+
+
+    +"Sorry. Tense." -> SorryTense
+    
+    +"Neither do I." -> NeitherDoI
+    
+    +Look away. ->LookAway
+
+
+
+=SorryTense
+
 STEPHAN: "Tense times. Can hardly blame you."
-+"Neither do I."
+
+-> MindIfIAskWho
+
+
+
+=NeitherDoI
+
 STEPHAN: "And so we've reached an accord. No bullets then?"
+
 He chuckles, vaguely masking a residual fear.
-+Look away.
+
+-> MindIfIAskWho
+
+
+
+=LookAway
+
 STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too so I doubt anyone else has."
-- ->MindIfIAskWho
+
+-> MindIfIAskWho
+
+
 
 =MindIfIAskWho
+
 His eyes laze towards the letter.
+
 STEPHAN: "Mind if I ask who?"
-    ++"..."
-    STEPHAN: "I understand."
-    ->AndYou
-    ++"I shouldn't say."
-    STEPHAN: "I understand."
-    ->AndYou
-    ++"A lover."
-    STEPHAN: "A secret lover!"
-        +++"That or dead."
-        His tone softens.
-        STEPHAN: "Ah."
-        His face hardens.
-        STEPHAN: "Heading south then?"
-        ->South
-        +++"I suppose you could say that.
-        STEPHAN: "Heading south amidst the chaos?"
-        ->South
-        
-=South  
-+"..."
-->YouSmoke
-+I shouldn't..."
-->YouSmoke 
-+"Through Abkhazia. Then on to Turkey. I have family there."
-STEPHAN: "Rough road. Suppose they all are right now."
+
+
+    ++"..." -> SilentAnswer
+    
+    ++"I shouldn't say." -> DoNotTellStephan
+    
+    ++"A lover." ->TellStephanItIsYourLover
+
+
+
+=SilentAnswer
+
+STEPHAN: "I understand."
+
 ->AndYou
+
+
+
+=DoNotTellStephan
+
+STEPHAN: "I understand."
+
+->AndYou
+
+
+
+=TellStephanItIsYourLover
+
+STEPHAN: "A secret lover!"
+    
+    
+    +"That or dead." -> IsLoverDead
+            
+    +"I suppose you could say that. ->StephanHunch
+        
+        
+
+=IsLoverDead
+
+His tone softens.
+        
+STEPHAN: "Ah."
+
+His face hardens.
+
+STEPHAN: "Heading south then?"
+
+->South
+
+
+
+=StephanHunch
+
+STEPHAN: "Heading south amidst the chaos?"
+        
+->South
+
+
+
+=South  
+
+
+    +"..." ->YouSmoke
+    
+    +I shouldn't..." ->YouSmoke 
+    
+    +"Through Abkhazia. Then on to Turkey. I have family there." -> TellStephanYourDestination
+
+
+
+=TellStephanYourDestination
+
+STEPHAN: "Rough road. Suppose they all are right now."
+
+->AndYou
+
+
         
 =YouSmoke
+
 The man glances towards your face for a moment. He nods and smiles. 
+
 STEPHAN: "Sorry. I'll drop it."
+
 He leans back, head to the sky, dragging in a mound of smoke off the end of his cigar before exhaling. You watch it dance against the fog.
+
 STEPHAN: "You smoke?"
-    +"No."
-    STEPHAN: "Ah."
-    He presses the cigar butt down against his coat.
-    STEPHAN: "Sorry about that."
-    ->AndYou
-    +"No. Thank You."
-    STEPHAN: "Ah."
-    He presses the cigar butt down against his coat.
-    STEPHAN: "Sorry about that."
-    ->AndYou
-    +"I do."
-    Cigar in mouth, he flicks open a small box from his trouser pocket. From inside his coat he removes a lighter and strikes a light. 
-    "Take the edge off."
-    You take the cigar and inhale. There's comfort in the heat.
-    ->AndYou
+
+
+    +"No." -> ProtagDoNotSmoke
+    
+    +"No. Thank You." ->NoThankYouStephan
+    
+    +"I do." -> ProtagSmokes
+
+
+
+=ProtagDoNotSmoke
+
+STEPHAN: "Ah."
+
+He presses the cigar butt down against his coat.
+
+STEPHAN: "Sorry about that."
+
+->AndYou
+
+
+
+=NoThankYouStephan
+
+STEPHAN: "Ah."
+
+He presses the cigar butt down against his coat.
+
+STEPHAN: "Sorry about that."
+
+->AndYou
+
+
+
+=ProtagSmokes
+
+Cigar in mouth, he flicks open a small box from his trouser pocket. From inside his coat he removes a lighter and strikes a light. 
+
+"Take the edge off."
+
+You take the cigar and inhale. There's comfort in the heat.
+
+->AndYou
+
+
         
 =AndYou
-+"Who are you waiting for?"
+
+
+    +"Who are you waiting for?" ->AskStephanWhoIsSheWaiting
+    
+    +"Why wait in the cold? That was the only bus for hours." -> AskStephanWhySheWaitsInTheCold
+
+
+
+=AskStephanWhoIsSheWaiting
+
 STEPHAN: "My son."
-+"Why wait in the cold? That was the only bus for hours."
+
+-> TheyAreNotComingthrough
+
+
+
+=AskStephanWhySheWaitsInTheCold
+
 STEPHAN: "Just tradition."
+
 He laughs at himself.
+
 STEPHAN: "My son."
 
-- STEPHAN: "They're not coming through."
+-> TheyAreNotComingthrough
 
-+"Sorry for your loss."
+
+
+=TheyAreNotComingthrough
+
+STEPHAN: "They're not coming through."
+
+
+    +"Sorry for your loss." -> SorryForYourLossStephan
+    
+    +"Sorry." -> SorryStephan
+
+
+
+=SorryForYourLossStephan
+
 STEPHAN: "Oh they're not dead. Least I hope not."
-+"Sorry."
+
+-> StephanTellsHerStory
+
+
+
+=SorryStephan
+
 STEPHAN: "Don't be. My own damn fault."
 
-- STEPHAN: "You have a child that outruns the world and sometimes you just can't keep up. Sometimes you say terrible things. I don't blame them for running off.  Moscow was probably better for them, find their own crowd and all that. Play in a band. Not a lot of those around here."
-+"City for the strays."
-STEPHAN: "Sounds like them."
-+"I lived there. Before all this."
-STEPHAN: "Ah! Wouldn't have guessed."
- - A cold breeze rushes past you and wind whips powdered snow around your feet.
+-> StephanTellsHerStory
+
+
+
+=StephanTellsHerStory
+
+STEPHAN: You have a child that outruns the world and sometimes you just can't keep up.
+
+STEPHAN: Sometimes you say terrible things. 
+
+STEPHAN: I don't blame them for running off.  
+
+STEPHAN: Moscow was probably better for them, find their own crowd and all that. 
+
+STEPHAN: Play in a band. 
+
+STEPHAN: Not a lot of those around here.
+
+
+    +"City for the strays." -> CityForTheStrays
+    
+    +"I lived there. Before all this." -> ILivedThere
+
+
+ 
+ =CityForTheStrays
+ 
+ STEPHAN: "Sounds like them."
+ 
+ -> StephanBreak
+ 
+ 
+ 
+ =ILivedThere
+ 
+ STEPHAN: "Ah! Wouldn't have guessed."
+ 
+ -> StephanBreak
+ 
+ 
+ 
+ =StephanBreak
+ 
+ A cold breeze rushes past you and wind whips powdered snow around your feet.
+ 
  STEPHAN: "Ahhh. I guess we're done for the day."
- +"I've got a bus to catch."
- STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover."
- +"It was nice to meet you."
- STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Recover."
-- The breeze returns with harsher ambition.
- +"I appreciate the concern. I'll be ok."
+ 
+ 
+     +"I've got a bus to catch." -> IHaveABusToCatch
+     
+     +"It was nice to meet you." -> ItWasNiceToMeetYouStephan
+
+
+
+=IHaveABusToCatch
+
+STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover."
+
+-> BreezeReturns
+
+
+
+=ItWasNiceToMeetYouStephan
+
+STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Recover."
+
+-> BreezeReturns
+
+
+
+=BreezeReturns
+
+The breeze returns with harsher ambition.
+
+
+     +"I appreciate the concern. I'll be ok." -> AppreciateStephanConcern
+     
+     +"As long as I'm not imposing." -> AsLongAsWeAreNotImposing
+ 
+ 
+ 
+ =AppreciateStephanConcern
+ 
  He frowns with furrowed brow.
+ 
  STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
+ 
  As he goes to leave, cigar in one hand, he waves with the other, and you spot fractured stubs on the tips of his fingers. Frostbite.
+ 
  ->SoloSnow
- +"As long as I'm not imposing."
+ 
+ 
+ 
+ =AsLongAsWeAreNotImposing
+ 
  The man grins. 
+ 
  STEPHAN: "Impossible. Come on then."
+ 
  ->ThroughTheSnow
  
- =SoloSnow
- You wait in silence, shattered by whistling wind. The storm rises and you pull your scarf to cover your face.
- +Stay.
- Your vision starts to cloud in blanket white, snow no longer merely bites at your ankles but rises to surround you on all sides. The cold cuts at your skin.
-    ++Stay.
-        You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
-        +++Stay
-            Are you sure?
-            ++++Stay
-            ->Death2
-            ++++Leave
-        +++Leave
-    ++Leave.
- +Leave.
- - ->ThroughTheSnow
  
+ 
+ =SoloSnow
+ 
+ You wait in silence, shattered by whistling wind. The storm rises and you pull your scarf to cover your face.
+ 
+ 
+     +Stay. -> Stay1
+        
+     +Leave. -> Leave
+ 
+ 
+ 
+ =Stay1
+ 
+ Your vision starts to cloud in blanket white, snow no longer merely bites at your ankles but rises to surround you on all sides. 
+ 
+ The cold cuts at your skin.
+ 
+ 
+    ++Stay. -> Stay2
+        
+    ++Leave. -> Leave
+ 
+ 
+ 
+ =Stay2
+ 
+ You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
+ 
+ 
+    +++Stay -> Stay3
+                
+    +++Leave -> Leave
+ 
+ 
+ 
+ =Stay3
+ 
+Are you sure?
+          
+            
+    +Stay -> Death2
+                
+    +Leave -> Leave
+ 
+ 
+ 
+=Leave
+ 
+ -> ThroughTheSnow
+  
+  
   
 =Death2
 
 Your eyes give way to pure white. 
+
 Cold gives way to warmth. 
+
 Light gives way to dark. 
 
 The pain.
+
 Ends.
+
 +Try again.
+
 ->Chapter2
+
+
  
  =ThroughTheSnow
+ 
  You trudge against the storm. Yellow paint cuts through the white like a knife, glistening in the distance. The walk is hard, but short. 
  
  The man and his wife brighten in your presence.
- The house is warm. 
- The food is warm. 
- You feel both full and light. 
- He eyes the case on your back.
- His eyes brighten.
- STEPHAN: "Play with me."
- +"Why not?"
- ->StephanDuet
- //START DUET SYSTEM - IF SUCCESUL GO TO =StephanDuet - IF UNSUCCESFUL GO TO =StephanNODUET
  
- +"I should sleep."
- The man face betrays his dissapointment, but he smiles regardless.
- STEPHAN: "I understand. Goodnight."
- ->Chapter2Epilogue
+ The house is warm. 
+ 
+ The food is warm. 
+ 
+ You feel both full and light. 
+ 
+ He eyes the case on your back.
+ 
+ His eyes brighten.
+ 
+ STEPHAN: "Play with me."
+ 
+ +"Why not?" -> StartStephanDuet
+ 
+ +"I should sleep." -> RestWithStephan
+ 
+ 
+ 
+  =StartStephanDuet
+ 
+  //START DUET SYSTEM - IF SUCCESUL GO TO =StephanDuet - IF UNSUCCESFUL GO TO =StephanNODUET
+ 
+ ->StephanDuet
+ 
+ 
  
   =StephanNODUET
+  
  As his wife watches from nearby, the man delicately places fingers on his accordion. It seems almost like a reunion of sorts. Long overdue. 
  
  You raise your bow as the wind howls outside. 
@@ -523,12 +1373,30 @@ Ends.
  STEPHAN: "You must be tired. We should let you rest."
  
  The man and his wife thank you, showing you a bed before retiring to their own.
+ 
  ->Chapter2Epilogue
+ 
+ 
+ 
+ =RestWithStephan
+ 
+ The man face betrays his dissapointment, but he smiles regardless.
+ 
+ STEPHAN: "I understand. Goodnight."
+ 
+ ->Chapter2Epilogue
+ 
+ 
   
  =StephanDuet
-As his wife watches from nearby, the man delicately places fingers on his accordion. It seems almost like a reunion of sorts. Long overdue. 
+ 
+As his wife watches from nearby, the man delicately places fingers on his accordion. 
 
-He waits for you, for some kind of strange permission, and you give it by stretching bow across silver string. The world, their world, brightens against the night and you see heavy smiles turn light. 
+It seems almost like a reunion of sorts. Long overdue. 
+
+He waits for you, for some kind of strange permission, and you give it by stretching bow across silver string. 
+
+The world, their world, brightens against the night and you see heavy smiles turn light. 
 
 The woman laughs.
 
@@ -543,21 +1411,58 @@ In this reprieve, music mutes the outside air.
 You play until the storm recedes. It's remarkably simple, and beautifully melancholic.
 
 Eventually, the man and his wife thank you, before showing you a bed and retiring to their own.
+
  ->Chapter2Epilogue
  
+ 
+ 
  =Chapter2Epilogue
-You welcome the propect of sleep, but not before you remove the letter from your coat, reading secret words bathed in firelight.
+ 
+ You welcome the propect of sleep, but not before you remove the letter from your coat, reading secret words bathed in firelight.
+ 
+ 
  
  LETTER: I miss you. I miss Moscow. I miss music and symphonies and sound that isn't wailing wind. I want to play music again. Prefferably, inside. I'd always loved wint3r before. Before I'd spent it flailing on the roa7. I hate it now. It's cruel and unkind. I want to see you. I will. 5tay safe. 
  
-+Burn it.
-You take one last glance. Breathe. Then press the paper into the fire. It burns a little brighter and you feel a little warmer as your eyes give way to sleep.
-+Keep it.
-You press the letter to your chest. Holding it tightly in place against the winter winds. There's a cold chill that sways you to sleep against the warmth of the fire.
-- ->Chapter3
  
- =Chapter3
- The bus rails on agains/
+ 
+    +Burn it. -> YouShouldBurnIt2
+    
+    +Keep it. -> KeepTheLetter2
+
+
+- ->Chapter3
+
+
+
+=YouShouldBurnIt2
+
+You take one last glance. 
+
+Breathe. 
+
+Then press the paper into the fire. 
+
+It burns a little brighter and you feel a little warmer as your eyes give way to sleep.
+
+-> Chapter3
+
+
+
+=KeepTheLetter2
+ 
+You press the letter to your chest. 
+
+Holding it tightly in place against the winter winds. 
+
+There's a cold chill that sways you to sleep against the warmth of the fire.
+
+-> Chapter3
+ 
+ 
+ 
+=Chapter3
+The bus rails on agains/
  
 /"OI STRINGS!"
 A voice cries out from across the way.

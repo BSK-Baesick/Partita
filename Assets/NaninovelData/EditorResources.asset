@@ -161,7 +161,7 @@ MonoBehaviour:
     - Name: StartGame
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
-    - Name: Menu
+    - Name: MenuStart
       PathPrefix: Scripts
       Guid: 450d2b521ab75e64d9c10fa4fca6b604
     - Name: ClickSFX
