@@ -20,7 +20,7 @@
 
 @wait 1
 
-@char Protag scale:1.2,1.2
+@char PROTAG.DEFAULT scale:1.2,1.2
 
 As your feet touch soft powder, weary eyes pierce through glaring snow. 
 
@@ -30,9 +30,9 @@ In her arms she cradles a rifle, trained delicately on your approach.
 
 Her voice is backed with a surprising vigor.
     
-@char Millia look:left pos:75,0 scale:1.2,1.2
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
-@char Protag look:right pos:25,0 scale:1.2,1.2
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 MILLIA: "No."
 
@@ -50,20 +50,20 @@ MILLIA: "No."
 
 She scoffs and raises the rifle to her eyeline.
 
-@char Millia look:left pos:75,0 scale:1.2,1.2
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
-@spawn DepthOfField params:Millia
+@spawn DepthOfField params:MILLIA
 
 MILLIA: "Say that again?"
 
 @resetText
 
 
-    +"-" -> SilentType
+    + ["-"] -> SilentType
         
-    +"No." -> Boring
+    + ["No."] -> Boring
     
-    +"Yes." -> FirstGunshot
+    + ["Yes."] -> FirstGunshot
 
 
 
@@ -94,7 +94,7 @@ You feel a trickle of blood.
 @resetText
     
     
-    +Take a step towards her. -> SecondGunshot
+    + [Take a step towards her.] -> SecondGunshot
 
 
     
@@ -117,11 +117,11 @@ Curled lips smirk in amusement.
 @resetText
 
 
-    +"If you wanted me dead, I'd be dead." -> IfYouWantedMeDead
+    + ["If you wanted me dead, I'd be dead."] -> IfYouWantedMeDead
         
-    +"What the fuck!?" -> Repetition1
+    + ["What the fuck!?"] -> Repetition1
         
-    +Run at her. -> RunAtHer
+    + [Run at her.] -> RunAtHer
 
 
 
@@ -132,9 +132,9 @@ Are you sure?
 @resetText
 
 
-    +Yes. -> MilliaDeath
+    + [Yes.] -> MilliaDeath
         
-    +No. -> WhatTheFuck
+    + [No.] -> WhatTheFuck
 
 
 
@@ -143,9 +143,9 @@ Are you sure?
 @resetText
         
         
-    +"What the fuck!?" -> ThirdGunshot
+    + ["What the fuck!?"] -> ThirdGunshot
     
-    +Take a step towards her. -> ThirdGunshot
+    + [Take a step towards her.] -> ThirdGunshot
 
 
     
@@ -162,7 +162,7 @@ You feel a trickle of blood.
 @resetText
 
 
-    +Take another step towards her. -> FourthGunshot
+    + [Take another step towards her.] -> FourthGunshot
 
 
 
@@ -185,11 +185,11 @@ Curled lips smirk in amusement.
 @resetText
 
 
-    +"If you wanted me dead, I'd be dead." -> IfYouWantedMeDead
+    + ["If you wanted me dead, I'd be dead."] -> IfYouWantedMeDead
     
-    +"What the fuck!?" -> WhatTheFuck
+    + ["What the fuck!?"] -> WhatTheFuck
     
-    +Run towards her. -> RunAtHer2
+    + [Run towards her.] -> RunAtHer2
 
 
 
@@ -200,11 +200,11 @@ Are you sure?
 @resetText
    
    
-    +Yes. -> MilliaDeath
+    + [Yes.] -> MilliaDeath
         
-    +No. -> WhatTheFuck
+    + [No.] -> WhatTheFuck
         
-    +"What the fuck!?" -> WhatTheFuck
+    + ["What the fuck!?"] -> WhatTheFuck
 
 
 
@@ -221,7 +221,7 @@ Ends.
 @resetText
 
 
-    +[Try again.]
+    + [Try again.]
 
 -> Chapter1
 
@@ -263,22 +263,17 @@ MILLIA: "You got me."
 
 @despawn DepthOfField
 
-MILLIA: "Silent type?"
+MILLIA:"Silent type?"
 
-// Change this to an action > Stare at...
-
-+"-"
-
-MILLIA: "-"
-
+@resetText
         
-    ++"-" -> Stare1
+    + ["-"] -> Stare1
     
-    ++"Just scared." -> JustScared
+    + ["Just scared."] -> ScaredProtag
 
 
 
-=JustScared
+=ScaredProtag
 
 "Smart."
 
@@ -291,9 +286,9 @@ MILLIA: "-"
 MILLIA:"-"
 
             
-    +++"-" -> Stare2
-    
-    +++"This is ridiculous." -> ThisIsRidiculous
+    + ["-"] -> Stare2
+        
+    + ["This is ridiculous."] -> ThisIsRidiculous
 
 
 
@@ -304,11 +299,11 @@ The woman stares into your soul, her eyes refuse to blink as they start to water
 Tiny teardrops freezing over wrinkled skin. 
 
                 
-    ++++"Are you ok?" -> MilliaWins
-    
-    ++++"-" -> BothGiveUp
-    
-    ++++"Are we done?" -> CuriousProtag
+    + ["Are you ok?"] -> MilliaWins
+        
+    + ["-"] -> BothGiveUp
+        
+    + ["Are we done?"] -> CuriousProtag
 
 
 
@@ -331,11 +326,11 @@ She grins with childlike ambition, as one hand wipes the frozen salt from her ey
 MILLIA: "You started it."
 
             
-+"What are you, a child?" -> YouStartedIt
-
-+"True." -> TrueMillia
-
-+"You're holding a rifle." -> CorrectMillia
+    + ["What are you, a child?"] -> YouStartedIt
+    
+    + ["True."] -> TrueMillia
+    
+    + ["You're holding a rifle."] -> CorrectMillia
 
 
 
@@ -379,7 +374,8 @@ As your vision returns, the sound of spluttered laughter carries across the way.
                 
 MILLIA: "I don't know. Are we?"
 
-+"You're a child."
+
+    + ["You're a child."]
 
 MILLIA: "Just a very bored old woman."
 
@@ -387,7 +383,7 @@ MILLIA: "Just a very bored old woman."
 
 
 
-+"Fine."
++["Fine."]
 
  MILLIA: "Well aren't you agreeable?"
  
@@ -395,7 +391,7 @@ MILLIA: "Just a very bored old woman."
  
  
  
-+"You're holding a rifle."
++["You're holding a rifle."]
 
 MILLIA: "Correct. A Mosins, to be precise."
 
@@ -420,11 +416,11 @@ Your response.
 MILLIA: "Where are you from?"
 
 
-+"Moscow." -> ILiveAtMoscow
-        
-+"None of your business." -> NoneOfYourBusiness
-
-+"Where are you from?" -> AskMilliaFirstWhereSheLives
+    + ["Moscow."] -> ILiveAtMoscow
+            
+    + ["None of your business."] -> NoneOfYourBusiness
+    
+    + ["Where are you from?"] -> AskMilliaFirstWhereSheLives
     
     
     
@@ -435,11 +431,11 @@ Her gaze converges on yours, she's intrigued.
 MILLIA: "And before that?
     
     
-++"Not Moscow." -> NotLivingInMoscow
-        
-++"None of your business." -> NoneOfYourBusiness
-        
-++"Where are you from?" -> AskMilliaFirstWhereSheLives
+    + ["Not Moscow."] -> NotLivingInMoscow
+            
+    + ["None of your business."] -> NoneOfYourBusiness
+            
+    + ["Where are you from?"] -> AskMilliaFirstWhereSheLives
         
         
         
@@ -495,11 +491,11 @@ LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to ki
 MILLIA: "Letter from a lover?"
 
 
-+"Yes." -> SmilesGently
-    
-+"No." -> SmilesKnowingly
+    + ["Yes."] -> SmilesGently
         
-+"-" -> SmilesSolemnly
+    + ["No."] -> SmilesKnowingly
+            
+    + ["-"] -> SmilesSolemnly
     
 
 
@@ -536,11 +532,11 @@ MILLIA: "You should burn it."
 =YouShouldBurnIt
 
 
-    +"Can't." -> CannotBurnLetter
+    + ["Can't."] -> CannotBurnLetter
     
-    +"Why?" -> WhyBurnTheLetter
+    + ["Why?"] -> WhyBurnTheLetter
     
-    +"I know." -> IKnowThat
+    + ["I know."] -> IKnowThat
     
     
     
@@ -577,11 +573,11 @@ After some time, her eyes turn back to the flame. She seems lost in the sight, s
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
     
     
-+"Why didn't you kill me?" -> WhyYouDidntKillMe
++ ["Why didn't you kill me?"] -> WhyYouDidntKillMe
     
-+"Do you like music?"  -> PlayHerASong
++ ["Do you like music?"]  -> PlayHerASong
     
-+"We should sleep." -> Sleep1
++ ["We should sleep."] -> Sleep1
     
     
     
@@ -604,9 +600,9 @@ Her eyes rise to laze on the horizon.
 MILLIA: "Besides. You seemed harmless enough."
         
         
-++Play her a song. -> PlayHerASong
-        
-++"We should sleep." -> Sleep2
+    + [Play her a song.] -> PlayHerASong
+            
+    + ["We should sleep."] -> Sleep2
 
 
     
@@ -695,9 +691,9 @@ As your eyes give way to sleep, you turn your attention to the fire, letter dang
 =1stLetter
 
 
-+Burn it. -> BurnTheLetter
-
-+Keep it. -> KeepTheLetter
+    + [Burn it.] -> BurnTheLetter
+    
+    + [Keep it.] -> KeepTheLetter
 
 
 
@@ -724,9 +720,9 @@ You wake before the birds, your eyes pressing open against the weight of the wor
 Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
 
 
-+Take it. -> TakeTheRifle
-
-+Leave it. -> LeaveTheRifle
+    + [Take it.] -> TakeTheRifle
+    
+    + [Leave it.] -> LeaveTheRifle
 
 
 
@@ -791,11 +787,11 @@ In the other, a letter.
 Your letter.
 
 
-+"I think that might be for me." -> StephanSmilesAtYou
-
-+Stare at him. -> StareAtStephan
-
-+ {TakeTheRifle} Train your rifle on him. -> TrainYourRifleAtStephan
+    + ["I think that might be for me."] -> StephanSmilesAtYou
+    
+    + [Stare at him.] -> StareAtStephan
+    
+    + [{TakeTheRifle} Train your rifle on him.] -> TrainYourRifleAtStephan
 
 
 
@@ -836,9 +832,9 @@ His arms fly upwards, eyes full of fear.
 The letter dangles gently from one hand as smoke rises from the cigar in the other.
 
 
-    +"Drop it." -> DropTheLetter1
+    + ["Drop it."] -> DropTheLetter1
         
-    +Move closer. -> MoveCloserToStephan
+    + [Move closer.] -> MoveCloserToStephan
 
 
 
@@ -851,9 +847,9 @@ His voice is tired.
 STEPHAN: "I thought it was for me."
 
     
-    +"It's not." -> TheLetterisNotForStephan
+    + ["It's not."] -> TheLetterisNotForStephan
                 
-    +"Drop. It." -> DropTheLetter2
+    + ["Drop. It."] -> DropTheLetter2
 
 
 
@@ -864,9 +860,9 @@ A wry, forced smile.
 STEPHAN: "I know."
 
         
-    +"Drop. It." -> DropTheLetter3
+    + ["Drop. It."] -> DropTheLetter3
                 
-    +Grab the letter. -> GrabTheLetter1
+    + [Grab the letter.] -> GrabTheLetter1
 
 
 
@@ -903,9 +899,9 @@ You rush forward and swipe it from the snow.
 He winces at the approach.
     
     
-    +Grab the letter. -> GrabTheLetter2
+    + [Grab the letter.] -> GrabTheLetter2
             
-    +"Give me the letter." -> GrabTheLetter3
+    + ["Give me the letter."] -> GrabTheLetter3
 
 
 
@@ -931,11 +927,11 @@ You walk forward, rifle still trained as you swipe the letter from his palms.
 STEPHAN: "I don't want trouble."
 
 
-    +"Sorry. Tense." -> SorryTense
+    + ["Sorry. Tense."] -> SorryTense
     
-    +"Neither do I." -> NeitherDoI
+    + ["Neither do I."] -> NeitherDoI
     
-    +Look away. ->LookAway
+    + [Look away.] ->LookAway
 
 
 
@@ -972,11 +968,11 @@ His eyes laze towards the letter.
 STEPHAN: "Mind if I ask who?"
 
 
-    ++"..." -> SilentAnswer
+    + ["..."] -> SilentAnswer
     
-    ++"I shouldn't say." -> DoNotTellStephan
+    + ["I shouldn't say."] -> DoNotTellStephan
     
-    ++"A lover." ->TellStephanItIsYourLover
+    + ["A lover."] ->TellStephanItIsYourLover
 
 
 
@@ -1001,9 +997,9 @@ STEPHAN: "I understand."
 STEPHAN: "A secret lover!"
     
     
-    +"That or dead." -> IsLoverDead
+    + ["That or dead."] -> IsLoverDead
             
-    +"I suppose you could say that. ->StephanHunch
+    + ["I suppose you could say that."] ->StephanHunch
         
         
 
@@ -1032,11 +1028,11 @@ STEPHAN: "Heading south amidst the chaos?"
 =South  
 
 
-    +"..." ->YouSmoke
+    + ["..."] ->YouSmoke
     
-    +I shouldn't..." ->YouSmoke 
+    + [I shouldn't..."] ->YouSmoke 
     
-    +"Through Abkhazia. Then on to Turkey. I have family there." -> TellStephanYourDestination
+    + ["Through Abkhazia. Then on to Turkey. I have family there."] -> TellStephanYourDestination
 
 
 
@@ -1059,11 +1055,11 @@ He leans back, head to the sky, dragging in a mound of smoke off the end of his 
 STEPHAN: "You smoke?"
 
 
-    +"No." -> ProtagDoNotSmoke
+    + ["No."] -> ProtagDoNotSmoke
     
-    +"No. Thank You." ->NoThankYouStephan
+    + ["No. Thank You."] ->NoThankYouStephan
     
-    +"I do." -> ProtagSmokes
+    + ["I do."] -> ProtagSmokes
 
 
 
@@ -1106,9 +1102,9 @@ You take the cigar and inhale. There's comfort in the heat.
 =AndYou
 
 
-    +"Who are you waiting for?" ->AskStephanWhoIsSheWaiting
+    + ["Who are you waiting for?"] ->AskStephanWhoIsSheWaiting
     
-    +"Why wait in the cold? That was the only bus for hours." -> AskStephanWhySheWaitsInTheCold
+    + ["Why wait in the cold? That was the only bus for hours."] -> AskStephanWhySheWaitsInTheCold
 
 
 
@@ -1137,9 +1133,9 @@ STEPHAN: "My son."
 STEPHAN: "They're not coming through."
 
 
-    +"Sorry for your loss." -> SorryForYourLossStephan
+    + ["Sorry for your loss."] -> SorryForYourLossStephan
     
-    +"Sorry." -> SorryStephan
+    + ["Sorry."] -> SorryStephan
 
 
 
@@ -1174,9 +1170,9 @@ STEPHAN: Play in a band.
 STEPHAN: Not a lot of those around here.
 
 
-    +"City for the strays." -> CityForTheStrays
+    + ["City for the strays."] -> CityForTheStrays
     
-    +"I lived there. Before all this." -> ILivedThere
+    + ["I lived there. Before all this."] -> ILivedThere
 
 
  
@@ -1203,9 +1199,9 @@ STEPHAN: Not a lot of those around here.
  STEPHAN: "Ahhh. I guess we're done for the day."
  
  
-     +"I've got a bus to catch." -> IHaveABusToCatch
+     + ["I've got a bus to catch."] -> IHaveABusToCatch
      
-     +"It was nice to meet you." -> ItWasNiceToMeetYouStephan
+     + ["It was nice to meet you."] -> ItWasNiceToMeetYouStephan
 
 
 
@@ -1230,9 +1226,9 @@ STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Rec
 The breeze returns with harsher ambition.
 
 
-     +"I appreciate the concern. I'll be ok." -> AppreciateStephanConcern
+     + ["I appreciate the concern. I'll be ok."] -> AppreciateStephanConcern
      
-     +"As long as I'm not imposing." -> AsLongAsWeAreNotImposing
+     + ["As long as I'm not imposing."] -> AsLongAsWeAreNotImposing
  
  
  
@@ -1263,9 +1259,9 @@ The breeze returns with harsher ambition.
  You wait in silence, shattered by whistling wind. The storm rises and you pull your scarf to cover your face.
  
  
-     +Stay. -> Stay1
+     + [Stay.] -> Stay1
         
-     +Leave. -> Leave
+     + [Leave.] -> Leave
  
  
  
@@ -1276,9 +1272,9 @@ The breeze returns with harsher ambition.
  The cold cuts at your skin.
  
  
-    ++Stay. -> Stay2
+    + [Stay.] -> Stay2
         
-    ++Leave. -> Leave
+    + [Leave.] -> Leave
  
  
  
@@ -1287,9 +1283,9 @@ The breeze returns with harsher ambition.
  You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
  
  
-    +++Stay -> Stay3
+    + [Stay] -> Stay3
                 
-    +++Leave -> Leave
+    + [Leave] -> Leave
  
  
  
@@ -1298,9 +1294,9 @@ The breeze returns with harsher ambition.
 Are you sure?
           
             
-    +Stay -> Death2
+    + [Stay] -> Death2
                 
-    +Leave -> Leave
+    + [Leave] -> Leave
  
  
  
@@ -1346,9 +1342,9 @@ Ends.
  
  STEPHAN: "Play with me."
  
- +"Why not?" -> StartStephanDuet
+ + ["Why not?"] -> StartStephanDuet
  
- +"I should sleep." -> RestWithStephan
+ + ["I should sleep."] -> RestWithStephan
  
  
  
@@ -1426,9 +1422,9 @@ Eventually, the man and his wife thank you, before showing you a bed and retirin
  
  
  
-    +Burn it. -> YouShouldBurnIt2
+    + [Burn it.] -> YouShouldBurnIt2
     
-    +Keep it. -> KeepTheLetter2
+    + [Keep it.] -> KeepTheLetter2
 
 
 - ->Chapter3
