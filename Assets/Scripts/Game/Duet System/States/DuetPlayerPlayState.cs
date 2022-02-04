@@ -7,6 +7,8 @@ using Naninovel.Commands;
 
 public class DuetPlayerPlayState : DuetBaseState
 {
+    public List<int> choices = new List<int>();
+
     private int scoreEarned;
     private int timerInstance;
     public int buttonChosen;
@@ -21,6 +23,11 @@ public class DuetPlayerPlayState : DuetBaseState
     {
         duet.turnTime = duet.setTurnTime;
         turns = Random.Range(4,7);
+
+        while(choices.Count < 3)
+        {
+            NewNumber(4);
+        }
     }
 
     public override void UpdateState(DuetStateManager duet)
@@ -31,21 +38,24 @@ public class DuetPlayerPlayState : DuetBaseState
         //choose button to play
         if(Input.GetKeyDown("a") && !duet.buttonPressed) //red
         {
-            buttonChosen = 1;
+            buttonChosen = choices[0];
+            Debug.Log(buttonChosen + " " + choices[0] + " " + timerInstance);
             duet.buttonPressed = true;
             CheckInput();
             duet.score += scoreEarned;
         }
         if(Input.GetKeyDown("s") && !duet.buttonPressed) //yellow
         {
-            buttonChosen = 2;
+            buttonChosen = choices[1];
+            Debug.Log(buttonChosen + " " + choices[1] + " " + timerInstance);
             duet.buttonPressed = true;
             CheckInput();
             duet.score += scoreEarned;
         }
         if(Input.GetKeyDown("d") && !duet.buttonPressed) //green
         {
-            buttonChosen = 3;
+            buttonChosen = choices[2];
+            Debug.Log(buttonChosen + " " + choices[2] + " " + timerInstance);
             duet.buttonPressed = true;
             CheckInput();
             duet.score += scoreEarned;
@@ -54,6 +64,7 @@ public class DuetPlayerPlayState : DuetBaseState
         //reset variables then check if we should loop back or continue
         if(duet.turnTime <= 0)
         {
+            choices.Clear();
             duet.turnTime = duet.setTurnTime;
             duet.buttonPressed = false;
             scoreEarned = 0;
@@ -62,6 +73,11 @@ public class DuetPlayerPlayState : DuetBaseState
             if(turns > 0)
             {
                 turns--;
+
+                while(choices.Count < 3)
+                {
+                    NewNumber(4);
+                }
             }
 
             if(turns <= 0)
@@ -84,6 +100,27 @@ public class DuetPlayerPlayState : DuetBaseState
             }
         }
 
+    }
+
+    //shuffle choices
+    public int NewNumber(int r) 
+    {
+        int a = 0;
+
+        while(a==0)
+        {    
+            a = Random.Range (1, r);
+
+            if(!choices.Contains(a))
+            {
+                choices.Add(a);
+            }
+            else
+            {
+                a=0;
+            }
+        }
+        return a;
     }
 
     private void CheckInput()
