@@ -39,9 +39,9 @@ MILLIA: "No."
 @resetText
 
 
-    + ["-"] -> SilentType
+    + [-] -> SilentType
     
-    + ["Yes."] -> Scene1
+    + [Yes.] -> Scene1
 
 
 
@@ -59,11 +59,11 @@ MILLIA: "Say that again?"
 @resetText
 
 
-    + ["-"] -> SilentType
+    + [-] -> SilentType
         
-    + ["No."] -> Boring
+    + [No.] -> Boring
     
-    + ["Yes."] -> FirstGunshot
+    + [Yes.] -> FirstGunshot
 
 
 
@@ -82,29 +82,56 @@ She flips the rifle back towards herself, where it settles harmlessly in her lap
 =FirstGunshot
     
 BANG!
+
+@spawn ShakePrinter params:,10,,,,,true,true
+
+@wait 2
+
+@despawn ShakePrinter
+
+@despawn DepthOfField
+
+@spawn ShakeCharacter params:PROTAG
     
 A bullet flies towards you, grazing the outside of your neck. 
+
+@spawn ShakeCharacter params:MILLIA
     
 She laughs.
+
+@spawn ShakeCharacter params:PROTAG
     
 You feel a trickle of blood.
     
-@despawn DepthOfField
-    
 @resetText
-    
     
     + [Take a step towards her.] -> SecondGunshot
 
 
     
 =SecondGunshot
+
+@char PROTAG.DEFAULT look:right pos:35,0 scale:1.2,1.2
+
+@wait 2
         
 BANG!
+
+@spawn ShakePrinter params:,10,,,,,true,true
+
+@wait 2
+
+@despawn ShakePrinter
+
+@spawn ShakeCharacter params:PROTAG
         
 Another bullet. Cutting delicately into the skin of your cheek
+
+@spawn ShakeCharacter params:MILLIA
         
 Another laugh. 
+
+@spawn ShakeCharacter params:PROTAG
         
 Another trickle of blood.
 
@@ -117,17 +144,17 @@ Curled lips smirk in amusement.
 @resetText
 
 
-    + ["If you wanted me dead, I'd be dead."] -> IfYouWantedMeDead
+    + [If you wanted me dead, I'd be dead.] -> IfYouWantedMeDead
         
-    + ["What the fuck!?"] -> Repetition1
-        
+    + [What the fuck!?] -> Repetition1
+    
     + [Run at her.] -> RunAtHer
 
 
 
 =RunAtHer
 
-Are you sure?
+MILLIA: Are you sure?
 
 @resetText
 
@@ -143,7 +170,7 @@ Are you sure?
 @resetText
         
         
-    + ["What the fuck!?"] -> ThirdGunshot
+    + [What the fuck!?] -> ThirdGunshot
     
     + [Take a step towards her.] -> ThirdGunshot
 
@@ -151,12 +178,32 @@ Are you sure?
     
 =ThirdGunshot
 
-BANG! 
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
 
-A bullet flies towards you, grazing the outside of your neck.
+@char MILLIA.DEFAULT look:left pos:80,0 scale:1.2,1.2
 
+@wait 2
+
+BANG!
+
+@spawn ShakePrinter params:,10,,,,,true,true
+
+@wait 3
+
+@despawn ShakePrinter
+
+@despawn DepthOfField
+
+@spawn ShakeCharacter params:PROTAG
+    
+A bullet flies towards you, grazing the outside of your neck. 
+
+@spawn ShakeCharacter params:MILLIA
+    
 She laughs.
 
+@spawn ShakeCharacter params:PROTAG
+    
 You feel a trickle of blood.
 
 @resetText
@@ -168,12 +215,30 @@ You feel a trickle of blood.
 
 =FourthGunshot
     
+@char PROTAG.DEFAULT look:right pos:55,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:85,0 scale:1.2,1.2
+
+@wait 2
+        
 BANG!
 
-Another bullet. Cutting delicately into the skin of your cheek.
+@spawn ShakePrinter params:,10,,,,,true,true
 
+@wait 2
+
+@despawn ShakePrinter
+
+@spawn ShakeCharacter params:PROTAG
+        
+Another bullet. Cutting delicately into the skin of your cheek
+
+@spawn ShakeCharacter params:MILLIA
+        
 Another laugh. 
 
+@spawn ShakeCharacter params:PROTAG
+        
 Another trickle of blood.
 
 Then silence.
@@ -185,9 +250,9 @@ Curled lips smirk in amusement.
 @resetText
 
 
-    + ["If you wanted me dead, I'd be dead."] -> IfYouWantedMeDead
+    + [If you wanted me dead, I'd be dead.] -> IfYouWantedMeDead
     
-    + ["What the fuck!?"] -> WhatTheFuck
+    + [What the fuck!?] -> WhatTheFuck
     
     + [Run towards her.] -> RunAtHer2
 
@@ -195,7 +260,7 @@ Curled lips smirk in amusement.
 
 =RunAtHer2
 
-Are you sure?
+MILLIA: Are you sure?
 
 @resetText
    
@@ -204,17 +269,31 @@ Are you sure?
         
     + [No.] -> WhatTheFuck
         
-    + ["What the fuck!?"] -> WhatTheFuck
+    + [What the fuck!?] -> WhatTheFuck
 
 
 
 =MilliaDeath
 
+@char PROTAG.DEFAULT look:right pos:65,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:95,0 scale:1.2,1.2
+
 You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from bemusement to a terrifying focus. 
 
 She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
 
+@spawn ShakePrinter params:,10,,,,,true,true
+
+@wait 2
+
+@despawn ShakePrinter
+
+@spawn ShakeCharacter params:PROTAG
+
 Everything.
+
+@char PROTAG.DEFAULT look:right transition:Crossfade pos:65,0 scale:1.2,1.2
 
 Ends.
 
@@ -229,7 +308,11 @@ Ends.
 
 =WhatTheFuck
 
+@spawn ShakeCharacter params:MILLIA,8,5,,1,,false,true
+
 She howls with laughter, her head reeling back to the sky as she splutters for a moment before it returns.
+
+@despawn ShakeCharacter params:MILLIA
 
 MILLIA: "You play with fire."
 
@@ -239,9 +322,13 @@ Her finger delicately tensing against the trigger.
 
 She smirks.
 
+@char PROTAG.DEFAULT look:right pos:35,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:right pos:75,0 scale:1.2,1.2
+
 And flips it back over her shoulder, as her lips give way to a wry smile.
 
-"I'm entertained."
+MILLIA: "I'm entertained."
 
 -> WhereFrom
 
@@ -249,9 +336,15 @@ And flips it back over her shoulder, as her lips give way to a wry smile.
         
 =IfYouWantedMeDead
 
+@char PROTAG.DEFAULT look:right pos:35,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:right pos:75,0 scale:1.2,1.2
+
 Her smirk gives way to laughter. 
 
 She releases the rifle and raises her hands as it falls into her lap.
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 MILLIA: "You got me."
 
@@ -267,15 +360,15 @@ MILLIA:"Silent type?"
 
 @resetText
         
-    + ["-"] -> Stare1
+    + [-] -> Stare1
     
-    + ["Just scared."] -> ScaredProtag
+    + [Just scared.] -> ScaredProtag
 
 
 
 =ScaredProtag
 
-"Smart."
+MILLIA:"Smart."
 
 -> WhereFrom
 
@@ -285,10 +378,11 @@ MILLIA:"Silent type?"
 
 MILLIA:"-"
 
+@resetText
             
-    + ["-"] -> Stare2
+    + [-] -> Stare2
         
-    + ["This is ridiculous."] -> ThisIsRidiculous
+    + [This is ridiculous.] -> ThisIsRidiculous
 
 
 
@@ -298,12 +392,14 @@ The woman stares into your soul, her eyes refuse to blink as they start to water
                 
 Tiny teardrops freezing over wrinkled skin. 
 
+@resetText
+
                 
-    + ["Are you ok?"] -> MilliaWins
+    + [Are you ok?] -> MilliaWins
         
-    + ["-"] -> BothGiveUp
+    + [-] -> BothGiveUp
         
-    + ["Are we done?"] -> CuriousProtag
+    + [Are we done?] -> CuriousProtag
 
 
 
@@ -311,7 +407,7 @@ Tiny teardrops freezing over wrinkled skin.
                     
 @char Millia look:left pos:75,0 scale:1.2,1.2
                     
-@spawn ShakeCharacter params:Millia,1
+@spawn ShakeCharacter params:MILLIA
 
 MILLIA: "HAH! I WIN!" 
 
@@ -325,12 +421,13 @@ She grins with childlike ambition, as one hand wipes the frozen salt from her ey
 
 MILLIA: "You started it."
 
+@resetText
             
-    + ["What are you, a child?"] -> YouStartedIt
+    + [What are you, a child?] -> YouStartedIt
     
-    + ["True."] -> TrueMillia
+    + [True.] -> TrueMillia
     
-    + ["You're holding a rifle."] -> CorrectMillia
+    + [You're holding a rifle.] -> CorrectMillia
 
 
 
@@ -364,7 +461,15 @@ You both remain unblinking, tears forming on the boundaries of your vision in so
 
 You lock gazes against the snow, frozen salt blinding you both until your bodies give way and force your hands to wipe your eyes.
 
+@spawn ShakeCharacter params:MILLIA,0
+
+@spawn ShakeCharacter params:PROTAG,0
+
 As your vision returns, the sound of spluttered laughter carries across the way. A smoker's lung.
+
+@despawn ShakeCharacter params:MILLIA
+
+@despawn ShakeCharacter params:PROTAG
 
 ->WhereFrom
 
@@ -374,24 +479,26 @@ As your vision returns, the sound of spluttered laughter carries across the way.
                 
 MILLIA: "I don't know. Are we?"
 
+@resetText
 
-    + ["You're a child."]
+
+    + [You're a child.]
 
 MILLIA: "Just a very bored old woman."
 
 ->WhereFrom
 
+@resetText
 
-
-+["Fine."]
++[Fine.]
 
  MILLIA: "Well aren't you agreeable?"
  
  ->WhereFrom
  
+ @resetText
  
- 
-+["You're holding a rifle."]
++[You're holding a rifle.]
 
 MILLIA: "Correct. A Mosins, to be precise."
 
@@ -403,39 +510,58 @@ MILLIA: "Correct. A Mosins, to be precise."
                 
 =WhereFrom 
 
+@spawn DepthOfField params:MILLIA
+
 Old eyes slowly scan you.
+
+@despawn DepthOfField
+
+@camera offset:-3,-0.3 zoom:0.35
 
 Your face
 
+@camera offset:-2.75,-1.5 zoom:0.25
+
 Your body. 
+
+@camera offset:0,0 zoom:0 rotation:0,0,0
 
 Your posture. 
 
+@spawn DepthOfField params:PROTAG
+
 Your response.
+
+@despawn DepthOfField
 
 MILLIA: "Where are you from?"
 
+@resetText
 
-    + ["Moscow."] -> ILiveAtMoscow
+    + [Moscow.] -> ILiveAtMoscow
             
-    + ["None of your business."] -> NoneOfYourBusiness
+    + [None of your business.] -> NoneOfYourBusiness
     
-    + ["Where are you from?"] -> AskMilliaFirstWhereSheLives
+    + [Where are you from?] -> AskMilliaFirstWhereSheLives
     
     
     
 =ILiveAtMoscow
+
+@spawn ShakeCharacter params:MILLIA
     
 Her gaze converges on yours, she's intrigued.
     
 MILLIA: "And before that?
+
+@resetText
     
     
-    + ["Not Moscow."] -> NotLivingInMoscow
+    + [Not Moscow.] -> NotLivingInMoscow
             
-    + ["None of your business."] -> NoneOfYourBusiness
+    + [None of your business.] -> NoneOfYourBusiness
             
-    + ["Where are you from?"] -> AskMilliaFirstWhereSheLives
+    + [Where are you from?] -> AskMilliaFirstWhereSheLives
         
         
         
@@ -451,7 +577,11 @@ MILLIA: "Well. Okay then."
 
 =AskMilliaFirstWhereSheLives
 
-MILLIA: "Moscow nowadays. Born in Bila Tserkva. But who knows what we'll be calling either of those a year from now."
+MILLIA: Moscow nowadays. 
+
+MILLIA: Born in Bila Tserkva. 
+
+MILLIA: But who knows what we'll be calling either of those a year from now.
 
 -> MilliaFire
 
@@ -471,11 +601,29 @@ MILLIA: "Well I suppose you're not lying at least."
 
 Her eyes slightly soften. The rifle lies harmlessly in her lap.
 
+@stopBusStopSoundscape
+
 MILLIA: "You must be cold. I'll start a fire.
+
+@despawn Snow
+
+@startTrans
+
+@playBonfireSoundscape
+
+@hideChars
+
+@back ph_bonfire
+
+@finishTrans RadialBlur time:3
 
 After a moment of wariness, the woman's shifting demeanor seems genuine. 
 
-You help her gather firewood, and as you reach for a pile of kindling, a thin red envelope catches your eye amidst the shrubbery.
+You help her gather firewood, and as you reach for a pile of kindling...
+
+@spawn Letter
+
+A thin red envelope catches your eye amidst the shrubbery.
 
 You know that this was meant for you.
 
@@ -486,20 +634,28 @@ You open it and familiar handwriting sends warmth wrapping round your body.
 // Convert this into a Featured Illustration
 LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to kindle dead eyes. She was looking for someone. Filled with hate, or passion, I couldn't tell which. I haven't seen that kind of drive in years. Everyone el5e I've met seems dead or dying. She reminded me of you, in a way. I asked her if she'd seen you. She said no. It stung. She wanted to be kind, I think, I think sh3'd forgotten how.
 
+@despawn Letter
 
+@char MILLIA.DEFAULT scale:1.2,1.2
 
 MILLIA: "Letter from a lover?"
 
+@resetText
 
-    + ["Yes."] -> SmilesGently
+
+    + [Yes.] -> SmilesGently
         
-    + ["No."] -> SmilesKnowingly
+    + [No.] -> SmilesKnowingly
             
-    + ["-"] -> SmilesSolemnly
+    + [-] -> SmilesSolemnly
     
 
 
 =SmilesGently
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 She smiles, gently. 
         
@@ -511,6 +667,10 @@ MILLIA: "You should burn it."
 
 =SmilesKnowingly
 
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 She smiles, knowingly. 
         
 MILLIA: "You should burn it."
@@ -520,6 +680,10 @@ MILLIA: "You should burn it."
 
 
 =SmilesSolemnly
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 She smiles, solemnly. 
         
@@ -531,16 +695,22 @@ MILLIA: "You should burn it."
     
 =YouShouldBurnIt
 
+@resetText
 
-    + ["Can't."] -> CannotBurnLetter
+
+    + [Can't.] -> CannotBurnLetter
     
-    + ["Why?"] -> WhyBurnTheLetter
+    + [Why?] -> WhyBurnTheLetter
     
-    + ["I know."] -> IKnowThat
+    + [I know.] -> IKnowThat
     
     
     
 =CannotBurnLetter
+
+@hidePrinter
+
+@wait 2
 
 MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. Memorise, then burn"  
 
@@ -550,6 +720,10 @@ MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. 
 
 =WhyBurnTheLetter
 
+@hidePrinter
+
+@wait 2
+
 MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. Memorise, then burn"  
 
 ->YouCouldHaveKilledMe
@@ -557,6 +731,10 @@ MILLIA: "If you're finding letters stashed in bus stops, they're worth burning. 
 
 
 =IKnowThat
+
+@hidePrinter
+
+@wait 2
 
 MILLIA: "I'm sure you do. Take the time to memorise."
 
@@ -573,11 +751,11 @@ After some time, her eyes turn back to the flame. She seems lost in the sight, s
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
     
     
-+ ["Why didn't you kill me?"] -> WhyYouDidntKillMe
++ [Why didn't you kill me?] -> WhyYouDidntKillMe
     
-+ ["Do you like music?"]  -> PlayHerASong
++ [Do you like music?]  -> PlayHerASong
     
-+ ["We should sleep."] -> Sleep1
++ [We should sleep.] -> Sleep1
     
     
     
@@ -602,7 +780,7 @@ MILLIA: "Besides. You seemed harmless enough."
         
     + [Play her a song.] -> PlayHerASong
             
-    + ["We should sleep."] -> Sleep2
+    + [We should sleep.] -> Sleep2
 
 
     
@@ -787,7 +965,7 @@ In the other, a letter.
 Your letter.
 
 
-    + ["I think that might be for me."] -> StephanSmilesAtYou
+    + [I think that might be for me.] -> StephanSmilesAtYou
     
     + [Stare at him.] -> StareAtStephan
     
@@ -832,8 +1010,8 @@ His arms fly upwards, eyes full of fear.
 The letter dangles gently from one hand as smoke rises from the cigar in the other.
 
 
-    + ["Drop it."] -> DropTheLetter1
-        
+    + [Drop it.] -> DropTheLetter1
+    
     + [Move closer.] -> MoveCloserToStephan
 
 
@@ -847,9 +1025,9 @@ His voice is tired.
 STEPHAN: "I thought it was for me."
 
     
-    + ["It's not."] -> TheLetterisNotForStephan
+    + [It's not.] -> TheLetterisNotForStephan
                 
-    + ["Drop. It."] -> DropTheLetter2
+    + [Drop. It.] -> DropTheLetter2
 
 
 
@@ -860,7 +1038,7 @@ A wry, forced smile.
 STEPHAN: "I know."
 
         
-    + ["Drop. It."] -> DropTheLetter3
+    + [Drop. It.] -> DropTheLetter3
                 
     + [Grab the letter.] -> GrabTheLetter1
 
@@ -901,7 +1079,7 @@ He winces at the approach.
     
     + [Grab the letter.] -> GrabTheLetter2
             
-    + ["Give me the letter."] -> GrabTheLetter3
+    + [Give me the letter.] -> GrabTheLetter3
 
 
 
@@ -927,9 +1105,9 @@ You walk forward, rifle still trained as you swipe the letter from his palms.
 STEPHAN: "I don't want trouble."
 
 
-    + ["Sorry. Tense."] -> SorryTense
+    + [Sorry. Tense.] -> SorryTense
     
-    + ["Neither do I."] -> NeitherDoI
+    + [Neither do I.] -> NeitherDoI
     
     + [Look away.] ->LookAway
 
@@ -937,7 +1115,7 @@ STEPHAN: "I don't want trouble."
 
 =SorryTense
 
-STEPHAN: "Tense times. Can hardly blame you."
+STEPHAN: Tense times. Can hardly blame you.
 
 -> MindIfIAskWho
 
@@ -968,11 +1146,11 @@ His eyes laze towards the letter.
 STEPHAN: "Mind if I ask who?"
 
 
-    + ["..."] -> SilentAnswer
+    + [...] -> SilentAnswer
     
-    + ["I shouldn't say."] -> DoNotTellStephan
+    + [I shouldn't say.] -> DoNotTellStephan
     
-    + ["A lover."] ->TellStephanItIsYourLover
+    + [A lover.] ->TellStephanItIsYourLover
 
 
 
@@ -997,9 +1175,9 @@ STEPHAN: "I understand."
 STEPHAN: "A secret lover!"
     
     
-    + ["That or dead."] -> IsLoverDead
+    + [That or dead.] -> IsLoverDead
             
-    + ["I suppose you could say that."] ->StephanHunch
+    + [I suppose you could say that.] ->StephanHunch
         
         
 
@@ -1028,11 +1206,11 @@ STEPHAN: "Heading south amidst the chaos?"
 =South  
 
 
-    + ["..."] ->YouSmoke
+    + [...] ->YouSmoke
     
     + [I shouldn't..."] ->YouSmoke 
     
-    + ["Through Abkhazia. Then on to Turkey. I have family there."] -> TellStephanYourDestination
+    + [Through Abkhazia. Then on to Turkey. I have family there.] -> TellStephanYourDestination
 
 
 
@@ -1055,11 +1233,11 @@ He leans back, head to the sky, dragging in a mound of smoke off the end of his 
 STEPHAN: "You smoke?"
 
 
-    + ["No."] -> ProtagDoNotSmoke
+    + [No.] -> ProtagDoNotSmoke
     
-    + ["No. Thank You."] ->NoThankYouStephan
+    + [No. Thank You.] ->NoThankYouStephan
     
-    + ["I do."] -> ProtagSmokes
+    + [I do.] -> ProtagSmokes
 
 
 
@@ -1102,9 +1280,9 @@ You take the cigar and inhale. There's comfort in the heat.
 =AndYou
 
 
-    + ["Who are you waiting for?"] ->AskStephanWhoIsSheWaiting
+    + [Who are you waiting for?] ->AskStephanWhoIsSheWaiting
     
-    + ["Why wait in the cold? That was the only bus for hours."] -> AskStephanWhySheWaitsInTheCold
+    + [Why wait in the cold? That was the only bus for hours.] -> AskStephanWhySheWaitsInTheCold
 
 
 
@@ -1133,9 +1311,9 @@ STEPHAN: "My son."
 STEPHAN: "They're not coming through."
 
 
-    + ["Sorry for your loss."] -> SorryForYourLossStephan
+    + [Sorry for your loss.] -> SorryForYourLossStephan
     
-    + ["Sorry."] -> SorryStephan
+    + [Sorry.] -> SorryStephan
 
 
 
@@ -1170,9 +1348,9 @@ STEPHAN: Play in a band.
 STEPHAN: Not a lot of those around here.
 
 
-    + ["City for the strays."] -> CityForTheStrays
+    + [City for the strays.] -> CityForTheStrays
     
-    + ["I lived there. Before all this."] -> ILivedThere
+    + [I lived there. Before all this.] -> ILivedThere
 
 
  
@@ -1199,9 +1377,9 @@ STEPHAN: Not a lot of those around here.
  STEPHAN: "Ahhh. I guess we're done for the day."
  
  
-     + ["I've got a bus to catch."] -> IHaveABusToCatch
+     + [I've got a bus to catch.] -> IHaveABusToCatch
      
-     + ["It was nice to meet you."] -> ItWasNiceToMeetYouStephan
+     + [It was nice to meet you.] -> ItWasNiceToMeetYouStephan
 
 
 
@@ -1226,9 +1404,9 @@ STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Rec
 The breeze returns with harsher ambition.
 
 
-     + ["I appreciate the concern. I'll be ok."] -> AppreciateStephanConcern
+     + [I appreciate the concern. I'll be ok.] -> AppreciateStephanConcern
      
-     + ["As long as I'm not imposing."] -> AsLongAsWeAreNotImposing
+     + [As long as I'm not imposing.] -> AsLongAsWeAreNotImposing
  
  
  
@@ -1342,9 +1520,9 @@ Ends.
  
  STEPHAN: "Play with me."
  
- + ["Why not?"] -> StartStephanDuet
+ + [Why not?] -> StartStephanDuet
  
- + ["I should sleep."] -> RestWithStephan
+ + [I should sleep.] -> RestWithStephan
  
  
  

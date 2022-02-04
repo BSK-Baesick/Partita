@@ -179,18 +179,18 @@ MonoBehaviour:
       Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Stephan
+    - Name: DEFAULT
+      PathPrefix: Characters/STEPHAN
       Guid: 66433bf975a379f47a2f851b3dfaa9f8
   - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Pascha
+    - Name: DEFAULT
+      PathPrefix: Characters/PASCHA
       Guid: 836bbdb377de56646b5ed50807ce8591
   - Id: Characters/08064e0c-2f57-4f7e-b7d2-1bf40e4b11fa
     Resources:
-    - Name: Millia
-      PathPrefix: Characters/Millia
+    - Name: DEFAULT
+      PathPrefix: Characters/MILLIA
       Guid: a0993a0b9fea51045bd2d723c45cb6c0
   - Id: CharacterAvatars
     Resources:
@@ -209,8 +209,8 @@ MonoBehaviour:
       Guid: be64294fec19cf34dbbbd995f2f9179f
   - Id: Characters/58537df7-284f-4e4e-8aa2-2629b881617b
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Protag
+    - Name: DEFAULT
+      PathPrefix: Characters/PROTAG
       Guid: 68aed0b4e68dcf94194a793867fb4b1c
   - Id: Characters/e7ea0b2b-4184-4969-94bf-ebfdf6d79e0b
     Resources: []

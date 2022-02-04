@@ -56,12 +56,12 @@ MonoBehaviour:
     Poses: []
   Metadata:
     ids:
-    - Millia
-    - Vera
-    - Stephan
-    - Pascha
-    - Zakhar
-    - Protag
+    - MILLIA
+    - VERA
+    - STEPHAN
+    - PASCHA
+    - ZURAB
+    - PROTAG
     metas:
     - Implementation: Naninovel.SpriteCharacter, Elringus.Naninovel.Runtime, Version=0.0.0.0,
         Culture=neutral, PublicKeyToken=null
