@@ -613,7 +613,7 @@ MILLIA: "You must be cold. I'll start a fire.
 
 @hideChars
 
-@back ph_bonfire
+@back ph_bonfire id:Bonfire
 
 @finishTrans RadialBlur time:3
 
@@ -681,10 +681,6 @@ MILLIA: "You should burn it."
 
 =SmilesSolemnly
 
-@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
-
-@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
-
 She smiles, solemnly. 
         
 MILLIA: "You should burn it."
@@ -744,11 +740,19 @@ MILLIA: "I'm sure you do. Take the time to memorise."
 
 =YouCouldHaveKilledMe
 
+@hideChars
+
 As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
     
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
+
+@resetText
     
     
 + [Why didn't you kill me?] -> WhyYouDidntKillMe
@@ -776,25 +780,42 @@ MILLIA: "Just a world wasting away on shriveled ambition."
 Her eyes rise to laze on the horizon.
         
 MILLIA: "Besides. You seemed harmless enough."
+
+@resetText
         
         
     + [Play her a song.] -> PlayHerASong
             
     + [We should sleep.] -> Sleep2
 
-
+VAR duetScore = 0
     
 =PlayHerASong
 
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
 
 @skip false
+
 @hideUI
+
 @spawn duet
+
 @duet
-@despawn duet
+
+// If duetScore is greater than or equal to x, then go to MilliaDUET. Else, go to MilliaNODUET.
+
+
+{ 
+    - duetScore >= 5: 
+    
+    -> MilliaDUET
+    
+    - else:
+    
+    -> MilliaNODUET
+}
         
--> MilliaDUET
+
 
 
 
@@ -806,12 +827,29 @@ MILLIA: "I adore it"
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
 
 @skip false
+
+@stopBonfireSoundscape
+
+@stopWorldMusic
+
 @hideUI
+
 @spawn duet
+
 @duet
-@despawn duet
     
--> MilliaDUET
+// If duetScore is greater than or equal to x, then go to MilliaDUET. Else, go to MilliaNODUET.
+
+
+{ 
+    - duetScore >= 5: 
+    
+    -> MilliaDUET
+    
+    - else:
+    
+    -> MilliaNODUET
+}
 
 
 
@@ -835,9 +873,23 @@ MILLIA: "True. I'll keep first watch."
 
 =MilliaDUET
 
+@despawn duet
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
+@camera offset:-2.75,-1.5 zoom:0.25
+
 As you raise a bow to match with string, you can't help but feel a little more alive
 
+@camera offset:4.5,2 zoom:0.25
+
 Matching your melody, the woman plays her own. 
+
+@camera offset:0,0 zoom:0 rotation:0,0,0
+
+@spawn SunShafts
 
 A once dull brass sheen refracts moon and flame into the sky above. 
 
@@ -850,6 +902,8 @@ Smoke ebbs and flows as it rises into the open air.
 You play long into the night. But eventually, weariness does draw you back to reality.
 
 As the music comes to a close and your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
+
+@despawn SunShafts
 
 -> 1stLetter
 
@@ -869,6 +923,10 @@ MILLIA: "I appreciate the sentiment, but now's the time for rest."
 
 =MilliaNoSong
 
+@despawn duet
+
+@spawn Letter
+
 As your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
 
 -> 1stLetter
@@ -877,6 +935,7 @@ As your eyes give way to sleep, you turn your attention to the fire, letter dang
 
 =1stLetter
 
+@resetText
 
     + [Burn it.] -> BurnTheLetter
     
@@ -886,7 +945,19 @@ As your eyes give way to sleep, you turn your attention to the fire, letter dang
 
 =BurnTheLetter
 
-You take one last glance. Breathe. Then press the paper into the fire. It burns a little brighter, and you feel a little warmer as your eyes succumb to the night.
+You take one last glance. 
+
+Breathe. 
+
+@despawn Letter
+
+Then press the paper into the fire. 
+
+It burns a little brighter, and you feel a little warmer as your eyes succumb to the night.
+
+@stopBonfireSoundscape
+
+@wait 2
 
 -> WakeUpProtag
 
@@ -894,7 +965,15 @@ You take one last glance. Breathe. Then press the paper into the fire. It burns 
 
 =KeepTheLetter
 
-You press the letter to your chest. Holding it tightly in place against the winter winds. There's a cold chill that sways you to sleep against the warmth of the fire.
+@despawn Letter
+
+You press the letter to your chest. Holding it tightly in place against the winter winds. 
+
+There's a cold chill that sways you to sleep against the warmth of the fire.
+
+@stopBonfireSoundscape
+
+@wait 2
 
 -> WakeUpProtag
 
@@ -902,7 +981,9 @@ You press the letter to your chest. Holding it tightly in place against the wint
 
 =WakeUpProtag
 
-@stopBonfireSoundscape
+@despawn Snow
+
+@playBusStopSoundscape
 
 You wake before the birds, your eyes pressing open against the weight of the world. 
 
@@ -936,6 +1017,8 @@ Your hands stretch out against the dying night, pulling the rifle towards you.
 She sleeps.
     
 You turn towards the coming bus.
+
+@title
     
 -> Chapter2
 
@@ -950,6 +1033,8 @@ And let it pass.
 In the distance, an engine rumbles on approach.
     
 You turn back to the roadside and press on into morning.
+
+@title
     
 -> Chapter2
 

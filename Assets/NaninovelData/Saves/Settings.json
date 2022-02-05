@@ -9,7 +9,7 @@
             "Naninovel.UIManager+Settings, Elringus.Naninovel.Runtime, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null"
         ],
         "values": [
-            "{\"QualityLevel\":5}",
+            "{\"QualityLevel\":4}",
             "{\"SelectedLocale\":\"en\"}",
             "{\"SkipMode\":1}",
             "{\"BaseRevealSpeed\":0.5,\"BaseAutoDelay\":0.5}",

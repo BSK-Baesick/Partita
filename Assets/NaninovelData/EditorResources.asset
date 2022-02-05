@@ -106,6 +106,9 @@ MonoBehaviour:
     - Name: duet
       PathPrefix: Spawn
       Guid: 19447ee7745ab9b4b80d4946832bc12c
+    - Name: Letter
+      PathPrefix: Spawn
+      Guid: 295d624b0e0863f4ab969ca6c8cf6483
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
