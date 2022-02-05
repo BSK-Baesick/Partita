@@ -787,10 +787,15 @@ MILLIA: "Besides. You seemed harmless enough."
 =PlayHerASong
 
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
+
+@skip false
+@hideUI
+@spawn duet
+@duet
+@despawn duet
         
 -> MilliaDUET
-        
-//START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
+
 
 
 
@@ -799,10 +804,14 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 MILLIA: "I adore it"
     
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
+
+@skip false
+@hideUI
+@spawn duet
+@duet
+@despawn duet
     
 -> MilliaDUET
-    
-//START DUET SYSTEM - IF SUCCESUL GO TO =MilliaDUET - IF UNSUCCESFUL GO TO =MilliaNODUET
 
 
 
@@ -826,7 +835,7 @@ MILLIA: "True. I'll keep first watch."
 
 =MilliaDUET
 
-As you raise a bow to match with string, you can't help but feel a little more alive.
+As you raise a bow to match with string, you can't help but feel a little more alive
 
 Matching your melody, the woman plays her own. 
 
@@ -893,9 +902,13 @@ You press the letter to your chest. Holding it tightly in place against the wint
 
 =WakeUpProtag
 
+@stopBonfireSoundscape
+
 You wake before the birds, your eyes pressing open against the weight of the world. 
 
 Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
+
+@resetText
 
 
     + [Take it.] -> TakeTheRifle
