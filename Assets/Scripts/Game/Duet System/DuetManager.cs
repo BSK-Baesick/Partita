@@ -34,11 +34,55 @@ public class DuetManager : MonoBehaviour
                 break;
         }
 
+        if(stateMg.playerState.choices.Count != 0)
+        {
+            switch(stateMg.playerState.choices[0])
+            {
+                case 1:
+                    UImg.c1Image.color = Color.magenta;
+                    break;
+                case 2:
+                    UImg.c1Image.color = Color.yellow;
+                    break;
+                case 3:
+                    UImg.c1Image.color = Color.cyan;
+                    break;
+            }
+
+            switch(stateMg.playerState.choices[1])
+            {
+                case 1:
+                    UImg.c2Image.color = Color.magenta;
+                    break;
+                case 2:
+                    UImg.c2Image.color = Color.yellow;
+                    break;
+                case 3:
+                    UImg.c2Image.color = Color.cyan;
+                    break;
+            }
+
+            switch(stateMg.playerState.choices[2])
+            {
+                case 1:
+                    UImg.c3Image.color = Color.magenta;
+                    break;
+                case 2:
+                    UImg.c3Image.color = Color.yellow;
+                    break;
+                case 3:
+                    UImg.c3Image.color = Color.cyan;
+                    break;
+            }
+        }
+
+        //set time
         if(stateMg.currentState == stateMg.bonusState)
             UImg.timerBar.maxValue = stateMg.setTurnTime * 2;
         else
             UImg.timerBar.maxValue = stateMg.setTurnTime;
 
+        //enable/disable choice ui on input
         if(stateMg.buttonPressed)
         {
             UImg.pickNotes.SetActive(false);
@@ -48,6 +92,7 @@ public class DuetManager : MonoBehaviour
             UImg.pickNotes.SetActive(true);
         }
 
+        //timer color
         switch (Mathf.RoundToInt(stateMg.turnTime))
         {
             case 1:

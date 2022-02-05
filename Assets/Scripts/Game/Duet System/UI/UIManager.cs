@@ -6,6 +6,10 @@ using UnityEngine.UI;
 public class UIManager : MonoBehaviour
 {
     [HideInInspector]public GameObject choiceUI;
+    public Image c1Image;
+    public Image c2Image;
+    public Image c3Image;
+
     [HideInInspector]public GameObject chanceUI;
     [HideInInspector]public GameObject bonusUI;
     [HideInInspector]public GameObject startUI;
@@ -22,9 +26,9 @@ public class UIManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        startUI = gameObject.transform.Find("Canvas/StartUI").gameObject;
-        choiceUI = gameObject.transform.Find("Canvas/ChoiceUI").gameObject;
-        chanceUI = gameObject.transform.Find("Canvas/ChanceUI").gameObject;
-        bonusUI = gameObject.transform.Find("Canvas/BonusUI").gameObject;
+        startUI = gameObject.transform.Find("Canvas/Panel/StartUI").gameObject;
+        choiceUI = gameObject.transform.Find("Canvas/Panel/ChoiceUI").gameObject;
+        chanceUI = gameObject.transform.Find("Canvas/Panel/ChanceUI").gameObject;
+        bonusUI = gameObject.transform.Find("Canvas/Panel/BonusUI").gameObject;
     }
 }
