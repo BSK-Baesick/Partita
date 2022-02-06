@@ -8,7 +8,12 @@ public class SwitchToNovel: Command
 {
     public override async UniTask ExecuteAsync(CancellationToken asyncToken = default)
     {
-        var duetManager = GameObject.Find("duet/DuetManager");
+        var duetCamera = GameObject.Find("duet/DuetCamera").GetComponent<Camera>();
+        duetCamera.enabled = false;
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = true;
+
+        var duetManager = GameObject.Find("duet");
         duetManager.SetActive(false);
 
         var uiManager = Engine.GetService<IUIManager>();

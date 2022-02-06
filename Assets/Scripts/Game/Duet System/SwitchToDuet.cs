@@ -8,7 +8,12 @@ public class SwitchToDuet: Command
 {
     public override async UniTask ExecuteAsync(CancellationToken asyncToken = default)
     {
-        var duetManager = GameObject.Find("duet/DuetManager");
+        var duetCamera = GameObject.Find("duet/DuetCamera").GetComponent<Camera>();
+        duetCamera.enabled = true;
+        var naniCamera = Engine.GetService<ICameraManager>().Camera;
+        naniCamera.enabled = false;
+
+        var duetManager = GameObject.Find("duet");
         duetManager.SetActive(true);
 
         var uiManager = Engine.GetService<IUIManager>();

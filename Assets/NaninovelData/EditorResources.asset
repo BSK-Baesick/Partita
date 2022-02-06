@@ -105,7 +105,13 @@ MonoBehaviour:
       Guid: 22c512d367684b848825ff35c7322dbd
     - Name: duet
       PathPrefix: Spawn
-      Guid: 19447ee7745ab9b4b80d4946832bc12c
+      Guid: b1077a4058a36444f95ba24272fb2516
+    - Name: duetNormal
+      PathPrefix: Spawn
+      Guid: 3d9a14ba91570d848ae1d56f2753ed0a
+    - Name: duetEasy
+      PathPrefix: Spawn
+      Guid: c4bfe27f863a5b948834946f38f1811f
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -182,6 +188,12 @@ MonoBehaviour:
     - Name: WhereFrom
       PathPrefix: Scripts
       Guid: 0bde1e9f53e56f2419d68dd5b71f719b
+    - Name: WhereFrom
+      PathPrefix: Scripts
+      Guid: d78e3331d14ae4445b572398f35d4e25
+    - Name: WhereFrom
+      PathPrefix: Scripts
+      Guid: 846edb93a0325c2478fc58c6b5707da5
   - Id: Audio
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
