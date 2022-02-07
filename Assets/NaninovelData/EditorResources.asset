@@ -103,7 +103,7 @@ MonoBehaviour:
     - Name: SnowHeavy
       PathPrefix: Spawn
       Guid: 22c512d367684b848825ff35c7322dbd
-    - Name: duet
+    - Name: duetHard
       PathPrefix: Spawn
       Guid: b1077a4058a36444f95ba24272fb2516
     - Name: duetNormal

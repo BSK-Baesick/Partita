@@ -9,13 +9,18 @@ using Naninovel.Commands;
 public class DuetController : MonoBehaviour
 {
     public int score;
-    private float scoreFloat;
+    public float scoreFloat;
     public Slider scoreBar;
 
     public float timer;
 
     public int circleState;
     public float circleSpeed;
+
+    public GameObject miss1;
+    public GameObject miss2;
+    public GameObject miss3;
+    public GameObject miss4;
 
     public Transform pos1;
     public Transform pos2;
@@ -24,11 +29,15 @@ public class DuetController : MonoBehaviour
     
     void Start()
     {
-        
+        score = 0;
     }
 
     void Update()
     {
+        //set the nani variable
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+        variableManager.TrySetVariableValue("duetScore", score);
+
         timer -= Time.deltaTime;
         score = Mathf.RoundToInt(scoreFloat);
         scoreBar.value = scoreFloat;
@@ -40,6 +49,7 @@ public class DuetController : MonoBehaviour
             switchCommand.ExecuteAsync().Forget();
         }
 
+        //move circle
         if(Input.GetKeyDown("s"))
             circleState++;
         if(Input.GetKeyDown("w"))
@@ -55,15 +65,31 @@ public class DuetController : MonoBehaviour
         {
             case 1:
                 transform.position = Vector3.Lerp(transform.position, pos1.position, circleSpeed);
+                miss1.SetActive(false);
+                miss2.SetActive(true);
+                miss3.SetActive(true);
+                miss4.SetActive(true);
                 break;
             case 2:
                 transform.position = Vector3.Lerp(transform.position, pos2.position, circleSpeed);
+                miss1.SetActive(true);
+                miss2.SetActive(false);
+                miss3.SetActive(true);
+                miss4.SetActive(true);
                 break;
             case 3:
                 transform.position = Vector3.Lerp(transform.position, pos3.position, circleSpeed);
+                miss1.SetActive(true);
+                miss2.SetActive(true);
+                miss3.SetActive(false);
+                miss4.SetActive(true);
                 break;
             case 4:
                 transform.position = Vector3.Lerp(transform.position, pos4.position, circleSpeed);
+                miss1.SetActive(true);
+                miss2.SetActive(true);
+                miss3.SetActive(true);
+                miss4.SetActive(false);
                 break;
         }
 
@@ -75,17 +101,17 @@ public class DuetController : MonoBehaviour
 
     private void OnTriggerStay2D(Collider2D col)
     {
-        if(col.tag == "PlayNote")
+        if(col.tag == "PlayNote") //good audio
         {
             scoreFloat += Time.deltaTime * 0.8f;
         }
 
-        if(col.tag == "SilenceNote")
+        if(col.tag == "SilenceNote") //bad audio
         {
             scoreFloat -= Time.deltaTime * 5;
         }
 
-        if(col.tag == "BonusNote")
+        if(col.tag == "BonusNote"  && Input.GetKey("space")) //bonus
         {
             scoreFloat += Time.deltaTime * 2;
         }
