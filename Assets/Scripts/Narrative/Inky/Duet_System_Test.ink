@@ -1,12 +1,14 @@
 VAR duetScore = 0
-
-Hello
+@back ph_bonfire id:Bonfire
+@char STEPHAN.DEFAULT
+@char PROTAG.DEFAULT
+@printer Partita
+STEPHAN: Hello
 
 ->AskDuet
 
 =AskDuet
-
-Do you wanna duet?
+STEPHAN: Do you wanna duet?
 
     +[Yes.]
     
@@ -14,30 +16,32 @@ Do you wanna duet?
     
     +[No.]
     
-    Why the hell did you even play this demo.
+    STEPHAN: Why the hell did you even play this demo.
     
     ->AskDuet
     
 =Duet
 
-Let's start
+STEPHAN: Let's start
 
 @skip false
 
 @hideUI
 
-@spawn duet
+@spawn duetEasy
+@duet easy
 
-@duet
-
-@despawn duet
+STEPHAN: You did...
+@despawn duetEasy
 
 ->AskDuet
 
 =GoodJob
-    
+
+goodjob
 ->AskDuet
     
 =BadJob
-    
+
+badjob 
 ->AskDuet
