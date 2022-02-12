@@ -4,6 +4,12 @@
 
 @startTrans
 
+// bus engine stops
+
+@wait 2
+
+// bus door opens
+
 @back id:BusInterior
 
 @playBusStopSoundscape
@@ -22,9 +28,11 @@
 
 @char PROTAG.DEFAULT scale:1.2,1.2
 
+// step on snow sfx
+
 As your feet touch soft powder, weary eyes pierce through glaring snow. 
 
-An ancient woman sits, alert, back pressed against the cracked concrete wall. 
+An ancient woman sits, alert, back pressed against the cracked concrete wall.
 
 In her arms she cradles a rifle, trained delicately on your approach.
 
@@ -47,6 +55,8 @@ MILLIA: "No."
 
 
 =Scene1
+
+// snifer rifle reload sfx
 
 She scoffs and raises the rifle to her eyeline.
 
@@ -80,14 +90,14 @@ She flips the rifle back towards herself, where it settles harmlessly in her lap
 
 
 =FirstGunshot
+
+// sniper rifle gunshot sfx
     
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 2
-
-@despawn ShakePrinter
+@wait 1
 
 @despawn DepthOfField
 
@@ -113,15 +123,15 @@ You feel a trickle of blood.
 
 @char PROTAG.DEFAULT look:right pos:35,0 scale:1.2,1.2
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
         
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 2
-
-@despawn ShakePrinter
+@wait 1
 
 @spawn ShakeCharacter params:PROTAG
         
@@ -182,15 +192,15 @@ MILLIA: Are you sure?
 
 @char MILLIA.DEFAULT look:left pos:80,0 scale:1.2,1.2
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
 
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 3
-
-@despawn ShakePrinter
+@wait 1
 
 @despawn DepthOfField
 
@@ -219,13 +229,13 @@ You feel a trickle of blood.
 
 @char MILLIA.DEFAULT look:left pos:85,0 scale:1.2,1.2
 
-@wait 2
-        
-BANG!
-
 @spawn ShakePrinter params:,10,,,,,true,true
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
+        
+BANG!
 
 @despawn ShakePrinter
 
@@ -282,6 +292,8 @@ MILLIA: Are you sure?
 You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from bemusement to a terrifying focus. 
 
 She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
+
+// final blow sniper rifle gunshot sfx
 
 @spawn ShakePrinter params:,10,,,,,true,true
 
@@ -510,11 +522,9 @@ MILLIA: "Correct. A Mosins, to be precise."
                 
 =WhereFrom 
 
-@spawn DepthOfField params:MILLIA
+@camera offset:4,0.25 zoom:0.35
 
 Old eyes slowly scan you.
-
-@despawn DepthOfField
 
 @camera offset:-3,-0.3 zoom:0.35
 
@@ -524,15 +534,17 @@ Your face
 
 Your body. 
 
-@camera offset:0,0 zoom:0 rotation:0,0,0
+@spawn DepthOfField
 
 Your posture. 
 
-@spawn DepthOfField params:PROTAG
+@despawn DepthOfField
+
+@camera offset:0,0 zoom:0 rotation:0,0,0
 
 Your response.
 
-@despawn DepthOfField
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 MILLIA: "Where are you from?"
 
@@ -621,18 +633,28 @@ After a moment of wariness, the woman's shifting demeanor seems genuine.
 
 You help her gather firewood, and as you reach for a pile of kindling...
 
-@spawn Letter
+@spawn Envelope
 
 A thin red envelope catches your eye amidst the shrubbery.
 
 You know that this was meant for you.
 
+@despawn Envelope
+
+// Open Envelope SFX
+
 You open it and familiar handwriting sends warmth wrapping round your body.
 
+@spawn Letter
 
-
+// Start Transition
+// Romantic BGM
+// Fullwidth View
 // Convert this into a Featured Illustration
-LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to kindle dead eyes. She was looking for someone. Filled with hate, or passion, I couldn't tell which. I haven't seen that kind of drive in years. Everyone el5e I've met seems dead or dying. She reminded me of you, in a way. I asked her if she'd seen you. She said no. It stung. She wanted to be kind, I think, I think sh3'd forgotten how.
+
+@wait i5[skipInput]
+
+// Despawn 
 
 @despawn Letter
 
@@ -680,6 +702,10 @@ MILLIA: "You should burn it."
 
 
 =SmilesSolemnly
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 She smiles, solemnly. 
         
@@ -742,13 +768,15 @@ MILLIA: "I'm sure you do. Take the time to memorise."
 
 @hideChars
 
-As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
-
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
-@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
+As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
+
+@char MILLIA.DEFAULT look:right pos:75,0 scale:1.2,1.2
     
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
+
+@char PROTAG.DEFAULT look:left pos:25,0 scale:1.2,1.2
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
 
@@ -806,7 +834,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 
 { 
-    - duetScore >= 5: 
+    - duetScore >= 50: 
     
     -> MilliaDUET
     
@@ -842,7 +870,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 
 { 
-    - duetScore >= 5: 
+    - duetScore >= 50: 
     
     -> MilliaDUET
     
@@ -923,9 +951,13 @@ MILLIA: "I appreciate the sentiment, but now's the time for rest."
 
 =MilliaNoSong
 
+@hideChars
+
 @despawn duet
 
-@spawn Letter
+@spawn Envelope
+
+@char PROTAG.DEFAULT look:right scale:1.2,1.2
 
 As your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
 
@@ -949,7 +981,9 @@ You take one last glance.
 
 Breathe. 
 
-@despawn Letter
+@despawn Envelope
+
+// burning paper sfx
 
 Then press the paper into the fire. 
 
@@ -965,7 +999,7 @@ It burns a little brighter, and you feel a little warmer as your eyes succumb to
 
 =KeepTheLetter
 
-@despawn Letter
+@despawn Envelope
 
 You press the letter to your chest. Holding it tightly in place against the winter winds. 
 
@@ -985,7 +1019,12 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
 
 @playBusStopSoundscape
 
+// chilly morning ambient layer
+// birds chirping sfx
+
 You wake before the birds, your eyes pressing open against the weight of the world. 
+
+// sniper rifle icon
 
 Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
 
@@ -1008,13 +1047,17 @@ You freeze.
 
 You wait.
 
+// bus engine approaching sfx
+
 You hear the rumbling of an engine in the distance.
+
+// snatch a gun sfx
 
 Your hands stretch out against the dying night, pulling the rifle towards you.
 
-// ART Change main character sprite, add Rifle.
-
 She sleeps.
+
+// bus door opens sfx
     
 You turn towards the coming bus.
 
@@ -1029,8 +1072,12 @@ You turn towards the coming bus.
 You consider the thought.
     
 And let it pass.
+
+// bus engine approaching sfx
     
 In the distance, an engine rumbles on approach.
+
+// bus door opens sfx
     
 You turn back to the roadside and press on into morning.
 
