@@ -1,8 +1,7 @@
 VAR duetScore = 0
 @back ph_bonfire id:Bonfire
-@char STEPHAN.DEFAULT
-@char PROTAG.DEFAULT
-@printer Partita
+@char STEPHAN.DEFAULT scale:1.2,1.2
+@char PROTAG.DEFAULT scale:1.2,1.2
 STEPHAN: Hello
 
 ->AskDuet
@@ -24,15 +23,15 @@ STEPHAN: Do you wanna duet?
 
 STEPHAN: Let's start
 
+@startTrans
 @skip false
-
 @hideUI
-
-@spawn duetEasy
-@duet easy
+@spawn duet
+@duet hard
+@finishTrans
 
 STEPHAN: You did...
-@despawn duetEasy
+@despawn duet
 
 ->AskDuet
 

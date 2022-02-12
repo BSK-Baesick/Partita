@@ -1733,7 +1733,7 @@ Ends.
   =StartStephanDuet
   @skip false
   @hideUI
-  @spawn duet
+  @spawn duetNormal
   @duet normal
   
   //duet conditional
@@ -1742,7 +1742,7 @@ Ends.
  
  
   =StephanNODUET
- @despawn duet
+ @despawn duetNormal
  As his wife watches from nearby, the man delicately places fingers on his accordion. It seems almost like a reunion of sorts. Long overdue. 
  
  You raise your bow as the wind howls outside. 
@@ -1770,7 +1770,7 @@ Ends.
  
   
  =StephanDuet
-@despawn duet
+@despawn duetNormal
 As his wife watches from nearby, the man delicately places fingers on his accordion. 
 
 It seems almost like a reunion of sorts. Long overdue. 
