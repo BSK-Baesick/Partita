@@ -103,7 +103,7 @@ MonoBehaviour:
     - Name: SnowHeavy
       PathPrefix: Spawn
       Guid: 22c512d367684b848825ff35c7322dbd
-    - Name: duetHard
+    - Name: duet
       PathPrefix: Spawn
       Guid: b1077a4058a36444f95ba24272fb2516
     - Name: duetNormal
@@ -112,6 +112,12 @@ MonoBehaviour:
     - Name: duetEasy
       PathPrefix: Spawn
       Guid: c4bfe27f863a5b948834946f38f1811f
+    - Name: Envelope
+      PathPrefix: Spawn
+      Guid: 295d624b0e0863f4ab969ca6c8cf6483
+    - Name: Letter
+      PathPrefix: Spawn
+      Guid: 3772608b452e592469430391ed82d6cd
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -164,36 +170,18 @@ MonoBehaviour:
       Guid: 4b121aa1be1b7e04480b452c595ff17a
   - Id: Scripts
     Resources:
-    - Name: TestNarrative
+    - Name: ClickSFX
       PathPrefix: Scripts
-      Guid: 420e409fc67d5404e8170ba7ed5d79ed
-    - Name: Chapter2
+      Guid: 9d4b1021f6a4be6408ab38da7c7f1bab
+    - Name: MenuEnd
       PathPrefix: Scripts
-      Guid: 1eb7f6bf86f16f246bb6de333b182ee7
-    - Name: SilentType
+      Guid: c969fe5c78ace3f4896983b6b9ec475a
+    - Name: MenuStart
       PathPrefix: Scripts
-      Guid: 8a67966a23dc9344ebd3b9fe95584f85
-    - Name: WhereFrom
-      PathPrefix: Scripts
-      Guid: d78e3331d14ae4445b572398f35d4e25
-    - Name: Chapter4
-      PathPrefix: Scripts
-      Guid: bddb2cca591509d4a8a80726ce5e530c
-    - Name: Chapter5
-      PathPrefix: Scripts
-      Guid: d172b9f07329a3c48b08bf129e98f9b7
-    - Name: Start Ink
+      Guid: 450d2b521ab75e64d9c10fa4fca6b604
+    - Name: StartGame
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
-    - Name: WhereFrom
-      PathPrefix: Scripts
-      Guid: 0bde1e9f53e56f2419d68dd5b71f719b
-    - Name: WhereFrom
-      PathPrefix: Scripts
-      Guid: d78e3331d14ae4445b572398f35d4e25
-    - Name: WhereFrom
-      PathPrefix: Scripts
-      Guid: 846edb93a0325c2478fc58c6b5707da5
   - Id: Audio
     Resources: []
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
@@ -203,18 +191,18 @@ MonoBehaviour:
       Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Stephan
+    - Name: DEFAULT
+      PathPrefix: Characters/STEPHAN
       Guid: 66433bf975a379f47a2f851b3dfaa9f8
   - Id: Characters/4892fe8c-c7e0-49be-b03d-d3cb765f93bb
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Pascha
+    - Name: DEFAULT
+      PathPrefix: Characters/PASCHA
       Guid: 836bbdb377de56646b5ed50807ce8591
   - Id: Characters/08064e0c-2f57-4f7e-b7d2-1bf40e4b11fa
     Resources:
-    - Name: Millia
-      PathPrefix: Characters/Millia
+    - Name: DEFAULT
+      PathPrefix: Characters/MILLIA
       Guid: a0993a0b9fea51045bd2d723c45cb6c0
   - Id: CharacterAvatars
     Resources:
@@ -233,8 +221,8 @@ MonoBehaviour:
       Guid: be64294fec19cf34dbbbd995f2f9179f
   - Id: Characters/58537df7-284f-4e4e-8aa2-2629b881617b
     Resources:
-    - Name: Default
-      PathPrefix: Characters/Protag
+    - Name: DEFAULT
+      PathPrefix: Characters/PROTAG
       Guid: 68aed0b4e68dcf94194a793867fb4b1c
   - Id: Characters/e7ea0b2b-4184-4969-94bf-ebfdf6d79e0b
     Resources: []
