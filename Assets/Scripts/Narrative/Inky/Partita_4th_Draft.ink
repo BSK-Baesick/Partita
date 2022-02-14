@@ -2249,11 +2249,15 @@ They aren't.
 
 As the bus pulls up and you stumble out into the street, the stark absence of them cuts you deeper than any winter wind.
 
-+Look for anyone. Anyone at all.
++[Look for anyone. Anyone at all.]
 Your eyes dash out against the cold horizon, marked only by the bus stop before you. They dart to and from every corner of the world, before resting on a figure hidden behind a bus stop pillar.
-+Call out their name.
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
++[Call out their name.]
 You cry out into the wind. You could swear it picks up a chill in response. 
 Silence.
+
 Then.
 "Hello?"
 
@@ -2261,72 +2265,137 @@ Your eyes flash towards the source of the voice, a figure resting behind a pilla
 
 - Your smile widens as you race towards them.
 
+@char PROTAG.SmilesGently look:right pos:25,0 scale:1.2,1.2
+
 The figure emerges.
 
 You pause in your tracks.
+@wait 5
 
 It's not them.
+
+@spawn DepthOfField
 
 ZURAB: "Ah. You're not looking for me, are you?"
 
 An old man, not so much disappointed as embarrassed. 
+
+@char ZURAB.sad look:back pos:25,0 scale:1.2,1.2
+
 A slightly curved back and open eyes. They carry with them a pointed stick and a rubbish bag half full to the brim. 
 As they wait for your response, they prick a metal can and shake it into the bag.
 
-+"No. Sorry."
+@wait 2
+
++[No. Sorry.]
 ZURAB: "Haven't seen anyone else yet, I'm afraid."
-+"Have you seen anyone else here today?"
+
++[Have you seen anyone else here today?]
 ZURAB: "No. Sorry."
+
+
 -He examines you. 
 ZURAB: "Come take a seat. You look weary."
+
+@spawn BreezeReturns
 The invitation is as alluring as the seat itself.
+
+@spawn seat 
 You take him up on the offer, grateful even for flimsy shelter from the cold sea breeze.
+
+@despawn BreezeReturns
+
 The man gently careers around the perimeter of the station, pricking cans of steel and plastic wrapping from the ground.
 ZURAB: "You've come a long way?"
-+"And then some."
+
++[And then some]
 ZURAB: "And still some yet, I'm sure."
-+"Not really."
++[Not really.]
+
 ZURAB: "Eyes say otherwise."
 -He taps the side of the station.
 ZURAB: "Seen many of these?"
-+"Too many."
-+"Not enough yet."
++[Too many.]
++[Not enough yet.]
 - His eyes enquire of yours with a strange sincerity.
 ZURAB: "Do you like them?"
-+"Yes."
+
++[Yes.]
 He smiles.
 ZURAB: "So do I."
-+"No."
++[No.]
 ZURAB: "Ahh. I'm sorry to hear that."
-    ++"Not their fault. Not yours. Just want to leave them all behind."
+@wait 2
+
+
+    ++[Not their fault. Not yours. Just want to leave them all behind.]
     ZURAB: "Understandable.
-    ++"No one's at fault for that.
+    ++[No one's at fault for that.]
     ZURAB: "Perhaps the artist is?"
-+"I hadn't thought about it."
++[I hadn't thought about it.]
 ZURAB: "Who could blame you? They're just bus stops."
+
 - His eyes drift to the top of the station. Cracked, weathered paint withers away on the concrete.
 ZURAB: "I just hope they remain a little longer than the world that built them. The absurdity. The color. Everything else is falling apart and everyone else is itching to paint our soon to be history in black and white and grey and anything but color. But we were red and gold and green and blue and anything and everything."
+@char ZURAB.SmilesGently
 He smiles.
+
 ZURAB: "I want us to outlive the fall. Language, art, music, silly bus stops. That might be all we have against a world that wants to sees us mute and all a wash. I want them to know that we were here, and we were wonderful. To see us as we were and are."
+
+@char ZURAB.smile
 The smile fades to embarrassment, he pricks another can on the ground.
 ZURAB: "Fickle artsy fartsy fancy, I know."
-+"What isn't?"
+
+@resetText 
+
++[What isn't?]
 ZURAB: "Who can say?"
-+"I understand."
++[I understand.] -> ZurabNoDuet
 He smiles again.
-+"A little."
++[A little.] -> ZurabDUET
 ZURAB: "Only a little?"
 He chuckles.
 - His eyes wander back towards you.
 ZURAB: "Play a song with me? Just until the end times?"
-+"Haven't the energy." 
++[Haven't the energy.] ->HisEyes
 ZURAB: Then I'll play for you.
 ->HisEyes
 +"Sure."
 ->ZurabDUET
+
      //START DUET SYSTEM - IF SUCCESUL GO TO =PaschaDuet - IF UNSUCCESFUL GO TO =PaschaNoDuet
+{
+    - duetScore <= 5:
+    -> ZurabNoDuet
+    - else:
+    -> ZurabDUET
+
+}
+
+@skip false
+
+@stopBonfireSoundscape
+
+@stopWorldMusic
+
+@hideUI
+
+@spawn duet
+
+@duet
+    
 
 =ZurabDUET
+@despawn duet
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char  Zurab.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
+@camera offset:-2.75,-1.5 zoom:0.25
+
+@spawn //Zurabs Duet Spawn
+
 His smile widens into a childlike grin, and you lose yourselves in the nothingness of fancificul sound.
 
 He strums with weary hands abound with energy.
@@ -2336,6 +2405,9 @@ The world becomes more vibrant, color dances on the rooftop.
 Concrete cracks heal over and grass grows through the morning snow.
 
 You think you see a sun behind the sky, and for a time, the world is brighter, if only in your minds.
+
+@despawn //Zurabs Duet Despawn
+
 ->Them
 
 =ZurabNoDuet
@@ -2348,6 +2420,9 @@ ZURAB: "You've come so far. Rest. I'll play for you."
 
 
 =HisEyes
+
+@despawn duet //Aftermath of Duet
+
 He eyes you from his periphery as he plays, matching tune to meet your face.
 
 But you can barely hear the tune.
@@ -2361,10 +2436,11 @@ They should be here.
 
 
 They should.
-++They will.->Them
+++[They will].->Them
 
 =Them
 Footsteps meet the beat of the song, faint crunching of snow in the distance. Your eyes rise instantly to face a silhouette in the light. But this time you know the shape.
+
 
 You rise.
 
@@ -2380,9 +2456,13 @@ You cry.
 
 They cry.
 
-+"I'm sill fucking freezing."
-+"You're late."
-+"Fuck you."
+@resetText 
+
+    +[I'm sill fucking freezing.]
+    +[You're late.] -> YouWereWonderful
+    +[Fuck you.]
+
+
 
 - You embrace
 
@@ -2404,7 +2484,7 @@ Of course.
 
 You hold hands.
 
-++No one dares to stop you.
+++[No one dares to stop you.]
 
 ->YouWereWonderful
 
@@ -2452,6 +2532,9 @@ Zurab lived out the rest of his days in Abkhazia. He cleaned the bus stop daily.
 =BonfireFinale
 
 The finale cinematic.
+@spawn
+
+@startTrans
 
 ->DONE
 
