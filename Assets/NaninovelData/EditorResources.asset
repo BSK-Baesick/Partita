@@ -115,9 +115,12 @@ MonoBehaviour:
     - Name: Envelope
       PathPrefix: Spawn
       Guid: 295d624b0e0863f4ab969ca6c8cf6483
-    - Name: Letter
+    - Name: Letter_002
       PathPrefix: Spawn
       Guid: 3772608b452e592469430391ed82d6cd
+    - Name: Letter_002
+      PathPrefix: Spawn
+      Guid: aa04bf5c659539047bd69c2f76543b3c
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -183,7 +186,46 @@ MonoBehaviour:
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
   - Id: Audio
-    Resources: []
+    Resources:
+    - Name: approaching_bus
+      PathPrefix: Audio
+      Guid: 1a9aea0abbd93ad40b79fea6c1755a8c
+    - Name: bus_departure
+      PathPrefix: Audio
+      Guid: 4335b9d95d6a43542a20f49bc7e18496
+    - Name: open_bus_door
+      PathPrefix: Audio
+      Guid: df9afd6f8e6aa444ba11a3f0af635e6a
+    - Name: Mosin_Oneshot
+      PathPrefix: Audio
+      Guid: 05e4a9f71802e09468763f92a46dc118
+    - Name: Mosin_Pop_Clip
+      PathPrefix: Audio
+      Guid: 65b4ef795a0c65846986a42886180e1f
+    - Name: Mosin_Reload
+      PathPrefix: Audio
+      Guid: af2f4715bc2bdc249a75c1e174e6f5d9
+    - Name: Mosin_Shot_And_Reload
+      PathPrefix: Audio
+      Guid: d5901eae32d04dd4f97ba9904278bcb4
+    - Name: pick_up_gun
+      PathPrefix: Audio
+      Guid: badb2751402dc2b44860668e4f041a3f
+    - Name: pick_up_letter
+      PathPrefix: Audio
+      Guid: 30b6afb99a9a49948b645b104e4e7c30
+    - Name: burn_letter
+      PathPrefix: Audio
+      Guid: 9f8bc63e704a65940acc133a494b52fb
+    - Name: open_envelope
+      PathPrefix: Audio
+      Guid: cb14cd47b13e46343b894373ac251928
+    - Name: smoking
+      PathPrefix: Audio
+      Guid: 4f408ee6bcd46d142859cf49b420ecd7
+    - Name: strike_lighter
+      PathPrefix: Audio
+      Guid: 4ea09de5b9cb0be4ea34f01f26fab362
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
     Resources:
     - Name: MainBackground
@@ -247,7 +289,7 @@ MonoBehaviour:
     Resources:
     - Name: Intro
       PathPrefix: Movies
-      Guid: d33ff32856efc5945ba07e48f45313ae
+      Guid: d4abff3cf3f6eaf479df63822f1cdd23
   - Id: Backgrounds/8544b14e-b3dc-49e3-8f83-995d3d25e031
     Resources:
     - Name: BusInterior
