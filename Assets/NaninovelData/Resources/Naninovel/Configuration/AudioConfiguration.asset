@@ -26,10 +26,10 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  DefaultMasterVolume: 1
-  DefaultBgmVolume: 1
-  DefaultSfxVolume: 1
-  DefaultVoiceVolume: 1
+  DefaultMasterVolume: 0.8
+  DefaultBgmVolume: 0.8
+  DefaultSfxVolume: 0.8
+  DefaultVoiceVolume: 0.8
   EnableAutoVoicing: 0
   AutoVoiceMode: 0
   VoiceOverlapPolicy: 1

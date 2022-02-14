@@ -13,7 +13,7 @@
             "{\"SelectedLocale\":\"en\"}",
             "{\"SkipMode\":1}",
             "{\"BaseRevealSpeed\":0.5,\"BaseAutoDelay\":0.5}",
-            "{\"MasterVolume\":1.0,\"BgmVolume\":1.0,\"SfxVolume\":1.0,\"VoiceVolume\":1.0,\"VoiceLocale\":\"\",\"AuthorVolume\":[]}",
+            "{\"MasterVolume\":0.6941596269607544,\"BgmVolume\":0.7043539881706238,\"SfxVolume\":0.6839650869369507,\"VoiceVolume\":0.6941594481468201,\"VoiceLocale\":\"\",\"AuthorVolume\":[]}",
             "{\"FontName\":\"\",\"FontSize\":-1}"
         ]
     }
