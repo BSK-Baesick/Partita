@@ -21,9 +21,9 @@ PlayerSettings:
   m_ShowUnitySplashLogo: 0
   m_SplashScreenOverlayOpacity: 1
   m_SplashScreenAnimation: 2
-  m_SplashScreenLogoStyle: 0
+  m_SplashScreenLogoStyle: 1
   m_SplashScreenDrawMode: 1
-  m_SplashScreenBackgroundAnimationZoom: 0.322
+  m_SplashScreenBackgroundAnimationZoom: 0.498
   m_SplashScreenLogoAnimationZoom: 1
   m_SplashScreenBackgroundLandscapeAspect: 1
   m_SplashScreenBackgroundPortraitAspect: 1
@@ -129,7 +129,7 @@ PlayerSettings:
     16:10: 1
     16:9: 1
     Others: 1
-  bundleVersion: v2022.11.0a1
+  bundleVersion: v2022.10.0a1
   preloadedAssets: []
   metroInputSource: 0
   wsaTransparentSwapchain: 0
