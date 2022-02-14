@@ -1,8 +1,15 @@
 ->Chapter1
 
 === Chapter1
+-> Chapter2
 
 @startTrans
+
+// bus engine stops
+
+@wait 2
+
+// bus door opens
 
 @back id:BusInterior
 
@@ -22,9 +29,11 @@
 
 @char PROTAG.DEFAULT scale:1.2,1.2
 
+// step on snow sfx
+
 As your feet touch soft powder, weary eyes pierce through glaring snow. 
 
-An ancient woman sits, alert, back pressed against the cracked concrete wall. 
+An ancient woman sits, alert, back pressed against the cracked concrete wall.
 
 In her arms she cradles a rifle, trained delicately on your approach.
 
@@ -47,6 +56,8 @@ MILLIA: "No."
 
 
 =Scene1
+
+// snifer rifle reload sfx
 
 She scoffs and raises the rifle to her eyeline.
 
@@ -80,14 +91,14 @@ She flips the rifle back towards herself, where it settles harmlessly in her lap
 
 
 =FirstGunshot
+
+// sniper rifle gunshot sfx
     
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 2
-
-@despawn ShakePrinter
+@wait 1
 
 @despawn DepthOfField
 
@@ -113,15 +124,15 @@ You feel a trickle of blood.
 
 @char PROTAG.DEFAULT look:right pos:35,0 scale:1.2,1.2
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
         
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 2
-
-@despawn ShakePrinter
+@wait 1
 
 @spawn ShakeCharacter params:PROTAG
         
@@ -182,15 +193,15 @@ MILLIA: Are you sure?
 
 @char MILLIA.DEFAULT look:left pos:80,0 scale:1.2,1.2
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
 
 BANG!
 
-@spawn ShakePrinter params:,10,,,,,true,true
+@spawn ShakePrinter params:,5,,,,,true,true
 
-@wait 3
-
-@despawn ShakePrinter
+@wait 1
 
 @despawn DepthOfField
 
@@ -219,13 +230,13 @@ You feel a trickle of blood.
 
 @char MILLIA.DEFAULT look:left pos:85,0 scale:1.2,1.2
 
-@wait 2
-        
-BANG!
-
 @spawn ShakePrinter params:,10,,,,,true,true
 
-@wait 2
+@wait 1
+
+// sniper rifle gunshot sfx
+        
+BANG!
 
 @despawn ShakePrinter
 
@@ -282,6 +293,8 @@ MILLIA: Are you sure?
 You press one foot down at an angle into the snow, propelling yourself forward as the woman's eyes shift from bemusement to a terrifying focus. 
 
 She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
+
+// final blow sniper rifle gunshot sfx
 
 @spawn ShakePrinter params:,10,,,,,true,true
 
@@ -510,11 +523,9 @@ MILLIA: "Correct. A Mosins, to be precise."
                 
 =WhereFrom 
 
-@spawn DepthOfField params:MILLIA
+@camera offset:4,0.25 zoom:0.35
 
 Old eyes slowly scan you.
-
-@despawn DepthOfField
 
 @camera offset:-3,-0.3 zoom:0.35
 
@@ -524,15 +535,17 @@ Your face
 
 Your body. 
 
-@camera offset:0,0 zoom:0 rotation:0,0,0
+@spawn DepthOfField
 
 Your posture. 
 
-@spawn DepthOfField params:PROTAG
+@despawn DepthOfField
+
+@camera offset:0,0 zoom:0 rotation:0,0,0
 
 Your response.
 
-@despawn DepthOfField
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 MILLIA: "Where are you from?"
 
@@ -621,18 +634,28 @@ After a moment of wariness, the woman's shifting demeanor seems genuine.
 
 You help her gather firewood, and as you reach for a pile of kindling...
 
-@spawn Letter
+@spawn Envelope
 
 A thin red envelope catches your eye amidst the shrubbery.
 
 You know that this was meant for you.
 
+@despawn Envelope
+
+// Open Envelope SFX
+
 You open it and familiar handwriting sends warmth wrapping round your body.
 
+@spawn Letter
 
-
+// Start Transition
+// Romantic BGM
+// Fullwidth View
 // Convert this into a Featured Illustration
-LETTER: I met a girl with a brimstone 4eart. Fire in her veins that rushed to kindle dead eyes. She was looking for someone. Filled with hate, or passion, I couldn't tell which. I haven't seen that kind of drive in years. Everyone el5e I've met seems dead or dying. She reminded me of you, in a way. I asked her if she'd seen you. She said no. It stung. She wanted to be kind, I think, I think sh3'd forgotten how.
+
+@wait i5[skipInput]
+
+// Despawn 
 
 @despawn Letter
 
@@ -680,6 +703,10 @@ MILLIA: "You should burn it."
 
 
 =SmilesSolemnly
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 She smiles, solemnly. 
         
@@ -742,13 +769,15 @@ MILLIA: "I'm sure you do. Take the time to memorise."
 
 @hideChars
 
-As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
-
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
-@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
+As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
+
+@char MILLIA.DEFAULT look:right pos:75,0 scale:1.2,1.2
     
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
+
+@char PROTAG.DEFAULT look:left pos:25,0 scale:1.2,1.2
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
 
@@ -798,15 +827,15 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 @hideUI
 
-@spawn duet
+@spawn duetEasy pos:50,50
 
-@duet
+@duet easy
 
 // If duetScore is greater than or equal to x, then go to MilliaDUET. Else, go to MilliaNODUET.
 
 
 { 
-    - duetScore >= 5: 
+    - duetScore >= 50: 
     
     -> MilliaDUET
     
@@ -834,15 +863,15 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 @hideUI
 
-@spawn duet
+@spawn duetEasy
 
-@duet
+@duet easy
     
 // If duetScore is greater than or equal to x, then go to MilliaDUET. Else, go to MilliaNODUET.
 
 
 { 
-    - duetScore >= 5: 
+    - duetScore >= 50: 
     
     -> MilliaDUET
     
@@ -873,7 +902,7 @@ MILLIA: "True. I'll keep first watch."
 
 =MilliaDUET
 
-@despawn duet
+@despawn duetEasy
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
@@ -923,9 +952,13 @@ MILLIA: "I appreciate the sentiment, but now's the time for rest."
 
 =MilliaNoSong
 
+@hideChars
+
 @despawn duet
 
-@spawn Letter
+@spawn Envelope
+
+@char PROTAG.DEFAULT look:right scale:1.2,1.2
 
 As your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
 
@@ -949,7 +982,9 @@ You take one last glance.
 
 Breathe. 
 
-@despawn Letter
+@despawn Envelope
+
+// burning paper sfx
 
 Then press the paper into the fire. 
 
@@ -965,7 +1000,7 @@ It burns a little brighter, and you feel a little warmer as your eyes succumb to
 
 =KeepTheLetter
 
-@despawn Letter
+@despawn Envelope
 
 You press the letter to your chest. Holding it tightly in place against the winter winds. 
 
@@ -985,7 +1020,12 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
 
 @playBusStopSoundscape
 
+// chilly morning ambient layer
+// birds chirping sfx
+
 You wake before the birds, your eyes pressing open against the weight of the world. 
+
+// sniper rifle icon
 
 Beside you, the sleeping woman's rifle lies loose. There should be a bus arriving soon.
 
@@ -1008,13 +1048,17 @@ You freeze.
 
 You wait.
 
+// bus engine approaching sfx
+
 You hear the rumbling of an engine in the distance.
+
+// snatch a gun sfx
 
 Your hands stretch out against the dying night, pulling the rifle towards you.
 
-// ART Change main character sprite, add Rifle.
-
 She sleeps.
+
+// bus door opens sfx
     
 You turn towards the coming bus.
 
@@ -1029,8 +1073,12 @@ You turn towards the coming bus.
 You consider the thought.
     
 And let it pass.
+
+// bus engine approaching sfx
     
 In the distance, an engine rumbles on approach.
+
+// bus door opens sfx
     
 You turn back to the roadside and press on into morning.
 
@@ -1041,6 +1089,11 @@ You turn back to the roadside and press on into morning.
 
 
 =Chapter2
+@startTrans
+@hideAll remove:true
+@back id:BusInterior
+@playBusStopSoundscape
+@finishTrans Crossfade time:3
 
 The road is long and monotonous. 
 
@@ -1048,6 +1101,11 @@ Grey snow falls against a dull backdrop.
 
 Faint hints of color from passing towns splash amidst the skyline and before you know it, the ride is over.
 
+@back id:Chapter2BusStop
+@spawn Snow
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
 As you press on to sleeted ground, a man waits nearby. 
 
 Older, but not elder, he's frail if not determined in demeanor. 
@@ -1061,13 +1119,13 @@ In one hand he holds a slowly burning cigar.
 In the other, a letter.
 
 Your letter.
-
+@resetText
 
     + [I think that might be for me.] -> StephanSmilesAtYou
     
     + [Stare at him.] -> StareAtStephan
     
-    + [{TakeTheRifle} Train your rifle on him.] -> TrainYourRifleAtStephan
+    + {TakeTheRifle} [Train your rifle on him.] -> TrainYourRifleAtStephan
 
 
 
@@ -1077,8 +1135,10 @@ Weary eyes smile at you.
 
 STEPHAN: "I think you might be correct."
 
+@char STEPHAN.DEFAULT look:left pos:55,0 scale:1.2,1.2
 He extends the letter out towards you. You take it, nestling it inside your coat.
-
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+//stephan happy asset?
 The man watches with warm intrigue.
 
 ->MindIfIAskWho
@@ -1091,22 +1151,25 @@ As the bus dips behind a cradle of trees, the man's eyes return to lock with you
 
 He smiles. It's surprisingly warm against the cold air.
 
-"I'd thought this was for me. Seems I was wrong."
+STEPHAN: "I'd thought this was for me. Seems I was wrong."
 
 He raises the letter towards you.
-
+@char PROTAG.DEFAULT look:right pos:55,0 scale:1.2,1.2
 You take it. Nestling it inside your coat.
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 ->MindIfIAskWho
 
 
 
 =TrainYourRifleAtStephan
-
+@char STEPHAN.DEFAULT look:left pos:80,0 scale:1.2,1.2
+@spawn ShakeCharacter params:STEPHAN,2,0.15,0.01
 His arms fly upwards, eyes full of fear. 
+@despawn ShakeCharacter
 
 The letter dangles gently from one hand as smoke rises from the cigar in the other.
-
+@resetText
 
     + [Drop it.] -> DropTheLetter1
     
@@ -1121,7 +1184,7 @@ STEPHAN: "I haven't opened it."
 His voice is tired.
     
 STEPHAN: "I thought it was for me."
-
+@resetText
     
     + [It's not.] -> TheLetterisNotForStephan
                 
@@ -1134,7 +1197,7 @@ STEPHAN: "I thought it was for me."
 A wry, forced smile. 
         
 STEPHAN: "I know."
-
+@resetText
         
     + [Drop. It.] -> DropTheLetter3
                 
@@ -1152,6 +1215,7 @@ He drops the letter. His hands remain pressed to the sky.
 
 =GrabTheLetter1
 
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
 You rush forward and swipe the letter from his hands.
 
 ->IDontWantTrouble
@@ -1160,10 +1224,11 @@ You rush forward and swipe the letter from his hands.
 
 =DropTheLetter3
 
-He drops the letter. 
-        
+He drops the letter.
+
 His hands remain pressed toward the sky.
-        
+
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
 You rush forward and swipe it from the snow.
 
 ->IDontWantTrouble
@@ -1172,8 +1237,10 @@ You rush forward and swipe it from the snow.
 
 =MoveCloserToStephan
 
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+@char STEPHAN.DEFAULT look:left pos:85,0 scale:1.2,1.2
 He winces at the approach.
-    
+@resetText
     
     + [Grab the letter.] -> GrabTheLetter2
             
@@ -1183,6 +1250,7 @@ He winces at the approach.
 
 =GrabTheLetter2
 
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
 You rush forward and swipe the letter from his hands.
 
 ->IDontWantTrouble
@@ -1192,7 +1260,8 @@ You rush forward and swipe the letter from his hands.
 =GrabTheLetter3
 
 He holds out a palm towards you. It trembles in the cold.
-        
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+@char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
 You walk forward, rifle still trained as you swipe the letter from his palms.
 
 ->IDontWantTrouble
@@ -1200,8 +1269,10 @@ You walk forward, rifle still trained as you swipe the letter from his palms.
 
 =IDontWantTrouble
 
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
 STEPHAN: "I don't want trouble."
-
+@resetText
 
     + [Sorry. Tense.] -> SorryTense
     
@@ -1242,7 +1313,7 @@ STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too 
 His eyes laze towards the letter.
 
 STEPHAN: "Mind if I ask who?"
-
+@resetText
 
     + [...] -> SilentAnswer
     
@@ -1270,8 +1341,10 @@ STEPHAN: "I understand."
 
 =TellStephanItIsYourLover
 
+@spawn ShakeCharacter params:STEPHAN,1,0.15,0.01
 STEPHAN: "A secret lover!"
-    
+@despawn ShakeCharacter
+@resetText  
     
     + [That or dead.] -> IsLoverDead
             
@@ -1302,7 +1375,7 @@ STEPHAN: "Heading south amidst the chaos?"
 
 
 =South  
-
+@resetText
 
     + [...] ->YouSmoke
     
@@ -1326,10 +1399,11 @@ The man glances towards your face for a moment. He nods and smiles.
 
 STEPHAN: "Sorry. I'll drop it."
 
+@char STEPHAN.DEFAULT look:left pos:80,0 scale:1.2,1.2
 He leans back, head to the sky, dragging in a mound of smoke off the end of his cigar before exhaling. You watch it dance against the fog.
 
 STEPHAN: "You smoke?"
-
+@resetText
 
     + [No.] -> ProtagDoNotSmoke
     
@@ -1343,6 +1417,7 @@ STEPHAN: "You smoke?"
 
 STEPHAN: "Ah."
 
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
 He presses the cigar butt down against his coat.
 
 STEPHAN: "Sorry about that."
@@ -1355,6 +1430,7 @@ STEPHAN: "Sorry about that."
 
 STEPHAN: "Ah."
 
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
 He presses the cigar butt down against his coat.
 
 STEPHAN: "Sorry about that."
@@ -1367,8 +1443,9 @@ STEPHAN: "Sorry about that."
 
 Cigar in mouth, he flicks open a small box from his trouser pocket. From inside his coat he removes a lighter and strikes a light. 
 
+@char STEPHAN.DEFAULT look:left pos:55,0 scale:1.2,1.2
 "Take the edge off."
-
+@char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
 You take the cigar and inhale. There's comfort in the heat.
 
 ->AndYou
@@ -1376,7 +1453,7 @@ You take the cigar and inhale. There's comfort in the heat.
 
         
 =AndYou
-
+@resetText
 
     + [Who are you waiting for?] ->AskStephanWhoIsSheWaiting
     
@@ -1396,6 +1473,7 @@ STEPHAN: "My son."
 
 STEPHAN: "Just tradition."
 
+@spawn ShakeCharacter params:STEPHAN,2,0.15,0.01,0.25
 He laughs at himself.
 
 STEPHAN: "My son."
@@ -1407,7 +1485,7 @@ STEPHAN: "My son."
 =TheyAreNotComingthrough
 
 STEPHAN: "They're not coming through."
-
+@resetText
 
     + [Sorry for your loss.] -> SorryForYourLossStephan
     
@@ -1444,7 +1522,7 @@ STEPHAN: Moscow was probably better for them, find their own crowd and all that.
 STEPHAN: Play in a band. 
 
 STEPHAN: Not a lot of those around here.
-
+@resetText
 
     + [City for the strays.] -> CityForTheStrays
     
@@ -1473,7 +1551,7 @@ STEPHAN: Not a lot of those around here.
  A cold breeze rushes past you and wind whips powdered snow around your feet.
  
  STEPHAN: "Ahhh. I guess we're done for the day."
- 
+ @resetText
  
      + [I've got a bus to catch.] -> IHaveABusToCatch
      
@@ -1483,7 +1561,7 @@ STEPHAN: Not a lot of those around here.
 
 =IHaveABusToCatch
 
-STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover."
+STEPHAN: "You'll freeze before it comes. Stay with my wife and I.[i] Rest.[i] Recover."
 
 -> BreezeReturns
 
@@ -1491,7 +1569,7 @@ STEPHAN: "You'll freeze before it comes. Stay with my wife and I. Rest. Recover.
 
 =ItWasNiceToMeetYouStephan
 
-STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Recover."
+STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I.[i] Rest.[i] Recover."
 
 -> BreezeReturns
 
@@ -1500,7 +1578,7 @@ STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I. Rest. Rec
 =BreezeReturns
 
 The breeze returns with harsher ambition.
-
+@resetText
 
      + [I appreciate the concern. I'll be ok.] -> AppreciateStephanConcern
      
@@ -1511,8 +1589,9 @@ The breeze returns with harsher ambition.
  =AppreciateStephanConcern
  
  He frowns with furrowed brow.
- 
+ @char STEPHAN.DEFAULT look:right pos:85,0 scale:1.2,1.2
  STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
+ @hide STEPHAN remove:true
  
  As he goes to leave, cigar in one hand, he waves with the other, and you spot fractured stubs on the tips of his fingers. Frostbite.
  
@@ -1523,17 +1602,25 @@ The breeze returns with harsher ambition.
  =AsLongAsWeAreNotImposing
  
  The man grins. 
- 
+ @char STEPHAN.DEFAULT look:right pos:75,0 scale:1.2,1.2
  STEPHAN: "Impossible. Come on then."
+ @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
  
  ->ThroughTheSnow
  
  
  
  =SoloSnow
+ @startTrans
+ @hideChars remove:true
+ @back id:SnowWild
+ @despawn Snow
+ @char PROTAG.DEFAULT scale:1.2,1.2
+ @spawn SnowHeavy
+ @finishTrans
  
  You wait in silence, shattered by whistling wind. The storm rises and you pull your scarf to cover your face.
- 
+ @resetText
  
      + [Stay.] -> Stay1
         
@@ -1542,11 +1629,12 @@ The breeze returns with harsher ambition.
  
  
  =Stay1
- 
+ @spawn ShakeCamera params:,0,,0.01,0.01
+ @spawn DepthOfField params:PROTAG,,1,3
  Your vision starts to cloud in blanket white, snow no longer merely bites at your ankles but rises to surround you on all sides. 
  
  The cold cuts at your skin.
- 
+ @resetText
  
     + [Stay.] -> Stay2
         
@@ -1555,9 +1643,10 @@ The breeze returns with harsher ambition.
  
  
  =Stay2
- 
+ @spawn ShakeCamera params:,0,,0.02,0.02
+ @spawn DepthOfField params:PROTAG,,2,3
  You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
- 
+ @resetText
  
     + [Stay] -> Stay3
                 
@@ -1566,8 +1655,10 @@ The breeze returns with harsher ambition.
  
  
  =Stay3
- 
+@spawn ShakeCamera params:,0,,0.02,0.02
+@spawn DepthOfField params:PROTAG,,5,3
 Are you sure?
+@resetText
           
             
     + [Stay] -> Death2
@@ -1578,12 +1669,15 @@ Are you sure?
  
 =Leave
  
+@despawn DepthOfField
+@despawn ShakeCamera
  -> ThroughTheSnow
   
   
   
 =Death2
-
+@despawn ShakeCamera
+@spawn DepthOfField params:null,,5,3
 Your eyes give way to pure white. 
 
 Cold gives way to warmth. 
@@ -1591,19 +1685,30 @@ Cold gives way to warmth.
 Light gives way to dark. 
 
 The pain.
+@hideChars remove:true
 
 Ends.
-
+@resetText
 +Try again.
-
+@despawn SnowHeavy
+@despawn DepthOfField
 ->Chapter2
 
 
  
  =ThroughTheSnow
- 
+@startTrans
+@hideAll remove:true
+@despawn SnowHeavy
+@despawn DepthOfField
+@back ph_bonfire id:Bonfire
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+@finishTrans
+
+
  You trudge against the storm. Yellow paint cuts through the white like a knife, glistening in the distance. The walk is hard, but short. 
  
+ @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
  The man and his wife brighten in your presence.
  
  The house is warm. 
@@ -1617,6 +1722,7 @@ Ends.
  His eyes brighten.
  
  STEPHAN: "Play with me."
+ @resetText
  
  + [Why not?] -> StartStephanDuet
  
@@ -1625,15 +1731,18 @@ Ends.
  
  
   =StartStephanDuet
- 
-  //START DUET SYSTEM - IF SUCCESUL GO TO =StephanDuet - IF UNSUCCESFUL GO TO =StephanNODUET
- 
+  @skip false
+  @hideUI
+  @spawn duet
+  @duet normal
+  
+  //duet conditional
  ->StephanDuet
  
  
  
   =StephanNODUET
-  
+ @despawn duet
  As his wife watches from nearby, the man delicately places fingers on his accordion. It seems almost like a reunion of sorts. Long overdue. 
  
  You raise your bow as the wind howls outside. 
@@ -1661,7 +1770,7 @@ Ends.
  
   
  =StephanDuet
- 
+@despawn duet
 As his wife watches from nearby, the man delicately places fingers on his accordion. 
 
 It seems almost like a reunion of sorts. Long overdue. 
@@ -1690,12 +1799,14 @@ Eventually, the man and his wife thank you, before showing you a bed and retirin
  
  =Chapter2Epilogue
  
+ @hide STEPHAN remove:true
+ @char PROTAG.DEFAULT look:right pos:0,0 scale:1.2,1.2
  You welcome the propect of sleep, but not before you remove the letter from your coat, reading secret words bathed in firelight.
  
  
  
  LETTER: I miss you. I miss Moscow. I miss music and symphonies and sound that isn't wailing wind. I want to play music again. Prefferably, inside. I'd always loved wint3r before. Before I'd spent it flailing on the roa7. I hate it now. It's cruel and unkind. I want to see you. I will. 5tay safe. 
- 
+    @resetText
  
  
     + [Burn it.] -> YouShouldBurnIt2
@@ -1734,6 +1845,7 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
  
  
 =Chapter3
+@hideAll remove:true
 The bus rails on agains/
  
 /"OI STRINGS!"
@@ -2137,15 +2249,11 @@ They aren't.
 
 As the bus pulls up and you stumble out into the street, the stark absence of them cuts you deeper than any winter wind.
 
-+[Look for anyone. Anyone at all.]
++Look for anyone. Anyone at all.
 Your eyes dash out against the cold horizon, marked only by the bus stop before you. They dart to and from every corner of the world, before resting on a figure hidden behind a bus stop pillar.
-
-@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
-
-+[Call out their name.]
++Call out their name.
 You cry out into the wind. You could swear it picks up a chill in response. 
 Silence.
-
 Then.
 "Hello?"
 
@@ -2153,137 +2261,72 @@ Your eyes flash towards the source of the voice, a figure resting behind a pilla
 
 - Your smile widens as you race towards them.
 
-@char PROTAG.SmilesGently look:right pos:25,0 scale:1.2,1.2
-
 The figure emerges.
 
 You pause in your tracks.
-@wait 5
 
 It's not them.
-
-@spawn DepthOfField
 
 ZURAB: "Ah. You're not looking for me, are you?"
 
 An old man, not so much disappointed as embarrassed. 
-
-@char ZURAB.sad look:back pos:25,0 scale:1.2,1.2
-
 A slightly curved back and open eyes. They carry with them a pointed stick and a rubbish bag half full to the brim. 
 As they wait for your response, they prick a metal can and shake it into the bag.
 
-@wait 2
-
-+[No. Sorry.]
++"No. Sorry."
 ZURAB: "Haven't seen anyone else yet, I'm afraid."
-
-+[Have you seen anyone else here today?]
++"Have you seen anyone else here today?"
 ZURAB: "No. Sorry."
-
-
 -He examines you. 
 ZURAB: "Come take a seat. You look weary."
-
-@spawn BreezeReturns
 The invitation is as alluring as the seat itself.
-
-@spawn seat 
 You take him up on the offer, grateful even for flimsy shelter from the cold sea breeze.
-
-@despawn BreezeReturns
-
 The man gently careers around the perimeter of the station, pricking cans of steel and plastic wrapping from the ground.
 ZURAB: "You've come a long way?"
-
-+[And then some]
++"And then some."
 ZURAB: "And still some yet, I'm sure."
-+[Not really.]
-
++"Not really."
 ZURAB: "Eyes say otherwise."
 -He taps the side of the station.
 ZURAB: "Seen many of these?"
-+[Too many.]
-+[Not enough yet.]
++"Too many."
++"Not enough yet."
 - His eyes enquire of yours with a strange sincerity.
 ZURAB: "Do you like them?"
-
-+[Yes.]
++"Yes."
 He smiles.
 ZURAB: "So do I."
-+[No.]
++"No."
 ZURAB: "Ahh. I'm sorry to hear that."
-@wait 2
-
-
-    ++[Not their fault. Not yours. Just want to leave them all behind.]
+    ++"Not their fault. Not yours. Just want to leave them all behind."
     ZURAB: "Understandable.
-    ++[No one's at fault for that.]
+    ++"No one's at fault for that.
     ZURAB: "Perhaps the artist is?"
-+[I hadn't thought about it.]
++"I hadn't thought about it."
 ZURAB: "Who could blame you? They're just bus stops."
-
 - His eyes drift to the top of the station. Cracked, weathered paint withers away on the concrete.
 ZURAB: "I just hope they remain a little longer than the world that built them. The absurdity. The color. Everything else is falling apart and everyone else is itching to paint our soon to be history in black and white and grey and anything but color. But we were red and gold and green and blue and anything and everything."
-@char ZURAB.SmilesGently
 He smiles.
-
 ZURAB: "I want us to outlive the fall. Language, art, music, silly bus stops. That might be all we have against a world that wants to sees us mute and all a wash. I want them to know that we were here, and we were wonderful. To see us as we were and are."
-
-@char ZURAB.smile
 The smile fades to embarrassment, he pricks another can on the ground.
 ZURAB: "Fickle artsy fartsy fancy, I know."
-
-@resetText 
-
-+[What isn't?]
++"What isn't?"
 ZURAB: "Who can say?"
-+[I understand.] -> ZurabNoDuet
++"I understand."
 He smiles again.
-+[A little.] -> ZurabDUET
++"A little."
 ZURAB: "Only a little?"
 He chuckles.
 - His eyes wander back towards you.
 ZURAB: "Play a song with me? Just until the end times?"
-+[Haven't the energy.] ->HisEyes
++"Haven't the energy." 
 ZURAB: Then I'll play for you.
 ->HisEyes
 +"Sure."
 ->ZurabDUET
-
      //START DUET SYSTEM - IF SUCCESUL GO TO =PaschaDuet - IF UNSUCCESFUL GO TO =PaschaNoDuet
-{
-    - duetScore <= 5:
-    -> ZurabNoDuet
-    - else:
-    -> ZurabDUET
-
-}
-
-@skip false
-
-@stopBonfireSoundscape
-
-@stopWorldMusic
-
-@hideUI
-
-@spawn duet
-
-@duet
-    
 
 =ZurabDUET
-@despawn duet
-
-@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
-
-@char  Zurab.DEFAULT look:left pos:75,0 scale:1.2,1.2
-
-@camera offset:-2.75,-1.5 zoom:0.25
-
-@spawn //Zurabs Duet Spawn
-
 His smile widens into a childlike grin, and you lose yourselves in the nothingness of fancificul sound.
 
 He strums with weary hands abound with energy.
@@ -2293,9 +2336,6 @@ The world becomes more vibrant, color dances on the rooftop.
 Concrete cracks heal over and grass grows through the morning snow.
 
 You think you see a sun behind the sky, and for a time, the world is brighter, if only in your minds.
-
-@despawn //Zurabs Duet Despawn
-
 ->Them
 
 =ZurabNoDuet
@@ -2308,9 +2348,6 @@ ZURAB: "You've come so far. Rest. I'll play for you."
 
 
 =HisEyes
-
-@despawn duet //Aftermath of Duet
-
 He eyes you from his periphery as he plays, matching tune to meet your face.
 
 But you can barely hear the tune.
@@ -2324,11 +2361,10 @@ They should be here.
 
 
 They should.
-++[They will].->Them
+++They will.->Them
 
 =Them
 Footsteps meet the beat of the song, faint crunching of snow in the distance. Your eyes rise instantly to face a silhouette in the light. But this time you know the shape.
-
 
 You rise.
 
@@ -2344,13 +2380,9 @@ You cry.
 
 They cry.
 
-@resetText 
-
-    +[I'm sill fucking freezing.]
-    +[You're late.] -> YouWereWonderful
-    +[Fuck you.]
-
-
++"I'm sill fucking freezing."
++"You're late."
++"Fuck you."
 
 - You embrace
 
@@ -2372,7 +2404,7 @@ Of course.
 
 You hold hands.
 
-++[No one dares to stop you.]
+++No one dares to stop you.
 
 ->YouWereWonderful
 
@@ -2420,9 +2452,6 @@ Zurab lived out the rest of his days in Abkhazia. He cleaned the bus stop daily.
 =BonfireFinale
 
 The finale cinematic.
-@spawn
-
-@startTrans
 
 ->DONE
 

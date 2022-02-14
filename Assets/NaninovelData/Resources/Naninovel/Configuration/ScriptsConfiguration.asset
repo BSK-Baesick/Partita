@@ -20,7 +20,7 @@ MonoBehaviour:
     - Naninovel.ProjectResourceProvider, Elringus.Naninovel.Runtime, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
   InitializationScript: 
-  TitleScript: 
+  TitleScript: MenuStart
   StartGameScript: StartGame
   AutoAddScripts: 1
   HotReloadScripts: 1
