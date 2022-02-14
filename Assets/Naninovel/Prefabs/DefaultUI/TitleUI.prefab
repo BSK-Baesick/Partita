@@ -944,7 +944,6 @@ GameObject:
   - component: {fileID: 114514801246507618}
   - component: {fileID: 114343483525403042}
   - component: {fileID: 3394749121914131317}
-  - component: {fileID: 8033256584253189683}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -1091,18 +1090,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
   labelText: {fileID: 114337869789940040}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1126,20 +1113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptName: ClickSFX
   scriptText: '@playClickUI'
---- !u!114 &8033256584253189683
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561638094064900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: MenuEnd
-  scriptText: 
 --- !u!1 &1592858419531552
 GameObject:
   m_ObjectHideFlags: 0
