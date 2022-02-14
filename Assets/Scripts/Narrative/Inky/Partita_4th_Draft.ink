@@ -1,7 +1,13 @@
+
+// Configuration Parameters
+
+// Use this variable for tracking the current duet system score that is playing in the scene
+var currentGameScore = 0;
+
+
 ->Chapter1
 
 === Chapter1
--> Chapter2
 
 @startTrans
 
@@ -653,7 +659,7 @@ You open it and familiar handwriting sends warmth wrapping round your body.
 // Fullwidth View
 // Convert this into a Featured Illustration
 
-@wait i5[skipInput]
+@wait i
 
 // Despawn 
 
@@ -827,7 +833,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 @hideUI
 
-@spawn duetEasy pos:50,50
+@spawn duetEasy
 
 @duet easy
 
@@ -835,7 +841,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 
 { 
-    - duetScore >= 50: 
+    - duetScore >= 45: 
     
     -> MilliaDUET
     
@@ -871,7 +877,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 
 { 
-    - duetScore >= 50: 
+    - duetScore >= 45: 
     
     -> MilliaDUET
     
@@ -1089,10 +1095,15 @@ You turn back to the roadside and press on into morning.
 
 
 =Chapter2
+
 @startTrans
+
 @hideAll remove:true
+
 @back id:BusInterior
+
 @playBusStopSoundscape
+
 @finishTrans Crossfade time:3
 
 The road is long and monotonous. 
@@ -1102,10 +1113,13 @@ Grey snow falls against a dull backdrop.
 Faint hints of color from passing towns splash amidst the skyline and before you know it, the ride is over.
 
 @back id:Chapter2BusStop
+
 @spawn Snow
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 As you press on to sleeted ground, a man waits nearby. 
 
 Older, but not elder, he's frail if not determined in demeanor. 
@@ -1119,6 +1133,7 @@ In one hand he holds a slowly burning cigar.
 In the other, a letter.
 
 Your letter.
+
 @resetText
 
     + [I think that might be for me.] -> StephanSmilesAtYou
@@ -1136,9 +1151,13 @@ Weary eyes smile at you.
 STEPHAN: "I think you might be correct."
 
 @char STEPHAN.DEFAULT look:left pos:55,0 scale:1.2,1.2
+
 He extends the letter out towards you. You take it, nestling it inside your coat.
+
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 //stephan happy asset?
+
 The man watches with warm intrigue.
 
 ->MindIfIAskWho
@@ -1154,8 +1173,11 @@ He smiles. It's surprisingly warm against the cold air.
 STEPHAN: "I'd thought this was for me. Seems I was wrong."
 
 He raises the letter towards you.
+
 @char PROTAG.DEFAULT look:right pos:55,0 scale:1.2,1.2
+
 You take it. Nestling it inside your coat.
+
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 ->MindIfIAskWho
@@ -1163,12 +1185,17 @@ You take it. Nestling it inside your coat.
 
 
 =TrainYourRifleAtStephan
+
 @char STEPHAN.DEFAULT look:left pos:80,0 scale:1.2,1.2
+
 @spawn ShakeCharacter params:STEPHAN,2,0.15,0.01
+
 His arms fly upwards, eyes full of fear. 
+
 @despawn ShakeCharacter
 
 The letter dangles gently from one hand as smoke rises from the cigar in the other.
+
 @resetText
 
     + [Drop it.] -> DropTheLetter1
@@ -1184,6 +1211,7 @@ STEPHAN: "I haven't opened it."
 His voice is tired.
     
 STEPHAN: "I thought it was for me."
+
 @resetText
     
     + [It's not.] -> TheLetterisNotForStephan
@@ -1197,6 +1225,7 @@ STEPHAN: "I thought it was for me."
 A wry, forced smile. 
         
 STEPHAN: "I know."
+
 @resetText
         
     + [Drop. It.] -> DropTheLetter3
@@ -1216,6 +1245,7 @@ He drops the letter. His hands remain pressed to the sky.
 =GrabTheLetter1
 
 @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+
 You rush forward and swipe the letter from his hands.
 
 ->IDontWantTrouble
@@ -1229,6 +1259,7 @@ He drops the letter.
 His hands remain pressed toward the sky.
 
 @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+
 You rush forward and swipe it from the snow.
 
 ->IDontWantTrouble
@@ -1238,8 +1269,11 @@ You rush forward and swipe it from the snow.
 =MoveCloserToStephan
 
 @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+
 @char STEPHAN.DEFAULT look:left pos:85,0 scale:1.2,1.2
+
 He winces at the approach.
+
 @resetText
     
     + [Grab the letter.] -> GrabTheLetter2
@@ -1251,6 +1285,7 @@ He winces at the approach.
 =GrabTheLetter2
 
 @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+
 You rush forward and swipe the letter from his hands.
 
 ->IDontWantTrouble
@@ -1260,8 +1295,11 @@ You rush forward and swipe the letter from his hands.
 =GrabTheLetter3
 
 He holds out a palm towards you. It trembles in the cold.
+
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
+
 You walk forward, rifle still trained as you swipe the letter from his palms.
 
 ->IDontWantTrouble
@@ -1270,8 +1308,11 @@ You walk forward, rifle still trained as you swipe the letter from his palms.
 =IDontWantTrouble
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 STEPHAN: "I don't want trouble."
+
 @resetText
 
     + [Sorry. Tense.] -> SorryTense
@@ -1313,6 +1354,7 @@ STEPHAN: "I really didn't read it, if that helps? Seemed pretty well hidden too 
 His eyes laze towards the letter.
 
 STEPHAN: "Mind if I ask who?"
+
 @resetText
 
     + [...] -> SilentAnswer
@@ -1342,8 +1384,11 @@ STEPHAN: "I understand."
 =TellStephanItIsYourLover
 
 @spawn ShakeCharacter params:STEPHAN,1,0.15,0.01
+
 STEPHAN: "A secret lover!"
+
 @despawn ShakeCharacter
+
 @resetText  
     
     + [That or dead.] -> IsLoverDead
@@ -1375,6 +1420,7 @@ STEPHAN: "Heading south amidst the chaos?"
 
 
 =South  
+
 @resetText
 
     + [...] ->YouSmoke
@@ -1400,9 +1446,11 @@ The man glances towards your face for a moment. He nods and smiles.
 STEPHAN: "Sorry. I'll drop it."
 
 @char STEPHAN.DEFAULT look:left pos:80,0 scale:1.2,1.2
+
 He leans back, head to the sky, dragging in a mound of smoke off the end of his cigar before exhaling. You watch it dance against the fog.
 
 STEPHAN: "You smoke?"
+
 @resetText
 
     + [No.] -> ProtagDoNotSmoke
@@ -1418,6 +1466,7 @@ STEPHAN: "You smoke?"
 STEPHAN: "Ah."
 
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 He presses the cigar butt down against his coat.
 
 STEPHAN: "Sorry about that."
@@ -1431,6 +1480,7 @@ STEPHAN: "Sorry about that."
 STEPHAN: "Ah."
 
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 He presses the cigar butt down against his coat.
 
 STEPHAN: "Sorry about that."
@@ -1444,8 +1494,11 @@ STEPHAN: "Sorry about that."
 Cigar in mouth, he flicks open a small box from his trouser pocket. From inside his coat he removes a lighter and strikes a light. 
 
 @char STEPHAN.DEFAULT look:left pos:55,0 scale:1.2,1.2
+
 "Take the edge off."
+
 @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+
 You take the cigar and inhale. There's comfort in the heat.
 
 ->AndYou
@@ -1453,6 +1506,7 @@ You take the cigar and inhale. There's comfort in the heat.
 
         
 =AndYou
+
 @resetText
 
     + [Who are you waiting for?] ->AskStephanWhoIsSheWaiting
@@ -1474,6 +1528,7 @@ STEPHAN: "My son."
 STEPHAN: "Just tradition."
 
 @spawn ShakeCharacter params:STEPHAN,2,0.15,0.01,0.25
+
 He laughs at himself.
 
 STEPHAN: "My son."
@@ -1485,6 +1540,7 @@ STEPHAN: "My son."
 =TheyAreNotComingthrough
 
 STEPHAN: "They're not coming through."
+
 @resetText
 
     + [Sorry for your loss.] -> SorryForYourLossStephan
@@ -1522,6 +1578,7 @@ STEPHAN: Moscow was probably better for them, find their own crowd and all that.
 STEPHAN: Play in a band. 
 
 STEPHAN: Not a lot of those around here.
+
 @resetText
 
     + [City for the strays.] -> CityForTheStrays
@@ -1551,6 +1608,7 @@ STEPHAN: Not a lot of those around here.
  A cold breeze rushes past you and wind whips powdered snow around your feet.
  
  STEPHAN: "Ahhh. I guess we're done for the day."
+ 
  @resetText
  
      + [I've got a bus to catch.] -> IHaveABusToCatch
@@ -1578,6 +1636,7 @@ STEPHAN: "You'll freeze before the bus comes. Stay with my wife and I.[i] Rest.[
 =BreezeReturns
 
 The breeze returns with harsher ambition.
+
 @resetText
 
      + [I appreciate the concern. I'll be ok.] -> AppreciateStephanConcern
@@ -1589,8 +1648,10 @@ The breeze returns with harsher ambition.
  =AppreciateStephanConcern
  
  He frowns with furrowed brow.
+ 
  @char STEPHAN.DEFAULT look:right pos:85,0 scale:1.2,1.2
  STEPHAN: "Yellow house. Just behind the bend due south. Don't die stupid."
+ 
  @hide STEPHAN remove:true
  
  As he goes to leave, cigar in one hand, he waves with the other, and you spot fractured stubs on the tips of his fingers. Frostbite.
@@ -1602,8 +1663,11 @@ The breeze returns with harsher ambition.
  =AsLongAsWeAreNotImposing
  
  The man grins. 
+ 
  @char STEPHAN.DEFAULT look:right pos:75,0 scale:1.2,1.2
+ 
  STEPHAN: "Impossible. Come on then."
+ 
  @char PROTAG.DEFAULT look:right pos:45,0 scale:1.2,1.2
  
  ->ThroughTheSnow
@@ -1611,12 +1675,19 @@ The breeze returns with harsher ambition.
  
  
  =SoloSnow
+ 
  @startTrans
+ 
  @hideChars remove:true
+ 
  @back id:SnowWild
+ 
  @despawn Snow
+ 
  @char PROTAG.DEFAULT scale:1.2,1.2
+ 
  @spawn SnowHeavy
+ 
  @finishTrans
  
  You wait in silence, shattered by whistling wind. The storm rises and you pull your scarf to cover your face.
@@ -1629,11 +1700,15 @@ The breeze returns with harsher ambition.
  
  
  =Stay1
+ 
  @spawn ShakeCamera params:,0,,0.01,0.01
+ 
  @spawn DepthOfField params:PROTAG,,1,3
+ 
  Your vision starts to cloud in blanket white, snow no longer merely bites at your ankles but rises to surround you on all sides. 
  
  The cold cuts at your skin.
+ 
  @resetText
  
     + [Stay.] -> Stay2
@@ -1643,9 +1718,15 @@ The breeze returns with harsher ambition.
  
  
  =Stay2
+ 
  @spawn ShakeCamera params:,0,,0.02,0.02
+ 
  @spawn DepthOfField params:PROTAG,,2,3
- You can feel your blood start to freeze, your skin frosting over. There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
+ 
+ You can feel your blood start to freeze, your skin frosting over.
+ 
+ There's a dangerous illusion of warmth as you begin to lose perception of your ligaments.
+ 
  @resetText
  
     + [Stay] -> Stay3
@@ -1655,9 +1736,13 @@ The breeze returns with harsher ambition.
  
  
  =Stay3
+ 
 @spawn ShakeCamera params:,0,,0.02,0.02
+
 @spawn DepthOfField params:PROTAG,,5,3
+
 Are you sure?
+
 @resetText
           
             
@@ -1670,14 +1755,19 @@ Are you sure?
 =Leave
  
 @despawn DepthOfField
+
 @despawn ShakeCamera
+
  -> ThroughTheSnow
   
   
   
 =Death2
+
 @despawn ShakeCamera
+
 @spawn DepthOfField params:null,,5,3
+
 Your eyes give way to pure white. 
 
 Cold gives way to warmth. 
@@ -1685,30 +1775,48 @@ Cold gives way to warmth.
 Light gives way to dark. 
 
 The pain.
+
 @hideChars remove:true
 
 Ends.
+
 @resetText
+
 +Try again.
+
 @despawn SnowHeavy
+
 @despawn DepthOfField
+
 ->Chapter2
 
 
  
  =ThroughTheSnow
+ 
 @startTrans
+
 @hideAll remove:true
+
 @despawn SnowHeavy
+
 @despawn DepthOfField
+
 @back ph_bonfire id:Bonfire
+
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
 @finishTrans
 
 
- You trudge against the storm. Yellow paint cuts through the white like a knife, glistening in the distance. The walk is hard, but short. 
+ You trudge against the storm. 
+ 
+ Yellow paint cuts through the white like a knife, glistening in the distance. 
+ 
+ The walk is hard, but short. 
  
  @char STEPHAN.DEFAULT look:left pos:75,0 scale:1.2,1.2
+ 
  The man and his wife brighten in your presence.
  
  The house is warm. 
@@ -1722,6 +1830,7 @@ Ends.
  His eyes brighten.
  
  STEPHAN: "Play with me."
+ 
  @resetText
  
  + [Why not?] -> StartStephanDuet
@@ -1731,9 +1840,13 @@ Ends.
  
  
   =StartStephanDuet
+  
   @skip false
+  
   @hideUI
+  
   @spawn duet
+  
   @duet normal
   
   //duet conditional
@@ -1742,7 +1855,9 @@ Ends.
  
  
   =StephanNODUET
+  
  @despawn duet
+ 
  As his wife watches from nearby, the man delicately places fingers on his accordion. It seems almost like a reunion of sorts. Long overdue. 
  
  You raise your bow as the wind howls outside. 
@@ -1770,7 +1885,9 @@ Ends.
  
   
  =StephanDuet
+ 
 @despawn duet
+
 As his wife watches from nearby, the man delicately places fingers on his accordion. 
 
 It seems almost like a reunion of sorts. Long overdue. 
@@ -1800,12 +1917,15 @@ Eventually, the man and his wife thank you, before showing you a bed and retirin
  =Chapter2Epilogue
  
  @hide STEPHAN remove:true
+ 
  @char PROTAG.DEFAULT look:right pos:0,0 scale:1.2,1.2
+ 
  You welcome the propect of sleep, but not before you remove the letter from your coat, reading secret words bathed in firelight.
  
  
  
  LETTER: I miss you. I miss Moscow. I miss music and symphonies and sound that isn't wailing wind. I want to play music again. Prefferably, inside. I'd always loved wint3r before. Before I'd spent it flailing on the roa7. I hate it now. It's cruel and unkind. I want to see you. I will. 5tay safe. 
+ 
     @resetText
  
  
@@ -1845,7 +1965,9 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
  
  
 =Chapter3
+
 @hideAll remove:true
+
 The bus rails on agains/
  
 /"OI STRINGS!"
@@ -2381,7 +2503,9 @@ You cry.
 They cry.
 
 +"I'm sill fucking freezing."
+
 +"You're late."
+
 +"Fuck you."
 
 - You embrace
