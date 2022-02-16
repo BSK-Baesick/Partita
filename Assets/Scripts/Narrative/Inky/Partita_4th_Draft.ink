@@ -2010,44 +2010,58 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
 =Chapter3
 @hideAll remove:true
 The bus rails on agains/
+
+
  
 /"OI STRINGS!"
 A voice cries out from across the way.
 You look around for a moment, but find only a single figure besides yourself and the driver.
 A teenage girl treading the boundaries of adulthood. She squints as you stare.
+
+@char VERA.Default look:right pos:75,0 scale:1.2,1.2
+
 VERA: "YEAH YOU, HORSEHAIR!"
-+"What?"
++[What?] 
 ->YouComeFromUpNorth
-+"I don't appreciate the tone."
++[I don't appreciate the tone.]
 VERA: "YEAH WELL I DON'T APPRECIATE YOUR LONG ASS FACE, I GOT A QUESTION FOR YA!"
-+"Neigh."
++[Neigh.]
 VERA: "YEAH TROT ON BITCH I GOT A QUESTION FOR YOU!"
-- +"What a great way to get an answer."
-    +"Ask it then"
+- +[What a great way to get an answer.]
+    +[Ask it then]
     - ->YouComeFromUpNorth
 =YouComeFromUpNorth
 Her face scrunches as she observes you for a moment, taking it all in.
 VERA: "You come from up North?"
-+"Yes and no."
++[Yes and no.]
 VERA: "The fuck does that mean?"
-    ++"Wasn't born there. Worked there a couple years. Moscow Orchestra."
+    ++[Wasn't born there. Worked there a couple years. Moscow Orchestra.]
     VERA: "Huh. Cool."
     She catches herself in a moment of sincerity.
+    @wait 2
+
     Then her face twists.
+    @char VERA.Twists pos:25,0 scale:1.2,1.2
+
     ->YouSeeAnOldBitch
-    ++"Means yes and no."
+    ++[Means yes and no.]
     Her distaste is palpable. Her face scrunches again.
+
+    @char VERA.Twists pos:25,0 scale:1.2,1.2
+
     ->YouSeeAnOldBitch
-+"Yes."
++[Yes.]
 ->YouSeeAnOldBitch
-+"No."
++[No.]
 She groans, stretching out her fingers and throwing her head back in frustration.
 VERA: "FUUUUUUUUCK!"
 She sighs.
 VERA: "Fuck it."
 ->YouSeeAnOldBitch
-+"Neigh."
++[Neigh.]
+
 She groans, stretching out her fingers and throwing her head back in frustration.
+
 VERA: "FUUUUUUUCK!"
 She sighs.
 VERA: "Fuck it."
@@ -2055,12 +2069,12 @@ VERA: "Fuck it."
 =YouSeeAnOldBitch
 VERA: "You see an old bitch on your trip? Seventies? Big ass nose? Good shot? Apparently she's got a Mosins. {TakeTheRifle:  Just like yours.}
 {TakeTheRifle: She points to the rifle on your back}.
-+"Yes."
++[Yes.]
 Her face gives way to shock as simmering eyes converge on yours.
 VERA: "Where?"
-    ++[Tell the truth.] "Donetsk."
+    ++[Tell the truth.] 
     ->VeraTruth
-    ++[Lie] "Kursk."
+    ++[Lie]
     ->VeraLie
     
 +"No."
@@ -2070,41 +2084,55 @@ VERA: "Where?"
 
 =NoOrNeigh
 She groans into the back of the headrest.
+
+@char VERA.Back pos:25,0 scale:1.2,1.2
+
 ->WhatsYourBeef
 
 =VeraTruth
 Her eyes widen. 
+
+@char VERA.Eyes pos:25,0 scale:1.2,1.2
+
 She pulls out a notepad and presses it against the headrest, scribbling letters on the page.
 ->WhatsYourBeef
 
 =VeraLie
 Her eyes widen. 
+
+@char VERA.Eyes pos:25,0 scale:1.2,1.2
+
 She pulls out a notepad and presses it against the headrest, scribbling letters on the page.
+
+@spawn notepad
+
 ->WhatsYourBeef
 
 =WhatsYourBeef
-+"What's your beef, Drumsticks?"
+
+
++[What's your beef, Drumsticks?]
 "Fuck off Horseface."
 But you've caught her in a moment of weakness.
-+"Why do you ask?"
++[Why do you ask?
 - VERA: "None of your fuckin business."
 She pauses. 
 Frustrated.
 VERA: "I just wanna learn.
-+"How to kill?"
++[How to kill?]
 VERA: "How to survive."
-+"Better lessons out there."
++[Better lessons out there.]
 VERA: "I'm not a coward."
 - VERA: "Everythings falling apart and everyone's pretending it's not. I just want to do something. That's all."
 Embarrassed by her own honesty, she turns away to stare against the horizon. 
 The rage is still there, resting behind the eyes, but resting none-the-less.
-+"I get it."
++[I get it.]
 VERA: "Fuck off Shoestring."
-    ++"That one's not even a pun."
+    ++ [That one's not even a pun.]
     VERA: "You're not even a fucking pun."
     She smirks, stifling laughter.
     ->Silence
-    ++"Aight, Whackstick."
+    ++[Aight, Whackstick.]
     She smirks, stifling laughter.
     ->Silence
 +Sit in silence.
@@ -2112,16 +2140,42 @@ VERA: "Fuck off Shoestring."
 
 =Silence
 Eventually, you settle into silence against the hum of the engine, your gazes drawn to the endless white horizon. Out of the corner of your eye, you see her soften at the sight. She's still a kid, tapping gently at the drum on her side.
-+Play alongside her.
++[Play alongside her.]
+
 ->VeraDuet
  //START DUET SYSTEM - IF SUCCESUL GO TO =VeraDuet - IF UNSUCCESFUL GO TO =VeraNoDuet
-+Sit in silence.
+
+@skip false
+
+@hideUI
+
+@spawn duetEasy pos:50,50
+
+@duet easy
+
+
+{
+     - duetScore >= 50: 
+    
+    -> VeraDuet
+    
+    - else:
+    
+    -> VeraNoDuet
+
+}
+
++[Sit in silence.]
 ->SitInSilence
 
 =VeraDuet
 You draw bow to string, expecting some grand rebuke. She offers nothing more than a petty scowl and a louder beat. An attempt to dissuade your communion. 
 
+@sfx BowString
+
 Drum beats back against melody. An uncommon pairing for uncommon times. She no longer fights against, but sets the lead and pace. You follow willingly.
+
+@sfx Drum_Beat
 
 You slowly start to dance against each other's sound, watching as the world you both once knew floats by on a sea of snow. 
 
@@ -2129,9 +2183,12 @@ It's still beautiful.
 
 You think you see her smile. 
 
+@spawn VERA.SmilesGently
+
 Maybe. 
 
 Probably not though.
+@despawn DUET
 ->FarewellVera
 
 =VeraNoDuet
@@ -2140,6 +2197,8 @@ You draw bow to string, expecting some grand rebuke. She offers nothing more tha
 You play with sound and ryhthm but she sticks to her own. Tapping restlessly against the snare and the side of the bus.
 
 She continues for the rest of the trip, fiery eyes gazing out over a sea of snow, refusing to meet your own.
+
+@despawn DUET
 ->FarewellVera
 
 =SitInSilence
@@ -2148,6 +2207,8 @@ She taps against the snare and the side of the bus, matching wardrum rhythm to t
 
 =FarewellVera
 Eventually, the bus starts to slow against the final bend of the road. Her fire returns as she pulls out a map from her coat pocket, scouring dogears and scribbled notes. This is your stop. Not hers. You weigh the weight of truth.
+
+    
     + {VeraLie or NoOrNeigh} [Tell here the truth about Millia's location.] 
     "I lied before. I met her in Donetsk."
     ->VeraFinalTruth
@@ -2161,20 +2222,27 @@ Eventually, the bus starts to slow against the final bend of the road. Her fire 
     + {VeraLie} "Good luck in Kursk."
     VERA: "Cheers, Strings."
     - ->GoodbyeVera
+
 =VeraFinalTruth
 She stares you up and down as you gather your belongings.
 VERA: "Appreciated, Strings."
 ->GoodbyeVera
+
+@wait 2
+
 =VeraFinalLie
 She stares you up and down as you gather your belongings. 
 VERA: "Appreciated, Strings."
 ->GoodbyeVera
+
       
 =GoodbyeVera  
 You move past her on your way to the front of the bus. A determined bundle of energy fumbling through pages of poorly kept notes.
-+ "Don't die stupid."
+
++ [Don't die stupid.]
+
 VERA: "Go fuck yourself on a spindle, Strings!" 
-+ "Go change the world, whack-a-mole!"
++ [Go change the world, whack-a-mole!]
 ->Chapter3Epilogue
 VERA: "Go fuck yourself on a spindle Strings!"
 ->Chapter3Epilogue
@@ -2186,10 +2254,14 @@ VERA: "Go fuck yourself on a spindle Strings!"
 - ->GiveVeraRifle
 
 =GiveVeraRifle
+
+@spawn 
+
 Her eyes widen and her mouth hangs agape. You feel like she hasn't been speechless in some time.
 VERA: "Thankyou."
 She smiles.
 VERA: "Good luck.
+
 ->Chapter3EpilogueHijack
 
 =Chapter3Epilogue
@@ -2203,6 +2275,7 @@ Grimacing as the driver's desperate eyes catch your own, you watch as the bus sl
 From a nearby window, a terrifying child offers a friendly wink before the bus disappears behind the bend.
 Nothing to be done. You turn back to your own journey.
 ->Chapter4
+@despawn 
 
 =Chapter4
 As evening settles in, you cross the road to the next weary stop. It's empty. A strange, lonely reprieve from the recent norms of peculiar company. You scour the surroundings, until a familiar red hue pops out from the stump of a nearby tree. Warmth rushes through you as you pull the letter from it's hidey hole.
