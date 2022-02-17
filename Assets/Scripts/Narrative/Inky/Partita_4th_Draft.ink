@@ -2205,45 +2205,73 @@ Nothing to be done. You turn back to your own journey.
 ->Chapter4
 
 =Chapter4
+@startTrans
+
+@bgm //Background Music
+
+@wait 2
+
+@sfx open_bus_door volume:0.5 time:4
+
+
+@finishTrans Crossfade time:3
+
+
+@playWorldMusic
+
+@spawn Snow
+
+@wait 1
+
+@char PROTAG.DEFAULT scale:1.2,1.2
+
+@char PASCHA scale:1.2,1.2\
+
+
 As evening settles in, you cross the road to the next weary stop. It's empty. A strange, lonely reprieve from the recent norms of peculiar company. You scour the surroundings, until a familiar red hue pops out from the stump of a nearby tree. Warmth rushes through you as you pull the letter from it's hidey hole.
 
 PASCHA: "Drugs?"
 
+
+
     You rise with a start against the sudden new presence. Turning back towards the stop, you see a figure where there was none before. Sharp eyes. Hair too soft. Skin too shiny. A perfect smile: charming and yet full of grit. They are, in a word, "eccentric".
-    +"Nothing that interesting."
+    +[Nothing that interesting.]
     PASCHA: "I beg to differ. In fact I'd be more interested if it wasn't drugs. So now, I am thus, "more interested"."
-    +"Just a letter."
+    +[Just a letter.]
     PASCHA: "Well that is much more interesting."
     - They siddle slowly towards you.
     PASCHA: "Albeit, I wouldn't say no to drugs. I am desperately bored."
     Sharp eyes turn down towards the envelope in your hands.
     PASCHA: "Read it to me?"
-    +"No."
+    +[No.]
     Their eyes turn soft as they plead with you.
     PASCHA: "Pleaaaase?"
     ->AreYouHigh
-    +"Why?"
+    +[Why?]
     PASCHA: "I told you, I'm bored.
     ->AreYouHigh
-    +"Fine."
+    +[Fine.]
     ->PublicReading
     
 =AreYouHigh
-++"Are you high?"
+
+@startTrans
+
+++[Are you high?]
         PASCHA: "I fucking wish, my dear. Now come, you sweet summer thing. Why not spill secrets with a stranger? 
-            +++"Fine."
+            +++[Fine.]
             ->PublicReading
-            +++"..."
+            +++[...]
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week." 
             ->IllBeDead
 
-++"I don't even know you."
+++[I don't even know you.]
         PASCHA: "Nor I you, you sweet summer thing. Why not spill secrets with a stranger?
-            +++"Fine."
+            +++[Fine.]
             ->PublicReading
-            +++"..."
+            +++[...]
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week."  
@@ -2251,56 +2279,96 @@ PASCHA: "Drugs?"
             
 =IllBeDead
 
-+"Sure you will."
+
+
++[Sure you will.]
+
 PASCHA: "Swear it on my grave. Dragged there by stupid, stupid queer love for stupid stupid queers."
-+"How?"
+
++[How?]
 PASCHA: "Stupid, stupid queer love for stupid stupid queers."
-+"How dramatic."
++[How dramatic.]
 PASCHA: "Death is pure drama. But it's love that pulls me there. Stupid, stupid queer love for stupid stupid queers."
 - They twirl towards you. Honest eyes stare into your soul.
 PASCHA: "I travel weeks from Moscow. I get half a day's walk from the border and my fuckwit of a lover gets caught home. Now me and my moronic bleeding heart are stuck racing back into the dark."
+
 They sigh.
+
 PASCHA: "Anyway. Your turn!"
+
 Before you can respond, they slip the letter from your grasp, laughing as they race back into the snow.
-+Chase them.
+
+@spawn snow 
+
++[Chase them.]
 You lumber through thick powder, but they dash away with a tedious ease, tearing open the envelope as they bound through the snow.
-+Let them go.
+
+@spawn Envelope
++[Let them go.]
+
 They settle a few feet away in the snow. Grounding themselves for some kind of performance as they rip the envelope open.
 
+
 -PASCHA: "I'm about to cross into Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
+
 ->PostPerformance
 
 
 =PublicReading
+
     PASCHA: "Huh. That was easy."
     
     You sigh as you rip open the envelope, eyes greeting familiar, comforting handwriting.
+
+    @spawn Envelope
     
     "I'm about to cross into Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
+    
     ->PostPerformance
     
     =PostPerformance
+
+    @despawn Envelope
+
     They sigh and stare at you with sad eyes.
+
     PASCHA: "Truly, we are kin both bound by dumb love. You for freedom, and I for the fire. Guess I should've chosen a smarter lover."
-    +"I'm sorry."
+    +[I'm sorry.]
     PASCHA: "Don't be. Jealousy among outcasts is a tedious thing. I am happy for you."
     They smile.
     PASCHA: "Truly."
-    +"You don't owe them your life."
+    +[You don't owe them your life.]
     PASCHA: "Oh but I do. Love's a fickle fiend. Take comfort that we'll never truly die, I suppose. Long as they keep breeding, we'll be being bred. Duality of man and all that."
     They chuckle.
     - PASCHA: "Play a dirge with me? Some battle song to feed me fake courage?"
-    +"I won't entertain a deathwish."
+    +[I won't entertain a deathwish.]
     PASCHA: "You are a cruel thing, my dear."
     ->PaschaPlaysAlone
-    +"Of course."
+    +[Of course.]
     PASCHA: "Then let's dance the night away."
     ->PaschaDuet
+    @spawn duet
      //START DUET SYSTEM - IF SUCCESUL GO TO =PaschaDuet - IF UNSUCCESFUL GO TO =PaschaNoDuet
     
-    =PaschaDuet
-    They take you by the hand and out into thick snow.
+
+    {
+    - duetScore >= 50: 
     
+    -> PaschaDuet
+    
+    - else:
+    
+    -> PaschaPlaysAlone
+
+
+    }
+
+    =PaschaDuet
+    @despawn duet
+
+    They take you by the hand and out into thick snow.
+    @spawn snow 
+
     As you press forward with bow, yhey strum aginst string and twirl in the night.
     
     They exude joy. Not as a facade, but as someone who's found it in all the joyless places.
@@ -2321,6 +2389,10 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     ->Chapter4Epilogue
     
     =PaschaNoDuet
+
+    @despawn duet
+
+
     They take you by the hand, leading out into the cold snow.
     
     You raise bow to string as they strum gently on their own.
@@ -2333,6 +2405,8 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     ->PaschaPlaysAlone
     
    =PaschaPlaysAlone
+
+   @sfx //Play alone Music
     Pascha plays alone. 
     
     You see faint tears catching moonlight. 
@@ -2341,15 +2415,16 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     ->Chapter4Epilogue
     
 =Chapter4Epilogue
+
 Their bus arriving earlier than your own, your momentary companion rises early against the dawn. Their skin is still too shiny and their hair is still too soft, but at least their sharp eyes seem somewhat weary. They smile as you wake to bid them farewell.
 
 + {TakeTheRifle and not GiveVeraRifle} "Here you go Rambo." Give them the rifle.
 ->GivePaschaRifle
-+"Don't die stupid."
++[Don't die stupid.]
 PASCHA: "Oofy doofy. That is a tall order my dear."
 They chuckle.
 PASCHA: "I'll try."
-+"Good luck."
++[Good luck.]
 PASCHA: "I'm sure your well wishings will make all the difference, my dear.
 They chuckle, warmly.
 
@@ -2361,38 +2436,50 @@ PASCHA: "S'pose I'll be getting more in touch with my Masculine side."
 As their bus presses round the corner, they step off the platform and into the snow leading to the roadside. ->Father
 
 =Father
-+"I think I met your father."
++[I think I met your father.]
 They don't stop walking, but a voice responds.
 PASCHA: Truly, a real cunt of a man.
-    ++"I've never seen so much regret."
+    ++[I've never seen so much regret.]
     They stop. 
     The bus waits. 
     They wait.
     PASCHA: "Thank-you."
     And press forth once more, rising on steel steps and disappearing behind glass doors.
     ->Chapter4StephanEnd
-    ++"Yeah..."
-    ++"..."
+    ++[Yeah...]
+    ++[...]
 
-+Let them go.
++[Let them go.]
 
 -And they press on through the snow.
 
 Up the stairs.
 
 Disappearing behind glass doors.
+@camera zoom:out 
+
 ->Chapter4MoscowEnd
 
 =Chapter4MoscowEnd
+
 An hour later, your bus arrives: a quiet, lonely shuttle to the edge of the Union's remains. 
+@startTrans
+
+@bgm approaching_bus fade:1
 
 Abkhazia awaits.
 
 And so do they.
+
 ->Chapter5
 
 =Chapter4StephanEnd
+
 An hour later, your bus arrives: a quiet, lonely shuttle nearing the edge of the Union's remains. 
+
+@startTrans
+
+@bgm approaching_bus fade:1
 
 Abkhazia awaits.
 
