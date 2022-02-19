@@ -2192,46 +2192,78 @@ She smiles.
 VERA: "Good luck.
 ->Chapter3EpilogueHijack
 
+@back id:Bus_stop2  
+
+@playBusStopSoundscape
+
+@sfx  // Rock the Volume if you want
+
+@sfx open_bus_door volume:0.5 time:4  //
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@sfx open_bus_door volume:0.5 time:4//Bus Door Closing Sound
+
 =Chapter3Epilogue
 You step back onto solid ground once more as the doors behind you hiss to a close. You turn back to face the window, where you're met by the sight of two middle fingers and two fiery eyes. She offers one last smirk as the bus curves around the trees and back out onto the empty road. 
-Nothing to be done. You turn back to your own journey.->Chapter4
-
-=Chapter3EpilogueHijack
-You step back onto solid ground once more as the doors behind you hiss to a close. As you turn back to face the window, you're met by the sound of a cocking rifle from inside the bus.
-VERA: "ALRIGHT FUCKBUCKET! LET'S TURN THIS STEEL TURD AROUND. WE'RE HEADING NORTH BABY!"
-Grimacing as the driver's desperate eyes catch your own, you watch as the bus slowly reverses back the way it came.
-From a nearby window, a terrifying child offers a friendly wink before the bus disappears behind the bend.
 Nothing to be done. You turn back to your own journey.
+
+@back //Bus Exit Art
+
 ->Chapter4
 
-=Chapter4
-@startTrans
+=Chapter3EpilogueHijack
 
-@bgm //Background Music
+@back id:Bus_stop2 
+
+@playBusStopSoundscape
+
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+You step back onto solid ground once more as the doors behind you hiss to a close.
+
+@sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+As you turn back to face the window, you're met by the sound of a cocking rifle from inside the bus.
+
+@sfx Mosin_Pop_Clip  //Bus door Volume
+
+VERA: "ALRIGHT FUCKBUCKET! LET'S TURN THIS STEEL TURD AROUND. WE'RE HEADING NORTH BABY!"
+Grimacing as the driver's desperate eyes catch your own, you watch as the bus slowly reverses back the way it came.
+
+@back bus_departure // Bus Exits
+
+From a nearby window, a terrifying child offers a friendly wink before the bus disappears behind the bend.
+Nothing to be done. You turn back to your own journey.
+
+@bgm approaching_bus fade:1 //Background Music
 
 @wait 2
 
-@sfx open_bus_door volume:0.5 time:4
 
+->Chapter4
+
+=Chapter4
+
+@startTrans
 
 @finishTrans Crossfade time:3
 
-
 @playWorldMusic
-
-@spawn Snow
 
 @wait 1
 
 @char PROTAG.DEFAULT scale:1.2,1.2
-
-@char PASCHA scale:1.2,1.2\
 
 
 As evening settles in, you cross the road to the next weary stop. It's empty. A strange, lonely reprieve from the recent norms of peculiar company. You scour the surroundings, until a familiar red hue pops out from the stump of a nearby tree. Warmth rushes through you as you pull the letter from it's hidey hole.
 
 PASCHA: "Drugs?"
 
+    @char PASCHA scale:1.2,1.2
+
+
+    @bgm Pascha.Intro volume:0.5 time:4//If We have Intro
 
 
     You rise with a start against the sudden new presence. Turning back towards the stop, you see a figure where there was none before. Sharp eyes. Hair too soft. Skin too shiny. A perfect smile: charming and yet full of grit. They are, in a word, "eccentric".
@@ -2303,10 +2335,15 @@ Before you can respond, they slip the letter from your grasp, laughing as they r
 +[Chase them.]
 You lumber through thick powder, but they dash away with a tedious ease, tearing open the envelope as they bound through the snow.
 
-@spawn Envelope
+@sfx  // Snow Feet Music
+
 +[Let them go.]
 
-They settle a few feet away in the snow. Grounding themselves for some kind of performance as they rip the envelope open.
+They settle a few feet away in the snow.
+
+@sfx  //Feet In the Snow
+
+Grounding themselves for some kind of performance as they rip the envelope open.
 
 
 -PASCHA: "I'm about to cross into Abkhaz1a and I've just realised I've never heard back from you. It makes sense of course, me traveling ahead and all. But it's scary, terrifying, to never really know where you are. I w1sh I'd never asked you to stay in Moscow. I wish we'd left when you said we should. I'm 3orry. Please let me say that in person. Please let me meet you at the next stop. Please let us cross the rest together. I love you. I love you. I love you."
@@ -2347,7 +2384,13 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     +[Of course.]
     PASCHA: "Then let's dance the night away."
     ->PaschaDuet
+
     @spawn duet
+
+
+    @back PASCHA.DUETLOOP //Pasha DUET art.
+
+    @sfx //pasha duet audio if any
      //START DUET SYSTEM - IF SUCCESUL GO TO =PaschaDuet - IF UNSUCCESFUL GO TO =PaschaNoDuet
     
 
@@ -2364,12 +2407,14 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     }
 
     =PaschaDuet
+
     @despawn duet
 
     They take you by the hand and out into thick snow.
-    @spawn snow 
 
-    As you press forward with bow, yhey strum aginst string and twirl in the night.
+    @spawn snow //Snow spawn to make it look preeetty
+
+    As you press forward with bow, They strum aginst string and twirl in the night.
     
     They exude joy. Not as a facade, but as someone who's found it in all the joyless places.
     
@@ -2377,10 +2422,16 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     
     And so you dance as you play.
     
+    @wait 1
+
     For hours.
     
+    @wait 1
+
     And hours.
     
+    @wait 1
+
     You twist angels in the fresh laid snow and music in the clear moon sky.
     
     It's no dirge, no battle song, but rather a ballad for all the queers that ever did queer.
@@ -2394,6 +2445,8 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
 
 
     They take you by the hand, leading out into the cold snow.
+
+    @spawn snow //Spawning snow
     
     You raise bow to string as they strum gently on their own.
     
@@ -2402,23 +2455,35 @@ They settle a few feet away in the snow. Grounding themselves for some kind of p
     They stop. They smile gently towards you.
     
     PASCHA: "Thankyou for trying. Seems I need solo stage tonight. Drama queen that I am."
+
     ->PaschaPlaysAlone
     
    =PaschaPlaysAlone
 
-   @sfx //Play alone Music
+   @sfx  //Play alone Music
     Pascha plays alone. 
     
     You see faint tears catching moonlight. 
+
+    @back //Moonlight Art if any
     
     You stay awake beside them until the grasp of exhaustion drags you both into slumber.
     ->Chapter4Epilogue
     
 =Chapter4Epilogue
 
+@bgm approaching_bus fade:1
+
+@playBusStopSoundscape
+
+@back id:Bus_stop2 //Bus Stop 3 Art Replacement
+
 Their bus arriving earlier than your own, your momentary companion rises early against the dawn. Their skin is still too shiny and their hair is still too soft, but at least their sharp eyes seem somewhat weary. They smile as you wake to bid them farewell.
 
 + {TakeTheRifle and not GiveVeraRifle} "Here you go Rambo." Give them the rifle.
+
+@back PASHA.rifle // Pasha With the rifel.
+
 ->GivePaschaRifle
 +[Don't die stupid.]
 PASCHA: "Oofy doofy. That is a tall order my dear."
@@ -2428,7 +2493,11 @@ PASCHA: "I'll try."
 PASCHA: "I'm sure your well wishings will make all the difference, my dear.
 They chuckle, warmly.
 
-- As their bus presses round the corner, they step off the platform and into the snow leading to the roadside. ->Father
+- As their bus presses round the corner, they step off the platform and into the snow leading to the roadside.
+
+@sfx //Footsteps in the snow
+
+->Father
 
 =GivePaschaRifle
 They take the rifle with both hands, toying with it for a moment before nodding graciously and strapping it to their back.
@@ -2440,11 +2509,22 @@ As their bus presses round the corner, they step off the platform and into the s
 They don't stop walking, but a voice responds.
 PASCHA: Truly, a real cunt of a man.
     ++[I've never seen so much regret.]
+
+    @sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
     They stop. 
     The bus waits. 
     They wait.
     PASCHA: "Thank-you."
+
+    @char PASHA.DEFAULT fade: 1 //Pasha Enters Bus and Fades
+
     And press forth once more, rising on steel steps and disappearing behind glass doors.
+    
+    @sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+    @back id:bus_departure fade: 1 // Bus Departure Scene
+
     ->Chapter4StephanEnd
     ++[Yeah...]
     ++[...]
@@ -2453,9 +2533,20 @@ PASCHA: Truly, a real cunt of a man.
 
 -And they press on through the snow.
 
+@sfx //Footsteps In the snow
+
+@sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+
 Up the stairs.
 
+
 Disappearing behind glass doors.
+
+@sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+@back id:bus_departure //Bus Departs and Exist to infity
+
 @camera zoom:out 
 
 ->Chapter4MoscowEnd
@@ -2463,13 +2554,18 @@ Disappearing behind glass doors.
 =Chapter4MoscowEnd
 
 An hour later, your bus arrives: a quiet, lonely shuttle to the edge of the Union's remains. 
-@startTrans
 
-@bgm approaching_bus fade:1
+@bgm approaching_bus fade:1 // Bus approaches
 
 Abkhazia awaits.
 
 And so do they.
+
+@sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+@back id:bus_departure //Bus Departs and Exist to infity
+
+@camera zoom:out 
 
 ->Chapter5
 
@@ -2477,16 +2573,30 @@ And so do they.
 
 An hour later, your bus arrives: a quiet, lonely shuttle nearing the edge of the Union's remains. 
 
+@sfx open_bus_door volume:0.5 time:4  //Bus door Volume
+
+@camera zoom:out 
+
+Abkhazia awaits.
+
+@wait 1
+
+And so do they.
+
+@back id:bus_departure //Bus Departs and Exist to infity
+
+->Chapter5
+
+=Chapter5
+
 @startTrans
 
 @bgm approaching_bus fade:1
 
-Abkhazia awaits.
+@back id:BusInterior // When Travelling in a bus
 
-And so do they.
-->Chapter5
+@char PROTAG.DEFAULT scale:1.2,1.2 // Scaled to normal.
 
-=Chapter5
 Abkhazia rolls in on the horizon. The Dead Sea breeze stings your nostrils. You stare out down the road ahead. They should be here.
 
 They should.
@@ -2515,12 +2625,13 @@ Your eyes flash towards the source of the voice, a figure resting behind a pilla
 
 - Your smile widens as you race towards them.
 
-@char PROTAG.SmilesGently look:right pos:25,0 scale:1.2,1.2
+@char PROTAG.DEFAULT pos:25,0 scale:1.2,1.2 // Protags Default Sprite
 
 The figure emerges.
 
 You pause in your tracks.
-@wait 5
+
+@wait 2
 
 It's not them.
 
