@@ -8,21 +8,26 @@ public class FmodAudioController : MonoBehaviour
 {
 
     //HV: Duet Parameters 
-    public string milliaDuetParameter = "Millia_duet";
-    public string stephanDuetParameter = "Stephan_duet";
-    public string veraDuetParameter = "Vera_duet";
-    public string paschaDuetParameter = "Pascha_duet";
-    public string zurabDuetParameter = "Zurab_duet";
+    private readonly string milliaDuetParameter = "Millia_duet";
+    private readonly string stephanDuetParameter = "Stephan_duet";
+    private readonly string veraDuetParameter = "Vera_duet";
+    private readonly string paschaDuetParameter = "Pascha_duet";
+    private readonly string zurabDuetParameter = "Zurab_duet";
 
-    public string duetParameterName = "duet_character";
+    private readonly string duetParameterName = "duet_character";
 
-    private FMOD.Studio.EventInstance duetMusic;
-    private FMOD.Studio.EventInstance finaleMusic;
-    private FMOD.Studio.EventInstance menuMusic;
-    private FMOD.Studio.EventInstance worldMusic;
-    private FMOD.Studio.EventInstance gettingReadyMusic;
-    private FMOD.Studio.EventInstance busStopSoundscape;
-    private FMOD.Studio.EventInstance bonfireSoundscape;
+    private readonly string musicHoldParameterName = "MusicHold";
+
+    [SerializeField, Range(-12f, 12f)] 
+    private float pitch;
+
+    [SerializeField] private FMOD.Studio.EventInstance duetMusic;
+    [SerializeField] private FMOD.Studio.EventInstance finaleMusic;
+    [SerializeField] private FMOD.Studio.EventInstance menuMusic;
+    [SerializeField] private FMOD.Studio.EventInstance worldMusic;
+    [SerializeField] private FMOD.Studio.EventInstance gettingReadyMusic;
+    [SerializeField] private FMOD.Studio.EventInstance busStopSoundscape;
+    [SerializeField] private FMOD.Studio.EventInstance bonfireSoundscape;
 
     FmodAudioConfiguration fmodAudioConfiguration;
 
@@ -42,11 +47,15 @@ public class FmodAudioController : MonoBehaviour
     //HV: MUSIC METHODS
 
     //HV: Music Duet (0 = Millia, 1 = Stephan, 2 = Vera, 3 = Pascha, 4 = Zurab)
-    public void PlayMusicDuet(int parameterNumber)
+    public void PlayMusicDuet(int parameterNumber, int playMusic = 1)
     {
         var eventReference = fmodAudioConfiguration.duet;
+
+        var musicHold = playMusic == 1 ? 1 : 0;
+
         duetMusic = FMODUnity.RuntimeManager.CreateInstance(eventReference);
         duetMusic.setParameterByName(duetParameterName, parameterNumber);
+        duetMusic.setParameterByName(musicHoldParameterName, musicHold);
         duetMusic.start();
         duetMusic.release();
     }
@@ -200,7 +209,13 @@ public class FmodAudioController : MonoBehaviour
     public void PlayClickUI()
     {
         var eventReference = fmodAudioConfiguration.uiClick;
-        FMODUnity.RuntimeManager.PlayOneShot("event:/SFX_click");
+        FMODUnity.RuntimeManager.PlayOneShot(eventReference);
+    }
+
+    public void PlayGameOverSfx()
+    {
+        var eventReference = fmodAudioConfiguration.uiClick;
+        FMODUnity.RuntimeManager.PlayOneShot(eventReference);
     }
 
     #endregion

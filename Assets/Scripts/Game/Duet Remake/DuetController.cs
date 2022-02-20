@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UniRx.Async;
 using Naninovel;
-using Naninovel.Commands;
+using Ink.Runtime;
 
 public class DuetController : MonoBehaviour
 {
@@ -26,7 +26,11 @@ public class DuetController : MonoBehaviour
     public Transform pos2;
     public Transform pos3;
     public Transform pos4;
-    
+
+    public TextAsset inkJSONAsset;
+
+    private Story story;
+
     void Start()
     {
         score = 0;
@@ -37,6 +41,8 @@ public class DuetController : MonoBehaviour
         //set the nani variable
         var variableManager = Engine.GetService<ICustomVariableManager>();
         variableManager.TrySetVariableValue("duetScore", score);
+
+        story.EvaluateFunction("duetScore", score);
 
         timer -= Time.deltaTime;
         score = Mathf.RoundToInt(scoreFloat);

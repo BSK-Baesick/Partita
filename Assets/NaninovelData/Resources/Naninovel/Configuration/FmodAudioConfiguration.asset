@@ -40,13 +40,6 @@ MonoBehaviour:
       Data3: 829037707
       Data4: -1889677786
     Path: event:/MUSIC_world
-  gettingReady:
-    Guid:
-      Data1: 0
-      Data2: 0
-      Data3: 0
-      Data4: 0
-    Path: 
   busStopSoundscape:
     Guid:
       Data1: -319462456
@@ -70,11 +63,18 @@ MonoBehaviour:
     Path: event:/SFX_Lover_talk
   uiClick:
     Guid:
-      Data1: 1286402755
-      Data2: 1186796328
-      Data3: -972821620
-      Data4: 1878066631
+      Data1: -1842963160
+      Data2: 1099688167
+      Data3: 1740412063
+      Data4: 1064109908
     Path: event:/SFX_click
+  gettingReady:
+    Guid:
+      Data1: 0
+      Data2: 0
+      Data3: 0
+      Data4: 0
+    Path: 
   minigameMillia:
     Guid:
       Data1: -1004121518
@@ -89,13 +89,6 @@ MonoBehaviour:
       Data3: 1348678565
       Data4: 1829276936
     Path: event:/Minigame_Pascha
-  protag:
-    Guid:
-      Data1: 526853747
-      Data2: 1259668281
-      Data3: 1206550674
-      Data4: -2014634180
-    Path: event:/Minigame_Protag
   minigameStephan:
     Guid:
       Data1: 1682223124
@@ -117,6 +110,13 @@ MonoBehaviour:
       Data3: -84986957
       Data4: -198039113
     Path: event:/Minigame_Zurab
+  protag:
+    Guid:
+      Data1: 526853747
+      Data2: 1259668281
+      Data3: 1206550674
+      Data4: -2014634180
+    Path: event:/Minigame_Protag
   minigameBirds:
     Guid:
       Data1: 0

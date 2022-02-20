@@ -26,6 +26,8 @@ public class FmodAudioConfiguration : Configuration
 
     public FMODUnity.EventReference uiClick;
 
+    public FMODUnity.EventReference gameOver;
+
     [Header("Minigame")]
 
     public FMODUnity.EventReference gettingReady;
