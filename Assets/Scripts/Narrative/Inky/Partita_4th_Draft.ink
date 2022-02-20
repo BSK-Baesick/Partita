@@ -73,7 +73,7 @@ MILLIA: "Say that again?"
 @resetText
 
 
-    + [-] -> SilentType
+    + [Stay Silent.] -> SilentType
         
     + [No.] -> Boring
     

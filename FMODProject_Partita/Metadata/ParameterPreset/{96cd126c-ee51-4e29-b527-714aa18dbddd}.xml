@@ -16,7 +16,7 @@
 			<value>2</value>
 		</property>
 		<property name="maximum">
-			<value>5</value>
+			<value>6</value>
 		</property>
 		<property name="enumerationLabels">
 			<value>Millia</value>
@@ -24,9 +24,18 @@
 			<value>Vera</value>
 			<value>Pascha</value>
 			<value>Zurab</value>
+			<value>Protag</value>
 		</property>
 		<property name="initialValue">
-			<value>0</value>
+			<value>5</value>
+		</property>
+		<relationship name="automators">
+			<destination>{afede013-762c-4eb7-b293-91fae5552b29}</destination>
+		</relationship>
+	</object>
+	<object class="Automator" id="{afede013-762c-4eb7-b293-91fae5552b29}">
+		<property name="nameOfPropertyBeingAutomated">
+			<value>cursorPosition</value>
 		</property>
 	</object>
 </objects>

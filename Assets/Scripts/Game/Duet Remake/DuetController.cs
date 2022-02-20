@@ -135,22 +135,27 @@ public class DuetController : MonoBehaviour
             {
                 case "MILLIA":
                     characterId = 1;
+                    fmodAudioManager.StartMinigameMillia();
                     break;
 
                 case "STEPHAN":
                     characterId = 2;
+                    fmodAudioManager.StartMinigameStephan();
                     break;
 
                 case "VERA":
                     characterId = 3;
+                    fmodAudioManager.StartMinigameVera();
                     break;
 
                 case "PASCHA":
                     characterId = 4;
+                    fmodAudioManager.StartMinigamePascha();
                     break;
 
                 case "ZURAB":
                     characterId = 5;
+                    fmodAudioManager.StartMinigameZurab();
                     break;
             }
 
