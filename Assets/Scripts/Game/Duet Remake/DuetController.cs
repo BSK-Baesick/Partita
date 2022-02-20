@@ -29,10 +29,16 @@ public class DuetController : MonoBehaviour
 
     public TextAsset inkJSONAsset;
 
+    private int characterId;
+
     private Story story;
+
+    private FmodAudioManager fmodAudioManager;
 
     void Start()
     {
+        fmodAudioManager = Engine.GetService<FmodAudioManager>();
+        fmodAudioManager.StartMusicDuet();
         score = 0;
     }
 
@@ -109,16 +115,46 @@ public class DuetController : MonoBehaviour
     {
         if(col.tag == "PlayNote") //good audio
         {
+            fmodAudioManager.ChangeDuetPlaybackStatus(1);
+            fmodAudioManager.ChangeTrack(6);
             scoreFloat += Time.deltaTime * 0.8f;
         }
 
         if(col.tag == "SilenceNote") //bad audio
         {
+            fmodAudioManager.ChangeDuetPlaybackStatus(0);
             scoreFloat -= Time.deltaTime * 5;
         }
 
         if(col.tag == "BonusNote"  && Input.GetKey("space")) //bonus
         {
+            fmodAudioManager.ChangeDuetPlaybackStatus(1);
+            var variableManager = Engine.GetService<ICustomVariableManager>();
+
+            switch (variableManager.GetVariableValue("currentCharacterPlaying"))
+            {
+                case "MILLIA":
+                    characterId = 1;
+                    break;
+
+                case "STEPHAN":
+                    characterId = 2;
+                    break;
+
+                case "VERA":
+                    characterId = 3;
+                    break;
+
+                case "PASCHA":
+                    characterId = 4;
+                    break;
+
+                case "ZURAB":
+                    characterId = 5;
+                    break;
+            }
+
+            fmodAudioManager.ChangeTrack(characterId);
             scoreFloat += Time.deltaTime * 2;
         }
     }

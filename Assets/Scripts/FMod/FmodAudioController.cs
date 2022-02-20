@@ -47,17 +47,21 @@ public class FmodAudioController : MonoBehaviour
     //HV: MUSIC METHODS
 
     //HV: Music Duet (0 = Millia, 1 = Stephan, 2 = Vera, 3 = Pascha, 4 = Zurab)
-    public void PlayMusicDuet(int parameterNumber, int playMusic = 1)
+    public void PlayMusicDuet(int parameterNumber)
     {
         var eventReference = fmodAudioConfiguration.duet;
-
-        var musicHold = playMusic == 1 ? 1 : 0;
-
         duetMusic = FMODUnity.RuntimeManager.CreateInstance(eventReference);
         duetMusic.setParameterByName(duetParameterName, parameterNumber);
-        duetMusic.setParameterByName(musicHoldParameterName, musicHold);
         duetMusic.start();
         duetMusic.release();
+    }
+
+    public void ControlMusicDuet(int playMusic = 1)
+    {
+        var eventReference = fmodAudioConfiguration.duet;
+        var musicHold = playMusic == 1 ? 1 : 0;
+
+        duetMusic.setParameterByName(musicHoldParameterName, musicHold);
     }
 
     //HV: Music Finale (0 = false, 1 = true)

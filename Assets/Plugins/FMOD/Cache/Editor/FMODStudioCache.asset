@@ -1,727 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-9132615064890970850
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_menu
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_menu
-  Guid:
-    Data1: 2034466473
-    Data2: 1273576920
-    Data3: 1516431277
-    Data4: 1190652741
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
---- !u!114 &-9091780168821722619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/Parameter 5
-  m_EditorClassIdentifier: 
-  Name: Parameter 5
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2509610369
-    data2: 1160230999
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-8408906790423941213
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Pascha_duet
-  m_EditorClassIdentifier: 
-  Name: Pascha_duet
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3594490401
-    data2: 2447494444
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-8281799634200087819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/Parameter 4
-  m_EditorClassIdentifier: 
-  Name: Parameter 4
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 3377883092
-    data2: 2841335612
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6982331266443322982
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_gettingready
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_gettingready
-  Guid:
-    Data1: -795228409
-    Data2: 1199942305
-    Data3: 1467185557
-    Data4: 823560235
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 16253
---- !u!114 &-6606656281489882080
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_birds
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_birds
-  Guid:
-    Data1: -1101399202
-    Data2: 1214613895
-    Data3: 2134347951
-    Data4: 940802379
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 47000
---- !u!114 &-6352289454083693040
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_finale
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_finale
-  Guid:
-    Data1: -1314649387
-    Data2: 1180778381
-    Data3: 996792489
-    Data4: 368809170
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: 5466464178347575680}
-  - {fileID: 6999108899028790235}
-  - {fileID: 6245906338184120056}
-  - {fileID: -8408906790423941213}
-  - {fileID: -6317704174812765129}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 236571
---- !u!114 &-6317704174812765129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Millia_duet
-  m_EditorClassIdentifier: 
-  Name: Millia_duet
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 568462561
-    data2: 615650383
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-6273450124101362410
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Vera
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Vera
-  Guid:
-    Data1: 1454912571
-    Data2: 1284011094
-    Data3: -206367588
-    Data4: 952350618
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &-6003466582849161030
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_heavy_snow_night
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_heavy_snow_night
-  Guid:
-    Data1: -882357577
-    Data2: 1322482728
-    Data3: 828377753
-    Data4: -1094003758
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5740853571691762478}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14678
---- !u!114 &-5740853571691762478
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SFX_heavy_snow_night/heavy snow night
-  m_EditorClassIdentifier: 
-  Name: heavy snow night
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 645380666
-    data2: 1591329395
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-5617982069397751381
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_duet/duet_character
-  m_EditorClassIdentifier: 
-  Name: duet_character
-  StudioPath: 
-  Min: 0
-  Max: 4
-  Default: 0
-  ID:
-    data1: 3197208376
-    data2: 1898819561
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-5440890523295856706
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_world
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_world
-  Guid:
-    Data1: 726610018
-    Data2: 1225982235
-    Data3: 829037707
-    Data4: -1889677786
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -9091780168821722619}
-  - {fileID: 8336530595922125835}
-  - {fileID: -8281799634200087819}
-  - {fileID: 2059143166569411221}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 75000
---- !u!114 &-5328876664207252256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_duet/MusicHold
-  m_EditorClassIdentifier: 
-  Name: MusicHold
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2061414651
-    data2: 914531880
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-4332167649221712317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_click
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_click
-  Guid:
-    Data1: -1842963160
-    Data2: 1099688167
-    Data3: 1740412063
-    Data4: 1064109908
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 2606
---- !u!114 &-1794660107216520657
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/SFX_heavy_snow_day/heavy snow
-  m_EditorClassIdentifier: 
-  Name: heavy snow
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 2264467500
-    data2: 334233725
-  Type: 0
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &-896059827081223429
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: FMODProject_Partita/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 637808676283286519
-  FileSizes:
-  - Name: Desktop
-    Value: 2208
-  Exists: 1
---- !u!114 &-757075147940541963
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/mUSIC_duet
-  m_EditorClassIdentifier: 
-  Path: event:/mUSIC_duet
-  Guid:
-    Data1: 265498131
-    Data2: 1225630576
-    Data3: -1275059049
-    Data4: -1077205249
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -5617982069397751381}
-  - {fileID: -5328876664207252256}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 66857
---- !u!114 &-96048828910213471
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Zurab
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Zurab
-  Guid:
-    Data1: 1955267614
-    Data2: 1197226594
-    Data3: -84986957
-    Data4: -198039113
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &11400000
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
-  m_Name: FMODStudioCache
-  m_EditorClassIdentifier: 
-  EditorBanks:
-  - {fileID: -896059827081223429}
-  - {fileID: 6734345658795634640}
-  EditorEvents:
-  - {fileID: -6982331266443322982}
-  - {fileID: -757075147940541963}
-  - {fileID: 1000444737097386528}
-  - {fileID: -96048828910213471}
-  - {fileID: -4332167649221712317}
-  - {fileID: -6273450124101362410}
-  - {fileID: 1121531869399628050}
-  - {fileID: -6606656281489882080}
-  - {fileID: -5440890523295856706}
-  - {fileID: 1785040728517796598}
-  - {fileID: 3176860465463014915}
-  - {fileID: 5462082448822637101}
-  - {fileID: -9132615064890970850}
-  - {fileID: -6003466582849161030}
-  - {fileID: 2504766192644270290}
-  - {fileID: 2817586907354698545}
-  - {fileID: -6352289454083693040}
-  EditorParameters: []
-  MasterBanks:
-  - {fileID: 6734345658795634640}
-  StringsBanks:
-  - {fileID: -896059827081223429}
-  cacheTime: 637808676283286519
-  cacheVersion: 10
---- !u!114 &1000444737097386528
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Stephan
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Stephan
-  Guid:
-    Data1: 1682223124
-    Data2: 1093600073
-    Data3: -509153917
-    Data4: 2140088351
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &1121531869399628050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Millia
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Millia
-  Guid:
-    Data1: -1004121518
-    Data2: 1162125317
-    Data3: -2091798630
-    Data4: 568506244
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &1785040728517796598
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/minigame_Protag
-  m_EditorClassIdentifier: 
-  Path: event:/minigame_Protag
-  Guid:
-    Data1: 526853747
-    Data2: 1259668281
-    Data3: 1206550674
-    Data4: -2014634180
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &2059143166569411221
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_world/1
-  m_EditorClassIdentifier: 
-  Name: 1
-  StudioPath: 
-  Min: 0
-  Max: 1
-  Default: 0
-  ID:
-    data1: 1901083469
-    data2: 300504962
-  Type: 1
-  IsGlobal: 0
-  Labels: []
-  Exists: 1
---- !u!114 &2504766192644270290
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_heavy_snow_day
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_heavy_snow_day
-  Guid:
-    Data1: -319462456
-    Data2: 1124280359
-    Data3: -1917955935
-    Data4: 1966924300
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 1
-  Is3D: 0
-  IsOneShot: 0
-  Parameters:
-  - {fileID: -1794660107216520657}
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 14963
---- !u!114 &2817586907354698545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_Fail
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_Fail
-  Guid:
-    Data1: 2033401300
-    Data2: 1197590295
-    Data3: -781219195
-    Data4: -322610627
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 4785
---- !u!114 &3176860465463014915
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/SFX_Lover_talk
-  m_EditorClassIdentifier: 
-  Path: event:/SFX_Lover_talk
-  Guid:
-    Data1: 2125511832
-    Data2: 1088889812
-    Data3: 967961022
-    Data4: -974376938
-  Banks:
-  - {fileID: 6734345658795634640}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 0
-  MaxDistance: 0
-  Length: 0
---- !u!114 &5462082448822637101
+--- !u!114 &-8725961272371245307
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -748,7 +27,63 @@ MonoBehaviour:
   MinDistance: 0
   MaxDistance: 0
   Length: 0
---- !u!114 &5466464178347575680
+--- !u!114 &-8224348617901393927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_click
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_click
+  Guid:
+    Data1: -1842963160
+    Data2: 1099688167
+    Data3: 1740412063
+    Data4: 1064109908
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 2606
+--- !u!114 &-7926817012520229692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/mUSIC_duet
+  m_EditorClassIdentifier: 
+  Path: event:/mUSIC_duet
+  Guid:
+    Data1: 265498131
+    Data2: 1225630576
+    Data3: -1275059049
+    Data4: -1077205249
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 8432664818068790958}
+  - {fileID: -2400220110100589925}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 66857
+--- !u!114 &-7917585182158762560
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -758,21 +93,325 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Zurab_duet
+  m_Name: parameter:/SFX_heavy_snow_night/heavy snow night
   m_EditorClassIdentifier: 
-  Name: Zurab_duet
+  Name: heavy snow night
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 386177743
-    data2: 3659736749
+    data1: 645380666
+    data2: 1591329395
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-7658832841203866715
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_world/Parameter 4
+  m_EditorClassIdentifier: 
+  Name: Parameter 4
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3377883092
+    data2: 2841335612
   Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6245906338184120056
+--- !u!114 &-6660431106967243539
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_world/1
+  m_EditorClassIdentifier: 
+  Name: 1
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 1901083469
+    data2: 300504962
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6432489025106101509
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_finale/Millia_duet
+  m_EditorClassIdentifier: 
+  Name: Millia_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 568462561
+    data2: 615650383
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-6118065579253834365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_Protag
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_Protag
+  Guid:
+    Data1: 526853747
+    Data2: 1259668281
+    Data3: 1206550674
+    Data4: -2014634180
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-5604703978609081791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_world/Parameter 5
+  m_EditorClassIdentifier: 
+  Name: Parameter 5
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2509610369
+    data2: 1160230999
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-5535306388187962730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/mUSIC_menu
+  m_EditorClassIdentifier: 
+  Path: event:/mUSIC_menu
+  Guid:
+    Data1: 2034466473
+    Data2: 1273576920
+    Data3: 1516431277
+    Data4: 1190652741
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 75000
+--- !u!114 &-5286185042657220521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_Millia
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_Millia
+  Guid:
+    Data1: -1004121518
+    Data2: 1162125317
+    Data3: -2091798630
+    Data4: 568506244
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2914510575931489336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_Stephan
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_Stephan
+  Guid:
+    Data1: 1682223124
+    Data2: 1093600073
+    Data3: -509153917
+    Data4: 2140088351
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &-2831621703763329760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/SFX_heavy_snow_day/heavy snow
+  m_EditorClassIdentifier: 
+  Name: heavy snow
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2264467500
+    data2: 334233725
+  Type: 0
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2648605529650622866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_finale/Pascha_duet
+  m_EditorClassIdentifier: 
+  Name: Pascha_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3594490401
+    data2: 2447494444
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-2400220110100589925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_duet/MusicHold
+  m_EditorClassIdentifier: 
+  Name: MusicHold
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 2061414651
+    data2: 914531880
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1551683294067062975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_heavy_snow_night
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_heavy_snow_night
+  Guid:
+    Data1: -882357577
+    Data2: 1322482728
+    Data3: 828377753
+    Data4: -1094003758
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -7917585182158762560}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14678
+--- !u!114 &-1304673776771663949
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -796,7 +435,7 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &6734345658795634640
+--- !u!114 &-896059827081223429
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -806,17 +445,84 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: FMODProject_Partita/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 637808676282866503
+  Path: FMODProject_Partita/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 637809770292651752
   FileSizes:
   - Name: Desktop
-    Value: 19976128
+    Value: 2208
   Exists: 1
---- !u!114 &6999108899028790235
+--- !u!114 &-283931808030908491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Fail
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Fail
+  Guid:
+    Data1: 2033401300
+    Data2: 1197590295
+    Data3: -781219195
+    Data4: -322610627
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 4785
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -896059827081223429}
+  - {fileID: 6734345658795634640}
+  EditorEvents:
+  - {fileID: 6249452210107393750}
+  - {fileID: -7926817012520229692}
+  - {fileID: -2914510575931489336}
+  - {fileID: 3179668935542886935}
+  - {fileID: -8224348617901393927}
+  - {fileID: 3291803521217697559}
+  - {fileID: -5286185042657220521}
+  - {fileID: 7368348306009452723}
+  - {fileID: 8514074303141040943}
+  - {fileID: -6118065579253834365}
+  - {fileID: 4151303157309271446}
+  - {fileID: -8725961272371245307}
+  - {fileID: -5535306388187962730}
+  - {fileID: -1551683294067062975}
+  - {fileID: 7328328629209213736}
+  - {fileID: -283931808030908491}
+  - {fileID: 3492146448686143706}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 6734345658795634640}
+  StringsBanks:
+  - {fileID: -896059827081223429}
+  cacheTime: 637809770292651752
+  cacheVersion: 10
+--- !u!114 &1777860032325985773
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -826,21 +532,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
-  m_Name: parameter:/mUSIC_finale/Stephan_duet
+  m_Name: parameter:/mUSIC_finale/Zurab_duet
   m_EditorClassIdentifier: 
-  Name: Stephan_duet
+  Name: Zurab_duet
   StudioPath: 
   Min: 0
   Max: 1
   Default: 0
   ID:
-    data1: 968881134
-    data2: 4011441088
+    data1: 386177743
+    data2: 3659736749
   Type: 1
   IsGlobal: 0
   Labels: []
   Exists: 1
---- !u!114 &8336530595922125835
+--- !u!114 &2924248092106001895
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -864,3 +570,297 @@ MonoBehaviour:
   IsGlobal: 0
   Labels: []
   Exists: 1
+--- !u!114 &3179668935542886935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_Zurab
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_Zurab
+  Guid:
+    Data1: 1955267614
+    Data2: 1197226594
+    Data3: -84986957
+    Data4: -198039113
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3291803521217697559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_Vera
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_Vera
+  Guid:
+    Data1: 1454912571
+    Data2: 1284011094
+    Data3: -206367588
+    Data4: 952350618
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &3492146448686143706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/mUSIC_finale
+  m_EditorClassIdentifier: 
+  Path: event:/mUSIC_finale
+  Guid:
+    Data1: -1314649387
+    Data2: 1180778381
+    Data3: 996792489
+    Data4: 368809170
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: 1777860032325985773}
+  - {fileID: 8012852795836014605}
+  - {fileID: -1304673776771663949}
+  - {fileID: -2648605529650622866}
+  - {fileID: -6432489025106101509}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 236571
+--- !u!114 &4151303157309271446
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_Lover_talk
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_Lover_talk
+  Guid:
+    Data1: 2125511832
+    Data2: 1088889812
+    Data3: 967961022
+    Data4: -974376938
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
+--- !u!114 &6249452210107393750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_gettingready
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_gettingready
+  Guid:
+    Data1: -795228409
+    Data2: 1199942305
+    Data3: 1467185557
+    Data4: 823560235
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 16253
+--- !u!114 &6734345658795634640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: FMODProject_Partita/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 637809770290051925
+  FileSizes:
+  - Name: Desktop
+    Value: 19976448
+  Exists: 1
+--- !u!114 &7328328629209213736
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SFX_heavy_snow_day
+  m_EditorClassIdentifier: 
+  Path: event:/SFX_heavy_snow_day
+  Guid:
+    Data1: -319462456
+    Data2: 1124280359
+    Data3: -1917955935
+    Data4: 1966924300
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -2831621703763329760}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 14963
+--- !u!114 &7368348306009452723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/minigame_birds
+  m_EditorClassIdentifier: 
+  Path: event:/minigame_birds
+  Guid:
+    Data1: -1101399202
+    Data2: 1214613895
+    Data3: 2134347951
+    Data4: 940802379
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 47000
+--- !u!114 &8012852795836014605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_finale/Stephan_duet
+  m_EditorClassIdentifier: 
+  Name: Stephan_duet
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 968881134
+    data2: 4011441088
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8432664818068790958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/mUSIC_duet/duet_character
+  m_EditorClassIdentifier: 
+  Name: duet_character
+  StudioPath: 
+  Min: 0
+  Max: 5
+  Default: 5
+  ID:
+    data1: 3197208376
+    data2: 1898819561
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &8514074303141040943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/mUSIC_world
+  m_EditorClassIdentifier: 
+  Path: event:/mUSIC_world
+  Guid:
+    Data1: 726610018
+    Data2: 1225982235
+    Data3: 829037707
+    Data4: -1889677786
+  Banks:
+  - {fileID: 6734345658795634640}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters:
+  - {fileID: -5604703978609081791}
+  - {fileID: 2924248092106001895}
+  - {fileID: -7658832841203866715}
+  - {fileID: -6660431106967243539}
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 75000

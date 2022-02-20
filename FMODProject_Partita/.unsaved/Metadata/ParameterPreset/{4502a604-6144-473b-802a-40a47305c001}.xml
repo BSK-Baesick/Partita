@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.01.00">
+	<object class="ParameterPreset" id="{4502a604-6144-473b-802a-40a47305c001}">
+		<property name="name">
+			<value>PlayDuet</value>
+		</property>
+		<relationship name="folder">
+			<destination>{648c4ef1-9e14-4447-a107-4fea8f300012}</destination>
+		</relationship>
+		<relationship name="parameter">
+			<destination>{f309ddd8-3fac-4b05-943c-fc8957563927}</destination>
+		</relationship>
+	</object>
+	<object class="GameParameter" id="{f309ddd8-3fac-4b05-943c-fc8957563927}">
+		<property name="parameterType">
+			<value>2</value>
+		</property>
+		<property name="maximum">
+			<value>2</value>
+		</property>
+		<property name="enumerationLabels">
+			<value>Solo</value>
+			<value>Duet</value>
+		</property>
+		<property name="initialValue">
+			<value>0</value>
+		</property>
+	</object>
+</objects>

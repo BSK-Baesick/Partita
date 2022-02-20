@@ -2,6 +2,10 @@
 
 === Chapter1
 
+@hideAll
+
+@setDuetCharacter MILLIA
+
 @startTrans
 
 @bgm approaching_bus fade:1
@@ -99,8 +103,6 @@ She flips the rifle back towards herself, where it settles harmlessly in her lap
     
 BANG!
 
-@spawn ShakePrinter params:,5,,,,,true,true
-
 @wait 1
 
 @spawn ShakeCharacter params:PROTAG
@@ -128,8 +130,6 @@ You feel a trickle of blood.
 @sfx Mosin_Shot_And_Reload
         
 BANG!
-
-@spawn ShakePrinter params:,5,,,,,true,true
 
 @wait 1
 
@@ -196,8 +196,6 @@ Are you sure?
 
 BANG!
 
-@spawn ShakePrinter params:,5,,,,,true,true
-
 @wait 1
 
 @despawn DepthOfField
@@ -227,13 +225,9 @@ You feel a trickle of blood.
 
 @char MILLIA.DEFAULT look:left pos:85,0 scale:1.2,1.2
 
-@spawn ShakePrinter params:,10,,,,,true,true
-
 @sfx Mosin_Shot_And_Reload
         
 BANG!
-
-@despawn ShakePrinter
 
 @spawn ShakeCharacter params:PROTAG
         
@@ -290,8 +284,6 @@ You press one foot down at an angle into the snow, propelling yourself forward a
 She tilts her scope toward you, and before you can bring your next leg forward, a bullet flies clean through your sk-
 
 @sfx Mosin_Oneshot
-
-@spawn ShakePrinter params:,10,,,,,true,true
 
 @wait 2
 
@@ -766,10 +758,12 @@ MILLIA: "I'm sure you do. Take the time to memorise."
 As you sit in silence against the coming night, the woman cradles the fire, eyeing off the letter in your hands with unbridled curiosity.
 
 @char MILLIA.DEFAULT look:right pos:75,0 scale:1.2,1.2
+
+@char PROTAG.DEFAULT look:left pos:25,0 scale:1.2,1.2
     
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
 
-@char PROTAG.DEFAULT look:left pos:25,0 scale:1.2,1.2
+@char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
 
@@ -785,6 +779,10 @@ For a second you think you see a tear, but she catches your stare with a smirk a
     
     
 =WhyYouDidntKillMe
+
+@wait 2
+
+@char MILLIA.DEFAULT look:left pos:25,0 scale:1.2,1.2
 
 MILLIA: "I've killed thousands for a country that's about to implode anyway. 
     
@@ -894,6 +892,8 @@ MILLIA: "True. I'll keep first watch."
 
 =MilliaDUET
 
+@playMusicDuet
+
 @despawn duetEasy
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
@@ -925,6 +925,8 @@ You play long into the night. But eventually, weariness does draw you back to re
 As the music comes to a close and your eyes give way to sleep, you turn your attention to the fire, letter dangling in your lap.
 
 @despawn SunShafts
+
+@stopMusicDuet
 
 -> 1stLetter
 
@@ -1076,6 +1078,8 @@ You turn back to the roadside and press on into morning.
 
 
 =Chapter2
+
+@setDuetCharacter STEPHAN
 
 @startTrans
 
@@ -1860,21 +1864,19 @@ Ends.
   
   @hideUI
   
-  @spawn duet
-  
-  @duet normal
+  @spawn duetEasy
+    
+  @duet easy
   
  { 
     - duetScore >= 50: 
     
-    -> MilliaDUET
+    -> StephanDuet
     
     - else:
     
-    -> MilliaNODUET
+    -> StephanNODUET
 }
-
- ->StephanDuet
  
  
  
@@ -1920,6 +1922,8 @@ STEPHAN: We should let you rest.
  
 @despawn duet
 
+@playMusicDuet
+
 As his wife watches from nearby, the man delicately places fingers on his accordion. 
 
 It seems almost like a reunion of sorts. 
@@ -1945,6 +1949,8 @@ You play until the storm recedes.
 It's remarkably simple, and beautifully melancholic.
 
 Eventually, the man and his wife thank you, before showing you a bed and retiring to their own.
+
+@stopMusicDuet
 
  ->Chapter2Epilogue
  
@@ -2008,6 +2014,7 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
  
  
 =Chapter3
+@setDuetCharacter VERA
 @hideAll remove:true
 The bus rails on agains/
  
@@ -2114,11 +2121,34 @@ VERA: "Fuck off Shoestring."
 Eventually, you settle into silence against the hum of the engine, your gazes drawn to the endless white horizon. Out of the corner of your eye, you see her soften at the sight. She's still a kid, tapping gently at the drum on her side.
 +Play alongside her.
 ->VeraDuet
- //START DUET SYSTEM - IF SUCCESUL GO TO =VeraDuet - IF UNSUCCESFUL GO TO =VeraNoDuet
+  @skip false
+  
+  @hideUI
+  
+  @spawn duetEasy
+    
+  @duet easy
+  
+ { 
+    - duetScore >= 50: 
+    
+    -> VeraDuet
+    
+    - else:
+    
+    -> VeraNoDuet
+}
 +Sit in silence.
 ->SitInSilence
 
 =VeraDuet
+
+@playMusicDuet
+
+@despawn duetEasy
+
+@stopMusicDuet
+
 You draw bow to string, expecting some grand rebuke. She offers nothing more than a petty scowl and a louder beat. An attempt to dissuade your communion. 
 
 Drum beats back against melody. An uncommon pairing for uncommon times. She no longer fights against, but sets the lead and pace. You follow willingly.
@@ -2132,6 +2162,9 @@ You think you see her smile.
 Maybe. 
 
 Probably not though.
+
+@stopMusicDuet
+
 ->FarewellVera
 
 =VeraNoDuet
@@ -2244,6 +2277,8 @@ Nothing to be done. You turn back to your own journey.
 ->Chapter4
 
 =Chapter4
+
+@setDuetCharacter PASCHA
 
 @startTrans
 
@@ -2401,12 +2436,14 @@ Grounding themselves for some kind of performance as they rip the envelope open.
     
     - else:
     
-    -> PaschaPlaysAlone
+    -> PaschaNoDuet
 
 
     }
 
     =PaschaDuet
+    
+    @playMusicDuet
 
     @despawn duet
 
@@ -2437,6 +2474,9 @@ Grounding themselves for some kind of performance as they rip the envelope open.
     It's no dirge, no battle song, but rather a ballad for all the queers that ever did queer.
     
     You could swear for a moment you felt the earth shift, before evening takes hold and you both collapse harmlessly into a long night's sleep.
+    
+    @stopMusicDuet
+    
     ->Chapter4Epilogue
     
     =PaschaNoDuet
@@ -2460,7 +2500,7 @@ Grounding themselves for some kind of performance as they rip the envelope open.
     
    =PaschaPlaysAlone
 
-   @sfx  //Play alone Music
+   @playMusicDuet
     Pascha plays alone. 
     
     You see faint tears catching moonlight. 
@@ -2468,6 +2508,8 @@ Grounding themselves for some kind of performance as they rip the envelope open.
     @back //Moonlight Art if any
     
     You stay awake beside them until the grasp of exhaustion drags you both into slumber.
+    
+    @stopMusicDuet
     ->Chapter4Epilogue
     
 =Chapter4Epilogue
@@ -2588,6 +2630,8 @@ And so do they.
 ->Chapter5
 
 =Chapter5
+
+@setDuetCharacter ZURAB
 
 @startTrans
 
@@ -2747,6 +2791,9 @@ ZURAB: Then I'll play for you.
     
 
 =ZurabDUET
+
+@playMusicDuet
+
 @despawn duet
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
@@ -2754,8 +2801,6 @@ ZURAB: Then I'll play for you.
 @char  Zurab.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 @camera offset:-2.75,-1.5 zoom:0.25
-
-@spawn //Zurabs Duet Spawn
 
 His smile widens into a childlike grin, and you lose yourselves in the nothingness of fancificul sound.
 
@@ -2767,7 +2812,7 @@ Concrete cracks heal over and grass grows through the morning snow.
 
 You think you see a sun behind the sky, and for a time, the world is brighter, if only in your minds.
 
-@despawn //Zurabs Duet Despawn
+@stopMusicDuet
 
 ->Them
 

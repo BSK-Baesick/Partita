@@ -4,9 +4,11 @@ using Naninovel;
 using UnityEngine;
 
 [InitializeAtRuntime] // makes the service auto-initialize with other built-in engine services
-public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IFmodAudioManager
+public class FmodAudioManager : IEngineService<FmodAudioConfiguration>
 {
     public FmodAudioConfiguration Configuration { get; set; }
+
+    private int characterId;
 
     public FmodAudioManager(FmodAudioConfiguration config)
     {
@@ -48,9 +50,44 @@ public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IFmodAud
     //HV: MUSIC METHODS
 
     //HV: Music Duet (0 = Millia, 1 = Stephan, 2 = Vera, 3 = Pascha, 4 = Zurab)
-    public void StartMusicDuet(int parameterNumber)
+    public void StartMusicDuet()
     {
-        audioController.PlayMusicDuet(parameterNumber);
+        var variableManager = Engine.GetService<ICustomVariableManager>();
+
+        switch (variableManager.GetVariableValue("currentCharacterPlaying"))
+        {
+            case "MILLIA":
+                characterId = 1;
+                break;
+
+            case "STEPHAN":
+                characterId = 2;
+                break;
+
+            case "VERA":
+                characterId = 3;
+                break;
+
+            case "PASCHA":
+                characterId = 4;
+                break;
+
+            case "ZURAB":
+                characterId = 5;
+                break;
+        }
+
+        audioController.PlayMusicDuet(characterId);
+    }
+
+    public void ChangeTrack(int trackId)
+    {
+        audioController.PlayMusicDuet(trackId);
+    }
+
+    public void ChangeDuetPlaybackStatus(int controlId)
+    {
+        audioController.ControlMusicDuet(controlId);
     }
 
     //HV: Music Finale (0 = false, 1 = true)
@@ -173,5 +210,4 @@ public class FmodAudioManager : IEngineService<FmodAudioConfiguration>, IFmodAud
         audioController.PlayClickUI();
     }
     #endregion
-
 }
