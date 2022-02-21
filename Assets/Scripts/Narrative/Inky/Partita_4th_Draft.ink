@@ -24,6 +24,8 @@
 
 @playWorldMusic
 
+@stopBgm
+
 @back bs_7 id:Chapter1BusStop
 
 @spawn Snow
@@ -31,8 +33,6 @@
 @wait 1
 
 @char PROTAG.DEFAULT scale:1.2,1.2
-
-// step on snow sfx
 
 As your feet touch soft powder, weary eyes pierce through glaring snow. 
 
