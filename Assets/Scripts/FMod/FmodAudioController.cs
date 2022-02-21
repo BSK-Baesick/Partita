@@ -21,6 +21,8 @@ public class FmodAudioController : MonoBehaviour
     [SerializeField, Range(-12f, 12f)] 
     private float pitch;
 
+    private bool audioResumed = false;
+
     [SerializeField] private FMOD.Studio.EventInstance duetMusic;
     [SerializeField] private FMOD.Studio.EventInstance finaleMusic;
     [SerializeField] private FMOD.Studio.EventInstance menuMusic;
@@ -41,6 +43,16 @@ public class FmodAudioController : MonoBehaviour
     {
         Engine.OnInitializationFinished -= GetFmodAudioConfiguration;
         fmodAudioConfiguration = Engine.GetConfiguration<FmodAudioConfiguration>();
+    }
+
+    private void OnApplicationFocus(bool focus)
+    {
+        FMODUnity.RuntimeManager.CoreSystem.mixerResume();
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
     }
 
     #region MUSIC
