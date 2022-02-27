@@ -7,27 +7,16 @@
 @setDuetCharacter MILLIA
 
 @startTrans
-
 @bgm approaching_bus fade:1
-
 @wait 2
-
 @sfx open_bus_door volume:0.5 time:4
-
 @back id:BusInterior
-
 @playBusStopSoundscape
-
 @finishTrans Crossfade time:3
-
 @hide BusInterior
-
 @playWorldMusic
-
 @stopBgm
-
-@back bs_7 id:Chapter1BusStop
-
+@back Chapter1BusStop id:Chapter1BusStop
 @spawn Snow
 
 @wait 1
@@ -51,7 +40,7 @@ MILLIA: "No."
 @resetText
 
 
-    + [-] -> SilentType
+    + [<i>Stay Silent.</i>] -> SilentType
     
     + [Yes.] -> Scene1
 
@@ -73,7 +62,7 @@ MILLIA: "Say that again?"
 @resetText
 
 
-    + [Stay Silent.] -> SilentType
+    + [<i>Stay Silent.</i>] -> SilentType
         
     + [No.] -> Boring
     
@@ -119,9 +108,9 @@ You feel a trickle of blood.
     
 @resetText
     
-    + [Take a step towards her.] -> SecondGunshot
-
-
+    + [<i>Take a step towards her.</i>] -> SecondGunshot
+    
+    + [What the fuck!?] -> WhatTheFuck
     
 =SecondGunshot
 
@@ -156,9 +145,9 @@ Curled lips smirk in amusement.
 
     + [If you wanted me dead, I'd be dead.] -> IfYouWantedMeDead
         
-    + [What the fuck!?] -> Repetition1
+    + [What the fuck!?] -> WhatTheFuck
     
-    + [Run at her.] -> RunAtHer
+    + [<i>Run at her.</i>] -> RunAtHer
 
 
 
@@ -169,9 +158,9 @@ Are you sure?
 @resetText
 
 
-    + [Yes.] -> MilliaDeath
+    + [<i>Yes.</i>] -> MilliaDeath
         
-    + [No.] -> WhatTheFuck
+    + [<i>No.</i>] -> WhatTheFuck
 
 
 
@@ -180,9 +169,9 @@ Are you sure?
 @resetText
         
         
-    + [What the fuck!?] -> ThirdGunshot
+    + [What the fuck!?] -> WhatTheFuck
     
-    + [Take a step towards her.] -> ThirdGunshot
+    + [<i>Take a step towards her.</i>] -> ThirdGunshot
 
 
     
@@ -215,9 +204,9 @@ You feel a trickle of blood.
 @resetText
 
 
-    + [Take another step towards her.] -> FourthGunshot
+    + [<i>Take another step towards her.</i>] -> FourthGunshot
 
-
+    + [What the fuck!?] -> WhatTheFuck
 
 =FourthGunshot
     
@@ -300,7 +289,7 @@ Ends.
 @resetText
 
 
-    + [Try again.]
+    + [<i>Try again.</i>]
 
 -> Chapter1
 
@@ -362,7 +351,7 @@ MILLIA:"Silent type?"
 
 @resetText
         
-    + [-] -> Stare1
+    + [<i>Stay silent.</i>] -> Stare1
     
     + [Just scared.] -> ScaredProtag
 
@@ -378,11 +367,11 @@ MILLIA:"Smart."
 
 =Stare1
 
-MILLIA:"-"
+MILLIA:"..."
 
 @resetText
             
-    + [-] -> Stare2
+    + [<i>Stay silent.</i>] -> Stare2
         
     + [This is ridiculous.] -> ThisIsRidiculous
 
@@ -399,7 +388,7 @@ Tiny teardrops freezing over wrinkled skin.
                 
     + [Are you ok?] -> MilliaWins
         
-    + [-] -> BothGiveUp
+    + [<i>Stay silent.</i>] -> BothGiveUp
         
     + [Are we done?] -> CuriousProtag
 
@@ -621,7 +610,7 @@ MILLIA: "You must be cold. I'll start a fire.
 
 After a moment of wariness, the woman's shifting demeanor seems genuine. 
 
-You help her gather firewood, and as you reach for a pile of kindling...
+You help her gather firewood, but as you each for a bundle of kindling.
 
 @spawn Envelope
 
@@ -654,7 +643,7 @@ MILLIA: "Letter from a lover?"
         
     + [No.] -> SmilesKnowingly
             
-    + [-] -> SmilesSolemnly
+    + [<i>Stay silent.</i>] -> SmilesSolemnly
     
 
 
@@ -764,6 +753,8 @@ As you sit in silence against the coming night, the woman cradles the fire, eyei
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
 
@@ -803,7 +794,7 @@ MILLIA: "Besides. You seemed harmless enough."
 @resetText
         
         
-    + [Play her a song.] -> PlayHerASong
+    + [<i>Play her a song.</i>] -> PlayHerASong
             
     + [We should sleep.] -> Sleep2
 
@@ -812,6 +803,10 @@ VAR duetScore = 0
 =PlayHerASong
 
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
+
+@stopWorldMusic
+
+@stopBonfireSoundscape
 
 @skip false
 
@@ -845,6 +840,10 @@ MILLIA: "I adore it"
     
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
 
+@stopWorldMusic
+
+@stopBonfireSoundscape
+
 @skip false
 
 @stopBonfireSoundscape
@@ -853,7 +852,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 @hideUI
 
-@spawn duetEasy
+@spawn duetEasy pos:50,50
 
 @duet easy
     
@@ -936,9 +935,17 @@ As the music comes to a close and your eyes give way to sleep, you turn your att
 
 =MilliaNODUET
 
+@playWorldMusic
+
+@playBonfireSoundscape
+
 As you raise a bow to matchstring, your arm curves against cold wind. You press forward, but the chill freezes you. The sound is naught but a screech.
 
 MILLIA: "I appreciate the sentiment, but now's the time for rest."
+
+@stopWorldMusic
+
+@stopBonfireSoundscape
 
 -> MilliaNoSong
 
@@ -964,9 +971,9 @@ As your eyes give way to sleep, you turn your attention to the fire, letter dang
 
 @resetText
 
-    + [Burn it.] -> BurnTheLetter
+    + [<i>Burn it.</i>] -> BurnTheLetter
     
-    + [Keep it.] -> KeepTheLetter
+    + [<i>Keep it.</i>] -> KeepTheLetter
 
 
 
@@ -1023,9 +1030,9 @@ Beside you, the sleeping woman's rifle lies loose. There should be a bus arrivin
 @resetText
 
 
-    + [Take it.] -> TakeTheRifle
+    + [<i>Take it.</i>] -> TakeTheRifle
     
-    + [Leave it.] -> LeaveTheRifle
+    + [<i>Leave it.</i>] -> LeaveTheRifle
 
 
 
@@ -1129,9 +1136,9 @@ Your letter.
 
     + [I think that might be for me.] -> StephanSmilesAtYou
     
-    + [Stare at him.] -> StareAtStephan
+    + [<i>Stare at him.</i>] -> StareAtStephan
     
-    + {TakeTheRifle} [Train your rifle on him.] -> TrainYourRifleAtStephan
+    + {TakeTheRifle} [<i>Train your rifle on him.</i>] -> TrainYourRifleAtStephan
 
 
 
@@ -1189,7 +1196,7 @@ The letter dangles gently from one hand as smoke rises from the cigar in the oth
 
     + [Drop it.] -> DropTheLetter1
     
-    + [Move closer.] -> MoveCloserToStephan
+    + [<i>Move closer.</i>] -> MoveCloserToStephan
 
 
 
@@ -1221,7 +1228,7 @@ STEPHAN: "I know."
         
     + [Drop. It.] -> DropTheLetter3
                 
-    + [Grab the letter.] -> GrabTheLetter1
+    + [<i>Grab the letter.</i>] -> GrabTheLetter1
 
 
 
@@ -1267,7 +1274,7 @@ He winces at the approach.
 
 @resetText
     
-    + [Grab the letter.] -> GrabTheLetter2
+    + [<i>Grab the letter.</i>] -> GrabTheLetter2
             
     + [Give me the letter.] -> GrabTheLetter3
 
@@ -1310,7 +1317,7 @@ STEPHAN: "I don't want trouble."
     
     + [Neither do I.] -> NeitherDoI
     
-    + [Look away.] ->LookAway
+    + [<i>Look away.</i>] ->LookAway
 
 
 
@@ -1350,7 +1357,7 @@ STEPHAN: "Mind if I ask who?"
 
 @resetText
 
-    + [...] -> SilentAnswer
+    + [<i>Stay silent.</i>] -> SilentAnswer
     
     + [I shouldn't say.] -> DoNotTellStephan
     
@@ -1416,11 +1423,11 @@ STEPHAN: "Heading south amidst the chaos?"
 
 @resetText
 
-    + [...] ->YouSmoke
+    + [<i>Stay silent.</i>] ->YouSmoke
     
-    + [I shouldn't..."] ->YouSmoke 
+    + [I shouldn't talk about it.] ->YouSmoke 
     
-    + [Through Abkhazia. Then on to Turkey. I have family there.] -> TellStephanYourDestination
+    + [Through Abkhazia. Then on to Rize. I have family there.] -> TellStephanYourDestination
 
 
 
@@ -1667,7 +1674,7 @@ STEPHAN: Yellow house.
  
 STEPHAN: Just behind the bend due south. 
  
-STEPHAN: Don't die stupid.
+STEPHAN: Don't die a stupid death.
  
 @hide STEPHAN remove:true
  
@@ -1713,9 +1720,9 @@ Frostbite.
  
  @resetText
  
-     + [Stay.] -> Stay1
+     + [<i>Stay.</i>] -> Stay1
         
-     + [Leave.] -> Leave
+     + [<i>Leave.</i>] -> Leave
  
  
  
@@ -1731,9 +1738,9 @@ Frostbite.
  
  @resetText
  
-    + [Stay.] -> Stay2
+    + [<i>Stay.</i>] -> Stay2
         
-    + [Leave.] -> Leave
+    + [<i>Leave.</i>] -> Leave
  
  
  
@@ -1749,9 +1756,9 @@ Frostbite.
  
  @resetText
  
-    + [Stay] -> Stay3
+    + [<i>Stay</i>] -> Stay3
                 
-    + [Leave] -> Leave
+    + [<i>Leave</i>] -> Leave
  
  
  
@@ -1766,9 +1773,9 @@ Are you sure?
 @resetText
           
             
-    + [Stay] -> Death2
+    + [<i>Stay</i>] -> Death2
                 
-    + [Leave] -> Leave
+    + [<i>Leave</i>] -> Leave
  
  
  
@@ -1971,9 +1978,9 @@ Eventually, the man and his wife thank you, before showing you a bed and retirin
  @resetText
  
  
-    + [Burn it.] -> YouShouldBurnIt2
+    + [<i>Burn it.</i>] -> YouShouldBurnIt2
     
-    + [Keep it.] -> KeepTheLetter2
+    + [<i>Keep it.</i>] -> KeepTheLetter2
     
 
 
@@ -2016,111 +2023,173 @@ There's a cold chill that sways you to sleep against the warmth of the fire.
 =Chapter3
 @setDuetCharacter VERA
 @hideAll remove:true
-The bus rails on agains/
- 
-/"OI STRINGS!"
+
+@startTrans
+@bgm approaching_bus fade:1
+@wait 2
+@sfx open_bus_door volume:0.5 time:4
+@back id:BusInterior
+@playBusStopSoundscape
+@finishTrans Crossfade time:3
+@playWorldMusic
+@stopBgm
+@wait 1
+
+The bus rails on agai [@skipInput]
+
+@spawn ShakeCamera params:,3
+???: "OI STRINGS!"
 A voice cries out from across the way.
+@char PROTAG.DEFAULT look:right scale:1.2,1.2
 You look around for a moment, but find only a single figure besides yourself and the driver.
+@hideChars remove:true
+
+@startTrans
+@char VERA.DEFAULT look:left scale:1.2,1.2
+@spawn DepthOfField params:VERA
+@wait 1
+@finishTrans
 A teenage girl treading the boundaries of adulthood. She squints as you stare.
+
+@startTrans
+@despawn DepthOfField params:2
+@char PROTAG.DEFAULT pos:25,0 look:right scale:1.2,1.2
+@char VERA.DEFAULT pos:75,0 look:left scale:1.2,1.2
+@finishTrans
+
 VERA: "YEAH YOU, HORSEHAIR!"
-+"What?"
+@resetText
++[What?]
 ->YouComeFromUpNorth
-+"I don't appreciate the tone."
++[I don't appreciate the tone.]
 VERA: "YEAH WELL I DON'T APPRECIATE YOUR LONG ASS FACE, I GOT A QUESTION FOR YA!"
-+"Neigh."
++[Neigh.]
 VERA: "YEAH TROT ON BITCH I GOT A QUESTION FOR YOU!"
-- +"What a great way to get an answer."
-    +"Ask it then"
+@resetText
+- +[What a great way to get an answer.]
+    +[Ask it then]
     - ->YouComeFromUpNorth
+    
+    
 =YouComeFromUpNorth
+@resetText
+@spawn ShakeCharacter params:VERA,3
 Her face scrunches as she observes you for a moment, taking it all in.
 VERA: "You come from up North?"
-+"Yes and no."
+@resetText
++[Yes and no.]
 VERA: "The fuck does that mean?"
-    ++"Wasn't born there. Worked there a couple years. Moscow Orchestra."
+    @resetText
+    ++[Wasn't born there. Worked there a couple years. Moscow Orchestra.]
     VERA: "Huh. Cool."
     She catches herself in a moment of sincerity.
     Then her face twists.
     ->YouSeeAnOldBitch
-    ++"Means yes and no."
+    ++[Means yes and no.]
+    @spawn ShakeCharacter params:VERA,3
     Her distaste is palpable. Her face scrunches again.
     ->YouSeeAnOldBitch
-+"Yes."
++[Yes.]
 ->YouSeeAnOldBitch
-+"No."
++[No.]
+@char VERA.DEFAULT pos:80,0 look:left scale:1.2,1.2
 She groans, stretching out her fingers and throwing her head back in frustration.
 VERA: "FUUUUUUUUCK!"
+@char VERA.DEFAULT pos:75,0 look:left scale:1.2,1.2
 She sighs.
 VERA: "Fuck it."
 ->YouSeeAnOldBitch
-+"Neigh."
++[Neigh.]
+
+@char VERA.DEFAULT pos:80,0 look:left scale:1.2,1.2
 She groans, stretching out her fingers and throwing her head back in frustration.
 VERA: "FUUUUUUUCK!"
+@char VERA.DEFAULT pos:75,0 look:left scale:1.2,1.2
 She sighs.
 VERA: "Fuck it."
 ->YouSeeAnOldBitch
 =YouSeeAnOldBitch
 VERA: "You see an old bitch on your trip? Seventies? Big ass nose? Good shot? Apparently she's got a Mosins. {TakeTheRifle:  Just like yours.}
 {TakeTheRifle: She points to the rifle on your back}.
-+"Yes."
+@resetText
++[Yes.]
 Her face gives way to shock as simmering eyes converge on yours.
 VERA: "Where?"
-    ++[Tell the truth.] "Donetsk."
+    @resetText
+    ++[Tell the truth.] YOU: Donetsk.
     ->VeraTruth
-    ++[Lie] "Kursk."
+    ++[Lie] YOU: Kursk.
     ->VeraLie
     
-+"No."
++[No.]
 ->NoOrNeigh
-+"Neigh."
++[Neigh.]
 ->NoOrNeigh
 
 =NoOrNeigh
+@char VERA.DEFAULT pos:76,0 look:left scale:1.2,1.2
 She groans into the back of the headrest.
+@char VERA.DEFAULT pos:75,0 look:left scale:1.2,1.2
 ->WhatsYourBeef
 
 =VeraTruth
 Her eyes widen. 
+@char VERA.DEFAULT look:left pos:77,-2 scale:1.2,1.2
+@spawn ShakeCharacter params:VERA,,0.25,,0.1,0.1,
 She pulls out a notepad and presses it against the headrest, scribbling letters on the page.
+@char VERA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 ->WhatsYourBeef
 
 =VeraLie
 Her eyes widen. 
+@char VERA.DEFAULT look:left pos:77,-2 scale:1.2,1.2
+@spawn ShakeCharacter params:VERA,,0.25,,0.1,0.1,
 She pulls out a notepad and presses it against the headrest, scribbling letters on the page.
+@char VERA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 ->WhatsYourBeef
 
 =WhatsYourBeef
-+"What's your beef, Drumsticks?"
-"Fuck off Horseface."
+@resetText
++[What's your beef, Drumsticks?]
+VERA: "Fuck off Horseface."
 But you've caught her in a moment of weakness.
-+"Why do you ask?"
++[Why do you ask?]
 - VERA: "None of your fuckin business."
 She pauses. 
 Frustrated.
 VERA: "I just wanna learn.
-+"How to kill?"
+@resetText
++[How to kill?]
 VERA: "How to survive."
-+"Better lessons out there."
++[Better lessons out there.]
 VERA: "I'm not a coward."
 - VERA: "Everythings falling apart and everyone's pretending it's not. I just want to do something. That's all."
+@char VERA.DEFAULT look:right pos:75,0 scale:1.2,1.2
 Embarrassed by her own honesty, she turns away to stare against the horizon. 
 The rage is still there, resting behind the eyes, but resting none-the-less.
-+"I get it."
+@resetText
++[I get it.]
 VERA: "Fuck off Shoestring."
-    ++"That one's not even a pun."
+    @resetText
+    ++[That one's not even a pun.]
     VERA: "You're not even a fucking pun."
+    @spawn ShakeCharacter params:VERA,1
     She smirks, stifling laughter.
     ->Silence
-    ++"Aight, Whackstick."
+    ++[Aight, Whackstick.]
+    @spawn ShakeCharacter params:VERA,1
     She smirks, stifling laughter.
     ->Silence
-+Sit in silence.
++[<i>Sit in silence.</i>]
 ->Silence
 
 =Silence
 Eventually, you settle into silence against the hum of the engine, your gazes drawn to the endless white horizon. Out of the corner of your eye, you see her soften at the sight. She's still a kid, tapping gently at the drum on her side.
+@resetText
 +Play alongside her.
 ->VeraDuet
+
+  @char VERA.DEFAULT look:left pos:75,0 scale:1.2,1.2
   @skip false
   
   @hideUI
@@ -2138,7 +2207,7 @@ Eventually, you settle into silence against the hum of the engine, your gazes dr
     
     -> VeraNoDuet
 }
-+Sit in silence.
++[<i>Sit in silence.</i>]
 ->SitInSilence
 
 =VeraDuet
@@ -2181,49 +2250,63 @@ She taps against the snare and the side of the bus, matching wardrum rhythm to t
 
 =FarewellVera
 Eventually, the bus starts to slow against the final bend of the road. Her fire returns as she pulls out a map from her coat pocket, scouring dogears and scribbled notes. This is your stop. Not hers. You weigh the weight of truth.
-    + {VeraLie or NoOrNeigh} [Tell here the truth about Millia's location.] 
-    "I lied before. I met her in Donetsk."
+    @resetText
+    + {VeraLie or NoOrNeigh} [<i>Tell her the truth about Millia's location.</i>] 
+    YOU: "I lied before. I met her in Donetsk."
     ->VeraFinalTruth
-    + {VeraTruth} [Lie about Millia's location.] 
-    "I lied, before. I met her in Kursk."
+    + {VeraTruth} [<i>Lie about Millia's location.</i>] 
+    YOU: "I lied, before. I met her in Kursk."
     ->VeraFinalLie
-    + {NoOrNeigh} "Good luck."
+    + {NoOrNeigh} [Good luck.]
     VERA: "Cheers, Strings."
-    + {VeraTruth} "Good luck in Donetsk."
+    + {VeraTruth} [Good luck in Donetsk.]
     VERA: "Cheers, Strings."
-    + {VeraLie} "Good luck in Kursk."
+    + {VeraLie} [Good luck in Kursk.]
     VERA: "Cheers, Strings."
     - ->GoodbyeVera
 =VeraFinalTruth
+@char VERA.DEFAULT look:left pos:74,0 scale:1.2,1.2
 She stares you up and down as you gather your belongings.
 VERA: "Appreciated, Strings."
 ->GoodbyeVera
 =VeraFinalLie
+@char VERA.DEFAULT look:left pos:74,0 scale:1.2,1.2
 She stares you up and down as you gather your belongings. 
 VERA: "Appreciated, Strings."
 ->GoodbyeVera
       
-=GoodbyeVera  
+=GoodbyeVera
+@hide VERA remove:true
+@char PROTAG.DEFAULT look:right scale:1.2,1.2
 You move past her on your way to the front of the bus. A determined bundle of energy fumbling through pages of poorly kept notes.
-+ "Don't die stupid."
+@char PROTAG.DEFAULT look:left pos:75,0 scale:1.2,1.2
+@char VERA.DEFAULT look:right pos:25,0 scale:1.2,1.2
+@resetText
++ [Don't die a stupid death.]
+@spawn ShakeCharacter params:VERA,1
 VERA: "Go fuck yourself on a spindle, Strings!" 
-+ "Go change the world, whack-a-mole!"
-->Chapter3Epilogue
++ [Go change the world, whack-a-mole!]
+@spawn ShakeCharacter params:VERA,1
 VERA: "Go fuck yourself on a spindle Strings!"
-->Chapter3Epilogue
-+ {TakeTheRifle} "You'll need this more than me." Give her the rifle. 
-+ {TakeTheRifle and VeraFinalTruth} "Tell her thanks for the loan." Give her the rifle. 
-+ {TakeTheRifle and VeraFinalTruth} "Tell her I'm sorry." Give her the rifle.
-+ {TakeTheRifle and VeraTruth and not VeraFinalLie} "Tell her thanks for the loan." Give her the rifle. 
-+ {TakeTheRifle and VeraTruth and not VeraFinalLie} "Tell her I'm sorry." Give her the rifle.
+- ->Chapter3Epilogue
+
++ {TakeTheRifle} "You'll need this more than me." <i>Give her the rifle.</i> 
++ {TakeTheRifle and VeraFinalTruth} "Tell her thanks for the loan." <i>Give her the rifle.</i> 
++ {TakeTheRifle and VeraFinalTruth} "Tell her I'm sorry." <i>Give her the rifle.</i>
++ {TakeTheRifle and VeraTruth and not VeraFinalLie} "Tell her thanks for the loan." <i>Give her the rifle.</i> 
++ {TakeTheRifle and VeraTruth and not VeraFinalLie} "Tell her I'm sorry." <i>Give her the rifle.</i>
 - ->GiveVeraRifle
 
 =GiveVeraRifle
+@char PROTAG.DEFAULT look:left pos:50,0 scale:1.2,1.2
 Her eyes widen and her mouth hangs agape. You feel like she hasn't been speechless in some time.
 VERA: "Thankyou."
 She smiles.
+@char PROTAG.DEFAULT look:right pos:75,0 scale:1.2,1.2
 VERA: "Good luck.
 ->Chapter3EpilogueHijack
+@startTrans
+@hideAll remove:true
 
 @back id:Bus_stop2  
 
@@ -2236,6 +2319,7 @@ VERA: "Good luck.
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
 @sfx open_bus_door volume:0.5 time:4//Bus Door Closing Sound
+@finishTrans
 
 =Chapter3Epilogue
 You step back onto solid ground once more as the doors behind you hiss to a close. You turn back to face the window, where you're met by the sight of two middle fingers and two fiery eyes. She offers one last smirk as the bus curves around the trees and back out onto the empty road. 
@@ -2328,7 +2412,7 @@ PASCHA: "Drugs?"
         PASCHA: "I fucking wish, my dear. Now come, you sweet summer thing. Why not spill secrets with a stranger? 
             +++[Fine.]
             ->PublicReading
-            +++[...]
+            +++[<i>Stay silent.</i>]
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week." 
@@ -2338,7 +2422,7 @@ PASCHA: "Drugs?"
         PASCHA: "Nor I you, you sweet summer thing. Why not spill secrets with a stranger?
             +++[Fine.]
             ->PublicReading
-            +++[...]
+            +++[<i>Stay silent.</i>]
             PASCHA: "Fine. I'll start." 
             They raise a dramatic hand against their forehead.
             "I'll be dead within a week."  
@@ -2367,12 +2451,12 @@ Before you can respond, they slip the letter from your grasp, laughing as they r
 
 @spawn snow 
 
-+[Chase them.]
++[<i>Chase them.</i>]
 You lumber through thick powder, but they dash away with a tedious ease, tearing open the envelope as they bound through the snow.
 
 @sfx  // Snow Feet Music
 
-+[Let them go.]
++[<i>Let them go.</i>]
 
 They settle a few feet away in the snow.
 
@@ -2522,12 +2606,14 @@ Grounding themselves for some kind of performance as they rip the envelope open.
 
 Their bus arriving earlier than your own, your momentary companion rises early against the dawn. Their skin is still too shiny and their hair is still too soft, but at least their sharp eyes seem somewhat weary. They smile as you wake to bid them farewell.
 
-+ {TakeTheRifle and not GiveVeraRifle} "Here you go Rambo." Give them the rifle.
++ {TakeTheRifle and not GiveVeraRifle} "Here you go Rambo." <i>Give them the rifle.</i>
 
 @back PASHA.rifle // Pasha With the rifel.
 
 ->GivePaschaRifle
-+[Don't die stupid.]
++[Don't die a stupid death.]
+They pause for a moment. Intrigue betrays the facade. 
+Then, a wry smile.
 PASCHA: "Oofy doofy. That is a tall order my dear."
 They chuckle.
 PASCHA: "I'll try."
@@ -2568,10 +2654,10 @@ PASCHA: Truly, a real cunt of a man.
     @back id:bus_departure fade: 1 // Bus Departure Scene
 
     ->Chapter4StephanEnd
-    ++[Yeah...]
-    ++[...]
-
-+[Let them go.]
+    ++[Yeah.]
+    ++[<i>Stay silent.</i>] 
+    
++[<i>Let them go.</i>]
 
 -And they press on through the snow.
 
@@ -2647,18 +2733,18 @@ They should.
 
 They will.
 
-...
+They.
 
 They aren't.
 
 As the bus pulls up and you stumble out into the street, the stark absence of them cuts you deeper than any winter wind.
 
-+[Look for anyone. Anyone at all.]
++[<i>Look for anyone. Anyone at all.</i>]
 Your eyes dash out against the cold horizon, marked only by the bus stop before you. They dart to and from every corner of the world, before resting on a figure hidden behind a bus stop pillar.
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
 
-+[Call out their name.]
++[<i>Call out their name.</i>]
 You cry out into the wind. You could swear it picks up a chill in response. 
 Silence.
 
@@ -2890,7 +2976,7 @@ Of course.
 
 You hold hands.
 
-++[No one dares to stop you.]
+++[<b>No one dares to stop you.</b>]
 
 ->YouWereWonderful
 
@@ -2943,17 +3029,3 @@ The finale cinematic.
 @startTrans
 
 ->DONE
-
-
-
-
-
-
-
-
-
-
-
-
-
-

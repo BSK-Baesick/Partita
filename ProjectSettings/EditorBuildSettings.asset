@@ -11,4 +11,10 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/DuetSystemTest.unity
     guid: 25ebd63f12cb6434ba526682c1e1d224
+  - enabled: 1
+    path: Assets/Scenes/Chapter1BusStop.unity
+    guid: 8a041828a6218ef49830356126ecc1c6
+  - enabled: 1
+    path: Assets/Scenes/C3BusStop.unity
+    guid: 1925112a7847c2040b6ab7c1c95bea5a
   m_configObjects: {}
