@@ -2,7 +2,7 @@
 
 === Chapter1
 
-@hideAll
+@hideAll remove:true
 
 @setDuetCharacter MILLIA
 
@@ -30,10 +30,9 @@ An ancient woman sits, alert, back pressed against the cracked concrete wall.
 In her arms she cradles a rifle, trained delicately on your approach.
 
 Her voice is backed with a surprising vigor.
-    
-@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
 
 MILLIA: "No."
 
@@ -2276,7 +2275,7 @@ VERA: "Appreciated, Strings."
 ->GoodbyeVera
       
 =GoodbyeVera
-@hide VERA remove:true
+@hide VERA.DEFAULT remove:true
 @char PROTAG.DEFAULT look:right scale:1.2,1.2
 You move past her on your way to the front of the bus. A determined bundle of energy fumbling through pages of poorly kept notes.
 @char PROTAG.DEFAULT look:left pos:75,0 scale:1.2,1.2
