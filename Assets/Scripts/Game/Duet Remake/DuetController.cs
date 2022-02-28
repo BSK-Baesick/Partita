@@ -48,8 +48,6 @@ public class DuetController : MonoBehaviour
         var variableManager = Engine.GetService<ICustomVariableManager>();
         variableManager.TrySetVariableValue("duetScore", score);
 
-        story.EvaluateFunction("duetScore", score);
-
         timer -= Time.deltaTime;
         score = Mathf.RoundToInt(scoreFloat);
         scoreBar.value = scoreFloat;

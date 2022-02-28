@@ -764,6 +764,8 @@ As you sit in silence against the coming night, the woman cradles the fire, eyei
 After some time, her eyes turn back to the flame. She seems lost in the sight, some strange nostalgia gripping at her mind. 
 
 @char PROTAG.DEFAULT look:right pos:25,0 scale:1.2,1.2
+
+@char MILLIA.DEFAULT look:left pos:75,0 scale:1.2,1.2
     
 For a second you think you see a tear, but she catches your stare with a smirk and a wiped eye before you can look closer.
 
@@ -813,6 +815,10 @@ VAR duetScore = 0
 
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
 
+@stopWorldMusic
+
+@stopBonfireSoundscape
+
 @skip false
 
 @hideUI
@@ -845,6 +851,10 @@ MILLIA: "I adore it"
     
 You gently curl your backpack towards the ground, pulling delicate red timber to your chin.
 
+@stopWorldMusic
+
+@stopBonfireSoundscape
+
 @skip false
 
 @stopBonfireSoundscape
@@ -853,7 +863,7 @@ You gently curl your backpack towards the ground, pulling delicate red timber to
 
 @hideUI
 
-@spawn duetEasy
+@spawn duetEasy pos:50,50
 
 @duet easy
     
@@ -936,9 +946,17 @@ As the music comes to a close and your eyes give way to sleep, you turn your att
 
 =MilliaNODUET
 
+@playWorldMusic
+
+@playBonfireSoundscape
+
 As you raise a bow to matchstring, your arm curves against cold wind. You press forward, but the chill freezes you. The sound is naught but a screech.
 
 MILLIA: "I appreciate the sentiment, but now's the time for rest."
+
+@stopWorldMusic
+
+@stopBonfireSoundscape
 
 -> MilliaNoSong
 

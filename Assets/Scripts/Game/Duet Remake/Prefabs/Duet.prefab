@@ -19931,7 +19931,7 @@ MonoBehaviour:
   m_BlockingObjects: 0
   m_BlockingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
 --- !u!1 &320434699587526096
 GameObject:
   m_ObjectHideFlags: 0
@@ -23609,6 +23609,7 @@ MonoBehaviour:
   pos2: {fileID: 320434699969257385}
   pos3: {fileID: 320434698073298142}
   pos4: {fileID: 320434698940803497}
+  inkJSONAsset: {fileID: 0}
 --- !u!96 &320434699950231912
 TrailRenderer:
   serializedVersion: 2
