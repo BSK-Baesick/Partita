@@ -33,7 +33,7 @@ public class FmodAudioController : MonoBehaviour
 
     FmodAudioConfiguration fmodAudioConfiguration;
 
-    private void Awake()
+    /* private void Awake()
     {
         if (Engine.Initialized) GetFmodAudioConfiguration();
         else Engine.OnInitializationFinished += GetFmodAudioConfiguration;
@@ -53,7 +53,7 @@ public class FmodAudioController : MonoBehaviour
     private void OnApplicationPause(bool pause)
     {
         FMODUnity.RuntimeManager.CoreSystem.mixerSuspend();
-    }
+    } */
 
     #region MUSIC
     //HV: MUSIC METHODS

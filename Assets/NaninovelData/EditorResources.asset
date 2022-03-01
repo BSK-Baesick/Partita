@@ -115,12 +115,18 @@ MonoBehaviour:
     - Name: Envelope
       PathPrefix: Spawn
       Guid: 295d624b0e0863f4ab969ca6c8cf6483
-    - Name: Letter_002
+    - Name: Letter_001
       PathPrefix: Spawn
       Guid: 3772608b452e592469430391ed82d6cd
     - Name: Letter_002
       PathPrefix: Spawn
       Guid: aa04bf5c659539047bd69c2f76543b3c
+    - Name: Mosin_Icon
+      PathPrefix: Spawn
+      Guid: 3426dd5b919dae046a36b0728e968dae
+    - Name: DelayImage
+      PathPrefix: Spawn
+      Guid: bef6cf929f2c1b6488e9b53679f15a22
   - Id: UI
     Resources:
     - Name: ClickThroughPanel
@@ -185,6 +191,9 @@ MonoBehaviour:
     - Name: StartGame
       PathPrefix: Scripts
       Guid: d459f2db2696fce44af52c7d8bd5e07b
+    - Name: DelayImage
+      PathPrefix: Scripts
+      Guid: 56f889665d5c771498a201b9612a91fe
   - Id: Audio
     Resources:
     - Name: approaching_bus
@@ -227,10 +236,7 @@ MonoBehaviour:
       PathPrefix: Audio
       Guid: 4ea09de5b9cb0be4ea34f01f26fab362
   - Id: Backgrounds/ca95dfeb-92fb-4954-9cbc-8ae9b14fd555
-    Resources:
-    - Name: MainBackground
-      PathPrefix: Backgrounds/MainBackground
-      Guid: c2a6a64b12eaa8e46ae3dbe4eab2c143
+    Resources: []
   - Id: Characters/499fe24c-82d8-4497-ad12-98395e4b3e6a
     Resources:
     - Name: DEFAULT

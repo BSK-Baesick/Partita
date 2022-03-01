@@ -27,11 +27,7 @@ public class DuetController : MonoBehaviour
     public Transform pos3;
     public Transform pos4;
 
-    public TextAsset inkJSONAsset;
-
     private int characterId;
-
-    private Story story;
 
     private FmodAudioManager fmodAudioManager;
 
@@ -47,8 +43,6 @@ public class DuetController : MonoBehaviour
         //set the nani variable
         var variableManager = Engine.GetService<ICustomVariableManager>();
         variableManager.TrySetVariableValue("duetScore", score);
-
-        story.EvaluateFunction("duetScore", score);
 
         timer -= Time.deltaTime;
         score = Mathf.RoundToInt(scoreFloat);

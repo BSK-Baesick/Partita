@@ -1280,7 +1280,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: ClickSFX
-  scriptText: '@playClickUI'
+  scriptText: 
 --- !u!1 &6290616554988975999
 GameObject:
   m_ObjectHideFlags: 0

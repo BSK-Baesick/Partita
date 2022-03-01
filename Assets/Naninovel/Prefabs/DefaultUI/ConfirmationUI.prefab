@@ -411,7 +411,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: ClickSFX
-  scriptText: '@playClickUI'
+  scriptText: 
 --- !u!1 &6306036015961478139
 GameObject:
   m_ObjectHideFlags: 0
@@ -819,7 +819,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: ClickSFX
-  scriptText: '@playClickUI'
+  scriptText: 
 --- !u!1 &7326192123093840477
 GameObject:
   m_ObjectHideFlags: 0
@@ -1287,7 +1287,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scriptName: ClickSFX
-  scriptText: '@playClickUI'
+  scriptText: 
 --- !u!1 &8887223364175600442
 GameObject:
   m_ObjectHideFlags: 0

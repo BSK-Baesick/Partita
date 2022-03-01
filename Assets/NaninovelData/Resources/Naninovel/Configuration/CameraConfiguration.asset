@@ -18,7 +18,7 @@ MonoBehaviour:
   InitialPosition: {x: 0, y: 0, z: -10}
   Orthographic: 1
   CustomCameraPrefab: {fileID: 0}
-  UseUICamera: 1
+  UseUICamera: 0
   CustomUICameraPrefab: {fileID: 0}
   DefaultEasing: 0
   ThumbnailResolution: {x: 240, y: 140}
