@@ -267,14 +267,17 @@ MonoBehaviour:
       PathPrefix: Characters/PROTAG
       Guid: 68aed0b4e68dcf94194a793867fb4b1c
   - Id: Characters/e7ea0b2b-4184-4969-94bf-ebfdf6d79e0b
-    Resources: []
+    Resources:
+    - Name: DEFAULT
+      PathPrefix: Characters/VERA
+      Guid: 49c043073cb85794d9cf948a7aac70bd
   - Id: Characters/7ccc65d6-2e47-43d0-95b6-37afb30d04a8
     Resources: []
   - Id: Backgrounds/3a3f92a0-9c3f-40af-9477-9e397d62c85d
     Resources:
-    - Name: bs_7
+    - Name: Chapter1BusStop
       PathPrefix: Backgrounds/Chapter1BusStop
-      Guid: db25581dc61a522489bd30cb550e8424
+      Guid: 8a041828a6218ef49830356126ecc1c6
   - Id: Backgrounds/ec8358b8-91d9-4289-8b35-af39cd756e0f
     Resources:
     - Name: ph_bonfire
@@ -295,3 +298,8 @@ MonoBehaviour:
     - Name: BusInterior
       PathPrefix: Backgrounds
       Guid: a82e5e7136130fe4e819a9b5ed42823a
+  - Id: Backgrounds/af5d05da-f7a8-47f7-a56f-313c03f677e9
+    Resources:
+    - Name: C3BusStop
+      PathPrefix: Backgrounds/C3BusStop
+      Guid: 1925112a7847c2040b6ab7c1c95bea5a
