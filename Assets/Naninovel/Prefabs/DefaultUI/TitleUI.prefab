@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 114408393979336234}
   - component: {fileID: 114967962024840508}
   - component: {fileID: 114607239137099958}
-  - component: {fileID: 5092003399325812861}
   m_Layer: 5
   m_Name: SettingsButton
   m_TagString: Untagged
@@ -64,7 +63,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -93,7 +91,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -122,19 +119,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114408393979336234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5092003399325812861}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 114757182876663026}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -169,20 +154,6 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &5092003399325812861
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006949445794044}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &1096723325606908
 GameObject:
   m_ObjectHideFlags: 0
@@ -244,7 +215,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -373,7 +343,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -411,7 +380,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114337869789940040}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -435,7 +403,6 @@ GameObject:
   - component: {fileID: 114888314837608326}
   - component: {fileID: 114894406141552424}
   - component: {fileID: 114026045080486480}
-  - component: {fileID: 5848020540511756703}
   m_Layer: 5
   m_Name: ContinueButton
   m_TagString: Untagged
@@ -486,7 +453,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -540,7 +506,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -569,19 +534,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114888314837608326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5848020540511756703}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 114943699497849748}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -591,20 +544,6 @@ MonoBehaviour:
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
---- !u!114 &5848020540511756703
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1471200193755478}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &1520790054547676
 GameObject:
   m_ObjectHideFlags: 0
@@ -675,7 +614,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.39215687}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -715,7 +653,6 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!114 &114028071237992180
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -744,8 +681,6 @@ GameObject:
   - component: {fileID: 225474842813907114}
   - component: {fileID: 114229584609833222}
   - component: {fileID: 114550892607585574}
-  - component: {fileID: 5647665351197283062}
-  - component: {fileID: -7002410619005515545}
   m_Layer: 5
   m_Name: TitleUI
   m_TagString: Untagged
@@ -816,34 +751,10 @@ MonoBehaviour:
   focusMode: 1
   onShow:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5647665351197283062}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onHide:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 5647665351197283062}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   hideOnLoad: 0
   saveVisibilityState: 0
   blockInputWhenVisible: 1
@@ -884,7 +795,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
 --- !u!114 &114550892607585574
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -902,34 +812,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5647665351197283062
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559046370377976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: MenuStart
-  scriptText: 
---- !u!114 &-7002410619005515545
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1559046370377976}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: MenuEnd
-  scriptText: 
 --- !u!1 &1561638094064900
 GameObject:
   m_ObjectHideFlags: 0
@@ -943,8 +825,6 @@ GameObject:
   - component: {fileID: 114475420713909690}
   - component: {fileID: 114514801246507618}
   - component: {fileID: 114343483525403042}
-  - component: {fileID: 3394749121914131317}
-  - component: {fileID: 1700008154824121814}
   m_Layer: 5
   m_Name: NewGameButton
   m_TagString: Untagged
@@ -995,7 +875,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1049,7 +928,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1078,19 +956,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114475420713909690}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3394749121914131317}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 114337869789940040}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1100,34 +966,6 @@ MonoBehaviour:
     m_DisabledColor: {r: 1, g: 1, b: 1, a: 0.5882353}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
---- !u!114 &3394749121914131317
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561638094064900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
---- !u!114 &1700008154824121814
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1561638094064900}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: MenuEnd
-  scriptText: 
 --- !u!1 &1592858419531552
 GameObject:
   m_ObjectHideFlags: 0
@@ -1189,7 +1027,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1229,7 +1066,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114943699497849748}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -1301,7 +1137,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1339,7 +1174,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114757182876663026}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -1363,7 +1197,6 @@ GameObject:
   - component: {fileID: 114832155409520722}
   - component: {fileID: 114702433164446130}
   - component: {fileID: 114308271288835770}
-  - component: {fileID: 7560020597859061756}
   m_Layer: 5
   m_Name: ExitButton
   m_TagString: Untagged
@@ -1414,7 +1247,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1443,7 +1275,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1472,19 +1303,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114832155409520722}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7560020597859061756}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 114106704116546184}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1519,20 +1338,6 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &7560020597859061756
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1898570353776236}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &1987780081686824
 GameObject:
   m_ObjectHideFlags: 0
@@ -1594,7 +1399,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1632,7 +1436,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 114106704116546184}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -1656,7 +1459,6 @@ GameObject:
   - component: {fileID: 6291825457609160525}
   - component: {fileID: 3395782645154965899}
   - component: {fileID: 2703458753945231691}
-  - component: {fileID: 986343634879883785}
   m_Layer: 5
   m_Name: TipsButton
   m_TagString: Untagged
@@ -1707,7 +1509,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1736,7 +1537,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -1765,19 +1565,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6291825457609160525}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 986343634879883785}
-        m_TargetAssemblyTypeName: Naninovel.PlayScript, Elringus.Naninovel.Runtime
-        m_MethodName: Play
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 459262516011404667}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -1812,20 +1600,6 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &986343634879883785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 299689213609843394}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &1754167900604569494
 GameObject:
   m_ObjectHideFlags: 0
@@ -1887,7 +1661,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1925,7 +1698,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 7970885347366291190}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -1997,7 +1769,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2035,7 +1806,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 6120967566864538350}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
@@ -2059,7 +1829,6 @@ GameObject:
   - component: {fileID: 3057230724869717430}
   - component: {fileID: 178706684283361292}
   - component: {fileID: 2890931005524654485}
-  - component: {fileID: 6953477804660914254}
   m_Layer: 5
   m_Name: ExternalScriptsButton
   m_TagString: Untagged
@@ -2110,7 +1879,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2139,7 +1907,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2168,19 +1935,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 3057230724869717430}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 6953477804660914254}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 7970885347366291190}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2215,20 +1970,6 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &6953477804660914254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4621344034470821630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &5186442444959667107
 GameObject:
   m_ObjectHideFlags: 0
@@ -2242,7 +1983,6 @@ GameObject:
   - component: {fileID: 6210046738770006234}
   - component: {fileID: 2982750238295682575}
   - component: {fileID: 8501426253556489991}
-  - component: {fileID: 3743400899189338449}
   m_Layer: 5
   m_Name: CGGalleryButton
   m_TagString: Untagged
@@ -2293,7 +2033,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2322,7 +2061,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
-    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -2351,19 +2089,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6210046738770006234}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3743400899189338449}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   labelText: {fileID: 6120967566864538350}
   labelColors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
@@ -2398,20 +2124,6 @@ MonoBehaviour:
   onHide:
     m_PersistentCalls:
       m_Calls: []
---- !u!114 &3743400899189338449
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5186442444959667107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5975c9748a52c8d43b34c8d7c428cacd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scriptName: ClickSFX
-  scriptText: 
 --- !u!1 &7759426239576870978
 GameObject:
   m_ObjectHideFlags: 0
@@ -2473,7 +2185,6 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2511,7 +2222,6 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 459262516011404667}
-        m_TargetAssemblyTypeName: 
         m_MethodName: set_text
         m_Mode: 0
         m_Arguments:
